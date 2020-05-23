@@ -1,0 +1,168 @@
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+  overflow-x: hidden;
+
+  background-color: $body-bg;
+
+  font-family: $base-font;
+  font-size: $font-size;
+  line-height: $line-height;
+  font-style: normal;
+  color: $b-color;
+  word-break: break-word;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  backface-visibility: hidden;
+}
+
+::-webkit-input-placeholder {
+  color: $b-color;
+  opacity: 1;
+}
+
+:-moz-placeholder {
+  color: $b-color;
+  opacity: 1;
+}
+
+::-moz-placeholder {
+  color: $b-color;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: $b-color;
+  opacity: 1;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+  color: $b-color;
+}
+
+body input:required:valid,
+body textarea:required:valid {
+  color: $b-color;
+}
+
+::selection {
+  background-color: $b-color;
+  color: #ffffff;
+}
+
+main {
+  min-height: 100%;
+}
+
+a {
+  color: $link-color;
+  background-color: transparent;
+  transition: color 0.3s;
+
+  &:hover,
+  &:focus {
+    color: $link-color--hover;
+  }
+
+  // &:visited {
+  // 	color: @link-color--hover;
+  // }
+}
+
+textarea {
+  resize: vertical; // Правильное изменение размеров
+}
+
+// Коррекция для кликабельных элементов с указанной ролью в iOS
+[role="button"] {
+  cursor: pointer;
+}
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.nooveflow {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  overflow: hidden;
+  padding-right: 20px;
+}
+
+.break-word {
+  word-break: break-all;
+  hyphens: auto;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap; /* added line */
+}
+
+/*Custom animation*/
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+}
+
+/** {
+  outline: @outline;
+}*/
+.sliced {
+  position: relative;
+  width: 640px;
+  height: 400px;
+}
+.tile {
+  float: left;
+  opacity: 1;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+.tile-animated {
+  opacity: 0;
+}
+.css3-preload .sliced * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+}

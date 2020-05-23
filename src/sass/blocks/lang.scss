@@ -1,0 +1,51 @@
+.lang {
+  position: relative;
+  margin-right: 13px;
+  font-size: 11.4961px;
+  line-height: 14px;
+  font-weight: 700;
+  color: $s-color;
+}
+
+.lang__btn {
+  width: 30px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  background-image: url("../img/icons/lang-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
+  color: inherit;
+  font-weight: 700;
+  text-align: left;
+  cursor: pointer;
+}
+
+.lang__list {
+  display: none;
+
+  &--opened {
+    @include list-reset;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+
+    a {
+      text-decoration: none;
+      line-height: 2;
+    }
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .lang {
+    order: 3;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .lang {
+    margin-right: 0;
+  }
+}

@@ -1,0 +1,15 @@
+@import "../../node_modules/normalize.css/normalize";
+@import "../../node_modules/slick-carousel/slick/slick.scss";
+@import "../../node_modules/slick-carousel/slick/slick-theme.scss";
+@import "global/fonts";
+@import "global/variables";
+@import "global/scafolding";
+@import "global/mixins";
+
+@import "blocks/marquee";
+@import "blocks/header";
+@import "blocks/logo";
+@import "blocks/lang";
+@import "blocks/main-nav";
+@import "blocks/main-slider";
+@import "blocks/projects";

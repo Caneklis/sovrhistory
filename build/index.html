@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body>
+    <div class="marquee">
+      <div class="marquee__wrapper">
+        <div class="marquee__text">
+          <p>Внимание! В связи с осложнившейся ситуацией по коронавирусу, мы зак...</p>
+        </div>
+        <a href="#" class="marquee__link">Подробнее</a>
+        <button class="marquee__close-btn" type="button"><span class="visually-hidden">ЗАкрыть строку</span></button>
+      </div>
+    </div>
+    <header class="header">
+      <div class="header__wrapper">
+        <div class="header__logo">
+          <a href="#" class="logo">
+            <img src="/img/logo.svg" alt="Логотип Государственный центральный музей современной истории России" width="49" height="20">
+            <div class="logo__text">Государственный центральный музей современной истории России</div>
+            <div class="logo__slogan">Историю создаете вы!</div>
+          </a>
+        </div>
+        <div class="header__user-block">
+          <div class="lang">
+            <button class="lang__btn" type="button">RU</button>
+            <ul class="lang__list">
+              <li class="lang__item"><a href="#">RU</a></li>
+              <li class="lang__item"><a href="#">ENG</a></li>
+            </ul>
+          </div>
+          <div class="header__search">
+            <button class="header__search-activate" type="button"><span class="visually-hidden">Открыть форму поиска</span></button>
+            <form action="#" method="GET" class="header__search-form">
+              <input type="text">
+              <button type="submit" class="header__search-form-btn"><span class="visually-hidden">Найти</span></button>
+            </form>
+          </div>
+          <ul class="header__menu-list">
+            <li class="header__menu-item"><a href="#">Билеты</a></li>
+            <li class="header__menu-item"><a href="#">Адреса</a></li>
+            <li class="header__menu-item"><a href="#">Время работы</a></li>
+          </ul>
+        </div>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Меню</span></button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="#">Посетителям</a>
+              <ul class="main-nav__sublist">
+                <li><a href="#">Экскурсии</a></li>
+                <li><a href="#">Лекции и музейные занятия</a></li>
+                <li><a href="#">Образовательные проекты</a></li>
+                <li><a href="#">Билеты и расписание</a></li>
+              </ul>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">Выставка</a>
+              <ul class="main-nav__sublist">
+                <li><a href="#">Экскурсии</a></li>
+                <li><a href="#">Лекции и музейные занятия</a></li>
+                <li><a href="#">Образовательные проекты</a></li>
+                <li><a href="#">Билеты и расписание</a></li>
+              </ul>
+            </li>
+            <li class="main-nav__item"><a href="#">События</a></li>
+            <li class="main-nav__item"><a href="#">Образование</a></li>
+            <li class="main-nav__item">
+              <a href="#">Музей</a>
+              <ul class="main-nav__sublist">
+                <li><a href="#">Экскурсии</a></li>
+                <li><a href="#">Лекции и музейные занятия</a></li>
+                <li><a href="#">Образовательные проекты</a></li>
+                <li><a href="#">Билеты и расписание</a></li>
+              </ul>
+            </li>
+            <li class="main-nav__item"><a href="#">Партнеры</a></li>
+            <li class="main-nav__item"><a href="#">Магазин</a></li>
+            <li class="main-nav__item"><a href="#"><img src="/img/glasses.svg" alt="Иконка версии для слабовидящих"><span class="visually-hidden">Версия для слабовидящих</span></a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="main-slider">
+      <ul class="main-slider__list">
+        <li class="main-slider__item">
+          <article class="main-slider__article">
+            <picture>
+              <source media="(min-width: 1440px)" data-src="/img/main-slider/slide-1-desktop.jpg" srcset="/img/main-slider/slide-1-desktop.jpg">
+              <source media="(min-width: 768px)" data-src="/img/main-slider/slide-1-tablet.jpg" srcset="/img/main-slider/slide-1-tablet.jpg">
+              <img class="lozad" data-src="/img/main-slider/slide-1-mobile.jpg" src="/img/main-slider/slide-1-mobile.jpg" alt="Фотография к новости" loading="lazy">
+            </picture>
+            <div class="main-slider__item-description">
+              <div class="main-slider__item-type">
+                <p>Экспозиция</p>
+              </div>
+              <div class="main-slider__item-text">
+                <h2><a href="#">В 2024 году Музей отмечает 100-летие! В нем сохранены интерьеры знаменитого Московского Английского клуба XIX в</a>
+                </h2>
+                <p>с 15 апреля в музее</p>
+              </div>
+              <div class="main-slider__item-place">
+                <p>Москва, ул. Садовническая, д. 30, стр. 1</p>
+              </div>
+            </div>
+          </article>
+        </li>
+        <li class="main-slider__item">
+          <article class="main-slider__article">
+            <picture>
+              <source media="(min-width: 1440px)" data-src="/img/main-slider/slide-2-desktop.jpg" srcset="/img/main-slider/slide-2-desktop.jpg">
+              <source media="(min-width: 768px)" data-src="/img/main-slider/slide-2-tablet.jpg" srcset="/img/main-slider/slide-2-tablet.jpg">
+              <img class="lozad" data-src="/img/main-slider/slide-2-mobile.jpg" src="/img/main-slider/slide-1-mobile.jpg" alt="Фотография к новости" loading="lazy">
+            </picture>
+            <div class="main-slider__item-description">
+              <div class="main-slider__item-type">
+                <p>Экспозиция</p>
+              </div>
+              <div class="main-slider__item-text">
+                <h2><a href="#">Музей входит в тройку крупнейших музеев России: его коллекция насчитывает более 1.300.000 единиц хранения</a>
+                </h2>
+              </div>
+            </div>
+          </article>
+        </li>
+        <li class="main-slider__item">
+          <article class="main-slider__article">
+            <picture>
+              <source media="(min-width: 1440px)" data-src="/img/main-slider/slide-3-desktop.jpg" srcset="/img/main-slider/slide-3-desktop.jpg">
+              <source media="(min-width: 768px)" data-src="/img/main-slider/slide-3-tablet.jpg" srcset="/img/main-slider/slide-3-tablet.jpg">
+              <img class="lozad" data-src="/img/main-slider/slide-3-mobile.jpg" src="/img/main-slider/slide-3-mobile.jpg" alt="Фотография к новости" loading="lazy">
+            </picture>
+            <div class="main-slider__item-description">
+              <div class="main-slider__item-text">
+                <h2>Единственный в стране Музей, представляющий новейший период российской истории </h2>
+              </div>
+            </div>
+          </article>
+        </li>
+        <li class="main-slider__item">
+          <article class="main-slider__article">
+            <picture>
+              <source media="(min-width: 1440px)" data-src="/img/main-slider/slide-4-desktop.jpg" srcset="/img/main-slider/slide-4-desktop.jpg">
+              <source media="(min-width: 768px)" data-src="/img/main-slider/slide-4-tablet.jpg" srcset="/img/main-slider/slide-4-tablet.jpg">
+              <img class="lozad" data-src="/img/main-slider/slide-4-mobile.jpg" src="/img/main-slider/slide-4-mobile.jpg" alt="Фотография к новости" loading="lazy">
+            </picture>
+            <div class="main-slider__item-description">
+              <div class="main-slider__item-text">
+                <h2>Ежегодно Музей организует около 80 выставок, где подлинные предметы и документы сочетаются с современными мультимедийными технологиями. </h2>
+              </div>
+            </div>
+          </article>
+        </li>
+      </ul>
+      <div class="main-slider__controls">
+        <button type="button" class="main-slider__prev">prev</button>
+        <div class="main-slider__dots"></div>
+        <button type="button" class="main-slider__next">next</button>
+      </div>
+    </section>
+    <section class="projects">
+      <h2 class="visually-hidden">Проекты музея</h2>
+      <ul class="projects__list">
+        <li class="projects__list-item">
+          <article class="projects__list-item-article">
+            <picture>
+              <source media="(min-width: 1440px)" data-src="/img/projects/project-1-desktop.jpg" srcset="/img/projects/project-1-desktop.jpg">
+              <source media="(min-width: 768px)" data-src="/img/projects/project-1-tablet.jpg" srcset="/img/projects/project-1-tablet.jpg">
+              <img class="lozad" data-src="/img/projects/project-1-mobile.jpg" src="/img/projects/project-1-mobile.jpg" alt="Фотография к проекту" loading="lazy">
+            </picture>
+            <div class="projects__list-item-text">
+              <p><a href="#">Экспозиция «Цветы и война» </a></p>
+            </div>
+          </article>
+        </li>
+        <li class="projects__list-item">
+          <article class="projects__list-item-article">
+            <picture>
+              <source media="(min-width: 1440px)" data-src="/img/projects/project-2-desktop.jpg" srcset="/img/projects/project-2-desktop.jpg">
+              <source media="(min-width: 768px)" data-src="/img/projects/project-2-tablet.jpg" srcset="/img/projects/project-2-tablet.jpg">
+              <img class="lozad" data-src="/img/projects/project-2-mobile.jpg" src="/img/projects/project-2-mobile.jpg" alt="Фотография к проекту" loading="lazy">
+            </picture>
+            <div class="projects__list-item-text">
+              <p><a href="#">Коллекция экспонатов искусства</a></p>
+            </div>
+          </article>
+        </li>
+        <li class="projects__list-item">
+          <article class="projects__list-item-article">
+            <picture>
+              <source media="(min-width: 1440px)" data-src="/img/projects/project-3-desktop.jpg" srcset="/img/projects/project-3-desktop.jpg">
+              <source media="(min-width: 768px)" data-src="/img/projects/project-3-tablet.jpg" srcset="/img/projects/project-3-tablet.jpg">
+              <img class="lozad" data-src="/img/projects/project-3-mobile.jpg" src="/img/projects/project-3-mobile.jpg" alt="Фотография к проекту" loading="lazy">
+            </picture>
+            <div class="projects__list-item-text">
+              <p><a href="#">Виртуальный музей</a></p>
+            </div>
+          </article>
+        </li>
+        <li class="projects__list-item  projects__list-item--special">
+          <div class="projects__list-item-picture">
+            <picture>
+              <source media="(min-width: 1440px)" data-src="/img/projects/project-spec-desktop.jpg" srcset="/img/projects/project-spec-desktop.jpg">
+              <source media="(min-width: 768px)" data-src="/img/projects/project-spec-tablet.jpg" srcset="/img/projects/project-spec-tablet.jpg">
+              <img class="lozad" data-src="/img/projects/project-spec-mobile.jpg" src="/img/projects/project-spec-mobile.jpg" alt="Фотография к проекту" loading="lazy">
+            </picture>
+          </div>
+          <div class="project__list-item-desc">
+            <h3>Человек и война</h3>
+            <p>Нерасказанная история о перипетиях войн и о том, как обычные люди их преодолевали</p>
+            <a href="#">спецпроект →</a>
+          </div>
+        </li>
+        <li class="projects__list-item">
+          <article class="projects__list-item-article">
+            <picture>
+              <source media="(min-width: 1440px)" data-src="/img/projects/project-4-desktop.jpg" srcset="/img/projects/project-4-desktop.jpg">
+              <source media="(min-width: 768px)" data-src="/img/projects/project-4-tablet.jpg" srcset="/img/projects/project-4-tablet.jpg">
+              <img class="lozad" data-src="/img/projects/project-4-mobile.jpg" src="/img/projects/project-4-mobile.jpg" alt="Фотография к проекту">
+            </picture>
+            <div class="projects__list-item-text">
+              <p><a href="#">Музей Революции</a></p>
+            </div>
+          </article>
+        </li>
+        <li class="projects__list-item">
+          <article class="projects__list-item-article">
+            <picture>
+              <source media="(min-width: 1440px)" data-src="/img/projects/project-5-desktop.jpg" srcset="/img/projects/project-5-desktop.jpg">
+              <source media="(min-width: 768px)" data-src="/img/projects/project-5-tablet.jpg" srcset="/img/projects/project-5-tablet.jpg">
+              <img class="lozad" data-src="/img/projects/project-5-mobile.jpg" src="/img/projects/project-5-mobile.jpg" alt="Фотография к проекту">
+            </picture>
+            <div class="projects__list-item-text">
+              <p><a href="#">Россия. XXI век</a></p>
+            </div>
+          </article>
+        </li>
+        <li class="projects__list-item">
+          <article class="projects__list-item-article">
+            <picture>
+              <source media="(min-width: 1440px)" data-src="/img/projects/project-6-desktop.jpg" srcset="/img/projects/project-6-desktop.jpg">
+              <source media="(min-width: 768px)" data-src="/img/projects/project-6-tablet.jpg" srcset="/img/projects/project-6-tablet.jpg">
+              <img class="lozad" data-src="/img/projects/project-6-mobile.jpg" src="/img/projects/project-6-mobile.jpg" alt="Фотография к проекту">
+            </picture>
+            <div class="projects__list-item-text">
+              <p><a href="#">Тверская 21</a></p>
+            </div>
+          </article>
+        </li>
+      </ul>
+    </section>
+    <h1>This is the Главная страница</h1>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    <footer>
+      <h2>footer</h2>
+    </footer>
+    <script src="/js/libs.js"></script>
+    <script src="/js/scripts.min.js"></script>
+  </body>
+</html>

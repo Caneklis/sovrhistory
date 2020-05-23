@@ -1,0 +1,109 @@
+.marquee {
+  width: 100%; /* the plugin works for responsive layouts so width is not necessary */
+  height: 80px;
+  padding: 18px 0;
+  background-color: $s-color;
+}
+
+.marquee__wrapper {
+  min-width: 320px;
+  max-width: 375px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+}
+
+.marquee__text {
+  width: 280px;
+  overflow: hidden;
+
+  p {
+    margin: 0;
+    font-size: 11px;
+    line-height: 14px;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    font-weight: 700;
+  }
+}
+
+.marquee__link {
+  font-size: 11px;
+  line-height: 14px;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-decoration-line: underline;
+
+  color: rgba(255, 255, 255, 0.77);
+
+  &:hover {
+    color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+.marquee__close-btn {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-color: transparent;
+  background-image: url("../img/icons/cross.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border: none;
+}
+
+@media screen and (min-width: $tablet) {
+  .marquee {
+    height: 55px;
+  }
+
+  .marquee__wrapper {
+    display: flex;
+    justify-content: space-between;
+    min-width: 768px;
+    max-width: 1200px;
+    padding: 0 5.2%;
+  }
+
+  .marquee__link {
+    padding: 0 40px 0 10px;
+    font-size: 13px;
+    line-height: 16px;
+  }
+
+  .marquee__text {
+    width: 550px;
+    p {
+      font-size: 13px;
+      line-height: 16px;
+      letter-spacing: 0.02em;
+    }
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .marquee__wrapper {
+    min-width: 1440px;
+    max-width: 1440px;
+    padding: 0 6.8%;
+  }
+
+  .marquee__close-btn {
+    right: 26px;
+  }
+
+  .marquee__link {
+    margin-right: 80px;
+    font-size: 14px;
+    line-height: 18px;
+    /* identical to box height */
+
+    text-align: center;
+    letter-spacing: 0.02em;
+  }
+}
