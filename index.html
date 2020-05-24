@@ -387,7 +387,7 @@
             <li class="subscribe">
               <h2 class="subscribe__title">Подпишитесь на информационную рассылку музея</h2>
               <form action="#" method="POST" class="subscribe__form">
-                <label for="mail" class="subscribe__label-field"><span class="visually-hidden">Ваш email</span></label>
+                <label for="mail" class="subscribe__label-field"><span class="visually-hidden">Ваша почта</span></label>
                 <input type="mail" name="mail" id="mail" class="subscribe__input-field" placeholder="example@mail.ru" required>
                 <button class="subscribe__btn" type="submit">Подписаться</button>
                 <div class="subscribe__field">
@@ -501,12 +501,61 @@
         </section>
       </div>
     </section>
-    <h1>This is the Главная страница</h1>
-    <li>Item 1</li>
-    <li>Item 2</li>
-    <li>Item 3</li>
-    <footer>
-      <h2>footer</h2>
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <ul class="footer__list">
+          <li class="footer__list-item"><a href="#">Адреса</a></li>
+          <li class="footer__list-item"><a href="#">Часы работы</a></li>
+          <li class="footer__list-item"><a href="#">Билеты</a></li>
+          <li class="footer__list-item"><a href="#">Правила посещения</a></li>
+          <li class="footer__list-item"><a href="#">Людям с ОВЗ</a></li>
+          <li class="footer__list-item"><a href="#">Противодействие коррупции</a></li>
+        </ul>
+        <ul class="footer__list">
+          <li class="footer__list-item"><a href="#">Главное</a></li>
+          <li class="footer__list-item"><a href="#">Пресня</a></li>
+          <li class="footer__list-item"><a href="#">Типография</a></li>
+          <li class="footer__list-item"><a href="#">Кржижановский</a></li>
+          <li class="footer__list-item"><a href="#">Евтушенко</a></li>
+          <li class="footer__list-item"><a href="#">Катынь</a></li>
+          <li class="footer__list-item"><a href="#">Медное</a></li>
+        </ul>
+        <ul class="footer__list">
+          <li class="footer__list-item"><a href="#">Для СМИ</a></li>
+          <li class="footer__list-item"><a href="#">Организация мероприятий</a></li>
+          <li class="footer__list-item"><a href="#">Спонсорам</a></li>
+          <li class="footer__list-item"><a href="#">Вакансии</a></li>
+          <li class="footer__list-item"><a href="#">Контакты</a></li>
+        </ul>
+        <section class="social  social--footer">
+          <h2 class="visually-hidden">Мы в соцсетях</h2>
+          <ul class="social__list">
+            <li class="social__item"><a href="#" class="social__link  social__link--fb"><span class="visually-hidden">Вк</span></a></li>
+            <li class="social__item"><a href="#" class="social__link  social__link--vk"><span class="visually-hidden"></span></a></li>
+            <li class="social__item"><a href="#" class="social__link  social__link--ok"><span class="visually-hidden"></span></a></li>
+            <li class="social__item"><a href="#" class="social__link  social__link--inst"><span class="visually-hidden"></span></a></li>
+            <li class="social__item"><a href="#" class="social__link  social__link--tw"><span class="visually-hidden"></span></a></li>
+          </ul>
+        </section>
+        <section class="subscribe  subscribe--footer">
+          <h2 class="subscribe__title">Написать нам</h2>
+          <form action="#" method="POST" class="subscribe__form">
+            <label for="name" class="subscribe__label-field"><span class="visually-hidden">Ваше имя</span></label>
+            <input type="text" name="name" id="name" class="subscribe__input-field  subscribe__input-field--dark" placeholder="Ваше имя" required>
+            <label for="mail" class="subscribe__label-field"><span class="visually-hidden">Ваша почта</span></label>
+            <input type="mail" name="mail" id="mail" class="subscribe__input-field  subscribe__input-field--dark" placeholder="Ваша почта" required>
+            <label for="text" class="subscribe__label-field"><span class="visually-hidden">Текст вопроса или предложения</span></label>
+            <textarea name="text" id="text"></textarea>
+            <input type="mail" name="mail" id="mail" class="subscribe__input-textarea" placeholder="Текст вопроса или предложения" required>
+            <button class="subscribe__btn" type="submit">Отправить</button>
+            <div class="subscribe__field">
+              <input type="checkbox" id="check" name="check" class="visually-hidden" required>
+              <label for="check">Я согласен с условиями подписки и <a>политикой обработки персональных данных</a>
+              </label>
+            </div>
+          </form>
+        </section>
+      </div>
     </footer>
     <script src="js/libs.js"></script>
     <script src="js/scripts.min.js"></script>
