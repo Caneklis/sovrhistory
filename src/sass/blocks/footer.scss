@@ -1,0 +1,52 @@
+.footer {
+  background-color: #31302f;
+  background-image: url("../img/subscribe-pettern.jpg");
+  background-repeat: repeat;
+}
+
+.footer__wrapper {
+  min-width: 320px;
+  max-width: 375px;
+  margin: 0 auto;
+  padding: 38px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.footer__list {
+  @include list-reset;
+  width: 118px;
+  margin-right: 50px;
+  margin-bottom: 14px;
+}
+
+.footer__list-item {
+  a {
+    font-size: 10px;
+    line-height: 13px;
+    letter-spacing: 0.02em;
+    text-decoration-line: underline;
+
+    color: #cfc8b7;
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .footer__wrapper {
+    min-width: 768px;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-left: 5.2%;
+    padding-right: 5.2%;
+  }
+
+  .footer__list {
+    width: auto;
+    margin-right: 0;
+  }
+  .footer__list-item {
+  }
+}

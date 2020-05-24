@@ -371,7 +371,7 @@ title: Главная страница
         <li class="subscribe">
           <h2 class="subscribe__title">Подпишитесь на информационную рассылку музея</h2>
           <form action="#" method="POST" class="subscribe__form">
-            <label for="mail" class="subscribe__label-field"><span class="visually-hidden">Ваш email</span></label>
+            <label for="mail" class="subscribe__label-field"><span class="visually-hidden">Ваша почта</span></label>
             <input type="mail" name="mail" id="mail" class="subscribe__input-field" placeholder="example@mail.ru"
               required>
             <button class="subscribe__btn" type="submit">Подписаться</button>
@@ -520,13 +520,5 @@ title: Главная страница
     </section>
   </div>
 </section>
-
-<h1>This is the {{ title }}</h1>
-
-{% import "data/data.html" as tests %}
-
-{% for test in tests.list %}
-<li>{{test.title}}</li>
-{% endfor %}
 
 {% endblock %}

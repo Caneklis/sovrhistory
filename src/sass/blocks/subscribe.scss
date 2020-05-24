@@ -42,6 +42,25 @@
   &:focus {
     outline: none;
   }
+
+  &--dark {
+    margin-bottom: 8px;
+    background-color: #31302f;
+    color: #cfc8b7;
+
+    &::placeholder {
+      color: #cfc8b7;
+    }
+  }
+}
+
+.subscribe__input-textarea {
+  margin-bottom: 8px;
+  background-color: #31302f;
+  margin-bottom: 4px;
+  padding: 13px 5px 11px;
+  font-size: 14px;
+  line-height: 18px;
 }
 
 .subscribe__btn {
