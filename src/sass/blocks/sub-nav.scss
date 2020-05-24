@@ -30,6 +30,7 @@
   .sub-nav {
     margin-bottom: 50px;
   }
+
   .sub-nav__list {
     padding-top: 49px;
     padding-bottom: 60px;
@@ -57,5 +58,14 @@
         justify-content: flex-end;
       }
     }
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .sub-nav__list {
+    min-width: 1440px;
+    max-width: 1440px;
+    padding-left: 130px;
+    padding-right: 130px;
   }
 }
