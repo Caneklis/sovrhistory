@@ -24,6 +24,14 @@ var server = require("browser-sync").create();
 var concat = require("gulp-concat");
 var uglify = require("gulp-uglify");
 
+const ghPages = require("gh-pages");
+const path = require("path");
+
+function deploy(cb) {
+  ghPages.publish(path.join(process.cwd(), "./build"), cb);
+}
+exports.deploy = deploy;
+
 gulp.task("css", function () {
   return gulp
     .src("src/sass/style.scss")
@@ -47,6 +55,7 @@ gulp.task("browser-sync", function () {
   });
 
   gulp.watch("src/sass/**/*.{scss,sass}", gulp.series("css"));
+  gulp.watch("src/img/**/*.{png,jpg,svg}", gulp.series("images", "reload"));
   gulp.watch("src/img/icon-*.svg", gulp.series("sprite", "nunjucks", "reload"));
   gulp.watch("src/**/*.+(html|nunjucks)", gulp.series("nunjucks", "reload"));
   gulp.watch("src/js/*.js", gulp.series("js", "reload"));
@@ -113,20 +122,21 @@ gulp.task("sprite", function () {
 
 gulp.task("images", function () {
   return gulp
-    .src("source/img/**/*.{png,jpg,svg}")
+    .src("src/img/**/*.{png,jpg,svg}")
     .pipe(
       imagemin([
         imagemin.optipng({
           optimizationLevel: 3,
         }),
-        imagemin.jpegtran({
+        imagemin.mozjpeg({
+          quality: 80,
           progressive: true,
         }),
         imagemin.svgo(),
       ])
     )
 
-    .pipe(gulp.dest("source/img"));
+    .pipe(gulp.dest("build/img"));
 });
 
 gulp.task("webp", function () {
@@ -147,6 +157,7 @@ gulp.task("libs", function () {
       "node_modules/slick-carousel/slick/slick.js",
       "node_modules/jquery.marquee/jquery.marquee.js",
       "node_modules/lozad/dist/lozad.js",
+      "node_modules/imagesloaded/imagesloaded.pkgd.js",
     ])
     .pipe(concat("libs.js"))
     .pipe(uglify()) // Минимизировать весь js (на выбор)
@@ -167,12 +178,9 @@ gulp.task("js", function () {
 
 gulp.task("copy", function () {
   return gulp
-    .src(
-      ["src/fonts/**/*.{woff,woff2}", "src/img/**", "src/js/**", "src/*.ico"],
-      {
-        base: "src",
-      }
-    )
+    .src(["src/fonts/**/*.{woff,woff2,eof,ttf,svg}", "src/img/favicon/**"], {
+      base: "src",
+    })
     .pipe(gulp.dest("build"));
 });
 gulp.task("clean", function () {
@@ -181,7 +189,16 @@ gulp.task("clean", function () {
 
 gulp.task(
   "build",
-  gulp.series("clean", "copy", "css", "libs", "js", "sprite", "nunjucks")
+  gulp.series(
+    "clean",
+    "copy",
+    "css",
+    "libs",
+    "js",
+    "images",
+    "sprite",
+    "nunjucks"
+  )
 );
 
 gulp.task("default", gulp.series("build", "browser-sync"));

@@ -5,6 +5,7 @@
 @import "global/variables";
 @import "global/scafolding";
 @import "global/mixins";
+@import "global/libs";
 
 @import "blocks/marquee";
 @import "blocks/header";
@@ -13,3 +14,10 @@
 @import "blocks/main-nav";
 @import "blocks/main-slider";
 @import "blocks/projects";
+@import "blocks/main-info";
+@import "blocks/news";
+@import "blocks/attention";
+@import "blocks/subscribe";
+@import "blocks/partners";
+@import "blocks/banners";
+@import "blocks/sub-nav";

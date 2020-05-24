@@ -1,0 +1,28 @@
+.attention {
+  padding: 17px 22px 19px;
+  background-color: $s-color;
+  color: #fff;
+  font-size: 15px;
+  line-height: 19px;
+  position: relative;
+
+  p {
+    margin: 0;
+  }
+}
+
+.attention__btn {
+  position: absolute;
+  right: 22px;
+  top: 17px;
+  display: block;
+  width: 15px;
+  height: 15px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  background-image: url("../img/icons/cross.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}

@@ -1,0 +1,17 @@
+.main-info {
+  background-color: #f3f3f3;
+}
+
+@media screen and (min-width: $desktop) {
+  .main-info__wrapper {
+    min-width: 1440px;
+    max-width: 1440px;
+    padding: 50px 130px;
+    margin: auto;
+    display: grid;
+    grid-template-areas:
+      "news partners"
+      "banners partners";
+    grid-gap: 50px;
+  }
+}
