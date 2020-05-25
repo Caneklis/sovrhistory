@@ -126,7 +126,7 @@ gulp.task("images", function () {
     .pipe(
       imagemin([
         imagemin.optipng({
-          optimizationLevel: 3,
+          optimizationLevel: 2,
         }),
         imagemin.mozjpeg({
           quality: 80,

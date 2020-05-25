@@ -1,0 +1,27 @@
+.copyright {
+  margin-bottom: 27px;
+  padding-right: 60px;
+  p {
+    margin: 0;
+    font-size: 9px;
+    line-height: 13px;
+    letter-spacing: 0.02em;
+
+    color: #cfc8b7;
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .copyright {
+    border-top: 1px solid #464541;
+    width: 42%;
+    padding-top: 40px;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .copyright {
+    width: 22%;
+    padding-right: 10px;
+  }
+}

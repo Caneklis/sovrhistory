@@ -1,29 +1,31 @@
 <footer class="footer">
   <div class="footer__wrapper">
-    <ul class="footer__list">
-      <li class="footer__list-item"><a href="#">Адреса</a></li>
-      <li class="footer__list-item"><a href="#">Часы работы</a></li>
-      <li class="footer__list-item"><a href="#">Билеты</a></li>
-      <li class="footer__list-item"><a href="#">Правила посещения</a></li>
-      <li class="footer__list-item"><a href="#">Людям с ОВЗ</a></li>
-      <li class="footer__list-item"><a href="#">Противодействие коррупции</a></li>
-    </ul>
-    <ul class="footer__list">
-      <li class="footer__list-item"><a href="#">Главное</a></li>
-      <li class="footer__list-item"><a href="#">Пресня</a></li>
-      <li class="footer__list-item"><a href="#">Типография</a></li>
-      <li class="footer__list-item"><a href="#">Кржижановский</a></li>
-      <li class="footer__list-item"><a href="#">Евтушенко</a></li>
-      <li class="footer__list-item"><a href="#">Катынь</a></li>
-      <li class="footer__list-item"><a href="#">Медное</a></li>
-    </ul>
-    <ul class="footer__list">
-      <li class="footer__list-item"><a href="#">Для СМИ</a></li>
-      <li class="footer__list-item"><a href="#">Организация мероприятий</a></li>
-      <li class="footer__list-item"><a href="#">Спонсорам</a></li>
-      <li class="footer__list-item"><a href="#">Вакансии</a></li>
-      <li class="footer__list-item"><a href="#">Контакты</a></li>
-    </ul>
+    <section class="footer__lists">
+      <ul class="footer__list">
+        <li class="footer__list-item"><a href="#">Адреса</a></li>
+        <li class="footer__list-item"><a href="#">Часы работы</a></li>
+        <li class="footer__list-item"><a href="#">Билеты</a></li>
+        <li class="footer__list-item"><a href="#">Правила посещения</a></li>
+        <li class="footer__list-item"><a href="#">Людям с ОВЗ</a></li>
+        <li class="footer__list-item"><a href="#">Противодействие коррупции</a></li>
+      </ul>
+      <ul class="footer__list">
+        <li class="footer__list-item"><a href="#">Главное</a></li>
+        <li class="footer__list-item"><a href="#">Пресня</a></li>
+        <li class="footer__list-item"><a href="#">Типография</a></li>
+        <li class="footer__list-item"><a href="#">Кржижановский</a></li>
+        <li class="footer__list-item"><a href="#">Евтушенко</a></li>
+        <li class="footer__list-item"><a href="#">Катынь</a></li>
+        <li class="footer__list-item"><a href="#">Медное</a></li>
+      </ul>
+      <ul class="footer__list">
+        <li class="footer__list-item"><a href="#">Для СМИ</a></li>
+        <li class="footer__list-item"><a href="#">Организация мероприятий</a></li>
+        <li class="footer__list-item"><a href="#">Спонсорам</a></li>
+        <li class="footer__list-item"><a href="#">Вакансии</a></li>
+        <li class="footer__list-item"><a href="#">Контакты</a></li>
+      </ul>
+    </section>
     <section class="social  social--footer">
       <h2 class="visually-hidden">Мы в соцсетях</h2>
       <ul class="social__list">
@@ -42,29 +44,78 @@
 
     <section class="subscribe  subscribe--footer">
       <h2 class="subscribe__title">Написать нам</h2>
+      <section class="social  social--in-form">
+        <h2 class="visually-hidden">Мы в соцсетях</h2>
+        <ul class="social__list">
+          <li class="social__item"><a href="#" class="social__link  social__link--fb"><span
+                class="visually-hidden">Вк</span></a></li>
+          <li class="social__item"><a href="#" class="social__link  social__link--vk"><span
+                class="visually-hidden"></span></a></li>
+          <li class="social__item"><a href="#" class="social__link  social__link--ok"><span
+                class="visually-hidden"></span></a></li>
+          <li class="social__item"><a href="#" class="social__link  social__link--inst"><span
+                class="visually-hidden"></span></a></li>
+          <li class="social__item"><a href="#" class="social__link  social__link--tw"><span
+                class="visually-hidden"></span></a></li>
+        </ul>
+      </section>
 
       <form action="#" method="POST" class="subscribe__form">
-        <label for="name" class="subscribe__label-field"><span class="visually-hidden">Ваше имя</span></label>
+        <label for="name" class="subscribe__label-field visually-hidden"><span class="visually-hidden">Ваше
+            имя</span></label>
         <input type="text" name="name" id="name" class="subscribe__input-field  subscribe__input-field--dark"
           placeholder="Ваше имя" required>
 
-        <label for="mail" class="subscribe__label-field"><span class="visually-hidden">Ваша почта</span></label>
+        <label for="mail" class="subscribe__label-field visually-hidden"><span class="visually-hidden">Ваша
+            почта</span></label>
         <input type="mail" name="mail" id="mail" class="subscribe__input-field  subscribe__input-field--dark"
           placeholder="Ваша почта" required>
 
-        <label for="text" class="subscribe__label-field"><span class="visually-hidden">Текст вопроса или
+        <label for="text" class="subscribe__label-field visually-hidden"><span class="visually-hidden">Текст вопроса или
             предложения</span></label>
-        <textarea name="text" id="text"></textarea>
-        <input type="mail" name="mail" id="mail" class="subscribe__input-textarea"
-          placeholder="Текст вопроса или предложения" required>
-        <button class="subscribe__btn" type="submit">Отправить</button>
+        <textarea name="text" id="text" class="subscribe__input-textarea" placeholder="Текст вопроса или предложения"
+          required></textarea>
 
         <div class="subscribe__field">
-          <input type="checkbox" id="check" name="check" class="visually-hidden" required>
-          <label for="check">Я согласен с условиями подписки и <a>политикой обработки персональных данных</a>
+          <input type="checkbox" id="check1" name="check" class="visually-hidden" required>
+          <label for="check1">Я согласен с <a>политикой обработки персональных данных</a>
           </label>
         </div>
+
+        <button class="subscribe__btn" type="submit">Отправить</button>
       </form>
     </section>
+
+    <section class="copyright">
+      <p>© 2015-2020. ГЦМСИР. Все права защищены. Использование материалов сайта разрешено только с предварительного
+        согласия правообладателей.</p>
+    </section>
+
+    <section class="footer__logos">
+      <ul class="footer__logos-list">
+        <li class="footer__logos-item  footer__logos-item--main"><a href="#"><img src="img/sovrhistory.svg"
+              alt="Логотип ГЦСИР" width="105" height="89"></a></li>
+        <li class="footer__logos-item  footer__logos-item--mincult"><a href="#"><img src="img/minkult.svg"
+              alt="Логотип Мин культуры" width="94" height="76"></a></li>
+        <li class="footer__logos-item  footer__logos-item--cultrf"><a href="#"><img src="img/kultrf.svg"
+              alt="Логотип Культура.рф" width="136" height="18"></a></li>
+      </ul>
+    </section>
+
+    <ul class="footer__bottom-list">
+      <li class="footer__bottom-item  footer__bottom-item--old-version"><a href="#">Старая версия сайта</a></li>
+      <li class="footer__bottom-item  footer__bottom-item--rules"><a href="#">Правила использования материалов сайта</a>
+      </li>
+      <li class="footer__bottom-item  footer__bottom-item--quality">
+        <a href="#">Оценка качества услуг </a>
+        <div class="footer__bottom-icons">
+          <img src="img/icons/like.svg" alt="Иконка мне нравится">
+          <img src="img/icons/dislike.svg" alt="иконка мне не нравится">
+        </div>
+      </li>
+      <li class="footer__bottom-item  footer__bottom-item--politics"><a href="#">Политика конфиденциальности и обработки
+          персональных данных</a></li>
+      <li class="footer__bottom-item  footer__bottom-item--developer"><a href="#">Разработка «Музей Плюс»</a></li>
+    </ul>
   </div>
 </footer>

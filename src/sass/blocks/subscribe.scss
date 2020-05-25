@@ -6,6 +6,62 @@
   background-repeat: repeat;
   background-size: auto;
   color: #bbb5a6;
+
+  &--footer {
+    margin-top: 18px;
+    margin-bottom: 18px;
+    padding-left: 20px;
+    padding-right: 35px;
+    padding-bottom: 20px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid #3a3936;
+    border-radius: 3px;
+
+    .subscribe__title {
+      font-size: 14px;
+      line-height: 135.2%;
+    }
+
+    .subscribe__form {
+      padding-top: 37px;
+    }
+
+    .subscribe__field {
+      margin-bottom: 20px;
+      label {
+        font-size: 9px;
+        line-height: 12px;
+
+        a {
+          display: inline;
+        }
+
+        &::before {
+          width: 12px;
+          height: 12px;
+        }
+      }
+
+      input:checked + label {
+        &::after {
+          top: 6px;
+          left: 3px;
+          width: 6px;
+          height: 6px;
+        }
+      }
+    }
+
+    .subscribe__btn {
+      margin-bottom: 0;
+      padding: 7px 5px 10px;
+    }
+  }
+
+  &--in-form {
+    display: none;
+  }
 }
 
 .subscribe__title {
@@ -45,8 +101,13 @@
 
   &--dark {
     margin-bottom: 8px;
+    padding-left: 20px;
     background-color: #31302f;
-    color: #cfc8b7;
+    color: #cfc8b7 !important;
+    font-size: 10px;
+    line-height: 13px;
+    letter-spacing: 0.02em;
+    text-align: left;
 
     &::placeholder {
       color: #cfc8b7;
@@ -55,12 +116,21 @@
 }
 
 .subscribe__input-textarea {
-  margin-bottom: 8px;
+  height: 79px;
+  margin-bottom: 12px;
   background-color: #31302f;
-  margin-bottom: 4px;
-  padding: 13px 5px 11px;
-  font-size: 14px;
-  line-height: 18px;
+  padding: 8px 20px 11px;
+  font-size: 10px;
+  line-height: 13px;
+  letter-spacing: 0.02em;
+  font-family: inherit;
+  color: #cfc8b7 !important;
+  border: none;
+  resize: none;
+
+  &::placeholder {
+    color: #cfc8b7;
+  }
 }
 
 .subscribe__btn {
@@ -121,6 +191,87 @@
 @media screen and (min-width: $tablet) {
   .subscribe {
     width: 49%;
+
+    &--footer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      width: 100%;
+      margin-top: 0;
+      margin-bottom: 35px;
+      padding-top: 25px;
+      padding-right: 20px;
+      padding-bottom: 25px;
+
+      .subscribe__title {
+        max-width: 227px;
+        font-size: 16.1171px;
+        line-height: 135.2%;
+        /* or 22px */
+      }
+
+      .subscribe__form {
+        width: 100%;
+        padding-top: 20px;
+        padding-right: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+          "input1 textarea textarea"
+          "input2 textarea textarea"
+          "text text btn";
+        grid-gap: 10px;
+        align-items: stretch;
+      }
+
+      .subscribe__input-field {
+        &--dark {
+          width: 237px;
+          margin: 0;
+          padding-top: 8px;
+          font-size: 12.0878px;
+          line-height: 15px;
+          /* identical to box height */
+
+          letter-spacing: 0.02em;
+          &:nth-child(1) {
+            grid-area: input1;
+          }
+        }
+        &:nth-child(2) {
+          grid-area: input2;
+        }
+      }
+
+      .subscribe__input-textarea {
+        grid-area: textarea;
+        //width: 398px;
+        height: 100%;
+        font-size: 12.0878px;
+        line-height: 15px;
+
+        &::placeholder {
+          width: 200px;
+        }
+      }
+
+      .subscribe__field {
+        grid-area: text;
+
+        label {
+          padding-top: 3px;
+          font-size: 10.0732px;
+          line-height: 135.2%;
+        }
+      }
+
+      .subscribe__btn {
+        width: 188px;
+        margin-left: auto;
+        grid-area: btn;
+      }
+    }
   }
 
   .subscribe__form {
@@ -132,5 +283,37 @@
   .subscribe {
     width: 32.4%;
     margin-left: 1.4%;
+
+    &--footer {
+      width: 58%;
+      margin: 0;
+      padding-top: 23px;
+      padding-right: 23px;
+      padding-bottom: 20px;
+
+      .subscribe__form {
+        padding-right: 0;
+      }
+
+      .subscribe__input-field {
+        &--dark {
+          width: 232px;
+          padding-left: 18px;
+          padding-top: 6px;
+          font-size: 12px;
+          line-height: 15px;
+        }
+      }
+
+      .subscribe__input-textarea {
+        padding-top: 6px;
+      }
+
+      .subscribe__field {
+        padding-top: 5px;
+        label {
+        }
+      }
+    }
   }
 }
