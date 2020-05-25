@@ -1,3 +1,8 @@
+.social {
+  &--in-form {
+    display: none;
+  }
+}
 .social__list {
   @include list-reset;
   display: flex;
