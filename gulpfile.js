@@ -158,6 +158,7 @@ gulp.task("libs", function () {
       "node_modules/jquery.marquee/jquery.marquee.js",
       "node_modules/lozad/dist/lozad.js",
       "node_modules/imagesloaded/imagesloaded.pkgd.js",
+      "node_modules/select2/dist/js/select2.full.min.js",
     ])
     .pipe(concat("libs.js"))
     .pipe(uglify()) // Минимизировать весь js (на выбор)

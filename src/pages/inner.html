@@ -6,4 +6,69 @@ title: Inner page
 {% block content %}
 <h1>This is the {{ title }}</h1>
 
+<section class="preview">
+  <h2 class="preview__title">Анонсы и события</h2>
+  <div class="preview__buttons">
+    <button class="btn" type="button">Все</button>
+    <button class="btn" type="button">Сегодня</button>
+    <button class="btn" type="button">Завтра</button>
+    <button class="btn" type="button">На выходных</button>
+    <button class="btn" type="button">На 7 дней</button>
+    <button class="btn" type="button">На 14 дней</button>
+  </div>
+  <div class="preview__filter">
+    <select class="js-select-basic">
+      <option value="hide">все</option>
+      <option value="all">Все</option>
+      <option value="1">Сегодня</option>
+      <option value="2">Завтра</option>
+      <option value="3">На выходных</option>
+      <option value="4">На 7 дней</option>
+      <option value="5">На 14 дней</option>
+    </select>
+
+    <select class="js-select-basic" multiple="multiple" style="width: 75%">
+      <option value="hide">все</option>
+      <option value="build-1">Главное здание</option>
+      <option value="build-2">Пресня</option>
+    </select>
+  </div>
+
+  <form class="filter">
+    <div class="filter-group">
+      <label for="color">Color:</label>
+      <select name="color">
+        <option value="">All</option>
+        <option value=".black">black</option>
+        <option value=".white">white</option>
+        <option value=".green">green</option>
+      </select>
+      <label for="color">Device:</label>
+      <select name="device">
+        <option value="">All</option>
+        <option value=".phone">phone</option>
+        <option value=".ipad">ipad</option>
+        <option value=".tablet">tablet</option>
+      </select>
+      <button class="delete">x</button>
+    </div>
+    <button class="add-filter">Add another filter</button>
+  </form>
+  <div class="active-filter">
+    Active filter: <span class="filter-class">none</span>
+  </div>
+  <div class="slick">
+    <div class="slide black phone">black phone</div>
+    <div class="slide white phone">white phone</div>
+    <div class="slide green phone">green phone</div>
+    <div class="slide black ipad">black ipad</div>
+    <div class="slide white ipad">white ipad</div>
+    <div class="slide green ipad">green ipad</div>
+    <div class="slide black tablet">black tablet</div>
+    <div class="slide white tablet">white tablet</div>
+    <div class="slide green tablet">green tablet</div>
+  </div>
+
+</section>
+
 {% endblock %}

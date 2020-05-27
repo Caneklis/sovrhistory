@@ -30,7 +30,7 @@
           <p>Внимание! В связи с осложнившейся ситуацией по коронавирусу, мы зак...</p>
         </div>
         <a href="#" class="marquee__link">Подробнее</a>
-        <button class="marquee__close-btn" type="button"><span class="visually-hidden">ЗАкрыть строку</span></button>
+        <button class="marquee__close-btn" type="button"><span class="visually-hidden">Закрыть строку</span></button>
       </div>
     </div>
     <header class="header">
@@ -97,7 +97,9 @@
             </li>
             <li class="main-nav__item"><a href="#">Партнеры</a></li>
             <li class="main-nav__item"><a href="#">Магазин</a></li>
-            <li class="main-nav__item"><a href="#"><img src="img/glasses.svg" alt="Иконка версии для слабовидящих"><span class="visually-hidden">Версия для слабовидящих</span></a></li>
+            <li class="main-nav__item"><a class="js-contrast-version"><img src="img/glasses.svg" alt="Иконка версии для слабовидящих"><span class="visually-hidden">Версия для слабовидящих</span></a>
+              <a class="js-normal-version">Обычная версия</a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -264,9 +266,9 @@
               <article class="buildings__events-article">
                 <div class="buildings__events-picture">
                   <picture>
-                    <source media="(min-width: 1440px)" data-src="img/buildings/events/building-event-desktop.jpg" srcset="img/buildings/events/building-event-desktop.jpg">
-                    <source media="(min-width: 768px)" data-src="img/buildings/events/building-event-tablet.jpg" srcset="img/buildings/events/building-event-tablet.jpg">
-                    <img class="lozad" data-src="img/buildings/events/building-event-mobile.jpg" src="img/buildings/events/building-event-mobile.jpg" alt="Фотография к новости" loading="lazy">
+                    <source media="(min-width: 1440px)" data-src="https://via.placeholder.com/1175x371/333333.png" srcset="https://via.placeholder.com/1175x371/333333.png">
+                    <source media="(min-width: 768px)" data-src="https://via.placeholder.com/767x339.png" srcset="https://via.placeholder.com/767x339/333333.png">
+                    <img class="lozad" data-src="https://via.placeholder.com/375x417/333333.png" src="https://via.placeholder.com/375x417/333333.png" alt="Фотография к новости" loading="lazy">
                   </picture>
                 </div>
                 <div class="buildings__events-text">
@@ -715,12 +717,12 @@
             </ul>
           </section>
           <form action="#" method="POST" class="subscribe__form">
-            <label for="name" class="subscribe__label-field visually-hidden"><span class="visually-hidden">Ваше имя</span></label>
-            <input type="text" name="name" id="name" class="subscribe__input-field  subscribe__input-field--dark" placeholder="Ваше имя" required>
-            <label for="mail" class="subscribe__label-field visually-hidden"><span class="visually-hidden">Ваша почта</span></label>
-            <input type="mail" name="mail" id="mail" class="subscribe__input-field  subscribe__input-field--dark" placeholder="Ваша почта" required>
-            <label for="text" class="subscribe__label-field visually-hidden"><span class="visually-hidden">Текст вопроса или предложения</span></label>
-            <textarea name="text" id="text" class="subscribe__input-textarea" placeholder="Текст вопроса или предложения" required></textarea>
+            <label for="name-footer" class="subscribe__label-field visually-hidden"><span class="visually-hidden">Ваше имя</span></label>
+            <input type="text" name="name" id="name-footer" class="subscribe__input-field  subscribe__input-field--dark" placeholder="Ваше имя" required>
+            <label for="mail-footer" class="subscribe__label-field visually-hidden"><span class="visually-hidden">Ваша почта</span></label>
+            <input type="mail" name="mail" id="mail-footer" class="subscribe__input-field  subscribe__input-field--dark" placeholder="Ваша почта" required>
+            <label for="text-footer" class="subscribe__label-field visually-hidden"><span class="visually-hidden">Текст вопроса или предложения</span></label>
+            <textarea name="text" id="text-footer" class="subscribe__input-textarea" placeholder="Текст вопроса или предложения" required></textarea>
             <div class="subscribe__field">
               <input type="checkbox" id="check1" name="check" class="visually-hidden" required>
               <label for="check1">Я согласен с <a>политикой обработки персональных данных</a>

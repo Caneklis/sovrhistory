@@ -66,12 +66,6 @@ $(".main-slider__list").slick({
   fade: true,
 });
 
-// $(document).ready(function () {
-//   slickBuildingsSlider();
-// });
-$(window).on("load", function () {
-  $(".buildings__list .buildings__list-item:first-child button").click();
-});
 var $carousel;
 var $slickCache;
 var previousFilter = "";
@@ -133,20 +127,28 @@ filterHandler = function (tag) {
   return currentFilter;
 };
 
-$(".buildings__list").slick({
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  autoplay: false,
-  autoplaySpeed: 2000,
-  mobileFirst: true,
-  arrows: true,
-  responsive: [
-    {
-      breakpoint: 767,
-      settings: "unslick",
-    },
-  ],
-});
+function createSlick() {
+  jQuery(".buildings__list")
+    .not(".slick-initialized")
+    .slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      autoplay: false,
+      autoplaySpeed: 2000,
+      mobileFirst: true,
+      arrows: true,
+      responsive: [
+        {
+          breakpoint: 767,
+          settings: "unslick",
+        },
+      ],
+    });
+}
+createSlick();
+
+//Now it will not throw error
+$(window).on("resize", createSlick);
 
 $carousel = $(".buildings__events-list").slick({
   slidesToShow: 1,
@@ -160,6 +162,10 @@ $carousel = $(".buildings__events-list").slick({
   prevArrow: $(".buildings__slider-prev"),
   nextArrow: $(".buildings__slider-next"),
 });
+
+// setTimeout(function () {
+//   $(".bla").trigger("click");
+// }, 10);
 
 $(".attention__btn").on("click", function () {
   $(this).parent().hide();
@@ -199,3 +205,184 @@ allItems = document.getElementsByClassName("item");
 for (x = 0; x < allItems.length; x++) {
   imagesLoaded(allItems[x], resizeInstance);
 }
+// возвращает cookie с именем name, если есть, если нет, то undefined
+function getCookie(name) {
+  var matches = document.cookie.match(
+    new RegExp(
+      "(?:^|; )" +
+        name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, "\\$1") +
+        "=([^;]*)"
+    )
+  );
+  return matches ? decodeURIComponent(matches[1]) : undefined;
+}
+
+// устанавливает cookie с именем name и значением value
+// options - объект с свойствами cookie (expires, path, domain, secure)
+function setCookie(name, value, options) {
+  options = options || {};
+
+  var expires = options.expires;
+
+  if (typeof expires == "number" && expires) {
+    var d = new Date();
+    d.setTime(d.getTime() + expires * 1000);
+    expires = options.expires = d;
+  }
+  if (expires && expires.toUTCString) {
+    options.expires = expires.toUTCString();
+  }
+
+  value = encodeURIComponent(value);
+
+  var updatedCookie = name + "=" + value;
+
+  for (var propName in options) {
+    updatedCookie += "; " + propName;
+    var propValue = options[propName];
+    if (propValue !== true) {
+      updatedCookie += "=" + propValue;
+    }
+  }
+
+  document.cookie = updatedCookie;
+}
+
+// удаляет cookie с именем name
+function deleteCookie(name) {
+  setCookie(name, "", {
+    expires: -1,
+  });
+}
+
+function blindVersion() {
+  var html = $("html"),
+    body = $("body"),
+    img = $("img"),
+    contrast = $(".js-contrast-version"),
+    normal = $(".js-normal-version"),
+    font = $(".js-font"),
+    contrastCookie = getCookie("contrast"),
+    imgCookie = getCookie("img"),
+    fontCookie = getCookie("font");
+
+  function show() {
+    $("img").show();
+    $("svg").show();
+    $(".video-container").show();
+    $(".video-preview").show();
+  }
+  function hide() {
+    $("svg").hide();
+    $("img").hide();
+    $(".video-container").hide();
+    $(".video-preview").hide();
+  }
+
+  contrast.on("click", function () {
+    html.addClass("contrast");
+    $(this).addClass("active");
+    normal.addClass("active");
+    hide();
+    setCookie("contrast", "on");
+
+    //$grid.masonry();
+  });
+  normal.on("click", function () {
+    html.removeClass("contrast");
+    $(this).removeClass("active");
+    contrast.addClass("active");
+    show();
+    setCookie("contrast", "off");
+
+    //$grid.masonry();
+  });
+
+  if (contrastCookie == "on") {
+    contrast.addClass("active");
+    normal.removeClass("active");
+    html.addClass("contrast");
+    // img.hide();
+    hide();
+    //$grid.masonry();
+  } else {
+    contrast.removeClass("active");
+    normal.removeClass("active");
+    html.removeClass("contrast");
+    show();
+    //$grid.masonry();
+  }
+}
+blindVersion();
+
+$(".js-example-tokenizer").select2({
+  tags: false,
+  tokenSeparators: [","],
+});
+
+$(function () {
+  $(".slick").slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    infinite: true,
+  });
+
+  // When the filter values are changed,
+  // apply the filter to slick.
+  $("form.filter select").on("change", function () {
+    var filterClass = getFilterValue();
+    $(".filter-class").text(filterClass);
+    $(".slick").slick("slickUnfilter");
+    $(".slick").slick("slickFilter", filterClass);
+  });
+
+  /**
+   * This just reads the inputs from the
+   * selects and creates the filter.
+   */
+  function getFilterValue() {
+    // Grab all the values from the filters.
+    var values = $(".filter-group")
+      .map(function () {
+        // For each group, get the select values.
+        var groupVal = $(this)
+          .find("select")
+          .map(function () {
+            return $(this).val();
+          })
+          .get();
+        // join the values together.
+        return groupVal.join("");
+      })
+      .get();
+    // Remove empty strings from the filter array.
+    // and join together with a comma. this way you
+    // can use multiple filters.
+    return values
+      .filter(function (n) {
+        return n !== "";
+      })
+      .join(",");
+  }
+
+  /**
+   * Add a delete button to the filter group.
+   */
+  $(".filter-group .delete").on("click", function (event) {
+    event.preventDefault();
+    $(this).closest(".filter-group").remove();
+  });
+
+  /**
+   * Add a filter group row.
+   */
+  $(".add-filter").on("click", function (event) {
+    event.preventDefault();
+    $("form.filter .filter-group")
+      .first()
+      .clone(true)
+      .insertBefore($("form.filter .add-filter"));
+  });
+});
