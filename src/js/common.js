@@ -66,6 +66,101 @@ $(".main-slider__list").slick({
   fade: true,
 });
 
+// $(document).ready(function () {
+//   slickBuildingsSlider();
+// });
+$(window).on("load", function () {
+  $(".buildings__list .buildings__list-item:first-child button").click();
+});
+var $carousel;
+var $slickCache;
+var previousFilter = "";
+var currentFilter = "all";
+var filtered = "false";
+
+$(".buildings__list").on("click", "button", function (event) {
+  console.log(this, event.currentTarget.value);
+  filterHandler(event.currentTarget.value);
+  $(".buildings__list button").not(this).parent().removeClass("active");
+  $(this).parent().addClass("active");
+});
+
+/**
+ * Filter function for carousel
+ * @param  {String} [tag=''] filter string to be applied
+ */
+filterHandler = function (tag) {
+  var query = '[data-tags*="' + tag + '"]';
+  var slick = $carousel[0].slick;
+
+  // Removes filter state if cache is active ( indicates a filter is applied).
+  // Work around for https://github.com/kenwheeler/slick/issues/3161
+  if (slick.$slidesCache !== null) {
+    slick.unload();
+    slick.$slideTrack.children(slick.options.slide).remove();
+    $slickCache.appendTo(slick.$slideTrack);
+    slick.reinit();
+    slick.goTo(0);
+  }
+
+  // Store a deep copy of the original carousel
+  $slickCache = slick.$slides.clone(true, true);
+
+  // Store the previous filter for reference
+  previousFilter = currentFilter;
+
+  // If the filter is being removed
+  if (tag === "" || tag === "all") {
+    // Store useful properties. Log
+    filtered = false;
+    currentFilter = "";
+
+    // A filter is being applied
+  } else {
+    // Pass custom function to slick to query UI for our target
+    slick.filterSlides(function (index, element) {
+      return $(element).find(query).length > 0;
+    });
+
+    // Reset slider position
+    slick.goTo(0);
+
+    // Store useful properties.
+    filtered = true;
+    currentFilter = tag;
+  }
+
+  return currentFilter;
+};
+
+$(".buildings__list").slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: false,
+  autoplaySpeed: 2000,
+  mobileFirst: true,
+  arrows: true,
+  responsive: [
+    {
+      breakpoint: 767,
+      settings: "unslick",
+    },
+  ],
+});
+
+$carousel = $(".buildings__events-list").slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: false,
+  autoplaySpeed: 2000,
+  infinite: false,
+  dots: true,
+  arrows: true,
+  appendDots: $(".buildings__slider-dots"),
+  prevArrow: $(".buildings__slider-prev"),
+  nextArrow: $(".buildings__slider-next"),
+});
+
 $(".attention__btn").on("click", function () {
   $(this).parent().hide();
 });
