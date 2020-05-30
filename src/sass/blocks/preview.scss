@@ -638,6 +638,23 @@
       width: 100%;
     }
   }
+  .preview__select-dropdown {
+    .select2-results__options {
+      li {
+        font-size: 12px;
+        line-height: 15px;
+        /* identical to box height */
+
+        letter-spacing: 0.02em;
+
+        color: #323232;
+      }
+    }
+
+    .select2-results__option--highlighted[aria-selected] {
+      background-color: $s-color;
+    }
+  }
 
   .preview__buttons-filter {
     padding: 0;
