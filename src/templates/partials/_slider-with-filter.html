@@ -1,0 +1,114 @@
+<section class="preview">
+  <h2 class="preview__title">Анонсы и события</h2>
+
+  <div class="preview__filter">
+    <div class="preview__filter-dates">
+      <div class="preview__filter-row">
+        <p>дата начала:</p>
+        <div class="preview__dates-field">
+
+          <input type="text" placeholder="дата начала" aria-label="дата начала" class="form-control start-date">
+        </div>
+      </div>
+
+      <div class="preview__filter-row">
+        <p>дата окончания:</p>
+        <div class="preview__dates-field">
+          <input type="text" placeholder="дата окончания" aria-label="дата окончания" class="form-control end-date">
+        </div>
+      </div>
+    </div>
+
+    <div class="preview__filter-types">
+
+      <div class="preview__filter-row">
+        <p>здания</p>
+        <select class="js-example-basic-multiple" name="buildings[]" multiple="multiple">
+          <option value="1">Главное</option>
+          <option value="2">Пресня</option>
+          <option value="3">Типография</option>
+          <option value="3">Кржижановский</option>
+          <option value="3">Евтушенко</option>
+          <option value="3">Катынь</option>
+          <option value="3">Медное</option>
+        </select>
+      </div>
+
+      <div class="preview__filter-row">
+        <p>тип события</p>
+        <select class="js-example-basic-multiple" name="types[]" multiple="multiple">
+          <option value="type-1">Выставка</option>
+          <option value="type-2">Экспозиция</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <div class="preview__buttons">
+
+    <select class="js-example-basic-multiple" name="date">
+      <option value="all">Все события</option>
+      <option value="today">Сегодня</option>
+      <option value="tomorrow">Завтра</option>
+      <option value="weekend">На выходных</option>
+      <option value="7-days">На 7 дней</option>
+      <option value="14-days">На 14 дней</option>
+    </select>
+    <div class="preview__buttons-filter">
+      <button value="all" type="button" class="active">Все</button>
+      <button value="today" type="button">Сегодня</button>
+      <button value="tomorrow" type="button">Завтра</button>
+      <button value="weekend" type="button">На выходных</button>
+      <button value="7-days" type="button">На 7 дней</button>
+      <button value="14-days" type="button">На 14 дней</button>
+    </div>
+  </div>
+
+  <div class="preview__slider">
+    <ul class="preview__slider-list">
+      <li class="preview__slider-item">
+        <article class="preview__article"
+          style="background-image: url(../img/preview-events/preview-slide-1-full-tablet.jpg);">
+          <div class="preview__article-time">16:30</div>
+          <h3><a href="#">Выставка современной истории </a></h3>
+          <time class="preview__article-date" datetime="2020-03-20 16:30">20/03/20</time>
+        </article>
+      </li>
+      <li class="preview__slider-item">
+        <article class="preview__article"
+          style="background-image: url(../img/preview-events/preview-slide-1-full-tablet.jpg);">
+          <div class="preview__article-time">16:30</div>
+          <h3><a href="#">Экспозиция итальянской культуры</a></h3>
+          <time class="preview__article-date" datetime="2020-03-20 16:30">20/03/20</time>
+        </article>
+      </li>
+      <li class="preview__slider-item">
+        <article class="preview__article">
+          <div class="preview__article-time">16:30</div>
+          <h3><a href="#">Выставка галереи картин Айвазовского</a></h3>
+          <time class="preview__article-date" datetime="2020-03-20 16:30">20/03/20</time>
+        </article>
+      </li>
+      <li class="preview__slider-item">
+        <article class="preview__article">
+          <div class="preview__article-time">16:30</div>
+          <h3><a href="#">Выставка галереи картин Айвазовского</a></h3>
+          <time class="preview__article-date" datetime="2020-03-20 16:30">20/03/20</time>
+        </article>
+      </li>
+      <li class="preview__slider-item">
+        <article class="preview__article">
+          <div class="preview__article-time">16:30</div>
+          <h3><a href="#">Выставка галереи картин Айвазовского</a></h3>
+          <time class="preview__article-date" datetime="2020-03-20 16:30">20/03/20</time>
+        </article>
+      </li>
+    </ul>
+
+    <div class="preview__slider-controls">
+      <button class="preview__slider-prev" type="button"><span class="visually-hidden">Следующий слайд</span></button>
+      <button class="preview__slider-next" type="button"><span class="visually-hidden">Предыдущий слайд</span></button>
+    </div>
+
+  </div>
+</section>

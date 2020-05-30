@@ -159,6 +159,8 @@ gulp.task("libs", function () {
       "node_modules/lozad/dist/lozad.js",
       "node_modules/imagesloaded/imagesloaded.pkgd.js",
       "node_modules/select2/dist/js/select2.full.min.js",
+      "node_modules/@chenfengyuan/datepicker/dist/datepicker.js",
+      "node_modules/@chenfengyuan/datepicker/i18n/datepicker.ru-RU.js",
     ])
     .pipe(concat("libs.js"))
     .pipe(uglify()) // Минимизировать весь js (на выбор)

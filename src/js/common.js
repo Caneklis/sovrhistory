@@ -163,10 +163,6 @@ $carousel = $(".buildings__events-list").slick({
   nextArrow: $(".buildings__slider-next"),
 });
 
-// setTimeout(function () {
-//   $(".bla").trigger("click");
-// }, 10);
-
 $(".attention__btn").on("click", function () {
   $(this).parent().hide();
 });
@@ -321,12 +317,30 @@ $(".js-example-tokenizer").select2({
 });
 
 $(function () {
-  $(".slick").slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    infinite: true,
+  $(".preview__slider-list").slick({
+    slidesToShow: 4,
+    centerMode: true,
+    centerPadding: "0px",
+    speed: 500,
+    focusOnSelect: true,
+    infinite: false,
+    arrows: true,
+    dots: false,
+    initialSlide: 1,
+    prevArrow: $(".preview__slider-prev"),
+    nextArrow: $(".preview__slider-next"),
+
+    responsive: [
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerMode: true,
+          centerPadding: "40px",
+        },
+      },
+    ],
   });
 
   // When the filter values are changed,
@@ -385,4 +399,40 @@ $(function () {
       .clone(true)
       .insertBefore($("form.filter .add-filter"));
   });
+});
+
+$(function () {
+  var $startDate = $(".start-date");
+  var $endDate = $(".end-date");
+
+  $startDate.datepicker({
+    autoHide: true,
+    language: "ru-RU",
+  });
+  $endDate.datepicker({
+    autoHide: true,
+    language: "ru-RU",
+    startDate: $startDate.datepicker("getDate"),
+  });
+
+  $startDate.on("change", function () {
+    $endDate.datepicker("setStartDate", $startDate.datepicker("getDate"));
+    console.log($startDate.datepicker("getDate", true));
+  });
+
+  $endDate.on("change", function () {
+    console.log($endDate.datepicker("getDate", true));
+  });
+});
+
+$(".js-example-basic-multiple").select2({
+  tags: true,
+  tokenSeparators: [",", " "],
+  scrollAfterSelect: true,
+  dropdownCssClass: "preview__select-dropdown",
+  minimumResultsForSearch: -1,
+});
+
+$(".js-example-basic-multiple").on("change", function () {
+  console.log($(this).val());
 });

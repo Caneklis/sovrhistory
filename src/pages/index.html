@@ -322,6 +322,7 @@ title: Главная страница
   </section>
 </section>
 
+{% include "../templates/partials/_slider-with-filter.html" %}
 
 <section class="sub-nav">
   <ul class="sub-nav__list">
@@ -577,7 +578,7 @@ title: Главная страница
           <h2 class="subscribe__title">Подпишитесь на информационную рассылку музея</h2>
           <form action="#" method="POST" class="subscribe__form">
             <label for="mail" class="subscribe__label-field"><span class="visually-hidden">Ваша почта</span></label>
-            <input type="mail" name="mail" id="mail" class="subscribe__input-field" placeholder="example@mail.ru"
+            <input type="email" name="mail" id="mail" class="subscribe__input-field" placeholder="example@mail.ru"
               required>
             <button class="subscribe__btn" type="submit">Подписаться</button>
 
