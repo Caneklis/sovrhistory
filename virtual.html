@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inner page</title>
+    <title>Виртуальные выставки</title>
     <link rel="stylesheet" href="/css/style.min.css">
     <link rel="apple-touch-icon" sizes="57x57" href="/img/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/img/favicon/apple-icon-60x60.png">
@@ -112,68 +112,117 @@
     <div class="breadcrumbs">
       <div class="breadcrumbs__wrapper">
         <a href="#" class="breadcrumbs__link">на главную</a>
-        <h2 class="breadcrumbs__title">Inner page</h2>
+        <h2 class="breadcrumbs__title">Виртуальные выставки</h2>
       </div>
     </div>
-    <h1>This is the Inner page</h1>
-    <section class="preview">
-      <h2 class="preview__title">Анонсы и события</h2>
-      <div class="preview__buttons">
-        <button class="btn" type="button">Все</button>
-        <button class="btn" type="button">Сегодня</button>
-        <button class="btn" type="button">Завтра</button>
-        <button class="btn" type="button">На выходных</button>
-        <button class="btn" type="button">На 7 дней</button>
-        <button class="btn" type="button">На 14 дней</button>
+    <section class="recommendations">
+      <div class="recommendations__wrapper">
+        <h2 class="recommendations__title">Тематические подборки:</h2>
+        <ul class="recommendations__list">
+          <li class="recommendations__list-item">
+            <article class="recommendations__list-item-article">
+              <img class="lozad" data-src="/img/projects/project-1-mobile.jpg" src="/img/projects/project-1-mobile.jpg" alt="Фотография к проекту" loading="lazy">
+              <div class="recommendations__list-item-text">
+                <p><a href="#">Выставки по войне</a></p>
+              </div>
+            </article>
+          </li>
+          <li class="recommendations__list-item">
+            <article class="recommendations__list-item-article">
+              <img class="lozad" data-src="/img/projects/project-2-mobile.jpg" src="/img/projects/project-2-mobile.jpg" alt="Фотография к проекту" loading="lazy">
+              <div class="recommendations__list-item-text">
+                <p><a href="#">Выставки по конституции</a></p>
+              </div>
+            </article>
+          </li>
+          <li class="recommendations__list-item">
+            <article class="recommendations__list-item-article">
+              <img class="lozad" data-src="/img/projects/project-3-mobile.jpg" src="/img/projects/project-3-mobile.jpg" alt="Фотография к проекту" loading="lazy">
+              <div class="recommendations__list-item-text">
+                <p><a href="#">Выставки по революции</a></p>
+              </div>
+            </article>
+          </li>
+        </ul>
       </div>
-      <div class="preview__filter">
-        <select class="js-select-basic">
-          <option value="hide">все</option>
-          <option value="all">Все</option>
-          <option value="1">Сегодня</option>
-          <option value="2">Завтра</option>
-          <option value="3">На выходных</option>
-          <option value="4">На 7 дней</option>
-          <option value="5">На 14 дней</option>
-        </select>
-        <select class="js-select-basic" multiple="multiple" style="width: 75%">
-          <option value="hide">все</option>
-          <option value="build-1">Главное здание</option>
-          <option value="build-2">Пресня</option>
-        </select>
+    </section>
+    <section class="exhibitions">
+      <div class="exhibitions__wrapper">
+        <ul class="exhibitions__list">
+          <li class="exhibitions__item">
+            <article class="exhibitions__article  exhibitions__article--virtual">
+              <div class="exhibitions__picture  exhibitions__picture--virtual">
+                <picture>
+                  <source media="(min-width: 1440px)" data-src="/img/exhibitions/virtual-desktop.jpg" srcset="/img/exhibitions/virtual-desktop.jpg">
+                  <source media="(min-width: 768px)" data-src="/img/exhibitions/virtual-tablet.jpg" srcset="/img/exhibitions/virtual-tablet.jpg">
+                  <img class="lozad" data-src="/img/exhibitions/virtual-mobile.jpg" src="/img/exhibitions/virtual-mobile.jpg" alt="Фотография к новости" loading="lazy">
+                </picture>
+                <div class="exhibitions__picture-type">выставки по войне</div>
+              </div>
+              <div class="exhibitions__text  exhibitions__text--wide">
+                <time class="exhibitions__date" datetime="2020">2020 г.</time>
+                <h2><a href="#">Военная экипировка</a></h2>
+                <p>С 20 сентября 2019 года до 19 января 2020 года пройдет выставка Никаса Сафронова «Иные миры». Работы художника будут представлены в главном здании Музея современной истории России как в традиционном исполнении ...</p>
+              </div>
+            </article>
+          </li>
+        </ul>
       </div>
-      <form class="filter">
-        <div class="filter-group">
-          <label for="color">Color:</label>
-          <select name="color">
-            <option value="">All</option>
-            <option value=".black">black</option>
-            <option value=".white">white</option>
-            <option value=".green">green</option>
-          </select>
-          <label for="color">Device:</label>
-          <select name="device">
-            <option value="">All</option>
-            <option value=".phone">phone</option>
-            <option value=".ipad">ipad</option>
-            <option value=".tablet">tablet</option>
-          </select>
-          <button class="delete">x</button>
-        </div>
-        <button class="add-filter">Add another filter</button>
-      </form>
-      <div class="active-filter"> Active filter: <span class="filter-class">none</span>
+    </section>
+    <section class="sub-nav">
+      <div class="sub-nav__wrapper">
+        <ul class="sub-nav__list  sub-nav__list--wide">
+          <li class="sub-nav__list-item"><a href="#">Анонсы</a></li>
+          <li class="sub-nav__list-item"><a href="#">Региональные и зарубежные</a></li>
+          <li class="sub-nav__list-item"><a href="#">Виртуальные</a></li>
+          <li class="sub-nav__list-item"><a href="#">Архив</a></li>
+        </ul>
       </div>
-      <div class="slick">
-        <div class="slide black phone">black phone</div>
-        <div class="slide white phone">white phone</div>
-        <div class="slide green phone">green phone</div>
-        <div class="slide black ipad">black ipad</div>
-        <div class="slide white ipad">white ipad</div>
-        <div class="slide green ipad">green ipad</div>
-        <div class="slide black tablet">black tablet</div>
-        <div class="slide white tablet">white tablet</div>
-        <div class="slide green tablet">green tablet</div>
+    </section>
+    <section class="banners">
+      <div class="banners__wrapper">
+        <ul class="banners__list  banners__list--grid">
+          <li class="banners__list-item">
+            <a href="#">
+              <picture>
+                <source media="(min-width: 1440px)" data-src="/img/banners/banner-gray-desktop.jpg" srcset="/img/banners/banner-gray-desktop.jpg">
+                <img class="lozad" data-src="/img/banners/banner-gray-mobile.jpg" src="/img/banners/banner-gray-mobile.jpg" alt="Баннер партнера>">
+              </picture>
+            </a>
+          </li>
+          <li class="banners__list-item">
+            <a href="#">
+              <picture>
+                <source media="(min-width: 1440px)" data-src="/img/banners/banner-gray-desktop.jpg" srcset="/img/banners/banner-gray-desktop.jpg">
+                <img class="lozad" data-src="/img/banners/banner-gray-mobile.jpg" src="/img/banners/banner-gray-mobile.jpg" alt="Баннер партнера>">
+              </picture>
+            </a>
+          </li>
+          <li class="banners__list-item">
+            <a href="#">
+              <picture>
+                <source media="(min-width: 1440px)" data-src="/img/banners/banner-gray-desktop.jpg" srcset="/img/banners/banner-gray-desktop.jpg">
+                <img class="lozad" data-src="/img/banners/banner-gray-mobile.jpg" src="/img/banners/banner-gray-mobile.jpg" alt="Баннер партнера>">
+              </picture>
+            </a>
+          </li>
+          <li class="banners__list-item">
+            <a href="#">
+              <picture>
+                <source media="(min-width: 1440px)" data-src="/img/banners/banner-gray-desktop.jpg" srcset="/img/banners/banner-gray-desktop.jpg">
+                <img class="lozad" data-src="/img/banners/banner-gray-mobile.jpg" src="/img/banners/banner-gray-mobile.jpg" alt="Баннер партнера>">
+              </picture>
+            </a>
+          </li>
+          <li class="banners__list-item">
+            <a href="#">
+              <picture>
+                <source media="(min-width: 1440px)" data-src="/img/banners/banner-gray-desktop.jpg" srcset="/img/banners/banner-gray-desktop.jpg">
+                <img class="lozad" data-src="/img/banners/banner-gray-mobile.jpg" src="/img/banners/banner-gray-mobile.jpg" alt="Баннер партнера>">
+              </picture>
+            </a>
+          </li>
+        </ul>
       </div>
     </section>
     <footer class="footer">

@@ -10,18 +10,32 @@ if (langBtn) {
 let searchActiveBtn = document.querySelector(".header__search-activate");
 let searchForm = document.querySelector(".header__search-form");
 let header = document.querySelector(".header");
-
-header.addEventListener("click", function (e) {
-  searchForm.classList.remove("header__search-form--opened");
-  e.stopPropagation();
-});
+let nav = document.querySelector(".main-nav");
+let logo = document.querySelector(".logo");
+let topOfNav = header.offsetTop;
 
 if (searchActiveBtn) {
   searchActiveBtn.addEventListener("click", function () {
-    searchForm.classList.add("header__search-form--opened");
-    event.stopPropagation();
+    this.classList.toggle("header__search-activate--active");
+    searchForm.classList.toggle("header__search-form--opened");
   });
 }
+
+function fixHeader() {
+  if (window.scrollY >= topOfNav) {
+    header.classList.add("header--fixed");
+    nav.classList.add("main-nav--fixed");
+    logo.classList.add("logo--fixed");
+    document.body.style.paddingTop = header.offsetHeight + "px";
+  } else {
+    header.classList.remove("header--fixed");
+    nav.classList.remove("main-nav--fixed");
+    logo.classList.remove("logo--fixed");
+    document.body.style.paddingTop = 0;
+  }
+}
+
+window.addEventListener("scroll", fixHeader);
 
 let menuToggle = document.querySelector(".main-nav__toggle");
 let menuList = document.querySelector(".main-nav__list");
@@ -318,9 +332,9 @@ $(".js-example-tokenizer").select2({
 
 $(function () {
   $(".preview__slider-list").slick({
-    slidesToShow: 4,
+    slidesToShow: 5,
     centerMode: true,
-    centerPadding: "0px",
+    centerPadding: "20px",
     speed: 500,
     focusOnSelect: true,
     infinite: false,
@@ -331,6 +345,12 @@ $(function () {
     nextArrow: $(".preview__slider-next"),
 
     responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 4,
+        },
+      },
       {
         breakpoint: 767,
         settings: {
@@ -436,3 +456,27 @@ $(".js-example-basic-multiple").select2({
 $(".js-example-basic-multiple").on("change", function () {
   console.log($(this).val());
 });
+
+$(".filter__select-option a").click(function (event) {
+  event.preventDefault();
+  var par = $(this).parents(".filter__custom-select");
+  $(".filter__select-value", par).text($.trim($(this).text()));
+});
+
+var buttons = document.querySelectorAll(".filter__button");
+for (var i = 0; i < buttons.length; i++) {
+  var self = buttons[i];
+
+  self.addEventListener(
+    "click",
+    function (event) {
+      // prevent browser's default action
+      event.preventDefault();
+      this.classList.toggle("filter__button--active");
+
+      // call your awesome function here
+      //MyAwesomeFunction(this); // 'this' refers to the current button on for loop
+    },
+    false
+  );
+}

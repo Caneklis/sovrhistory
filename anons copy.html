@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inner page</title>
+    <title>Анонсы</title>
     <link rel="stylesheet" href="/css/style.min.css">
     <link rel="apple-touch-icon" sizes="57x57" href="/img/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/img/favicon/apple-icon-60x60.png">
@@ -112,68 +112,170 @@
     <div class="breadcrumbs">
       <div class="breadcrumbs__wrapper">
         <a href="#" class="breadcrumbs__link">на главную</a>
-        <h2 class="breadcrumbs__title">Inner page</h2>
+        <h2 class="breadcrumbs__title">Анонсы</h2>
       </div>
     </div>
-    <h1>This is the Inner page</h1>
-    <section class="preview">
-      <h2 class="preview__title">Анонсы и события</h2>
-      <div class="preview__buttons">
-        <button class="btn" type="button">Все</button>
-        <button class="btn" type="button">Сегодня</button>
-        <button class="btn" type="button">Завтра</button>
-        <button class="btn" type="button">На выходных</button>
-        <button class="btn" type="button">На 7 дней</button>
-        <button class="btn" type="button">На 14 дней</button>
+    <section class="exhibitions">
+      <div class="exhibitions__wrapper">
+        <section class="filter">
+          <div class="filter__block">
+            <h2 class="filter__title">Музеи:</h2>
+            <div class="filter__custom-select">
+              <select class="js-example-basic-multiple" name="buildings[]" multiple="multiple">
+                <option value="all">Все музеи</option>
+                <option value="1">Музей современной истории России</option>
+                <option value="2">Пресня</option>
+                <option value="3">Подпольная типография 1905-1906 гг.</option>
+                <option value="3">Квартира Г.М. Кржижановского</option>
+                <option value="3">Музей-галерея Е. Евтушенко</option>
+                <option value="3">Мемориальный комплекс «Катынь»</option>
+                <option value="3">Мемориальный комплекс «Медное»</option>
+              </select>
+            </div>
+            <div class="filter__buttons">
+              <button class="filter__button" type="button" value="1">Музей современной истории России</button>
+              <button class="filter__button" type="button" value="2">Пресня</button>
+              <button class="filter__button" type="button" value="3">Подпольная типография 1905-1906 гг.</button>
+              <button class="filter__button" type="button" value="3">Квартира Г.М. Кржижановского</button>
+              <button class="filter__button" type="button" value="3">Музей-галерея Е. Евтушенко</button>
+              <button class="filter__button" type="button" value="3">Мемориальный комплекс «Катынь»</button>
+              <button class="filter__button" type="button" value="3">Мемориальный комплекс «Медное»</button>
+            </div>
+          </div>
+          <div class="filter__block">
+            <h2 class="filter__title">Темы</h2>
+            <div class="filter__buttons">
+              <button class="filter__button" type="button" value="1">Тематика про конституцию</button>
+              <button class="filter__button" type="button" value="2">Военная тематика</button>
+              <button class="filter__button" type="button" value="3">Революция</button>
+              <button class="filter__button" type="button" value="3">типография</button>
+              <button class="filter__button" type="button" value="3">Эксперты о войне</button>
+            </div>
+          </div>
+          <div class="filter__block">
+            <h2 class="filter__title">Года</h2>
+            <div class="filter__buttons">
+              <button class="filter__button" type="button" value="1">2020</button>
+              <button class="filter__button" type="button" value="2">2021</button>
+              <button class="filter__button" type="button" value="3">2022</button>
+            </div>
+          </div>
+        </section>
+        <ul class="exhibitions__list">
+          <li class="exhibitions__item">
+            <article class="exhibitions__article">
+              <div class="exhibitions__picture">
+                <picture>
+                  <source media="(min-width: 1440px)" data-src="/img/exhibitions/anons-desktop.jpg" srcset="/img/exhibitions/anons-desktop.jpg">
+                  <source media="(min-width: 768px)" data-src="/img/exhibitions/anons-tablet.jpg" srcset="/img/exhibitions/anons-tablet.jpg">
+                  <img class="lozad" data-src="/img/exhibitions/anons-mobile.jpg" src="/img/exhibitions/anons-mobile.jpg" alt="Фотография к новости" loading="lazy">
+                </picture>
+              </div>
+              <div class="exhibitions__text">
+                <time class="exhibitions__date" datetime="2020-02-13 14:30">20 февраля 2020 - 30 апреля 2020</time>
+                <h2><a href="#">Иные Миры</a></h2>
+                <p>С 20 сентября 2019 года до 19 января 2020 года пройдет выставка Никаса Сафронова «Иные миры». Работы художника будут представлены в главном здании Музея современной истории России как в традиционном исполнении — на холстах, так и с помощью современных мультимедийных технологий.</p>
+                <p>Мультимедийные проекции на стены перенесут зрителей в мир художника Никаса Сафронова. Бесшовная проекция позволит создать иллюзию изменения пространства не только в виде цифрового декора, но и в качестве «самостоятельного рассказчика». </p>
+                <div class="exhibitions__price">
+                  <a href="#" class="btn">Поддержать выставку</a>
+                </div>
+              </div>
+              <div class="exhibitions__info">
+                <div class="exhibitions__place">Музей современной истории России</div>
+                <div class="exhibitions__address">Тверская 21</div>
+                <div class="exhibitions__time">Региональная выставка</div>
+                <div class="exhibitions__building">
+                  <img src="/img/buildings/building-1.svg" alt="Иконка здания" width="66" height="25">
+                </div>
+              </div>
+            </article>
+          </li>
+          <li class="exhibitions__item">
+            <article class="exhibitions__article">
+              <div class="exhibitions__picture">
+                <picture>
+                  <source media="(min-width: 1440px)" data-src="/img/exhibitions/anons-desktop.jpg" srcset="/img/exhibitions/anons-desktop.jpg">
+                  <source media="(min-width: 768px)" data-src="/img/exhibitions/anons-tablet.jpg" srcset="/img/exhibitions/anons-tablet.jpg">
+                  <img class="lozad" data-src="/img/exhibitions/anons-mobile.jpg" src="/img/exhibitions/anons-mobile.jpg" alt="Фотография к новости" loading="lazy">
+                </picture>
+              </div>
+              <div class="exhibitions__text">
+                <time class="exhibitions__date" datetime="2020-02-13 14:30">20 февраля 2020 - 30 апреля 2020</time>
+                <h2><a href="#">Если много текста, картинка растягивается по высоте</a></h2>
+                <p>С 20 сентября 2019 года до 19 января 2020 года пройдет выставка Никаса Сафронова «Иные миры». Работы художника будут представлены в главном здании Музея современной истории России как в традиционном исполнении — на холстах, так и с помощью современных мультимедийных технологий.</p>
+                <p>Мультимедийные проекции на стены перенесут зрителей в мир художника Никаса Сафронова. Бесшовная проекция позволит создать иллюзию изменения пространства не только в виде цифрового декора, но и в качестве «самостоятельного рассказчика». </p>
+                <p>Мультимедийные проекции на стены перенесут зрителей в мир художника Никаса Сафронова. Бесшовная проекция позволит создать иллюзию изменения пространства не только в виде цифрового декора, но и в качестве «самостоятельного рассказчика». </p>
+                <div class="exhibitions__price">
+                  <a href="#" class="btn">Поддержать выставку</a>
+                </div>
+              </div>
+              <div class="exhibitions__info">
+                <div class="exhibitions__place">Музей современной истории России</div>
+                <div class="exhibitions__address">Тверская 21</div>
+                <div class="exhibitions__time">с 11.00 до 19.00</div>
+                <div class="exhibitions__building">
+                  <img src="/img/buildings/building-1.svg" alt="Иконка здания" width="66" height="25">
+                </div>
+              </div>
+            </article>
+          </li>
+        </ul>
       </div>
-      <div class="preview__filter">
-        <select class="js-select-basic">
-          <option value="hide">все</option>
-          <option value="all">Все</option>
-          <option value="1">Сегодня</option>
-          <option value="2">Завтра</option>
-          <option value="3">На выходных</option>
-          <option value="4">На 7 дней</option>
-          <option value="5">На 14 дней</option>
-        </select>
-        <select class="js-select-basic" multiple="multiple" style="width: 75%">
-          <option value="hide">все</option>
-          <option value="build-1">Главное здание</option>
-          <option value="build-2">Пресня</option>
-        </select>
+    </section>
+    <section class="sub-nav">
+      <div class="sub-nav__wrapper">
+        <ul class="sub-nav__list  sub-nav__list--wide">
+          <li class="sub-nav__list-item"><a href="#">Анонсы</a></li>
+          <li class="sub-nav__list-item"><a href="#">Региональные и зарубежные</a></li>
+          <li class="sub-nav__list-item"><a href="#">Виртуальные</a></li>
+          <li class="sub-nav__list-item"><a href="#">Архив</a></li>
+        </ul>
       </div>
-      <form class="filter">
-        <div class="filter-group">
-          <label for="color">Color:</label>
-          <select name="color">
-            <option value="">All</option>
-            <option value=".black">black</option>
-            <option value=".white">white</option>
-            <option value=".green">green</option>
-          </select>
-          <label for="color">Device:</label>
-          <select name="device">
-            <option value="">All</option>
-            <option value=".phone">phone</option>
-            <option value=".ipad">ipad</option>
-            <option value=".tablet">tablet</option>
-          </select>
-          <button class="delete">x</button>
-        </div>
-        <button class="add-filter">Add another filter</button>
-      </form>
-      <div class="active-filter"> Active filter: <span class="filter-class">none</span>
-      </div>
-      <div class="slick">
-        <div class="slide black phone">black phone</div>
-        <div class="slide white phone">white phone</div>
-        <div class="slide green phone">green phone</div>
-        <div class="slide black ipad">black ipad</div>
-        <div class="slide white ipad">white ipad</div>
-        <div class="slide green ipad">green ipad</div>
-        <div class="slide black tablet">black tablet</div>
-        <div class="slide white tablet">white tablet</div>
-        <div class="slide green tablet">green tablet</div>
+    </section>
+    <section class="banners">
+      <div class="banners__wrapper">
+        <ul class="banners__list  banners__list--grid">
+          <li class="banners__list-item">
+            <a href="#">
+              <picture>
+                <source media="(min-width: 1440px)" data-src="/img/banners/banner-gray-desktop.jpg" srcset="/img/banners/banner-gray-desktop.jpg">
+                <img class="lozad" data-src="/img/banners/banner-gray-mobile.jpg" src="/img/banners/banner-gray-mobile.jpg" alt="Баннер партнера>">
+              </picture>
+            </a>
+          </li>
+          <li class="banners__list-item">
+            <a href="#">
+              <picture>
+                <source media="(min-width: 1440px)" data-src="/img/banners/banner-gray-desktop.jpg" srcset="/img/banners/banner-gray-desktop.jpg">
+                <img class="lozad" data-src="/img/banners/banner-gray-mobile.jpg" src="/img/banners/banner-gray-mobile.jpg" alt="Баннер партнера>">
+              </picture>
+            </a>
+          </li>
+          <li class="banners__list-item">
+            <a href="#">
+              <picture>
+                <source media="(min-width: 1440px)" data-src="/img/banners/banner-gray-desktop.jpg" srcset="/img/banners/banner-gray-desktop.jpg">
+                <img class="lozad" data-src="/img/banners/banner-gray-mobile.jpg" src="/img/banners/banner-gray-mobile.jpg" alt="Баннер партнера>">
+              </picture>
+            </a>
+          </li>
+          <li class="banners__list-item">
+            <a href="#">
+              <picture>
+                <source media="(min-width: 1440px)" data-src="/img/banners/banner-gray-desktop.jpg" srcset="/img/banners/banner-gray-desktop.jpg">
+                <img class="lozad" data-src="/img/banners/banner-gray-mobile.jpg" src="/img/banners/banner-gray-mobile.jpg" alt="Баннер партнера>">
+              </picture>
+            </a>
+          </li>
+          <li class="banners__list-item">
+            <a href="#">
+              <picture>
+                <source media="(min-width: 1440px)" data-src="/img/banners/banner-gray-desktop.jpg" srcset="/img/banners/banner-gray-desktop.jpg">
+                <img class="lozad" data-src="/img/banners/banner-gray-mobile.jpg" src="/img/banners/banner-gray-mobile.jpg" alt="Баннер партнера>">
+              </picture>
+            </a>
+          </li>
+        </ul>
       </div>
     </section>
     <footer class="footer">
