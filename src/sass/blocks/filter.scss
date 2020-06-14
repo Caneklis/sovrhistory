@@ -1,0 +1,170 @@
+// .filter__select-option {
+//   display: none;
+// }
+
+// .filter__custom-select {
+//   &--active {
+//     .filter__select-option {
+//       display: block;
+//     }
+//   }
+// }
+.filter {
+  margin-bottom: 35px;
+}
+
+.filter__custom-select {
+  .select2-container {
+    display: flex;
+    width: 100% !important;
+    background-color: #c8134a;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+
+  .selection {
+    width: 100%;
+  }
+
+  .select2-selection--single {
+    display: flex;
+    justify-content: center;
+    border-radius: 3px;
+  }
+  .select2-selection--multiple,
+  .select2-selection--single {
+    background-color: #c8134a;
+    border: 0;
+    border-radius: 3px;
+  }
+
+  .select2-container--default,
+  .select2-selection--single,
+  .select2-selection__rendered {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 9.77496px;
+    line-height: 12px;
+    color: #fff;
+  }
+
+  .select2-container--default
+    .select2-selection--single
+    .select2-selection__arrow
+    b {
+    width: 8px;
+    height: 4px;
+    background-image: url(../img/icons/select-arrow-white.svg);
+  }
+
+  .select2-selection__rendered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 9.77496px;
+    line-height: 12px;
+    color: #fff;
+  }
+}
+
+.filter__buttons {
+  display: none;
+}
+
+.filter__title {
+  display: none;
+}
+
+.filter__block {
+  margin-bottom: 7px;
+}
+
+@media screen and (min-width: $tablet) {
+  .filter__custom-select {
+    display: none;
+  }
+
+  .filter {
+    margin-bottom: 40px;
+  }
+
+  .filter__block {
+    margin-bottom: 12px;
+  }
+
+  .filter__title {
+    display: block;
+    margin: 0;
+    margin-bottom: 9px;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 400;
+
+    color: #292929;
+  }
+
+  .filter__buttons {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .filter__button {
+    margin-right: 4px;
+    margin-bottom: 4px;
+    padding: 10px 16px;
+    border: none;
+    background: #f3f3f3;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #000000;
+    cursor: pointer;
+
+    &:active,
+    &:focus {
+      outline: none;
+      color: #ac103f;
+    }
+
+    &--active {
+      background-color: $s-color;
+      color: #fff;
+
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: 5px;
+        top: 50%;
+        transform: translateY(-50%);
+        display: block;
+        width: 8px;
+        height: 8px;
+        background-image: url("../img/icons/cross.svg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+      }
+
+      &:hover {
+        background-color: $s-color;
+        color: #fff;
+      }
+      &:active,
+      &:focus {
+        outline: none;
+        background-color: $s-color;
+        color: #fff;
+      }
+    }
+  }
+}

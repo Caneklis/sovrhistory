@@ -30,6 +30,12 @@
 @media screen and (min-width: $tablet) {
   .logo {
     width: 250px;
+
+    &--fixed {
+      .logo__slogan {
+        display: none;
+      }
+    }
   }
 
   .logo__text {
@@ -42,6 +48,14 @@
 @media screen and (min-width: $desktop) {
   .logo {
     width: 265px;
+
+    &--fixed {
+      width: 310px;
+
+      .logo__text {
+        width: 220px;
+      }
+    }
 
     img {
       display: block;

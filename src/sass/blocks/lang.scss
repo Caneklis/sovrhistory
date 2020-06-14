@@ -19,6 +19,13 @@
   font-weight: 700;
   text-align: left;
   cursor: pointer;
+  transition: all 0.3s;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    opacity: 0.7;
+  }
 }
 
 .lang__list {
@@ -30,6 +37,7 @@
     position: absolute;
     left: 0;
     top: 100%;
+    background-color: rgba(#201d18, 0.9);
 
     a {
       text-decoration: none;

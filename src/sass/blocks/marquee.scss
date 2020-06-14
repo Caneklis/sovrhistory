@@ -77,7 +77,7 @@
   }
 
   .marquee__text {
-    width: 550px;
+    width: 80%;
     p {
       font-size: 13px;
       line-height: 16px;
@@ -105,5 +105,9 @@
 
     text-align: center;
     letter-spacing: 0.02em;
+  }
+
+  .marquee__text {
+    width: 80%;
   }
 }

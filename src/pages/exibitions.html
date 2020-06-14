@@ -1,0 +1,230 @@
+---
+title: Текущие выставки
+---
+{% extends "../templates/layouts/_layout-inner.html" %}
+
+{% block content %}
+
+<section class="exhibitions">
+  <div class="exhibitions__wrapper">
+
+    <section class="filter">
+      <div class="filter__block">
+        <h2 class="filter__title">Музеи:</h2>
+
+        <div class="filter__custom-select">
+          <select class="js-example-basic-multiple" name="buildings[]" multiple="multiple">
+            <option value="all">Все музеи</option>
+            <option value="1">Музей современной истории России</option>
+            <option value="2">Пресня</option>
+            <option value="3">Подпольная типография 1905-1906 гг.</option>
+            <option value="3">Квартира Г.М. Кржижановского</option>
+            <option value="3">Музей-галерея Е. Евтушенко</option>
+            <option value="3">Мемориальный комплекс «Катынь»</option>
+            <option value="3">Мемориальный комплекс «Медное»</option>
+          </select>
+        </div>
+
+        <div class="filter__buttons">
+          <button class="filter__button" type="button" value="1">Музей современной истории России</button>
+          <button class="filter__button" type="button" value="2">Пресня</button>
+          <button class="filter__button" type="button" value="3">Подпольная типография 1905-1906 гг.</button>
+          <button class="filter__button" type="button" value="3">Квартира Г.М. Кржижановского</button>
+          <button class="filter__button" type="button" value="3">Музей-галерея Е. Евтушенко</button>
+          <button class="filter__button" type="button" value="3">Мемориальный комплекс «Катынь»</button>
+          <button class="filter__button" type="button" value="3">Мемориальный комплекс «Медное»</button>
+        </div>
+      </div>
+
+      <div class="filter__block">
+        <h2 class="filter__title">Темы</h2>
+
+        <div class="filter__buttons">
+          <button class="filter__button" type="button" value="1">Тематика про конституцию</button>
+          <button class="filter__button" type="button" value="2">Военная тематика</button>
+          <button class="filter__button" type="button" value="3">Революция</button>
+          <button class="filter__button" type="button" value="3">типография</button>
+          <button class="filter__button" type="button" value="3">Эксперты о войне</button>
+        </div>
+      </div>
+
+    </section>
+
+    <ul class="exhibitions__list">
+      <li class="exhibitions__item">
+        <article class="exhibitions__article">
+          <div class="exhibitions__picture">
+            <picture>
+              <source media="(min-width: 1440px)" data-src="/img/exhibitions/exhibition-pic-desktop.jpg"
+                srcset="/img/exhibitions/exhibition-pic-desktop.jpg">
+              <source media="(min-width: 768px)" data-src="/img/exhibitions/exhibition-pic-tablet.jpg"
+                srcset="/img/exhibitions/exhibition-pic-tablet.jpg">
+              <img class="lozad" data-src="/img/exhibitions/exhibition-pic-mobile.jpg"
+                src="/img/exhibitions/exhibition-pic-mobile.jpg" alt="Фотография к новости" loading="lazy">
+            </picture>
+          </div>
+
+          <div class="exhibitions__text">
+            <time class="exhibitions__date" datetime="2020-02-13 14:30">20 февраля 2020 - 30 апреля 2020</time>
+            <h2><a href="#">Человек и война. Нерасказанная история</a></h2>
+            <p>21 февраля 2020 г. в Музее современной истории России открылся масштабный выставочный проект «Человек и
+              война. Нерассказанная история», посвящённый 75-летию Победы в Великой Отечественной войне. В центре
+              внимания выставки — человек и его бытие в экстремальных условиях военной повседневности. Выставка
+              представляет события тех лет не только через предметы, свидетельствующие о знаменитых сражениях, блестящих
+              операциях и героизме советских людей. </p>
+            <div class="exhibitions__price">800₽</div>
+          </div>
+
+          <div class="exhibitions__info">
+            <div class="exhibitions__place">Музей современной истории России</div>
+            <div class="exhibitions__address">Тверская 21</div>
+            <div class="exhibitions__time">с 11.00 до 19.00</div>
+            <div class="exhibitions__building">
+              <img src="/img/buildings/building-1.svg" alt="Иконка здания" width="66" height="25">
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="exhibitions__item">
+        <article class="exhibitions__article">
+          <div class="exhibitions__picture">
+            <picture>
+              <source media="(min-width: 1440px)" data-src="/img/exhibitions/exhibition-pic-desktop.jpg"
+                srcset="/img/exhibitions/exhibition-pic-desktop.jpg">
+              <source media="(min-width: 768px)" data-src="/img/exhibitions/exhibition-pic-tablet.jpg"
+                srcset="/img/exhibitions/exhibition-pic-tablet.jpg">
+              <img class="lozad" data-src="/img/exhibitions/exhibition-pic-mobile.jpg"
+                src="/img/exhibitions/exhibition-pic-mobile.jpg" alt="Фотография к новости" loading="lazy">
+            </picture>
+          </div>
+
+          <div class="exhibitions__text">
+            <time class="exhibitions__date" datetime="2020-02-13 14:30">20 февраля 2020 - 30 апреля 2020</time>
+            <h2><a href="#">Человек и война. Нерасказанная история</a></h2>
+            <p>21 февраля 2020 г. в Музее современной истории России открылся масштабный выставочный проект «Человек и
+              война. Нерассказанная история», посвящённый 75-летию Победы в Великой Отечественной войне. В центре
+              внимания выставки — человек и его бытие в экстремальных условиях военной повседневности. Выставка
+              представляет события тех лет не только через предметы, свидетельствующие о знаменитых сражениях, блестящих
+              операциях и героизме советских людей. </p>
+            <p>21 февраля 2020 г. в Музее современной истории России открылся масштабный выставочный проект «Человек и
+              война. Нерассказанная история», посвящённый 75-летию Победы в Великой Отечественной войне. В центре
+              внимания выставки — человек и его бытие в экстремальных условиях военной повседневности. Выставка
+              представляет события тех лет не только через предметы, свидетельствующие о знаменитых сражениях, блестящих
+              операциях и героизме советских людей. </p>
+            <div class="exhibitions__price">800₽</div>
+          </div>
+
+          <div class="exhibitions__info">
+            <div class="exhibitions__place">Музей современной истории России</div>
+            <div class="exhibitions__address">Тверская 21</div>
+            <div class="exhibitions__time">с 11.00 до 19.00</div>
+            <div class="exhibitions__building">
+              <img src="/img/buildings/building-1.svg" alt="Иконка здания" width="66" height="25">
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="exhibitions__item">
+        <article class="exhibitions__article">
+          <div class="exhibitions__picture">
+            <picture>
+              <source media="(min-width: 1440px)" data-src="/img/exhibitions/exhibition-pic-desktop.jpg"
+                srcset="/img/exhibitions/exhibition-pic-desktop.jpg">
+              <source media="(min-width: 768px)" data-src="/img/exhibitions/exhibition-pic-tablet.jpg"
+                srcset="/img/exhibitions/exhibition-pic-tablet.jpg">
+              <img class="lozad" data-src="/img/exhibitions/exhibition-pic-mobile.jpg"
+                src="/img/exhibitions/exhibition-pic-mobile.jpg" alt="Фотография к новости" loading="lazy">
+            </picture>
+          </div>
+
+          <div class="exhibitions__text">
+            <time class="exhibitions__date" datetime="2020-02-13 14:30">20 февраля 2020 - 30 апреля 2020</time>
+            <h2><a href="#">Человек и война. Нерасказанная история</a></h2>
+            <p>21 февраля 2020 г. в Музее современной истории России открылся масштабный выставочный проект «Человек и
+              война. Нерассказанная история», посвящённый 75-летию Победы в Великой Отечественной войне. </p>
+            <div class="exhibitions__price">800₽</div>
+          </div>
+
+          <div class="exhibitions__info">
+            <div class="exhibitions__place">Музей современной истории России</div>
+            <div class="exhibitions__address">Тверская 21</div>
+            <div class="exhibitions__time">с 11.00 до 19.00</div>
+            <div class="exhibitions__building">
+              <img src="/img/buildings/building-1.svg" alt="Иконка здания" width="66" height="25">
+            </div>
+          </div>
+        </article>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="sub-nav">
+  <div class="sub-nav__wrapper">
+    <ul class="sub-nav__list  sub-nav__list--wide">
+      <li class="sub-nav__list-item"><a href="#">Анонсы</a></li>
+      <li class="sub-nav__list-item"><a href="#">Региональные и зарубежные</a></li>
+      <li class="sub-nav__list-item"><a href="#">Виртуальные</a></li>
+      <li class="sub-nav__list-item"><a href="#">Архив</a></li>
+    </ul>
+  </div>
+</section>
+
+<section class="banners">
+  <div class="banners__wrapper">
+    <ul class="banners__list  banners__list--grid">
+      <li class="banners__list-item">
+        <a href="#">
+          <picture>
+            <source media="(min-width: 1440px)" data-src="/img/banners/banner-gray-desktop.jpg"
+              srcset="/img/banners/banner-gray-desktop.jpg">
+            <img class="lozad" data-src="/img/banners/banner-gray-mobile.jpg" src="/img/banners/banner-gray-mobile.jpg"
+              alt="Баннер партнера>">
+          </picture>
+        </a>
+      </li>
+      <li class="banners__list-item">
+        <a href="#">
+          <picture>
+            <source media="(min-width: 1440px)" data-src="/img/banners/banner-gray-desktop.jpg"
+              srcset="/img/banners/banner-gray-desktop.jpg">
+            <img class="lozad" data-src="/img/banners/banner-gray-mobile.jpg" src="/img/banners/banner-gray-mobile.jpg"
+              alt="Баннер партнера>">
+          </picture>
+        </a>
+      </li>
+      <li class="banners__list-item">
+        <a href="#">
+          <picture>
+            <source media="(min-width: 1440px)" data-src="/img/banners/banner-gray-desktop.jpg"
+              srcset="/img/banners/banner-gray-desktop.jpg">
+            <img class="lozad" data-src="/img/banners/banner-gray-mobile.jpg" src="/img/banners/banner-gray-mobile.jpg"
+              alt="Баннер партнера>">
+          </picture>
+        </a>
+      </li>
+      <li class="banners__list-item">
+        <a href="#">
+          <picture>
+            <source media="(min-width: 1440px)" data-src="/img/banners/banner-gray-desktop.jpg"
+              srcset="/img/banners/banner-gray-desktop.jpg">
+            <img class="lozad" data-src="/img/banners/banner-gray-mobile.jpg" src="/img/banners/banner-gray-mobile.jpg"
+              alt="Баннер партнера>">
+          </picture>
+        </a>
+      </li>
+      <li class="banners__list-item">
+        <a href="#">
+          <picture>
+            <source media="(min-width: 1440px)" data-src="/img/banners/banner-gray-desktop.jpg"
+              srcset="/img/banners/banner-gray-desktop.jpg">
+            <img class="lozad" data-src="/img/banners/banner-gray-mobile.jpg" src="/img/banners/banner-gray-mobile.jpg"
+              alt="Баннер партнера>">
+          </picture>
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+{% endblock %}

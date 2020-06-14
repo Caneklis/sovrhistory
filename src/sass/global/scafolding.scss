@@ -275,3 +275,32 @@ html.contrast {
 .active-filter {
   margin: 1rem 0;
 }
+
+.btn {
+  display: inline-block;
+  padding: 14px 20px;
+  text-decoration: none;
+  border: none;
+  color: #fff;
+
+  background: $s-color;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  transition: all 0.3;
+
+  &:hover {
+    background: #de2b62;
+  }
+
+  &:focus,
+  &:active {
+    background: #ac103f;
+  }
+}

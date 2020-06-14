@@ -11,6 +11,16 @@
   padding: 30px 20px 4px;
   display: grid;
   grid-template-columns: 1fr 1fr;
+
+  &--wide {
+    grid-template-columns: 1fr;
+
+    .sub-nav__list-item {
+      a {
+        justify-content: center;
+      }
+    }
+  }
 }
 
 .sub-nav__list-item {
@@ -26,6 +36,10 @@
   }
 }
 
+.sub-nav__wrapper {
+  @include wrapper;
+}
+
 @media screen and (min-width: $tablet) {
   .sub-nav {
     margin-bottom: 50px;
@@ -38,6 +52,19 @@
     padding-right: 5.2%;
     min-width: 768px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    &--wide {
+      min-width: 100%;
+      padding-left: 0;
+      padding-right: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .sub-nav__list-item {
+        a {
+          justify-content: flex-start;
+        }
+      }
+    }
   }
 
   .sub-nav__list-item {
@@ -69,6 +96,12 @@
     min-width: 1440px;
     max-width: 1440px;
     padding: 48px 130px;
+    &--wide {
+      padding-left: 0;
+      padding-right: 0;
+      max-width: 100%;
+      min-width: 100%;
+    }
   }
 
   .sub-nav__list-item {

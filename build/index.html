@@ -4,23 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная страница</title>
-    <link rel="stylesheet" href="css/style.min.css">
-    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="img/favicon/manifest.json">
+    <link rel="stylesheet" href="/css/style.min.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="/img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/img/favicon/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+    <meta name="msapplication-TileImage" content="/img/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
   </head>
   <body>
@@ -37,7 +37,7 @@
       <div class="header__wrapper">
         <div class="header__logo">
           <a href="#" class="logo">
-            <img src="img/logo.svg" alt="Логотип Государственный центральный музей современной истории России" width="49" height="20">
+            <img src="/img/logo.svg" alt="Логотип Государственный центральный музей современной истории России" width="49" height="20">
             <div class="logo__text">Государственный центральный музей современной истории России</div>
             <div class="logo__slogan">Историю создаете вы!</div>
           </a>
@@ -47,15 +47,16 @@
             <button class="lang__btn" type="button">RU</button>
             <ul class="lang__list">
               <li class="lang__item"><a href="#">RU</a></li>
-              <li class="lang__item"><a href="#">ENG</a></li>
+              <li class="lang__item"><a href="#">EN</a></li>
+              <li class="lang__item"><a href="#">日本</a></li>
             </ul>
           </div>
           <div class="header__search">
-            <button class="header__search-activate" type="button"><span class="visually-hidden">Открыть форму поиска</span></button>
             <form action="#" method="GET" class="header__search-form">
               <input type="text">
               <button type="submit" class="header__search-form-btn"><span class="visually-hidden">Найти</span></button>
             </form>
+            <button class="header__search-activate" type="button"><span class="visually-hidden">Открыть форму поиска</span></button>
           </div>
           <ul class="header__menu-list">
             <li class="header__menu-item"><a href="#">Билеты</a></li>
@@ -69,6 +70,10 @@
             <li class="main-nav__item">
               <a href="#">Посетителям</a>
               <ul class="main-nav__sublist">
+                <li><a href="#">Экскурсии</a></li>
+                <li><a href="#">Лекции и музейные занятия</a></li>
+                <li><a href="#">Образовательные проекты</a></li>
+                <li><a href="#">Билеты и расписание</a></li>
                 <li><a href="#">Экскурсии</a></li>
                 <li><a href="#">Лекции и музейные занятия</a></li>
                 <li><a href="#">Образовательные проекты</a></li>
@@ -97,7 +102,7 @@
             </li>
             <li class="main-nav__item"><a href="#">Партнеры</a></li>
             <li class="main-nav__item"><a href="#">Магазин</a></li>
-            <li class="main-nav__item"><a class="js-contrast-version"><img src="img/glasses.svg" alt="Иконка версии для слабовидящих"><span class="visually-hidden">Версия для слабовидящих</span></a>
+            <li class="main-nav__item  main-nav__item--contrast"><a class="js-contrast-version"><img src="/img/glasses.svg" alt="Иконка версии для слабовидящих"><span class="visually-hidden">Версия для слабовидящих</span></a>
               <a class="js-normal-version">Обычная версия</a>
             </li>
           </ul>
@@ -107,11 +112,11 @@
     <section class="main-slider">
       <ul class="main-slider__list">
         <li class="main-slider__item">
-          <article class="main-slider__article">
+          <article class="main-slider__article  main-slider__article--bg-img">
             <picture>
-              <source media="(min-width: 1440px)" data-src="img/main-slider/slide-1-desktop.jpg" srcset="img/main-slider/slide-1-desktop.jpg">
-              <source media="(min-width: 768px)" data-src="img/main-slider/slide-1-tablet.jpg" srcset="img/main-slider/slide-1-tablet.jpg">
-              <img class="lozad" data-src="img/main-slider/slide-1-mobile.jpg" src="img/main-slider/slide-1-mobile.jpg" alt="Фотография к новости" loading="lazy">
+              <source media="(min-width: 1440px)" data-src="/img/main-slider/slide-1-desktop.jpg" srcset="/img/main-slider/slide-1-desktop.jpg">
+              <source media="(min-width: 768px)" data-src="/img/main-slider/slide-1-tablet.jpg" srcset="/img/main-slider/slide-1-tablet.jpg">
+              <img class="lozad" data-src="/img/main-slider/slide-1-mobile.jpg" src="/img/main-slider/slide-1-mobile.jpg" alt="Фотография к новости" loading="lazy">
             </picture>
             <div class="main-slider__item-description">
               <div class="main-slider__item-type">
@@ -129,11 +134,11 @@
           </article>
         </li>
         <li class="main-slider__item">
-          <article class="main-slider__article">
+          <article class="main-slider__article  main-slider__article--bg-img">
             <picture>
-              <source media="(min-width: 1440px)" data-src="img/main-slider/slide-2-desktop.jpg" srcset="img/main-slider/slide-2-desktop.jpg">
-              <source media="(min-width: 768px)" data-src="img/main-slider/slide-2-tablet.jpg" srcset="img/main-slider/slide-2-tablet.jpg">
-              <img class="lozad" data-src="img/main-slider/slide-2-mobile.jpg" src="img/main-slider/slide-1-mobile.jpg" alt="Фотография к новости" loading="lazy">
+              <source media="(min-width: 1440px)" data-src="/img/main-slider/slide-2-desktop.jpg" srcset="/img/main-slider/slide-2-desktop.jpg">
+              <source media="(min-width: 768px)" data-src="/img/main-slider/slide-2-tablet.jpg" srcset="/img/main-slider/slide-2-tablet.jpg">
+              <img class="lozad" data-src="/img/main-slider/slide-2-mobile.jpg" src="/img/main-slider/slide-1-mobile.jpg" alt="Фотография к новости" loading="lazy">
             </picture>
             <div class="main-slider__item-description">
               <div class="main-slider__item-type">
@@ -149,9 +154,9 @@
         <li class="main-slider__item">
           <article class="main-slider__article">
             <picture>
-              <source media="(min-width: 1440px)" data-src="img/main-slider/slide-3-desktop.jpg" srcset="img/main-slider/slide-3-desktop.jpg">
-              <source media="(min-width: 768px)" data-src="img/main-slider/slide-3-tablet.jpg" srcset="img/main-slider/slide-3-tablet.jpg">
-              <img class="lozad" data-src="img/main-slider/slide-3-mobile.jpg" src="img/main-slider/slide-3-mobile.jpg" alt="Фотография к новости" loading="lazy">
+              <source media="(min-width: 1440px)" data-src="/img/main-slider/slide-3-desktop.jpg" srcset="/img/main-slider/slide-3-desktop.jpg">
+              <source media="(min-width: 768px)" data-src="/img/main-slider/slide-3-tablet.jpg" srcset="/img/main-slider/slide-3-tablet.jpg">
+              <img class="lozad" data-src="/img/main-slider/slide-3-mobile.jpg" src="/img/main-slider/slide-3-mobile.jpg" alt="Фотография к новости" loading="lazy">
             </picture>
             <div class="main-slider__item-description">
               <div class="main-slider__item-text">
@@ -163,9 +168,9 @@
         <li class="main-slider__item">
           <article class="main-slider__article">
             <picture>
-              <source media="(min-width: 1440px)" data-src="img/main-slider/slide-4-desktop.jpg" srcset="img/main-slider/slide-4-desktop.jpg">
-              <source media="(min-width: 768px)" data-src="img/main-slider/slide-4-tablet.jpg" srcset="img/main-slider/slide-4-tablet.jpg">
-              <img class="lozad" data-src="img/main-slider/slide-4-mobile.jpg" src="img/main-slider/slide-4-mobile.jpg" alt="Фотография к новости" loading="lazy">
+              <source media="(min-width: 1440px)" data-src="/img/main-slider/slide-4-desktop.jpg" srcset="/img/main-slider/slide-4-desktop.jpg">
+              <source media="(min-width: 768px)" data-src="/img/main-slider/slide-4-tablet.jpg" srcset="/img/main-slider/slide-4-tablet.jpg">
+              <img class="lozad" data-src="/img/main-slider/slide-4-mobile.jpg" src="/img/main-slider/slide-4-mobile.jpg" alt="Фотография к новости" loading="lazy">
             </picture>
             <div class="main-slider__item-description">
               <div class="main-slider__item-text">
@@ -186,43 +191,43 @@
         <ul class="buildings__list">
           <li class="buildings__list-item">
             <button type="button" value="1">
-              <img src="img/buildings/building-1.svg" alt="">
+              <img src="/img/buildings/building-1.svg" alt="">
               <span>Главное</span>
             </button>
           </li>
           <li class="buildings__list-item">
             <button type="button" value="2">
-              <img src="img/buildings/building-2.svg" alt="">
+              <img src="/img/buildings/building-2.svg" alt="">
               <span>Пресня</span>
             </button>
           </li>
           <li class="buildings__list-item">
             <button type="button" value="3">
-              <img src="img/buildings/building-3.svg" alt="">
+              <img src="/img/buildings/building-3.svg" alt="">
               <span>Типография</span>
             </button>
           </li>
           <li class="buildings__list-item">
             <button type="button" value="3">
-              <img src="img/buildings/building-4.svg" alt="">
+              <img src="/img/buildings/building-4.svg" alt="">
               <span>Кржижановский</span>
             </button>
           </li>
           <li class="buildings__list-item">
             <button type="button" value="5">
-              <img src="img/buildings/building-5.svg" alt="">
+              <img src="/img/buildings/building-5.svg" alt="">
               <span>Евтушенко</span>
             </button>
           </li>
           <li class="buildings__list-item">
             <button type="button" value="6">
-              <img src="img/buildings/building-6.svg" alt="">
+              <img src="/img/buildings/building-6.svg" alt="">
               <span>Катынь</span>
             </button>
           </li>
           <li class="buildings__list-item">
             <button type="button" value="7">
-              <img src="img/buildings/building-7.svg" alt="">
+              <img src="/img/buildings/building-7.svg" alt="">
               <span>Медное</span>
             </button>
           </li>
@@ -245,9 +250,9 @@
               <article class="buildings__events-article">
                 <div class="buildings__events-picture">
                   <picture>
-                    <source media="(min-width: 1440px)" data-src="img/buildings/events/building-event-desktop.jpg" srcset="img/buildings/events/building-event-desktop.jpg">
-                    <source media="(min-width: 768px)" data-src="img/buildings/events/building-event-tablet.jpg" srcset="img/buildings/events/building-event-tablet.jpg">
-                    <img class="lozad" data-src="img/buildings/events/building-event-mobile.jpg" src="img/buildings/events/building-event-mobile.jpg" alt="Фотография к новости" loading="lazy">
+                    <source media="(min-width: 1440px)" data-src="/img/buildings/events/building-event-desktop.jpg" srcset="/img/buildings/events/building-event-desktop.jpg">
+                    <source media="(min-width: 768px)" data-src="/img/buildings/events/building-event-tablet.jpg" srcset="/img/buildings/events/building-event-tablet.jpg">
+                    <img class="lozad" data-src="/img/buildings/events/building-event-mobile.jpg" src="/img/buildings/events/building-event-mobile.jpg" alt="Фотография к новости" loading="lazy">
                   </picture>
                 </div>
                 <div class="buildings__events-text">
@@ -287,9 +292,9 @@
               <article class="buildings__events-article">
                 <div class="buildings__events-picture">
                   <picture>
-                    <source media="(min-width: 1440px)" data-src="img/buildings/events/building-event-desktop.jpg" srcset="img/buildings/events/building-event-desktop.jpg">
-                    <source media="(min-width: 768px)" data-src="img/buildings/events/building-event-tablet.jpg" srcset="img/buildings/events/building-event-tablet.jpg">
-                    <img class="lozad" data-src="img/buildings/events/building-event-mobile.jpg" src="img/buildings/events/building-event-mobile.jpg" alt="Фотография к новости" loading="lazy">
+                    <source media="(min-width: 1440px)" data-src="/img/buildings/events/building-event-desktop.jpg" srcset="/img/buildings/events/building-event-desktop.jpg">
+                    <source media="(min-width: 768px)" data-src="/img/buildings/events/building-event-tablet.jpg" srcset="/img/buildings/events/building-event-tablet.jpg">
+                    <img class="lozad" data-src="/img/buildings/events/building-event-mobile.jpg" src="/img/buildings/events/building-event-mobile.jpg" alt="Фотография к новости" loading="lazy">
                   </picture>
                 </div>
                 <div class="buildings__events-text">
@@ -308,9 +313,9 @@
               <article class="buildings__events-article">
                 <div class="buildings__events-picture">
                   <picture>
-                    <source media="(min-width: 1440px)" data-src="img/buildings/events/building-event-desktop.jpg" srcset="img/buildings/events/building-event-desktop.jpg">
-                    <source media="(min-width: 768px)" data-src="img/buildings/events/building-event-tablet.jpg" srcset="img/buildings/events/building-event-tablet.jpg">
-                    <img class="lozad" data-src="img/buildings/events/building-event-mobile.jpg" src="img/buildings/events/building-event-mobile.jpg" alt="Фотография к новости" loading="lazy">
+                    <source media="(min-width: 1440px)" data-src="/img/buildings/events/building-event-desktop.jpg" srcset="/img/buildings/events/building-event-desktop.jpg">
+                    <source media="(min-width: 768px)" data-src="/img/buildings/events/building-event-tablet.jpg" srcset="/img/buildings/events/building-event-tablet.jpg">
+                    <img class="lozad" data-src="/img/buildings/events/building-event-mobile.jpg" src="/img/buildings/events/building-event-mobile.jpg" alt="Фотография к новости" loading="lazy">
                   </picture>
                 </div>
                 <div class="buildings__events-text">
@@ -404,15 +409,17 @@
       <div class="preview__slider">
         <ul class="preview__slider-list">
           <li class="preview__slider-item">
-            <article class="preview__article" style="background-image: url('img/preview-events/preview-slide-1-full-tablet.jpg');">
+            <article class="preview__article" style="background-image: url('/img/preview-events/preview-slide-1-full-tablet.jpg');">
               <div class="preview__article-time">16:30</div>
+              <div class="preview__article-type">Выставка</div>
               <h3><a href="#">Выставка современной истории </a></h3>
               <time class="preview__article-date" datetime="2020-03-20 16:30">20/03/20</time>
             </article>
           </li>
           <li class="preview__slider-item">
-            <article class="preview__article" style="background-image: url('img/preview-events/preview-slide-1-full-tablet.jpg');">
+            <article class="preview__article" style="background-image: url('/img/preview-events/preview-slide-1-full-tablet.jpg');">
               <div class="preview__article-time">16:30</div>
+              <div class="preview__article-type">Выставка</div>
               <h3><a href="#">Экспозиция итальянской культуры</a></h3>
               <time class="preview__article-date" datetime="2020-03-20 16:30">20/03/20</time>
             </article>
@@ -420,6 +427,7 @@
           <li class="preview__slider-item">
             <article class="preview__article">
               <div class="preview__article-time">16:30</div>
+              <div class="preview__article-type">Выставка</div>
               <h3><a href="#">Выставка галереи картин Айвазовского</a></h3>
               <time class="preview__article-date" datetime="2020-03-20 16:30">20/03/20</time>
             </article>
@@ -427,6 +435,7 @@
           <li class="preview__slider-item">
             <article class="preview__article">
               <div class="preview__article-time">16:30</div>
+              <div class="preview__article-type">Выставка</div>
               <h3><a href="#">Выставка галереи картин Айвазовского</a></h3>
               <time class="preview__article-date" datetime="2020-03-20 16:30">20/03/20</time>
             </article>
@@ -434,6 +443,23 @@
           <li class="preview__slider-item">
             <article class="preview__article">
               <div class="preview__article-time">16:30</div>
+              <div class="preview__article-type">Выставка</div>
+              <h3><a href="#">Выставка галереи картин Айвазовского</a></h3>
+              <time class="preview__article-date" datetime="2020-03-20 16:30">20/03/20</time>
+            </article>
+          </li>
+          <li class="preview__slider-item">
+            <article class="preview__article">
+              <div class="preview__article-time">16:30</div>
+              <div class="preview__article-type">Выставка</div>
+              <h3><a href="#">Выставка галереи картин Айвазовского</a></h3>
+              <time class="preview__article-date" datetime="2020-03-20 16:30">20/03/20</time>
+            </article>
+          </li>
+          <li class="preview__slider-item">
+            <article class="preview__article">
+              <div class="preview__article-time">16:30</div>
+              <div class="preview__article-type">Выставка</div>
               <h3><a href="#">Выставка галереи картин Айвазовского</a></h3>
               <time class="preview__article-date" datetime="2020-03-20 16:30">20/03/20</time>
             </article>
@@ -459,9 +485,9 @@
         <li class="projects__list-item">
           <article class="projects__list-item-article">
             <picture>
-              <source media="(min-width: 1440px)" data-src="img/projects/project-1-desktop.jpg" srcset="img/projects/project-1-desktop.jpg">
-              <source media="(min-width: 768px)" data-src="img/projects/project-1-tablet.jpg" srcset="img/projects/project-1-tablet.jpg">
-              <img class="lozad" data-src="img/projects/project-1-mobile.jpg" src="img/projects/project-1-mobile.jpg" alt="Фотография к проекту" loading="lazy">
+              <source media="(min-width: 1440px)" data-src="/img/projects/project-1-desktop.jpg" srcset="/img/projects/project-1-desktop.jpg">
+              <source media="(min-width: 768px)" data-src="/img/projects/project-1-tablet.jpg" srcset="/img/projects/project-1-tablet.jpg">
+              <img class="lozad" data-src="/img/projects/project-1-mobile.jpg" src="/img/projects/project-1-mobile.jpg" alt="Фотография к проекту" loading="lazy">
             </picture>
             <div class="projects__list-item-text">
               <p><a href="#">Экспозиция «Цветы и война» </a></p>
@@ -471,9 +497,9 @@
         <li class="projects__list-item">
           <article class="projects__list-item-article">
             <picture>
-              <source media="(min-width: 1440px)" data-src="img/projects/project-2-desktop.jpg" srcset="img/projects/project-2-desktop.jpg">
-              <source media="(min-width: 768px)" data-src="img/projects/project-2-tablet.jpg" srcset="img/projects/project-2-tablet.jpg">
-              <img class="lozad" data-src="img/projects/project-2-mobile.jpg" src="img/projects/project-2-mobile.jpg" alt="Фотография к проекту" loading="lazy">
+              <source media="(min-width: 1440px)" data-src="/img/projects/project-2-desktop.jpg" srcset="/img/projects/project-2-desktop.jpg">
+              <source media="(min-width: 768px)" data-src="/img/projects/project-2-tablet.jpg" srcset="/img/projects/project-2-tablet.jpg">
+              <img class="lozad" data-src="/img/projects/project-2-mobile.jpg" src="/img/projects/project-2-mobile.jpg" alt="Фотография к проекту" loading="lazy">
             </picture>
             <div class="projects__list-item-text">
               <p><a href="#">Коллекция экспонатов искусства</a></p>
@@ -483,9 +509,9 @@
         <li class="projects__list-item">
           <article class="projects__list-item-article">
             <picture>
-              <source media="(min-width: 1440px)" data-src="img/projects/project-3-desktop.jpg" srcset="img/projects/project-3-desktop.jpg">
-              <source media="(min-width: 768px)" data-src="img/projects/project-3-tablet.jpg" srcset="img/projects/project-3-tablet.jpg">
-              <img class="lozad" data-src="img/projects/project-3-mobile.jpg" src="img/projects/project-3-mobile.jpg" alt="Фотография к проекту" loading="lazy">
+              <source media="(min-width: 1440px)" data-src="/img/projects/project-3-desktop.jpg" srcset="/img/projects/project-3-desktop.jpg">
+              <source media="(min-width: 768px)" data-src="/img/projects/project-3-tablet.jpg" srcset="/img/projects/project-3-tablet.jpg">
+              <img class="lozad" data-src="/img/projects/project-3-mobile.jpg" src="/img/projects/project-3-mobile.jpg" alt="Фотография к проекту" loading="lazy">
             </picture>
             <div class="projects__list-item-text">
               <p><a href="#">Виртуальный музей</a></p>
@@ -495,9 +521,9 @@
         <li class="projects__list-item  projects__list-item--special">
           <div class="projects__list-item-picture">
             <picture>
-              <source media="(min-width: 1440px)" data-src="img/projects/project-spec-desktop.jpg" srcset="img/projects/project-spec-desktop.jpg">
-              <source media="(min-width: 768px)" data-src="img/projects/project-spec-tablet.jpg" srcset="img/projects/project-spec-tablet.jpg">
-              <img class="lozad" data-src="img/projects/project-spec-mobile.jpg" src="img/projects/project-spec-mobile.jpg" alt="Фотография к проекту" loading="lazy">
+              <source media="(min-width: 1440px)" data-src="/img/projects/project-spec-desktop.jpg" srcset="/img/projects/project-spec-desktop.jpg">
+              <source media="(min-width: 768px)" data-src="/img/projects/project-spec-tablet.jpg" srcset="/img/projects/project-spec-tablet.jpg">
+              <img class="lozad" data-src="/img/projects/project-spec-mobile.jpg" src="/img/projects/project-spec-mobile.jpg" alt="Фотография к проекту" loading="lazy">
             </picture>
           </div>
           <div class="projects__list-item-desc">
@@ -509,9 +535,9 @@
         <li class="projects__list-item">
           <article class="projects__list-item-article">
             <picture>
-              <source media="(min-width: 1440px)" data-src="img/projects/project-4-desktop.jpg" srcset="img/projects/project-4-desktop.jpg">
-              <source media="(min-width: 768px)" data-src="img/projects/project-4-tablet.jpg" srcset="img/projects/project-4-tablet.jpg">
-              <img class="lozad" data-src="img/projects/project-4-mobile.jpg" src="img/projects/project-4-mobile.jpg" alt="Фотография к проекту">
+              <source media="(min-width: 1440px)" data-src="/img/projects/project-4-desktop.jpg" srcset="/img/projects/project-4-desktop.jpg">
+              <source media="(min-width: 768px)" data-src="/img/projects/project-4-tablet.jpg" srcset="/img/projects/project-4-tablet.jpg">
+              <img class="lozad" data-src="/img/projects/project-4-mobile.jpg" src="/img/projects/project-4-mobile.jpg" alt="Фотография к проекту">
             </picture>
             <div class="projects__list-item-text">
               <p><a href="#">Музей Революции</a></p>
@@ -521,9 +547,9 @@
         <li class="projects__list-item">
           <article class="projects__list-item-article">
             <picture>
-              <source media="(min-width: 1440px)" data-src="img/projects/project-5-desktop.jpg" srcset="img/projects/project-5-desktop.jpg">
-              <source media="(min-width: 768px)" data-src="img/projects/project-5-tablet.jpg" srcset="img/projects/project-5-tablet.jpg">
-              <img class="lozad" data-src="img/projects/project-5-mobile.jpg" src="img/projects/project-5-mobile.jpg" alt="Фотография к проекту">
+              <source media="(min-width: 1440px)" data-src="/img/projects/project-5-desktop.jpg" srcset="/img/projects/project-5-desktop.jpg">
+              <source media="(min-width: 768px)" data-src="/img/projects/project-5-tablet.jpg" srcset="/img/projects/project-5-tablet.jpg">
+              <img class="lozad" data-src="/img/projects/project-5-mobile.jpg" src="/img/projects/project-5-mobile.jpg" alt="Фотография к проекту">
             </picture>
             <div class="projects__list-item-text">
               <p><a href="#">Россия. XXI век</a></p>
@@ -533,9 +559,9 @@
         <li class="projects__list-item">
           <article class="projects__list-item-article">
             <picture>
-              <source media="(min-width: 1440px)" data-src="img/projects/project-6-desktop.jpg" srcset="img/projects/project-6-desktop.jpg">
-              <source media="(min-width: 768px)" data-src="img/projects/project-6-tablet.jpg" srcset="img/projects/project-6-tablet.jpg">
-              <img class="lozad" data-src="img/projects/project-6-mobile.jpg" src="img/projects/project-6-mobile.jpg" alt="Фотография к проекту">
+              <source media="(min-width: 1440px)" data-src="/img/projects/project-6-desktop.jpg" srcset="/img/projects/project-6-desktop.jpg">
+              <source media="(min-width: 768px)" data-src="/img/projects/project-6-tablet.jpg" srcset="/img/projects/project-6-tablet.jpg">
+              <img class="lozad" data-src="/img/projects/project-6-mobile.jpg" src="/img/projects/project-6-mobile.jpg" alt="Фотография к проекту">
             </picture>
             <div class="projects__list-item-text">
               <p><a href="#">Тверская 21</a></p>
@@ -554,9 +580,9 @@
                 <article class="news__article">
                   <div class="news__photo">
                     <picture>
-                      <source media="(min-width: 1440px)" data-src="img/news/news-pic-main-desktop.jpg" srcset="img/news/news-pic-main-desktop.jpg">
-                      <source media="(min-width: 768px)" data-src="img/news/news-pic-main-tablet.jpg" srcset="img/news/news-pic-main-tablet.jpg">
-                      <img class="lozad" data-src="img/news/news-pic-main-mobile.jpg" src="img/news/news-pic-main-mobile.jpg" alt="Фотография к новости">
+                      <source media="(min-width: 1440px)" data-src="/img/news/news-pic-main-desktop.jpg" srcset="/img/news/news-pic-main-desktop.jpg">
+                      <source media="(min-width: 768px)" data-src="/img/news/news-pic-main-tablet.jpg" srcset="/img/news/news-pic-main-tablet.jpg">
+                      <img class="lozad" data-src="/img/news/news-pic-main-mobile.jpg" src="/img/news/news-pic-main-mobile.jpg" alt="Фотография к новости">
                     </picture>
                   </div>
                   <div class="news__text">
@@ -583,7 +609,7 @@
                     </div>
                   </div>
                   <div class="news__photo">
-                    <img src="img/news/news-pic-1.jpg" alt="Фотография к новости">
+                    <img src="/img/news/news-pic-1.jpg" alt="Фотография к новости">
                   </div>
                 </article>
               </a>
@@ -599,7 +625,7 @@
                     </div>
                   </div>
                   <div class="news__photo">
-                    <img src="img/news/news-pic-2.jpg" alt="Фотография к новости">
+                    <img src="/img/news/news-pic-2.jpg" alt="Фотография к новости">
                   </div>
                 </article>
               </a>
@@ -615,7 +641,7 @@
                     </div>
                   </div>
                   <div class="news__photo">
-                    <img src="img/news/news-pic-2.jpg" alt="Фотография к новости">
+                    <img src="/img/news/news-pic-2.jpg" alt="Фотография к новости">
                   </div>
                 </article>
               </a>
@@ -631,7 +657,7 @@
                     </div>
                   </div>
                   <div class="news__photo">
-                    <img src="img/news/news-pic-1.jpg" alt="Фотография к новости">
+                    <img src="/img/news/news-pic-1.jpg" alt="Фотография к новости">
                   </div>
                 </article>
               </a>
@@ -672,54 +698,54 @@
             <li class="partners__item item">
               <a href="#" class="content">
                 <picture>
-                  <source media="(min-width: 1440px)" data-src="img/partners/partner-1-desktop.png" srcset="img/partners/partner-1-desktop.png">
-                  <source media="(min-width: 768px)" data-src="img/partners/partner-1-tablet.png" srcset="img/partners/partner-1-tablet.png">
-                  <img class="lozad" data-src="img/partners/partner-1-mobile.png" src="img/partners/partner-1-mobile.png" alt="Баннер партнера>">
+                  <source media="(min-width: 1440px)" data-src="/img/partners/partner-1-desktop.png" srcset="/img/partners/partner-1-desktop.png">
+                  <source media="(min-width: 768px)" data-src="/img/partners/partner-1-tablet.png" srcset="/img/partners/partner-1-tablet.png">
+                  <img class="lozad" data-src="/img/partners/partner-1-mobile.png" src="/img/partners/partner-1-mobile.png" alt="Баннер партнера>">
                 </picture>
               </a>
             </li>
             <li class="partners__item item">
               <a href="#" class="content">
                 <picture>
-                  <source media="(min-width: 1440px)" data-src="img/partners/partner-2-desktop.png" srcset="img/partners/partner-2-desktop.png">
-                  <source media="(min-width: 768px)" data-src="img/partners/partner-2-tablet.png" srcset="img/partners/partner-2-tablet.png">
-                  <img class="lozad" data-src="img/partners/partner-2-mobile.png" src="img/partners/partner-2-mobile.png" alt="Баннер партнера>">
+                  <source media="(min-width: 1440px)" data-src="/img/partners/partner-2-desktop.png" srcset="/img/partners/partner-2-desktop.png">
+                  <source media="(min-width: 768px)" data-src="/img/partners/partner-2-tablet.png" srcset="/img/partners/partner-2-tablet.png">
+                  <img class="lozad" data-src="/img/partners/partner-2-mobile.png" src="/img/partners/partner-2-mobile.png" alt="Баннер партнера>">
                 </picture>
               </a>
             </li>
             <li class="partners__item item">
               <a href="#" class="content">
                 <picture>
-                  <source media="(min-width: 1440px)" data-src="img/partners/partner-3-desktop.png" srcset="img/partners/partner-3-desktop.png">
-                  <source media="(min-width: 768px)" data-src="img/partners/partner-3-tablet.png" srcset="img/partners/partner-3-tablet.png">
-                  <img class="lozad" data-src="img/partners/partner-3-mobile.png" src="img/partners/partner-3-mobile.png" alt="Баннер партнера>">
+                  <source media="(min-width: 1440px)" data-src="/img/partners/partner-3-desktop.png" srcset="/img/partners/partner-3-desktop.png">
+                  <source media="(min-width: 768px)" data-src="/img/partners/partner-3-tablet.png" srcset="/img/partners/partner-3-tablet.png">
+                  <img class="lozad" data-src="/img/partners/partner-3-mobile.png" src="/img/partners/partner-3-mobile.png" alt="Баннер партнера>">
                 </picture>
               </a>
             </li>
             <li class="partners__item item">
               <a href="#" class="content">
                 <picture>
-                  <source media="(min-width: 1440px)" data-src="img/partners/partner-5-desktop.png" srcset="img/partners/partner-5-desktop.png">
-                  <source media="(min-width: 768px)" data-src="img/partners/partner-5-tablet.png" srcset="img/partners/partner-5-tablet.png">
-                  <img class="lozad" data-src="img/partners/partner-5-mobile.png" src="img/partners/partner-5-mobile.png" alt="Баннер партнера>">
+                  <source media="(min-width: 1440px)" data-src="/img/partners/partner-5-desktop.png" srcset="/img/partners/partner-5-desktop.png">
+                  <source media="(min-width: 768px)" data-src="/img/partners/partner-5-tablet.png" srcset="/img/partners/partner-5-tablet.png">
+                  <img class="lozad" data-src="/img/partners/partner-5-mobile.png" src="/img/partners/partner-5-mobile.png" alt="Баннер партнера>">
                 </picture>
               </a>
             </li>
             <li class="partners__item item">
               <a href="#" class="content">
                 <picture>
-                  <source media="(min-width: 1440px)" data-src="img/partners/partner-4-desktop.png" srcset="img/partners/partner-4-desktop.png">
-                  <source media="(min-width: 768px)" data-src="img/partners/partner-4-tablet.png" srcset="img/partners/partner-4-tablet.png">
-                  <img class="lozad" data-src="img/partners/partner-4-mobile.png" src="img/partners/partner-4-mobile.png" alt="Баннер партнера>">
+                  <source media="(min-width: 1440px)" data-src="/img/partners/partner-4-desktop.png" srcset="/img/partners/partner-4-desktop.png">
+                  <source media="(min-width: 768px)" data-src="/img/partners/partner-4-tablet.png" srcset="/img/partners/partner-4-tablet.png">
+                  <img class="lozad" data-src="/img/partners/partner-4-mobile.png" src="/img/partners/partner-4-mobile.png" alt="Баннер партнера>">
                 </picture>
               </a>
             </li>
             <li class="partners__item item">
               <a href="#" class="content">
                 <picture>
-                  <source media="(min-width: 1440px)" data-src="img/partners/partner-6-desktop.png" srcset="img/partners/partner-6-desktop.png">
-                  <source media="(min-width: 768px)" data-src="img/partners/partner-6-tablet.png" srcset="img/partners/partner-6-tablet.png">
-                  <img class="lozad" data-src="img/partners/partner-6-mobile.png" src="img/partners/partner-6-mobile.png" alt="Баннер партнера>">
+                  <source media="(min-width: 1440px)" data-src="/img/partners/partner-6-desktop.png" srcset="/img/partners/partner-6-desktop.png">
+                  <source media="(min-width: 768px)" data-src="/img/partners/partner-6-tablet.png" srcset="/img/partners/partner-6-tablet.png">
+                  <img class="lozad" data-src="/img/partners/partner-6-mobile.png" src="/img/partners/partner-6-mobile.png" alt="Баннер партнера>">
                 </picture>
               </a>
             </li>
@@ -730,36 +756,36 @@
             <li class="banners__list-item">
               <a href="#">
                 <picture>
-                  <source media="(min-width: 1440px)" data-src="img/banners/banner-desktop.jpg" srcset="img/banners/banner-desktop.jpg">
-                  <source media="(min-width: 768px)" data-src="img/banners/banner-tablet.jpg" srcset="img/banners/banner-tablet.jpg">
-                  <img class="lozad" data-src="img/banners/banner-mobile.jpg" src="img/banners/banner-mobile.jpg" alt="Баннер партнера>">
+                  <source media="(min-width: 1440px)" data-src="/img/banners/banner-desktop.jpg" srcset="/img/banners/banner-desktop.jpg">
+                  <source media="(min-width: 768px)" data-src="/img/banners/banner-tablet.jpg" srcset="/img/banners/banner-tablet.jpg">
+                  <img class="lozad" data-src="/img/banners/banner-mobile.jpg" src="/img/banners/banner-mobile.jpg" alt="Баннер партнера>">
                 </picture>
               </a>
             </li>
             <li class="banners__list-item">
               <a href="#">
                 <picture>
-                  <source media="(min-width: 1440px)" data-src="img/banners/banner-desktop.jpg" srcset="img/banners/banner-desktop.jpg">
-                  <source media="(min-width: 768px)" data-src="img/banners/banner-tablet.jpg" srcset="img/banners/banner-tablet.jpg">
-                  <img class="lozad" data-src="img/banners/banner-mobile.jpg" src="img/banners/banner-mobile.jpg" alt="Баннер партнера>">
+                  <source media="(min-width: 1440px)" data-src="/img/banners/banner-desktop.jpg" srcset="/img/banners/banner-desktop.jpg">
+                  <source media="(min-width: 768px)" data-src="/img/banners/banner-tablet.jpg" srcset="/img/banners/banner-tablet.jpg">
+                  <img class="lozad" data-src="/img/banners/banner-mobile.jpg" src="/img/banners/banner-mobile.jpg" alt="Баннер партнера>">
                 </picture>
               </a>
             </li>
             <li class="banners__list-item">
               <a href="#">
                 <picture>
-                  <source media="(min-width: 1440px)" data-src="img/banners/banner-desktop.jpg" srcset="img/banners/banner-desktop.jpg">
-                  <source media="(min-width: 768px)" data-src="img/banners/banner-tablet.jpg" srcset="img/banners/banner-tablet.jpg">
-                  <img class="lozad" data-src="img/banners/banner-mobile.jpg" src="img/banners/banner-mobile.jpg" alt="Баннер партнера>">
+                  <source media="(min-width: 1440px)" data-src="/img/banners/banner-desktop.jpg" srcset="/img/banners/banner-desktop.jpg">
+                  <source media="(min-width: 768px)" data-src="/img/banners/banner-tablet.jpg" srcset="/img/banners/banner-tablet.jpg">
+                  <img class="lozad" data-src="/img/banners/banner-mobile.jpg" src="/img/banners/banner-mobile.jpg" alt="Баннер партнера>">
                 </picture>
               </a>
             </li>
             <li class="banners__list-item">
               <a href="#">
                 <picture>
-                  <source media="(min-width: 1440px)" data-src="img/banners/banner-desktop.jpg" srcset="img/banners/banner-desktop.jpg">
-                  <source media="(min-width: 768px)" data-src="img/banners/banner-tablet.jpg" srcset="img/banners/banner-tablet.jpg">
-                  <img class="lozad" data-src="img/banners/banner-mobile.jpg" src="img/banners/banner-mobile.jpg" alt="Баннер партнера>">
+                  <source media="(min-width: 1440px)" data-src="/img/banners/banner-desktop.jpg" srcset="/img/banners/banner-desktop.jpg">
+                  <source media="(min-width: 768px)" data-src="/img/banners/banner-tablet.jpg" srcset="/img/banners/banner-tablet.jpg">
+                  <img class="lozad" data-src="/img/banners/banner-mobile.jpg" src="/img/banners/banner-mobile.jpg" alt="Баннер партнера>">
                 </picture>
               </a>
             </li>
@@ -837,9 +863,9 @@
         </section>
         <section class="footer__logos">
           <ul class="footer__logos-list">
-            <li class="footer__logos-item  footer__logos-item--main"><a href="#"><img src="img/sovrhistory.svg" alt="Логотип ГЦСИР" width="105" height="89"></a></li>
-            <li class="footer__logos-item  footer__logos-item--mincult"><a href="#"><img src="img/minkult.svg" alt="Логотип Мин культуры" width="94" height="76"></a></li>
-            <li class="footer__logos-item  footer__logos-item--cultrf"><a href="#"><img src="img/kultrf.svg" alt="Логотип Культура.рф" width="136" height="18"></a></li>
+            <li class="footer__logos-item  footer__logos-item--main"><a href="#"><img src="/img/sovrhistory.svg" alt="Логотип ГЦСИР" width="105" height="89"></a></li>
+            <li class="footer__logos-item  footer__logos-item--mincult"><a href="#"><img src="/img/minkult.svg" alt="Логотип Мин культуры" width="94" height="76"></a></li>
+            <li class="footer__logos-item  footer__logos-item--cultrf"><a href="#"><img src="/img/kultrf.svg" alt="Логотип Культура.рф" width="136" height="18"></a></li>
           </ul>
         </section>
         <ul class="footer__bottom-list">
@@ -849,8 +875,8 @@
           <li class="footer__bottom-item  footer__bottom-item--quality">
             <a href="#">Оценка качества услуг </a>
             <div class="footer__bottom-icons">
-              <img src="img/icons/like.svg" alt="Иконка мне нравится">
-              <img src="img/icons/dislike.svg" alt="иконка мне не нравится">
+              <img src="/img/icons/like.svg" alt="Иконка мне нравится">
+              <img src="/img/icons/dislike.svg" alt="иконка мне не нравится">
             </div>
           </li>
           <li class="footer__bottom-item  footer__bottom-item--politics"><a href="#">Политика конфиденциальности и обработки персональных данных</a></li>
@@ -858,7 +884,7 @@
         </ul>
       </div>
     </footer>
-    <script src="js/libs.js"></script>
-    <script src="js/scripts.min.js"></script>
+    <script src="/js/libs.js"></script>
+    <script src="/js/scripts.min.js"></script>
   </body>
 </html>

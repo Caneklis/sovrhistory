@@ -3,6 +3,7 @@
   font-family: "Merriweather";
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
   src: local("Merriweather Regular"), local("Merriweather-Regular"),
     url("../fonts/merriweather-v21-latin_cyrillic-regular.woff2")
       format("woff2"),
@@ -15,6 +16,7 @@
   font-family: "Merriweather";
   font-style: normal;
   font-weight: 700;
+  font-display: swap;
   src: local("Merriweather Bold"), local("Merriweather-Bold"),
     url("../fonts/merriweather-v21-latin_cyrillic-700.woff2") format("woff2"),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
@@ -25,6 +27,7 @@
   font-family: "Merriweather";
   font-style: italic;
   font-weight: 700;
+  font-display: swap;
   src: local("Merriweather Bold Italic"), local("Merriweather-BoldItalic"),
     url("../fonts/merriweather-v21-latin_cyrillic-700italic.woff2")
       format("woff2"),
@@ -37,6 +40,7 @@
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
   src: local("Roboto Thin"), local("Roboto-Thin"),
     url("../fonts/roboto.woff2") format("woff2"),
     url("../fonts/roboto.woff") format("woff");

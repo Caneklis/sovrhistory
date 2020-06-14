@@ -1,0 +1,149 @@
+---
+title: Виртуальные выставки
+---
+{% extends "../templates/layouts/_layout-inner.html" %}
+
+{% block content %}
+
+<section class="recommendations">
+  <div class="recommendations__wrapper">
+    <h2 class="recommendations__title">Тематические подборки:</h2>
+    <ul class="recommendations__list">
+      <li class="recommendations__list-item">
+        <article class="recommendations__list-item-article">
+          <img class="lozad" data-src="/img/projects/project-1-mobile.jpg" src="/img/projects/project-1-mobile.jpg"
+            alt="Фотография к проекту" loading="lazy">
+
+          <div class="recommendations__list-item-text">
+            <p><a href="#">Выставки по войне</a></p>
+          </div>
+
+        </article>
+      </li>
+
+      <li class="recommendations__list-item">
+        <article class="recommendations__list-item-article">
+          <img class="lozad" data-src="/img/projects/project-2-mobile.jpg" src="/img/projects/project-2-mobile.jpg"
+            alt="Фотография к проекту" loading="lazy">
+
+          <div class="recommendations__list-item-text">
+            <p><a href="#">Выставки по конституции</a></p>
+          </div>
+        </article>
+      </li>
+
+      <li class="recommendations__list-item">
+        <article class="recommendations__list-item-article">
+          <img class="lozad" data-src="/img/projects/project-3-mobile.jpg" src="/img/projects/project-3-mobile.jpg"
+            alt="Фотография к проекту" loading="lazy">
+
+          <div class="recommendations__list-item-text">
+            <p><a href="#">Выставки по революции</a></p>
+          </div>
+        </article>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="exhibitions">
+  <div class="exhibitions__wrapper">
+
+    <ul class="exhibitions__list">
+      <li class="exhibitions__item">
+        <article class="exhibitions__article  exhibitions__article--virtual">
+          <div class="exhibitions__picture  exhibitions__picture--virtual">
+            <picture>
+              <source media="(min-width: 1440px)" data-src="/img/exhibitions/virtual-desktop.jpg"
+                srcset="/img/exhibitions/virtual-desktop.jpg">
+              <source media="(min-width: 768px)" data-src="/img/exhibitions/virtual-tablet.jpg"
+                srcset="/img/exhibitions/virtual-tablet.jpg">
+              <img class="lozad" data-src="/img/exhibitions/virtual-mobile.jpg"
+                src="/img/exhibitions/virtual-mobile.jpg" alt="Фотография к новости" loading="lazy">
+            </picture>
+
+            <div class="exhibitions__picture-type">выставки по войне</div>
+          </div>
+
+          <div class="exhibitions__text  exhibitions__text--wide">
+            <time class="exhibitions__date" datetime="2020">2020 г.</time>
+            <h2><a href="#">Военная экипировка</a></h2>
+            <p>С 20 сентября 2019 года до 19 января 2020 года пройдет выставка Никаса Сафронова «Иные миры». Работы
+              художника будут представлены в главном здании Музея современной истории России как в традиционном
+              исполнении ...</p>
+          </div>
+        </article>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="sub-nav">
+  <div class="sub-nav__wrapper">
+    <ul class="sub-nav__list  sub-nav__list--wide">
+      <li class="sub-nav__list-item"><a href="#">Анонсы</a></li>
+      <li class="sub-nav__list-item"><a href="#">Региональные и зарубежные</a></li>
+      <li class="sub-nav__list-item"><a href="#">Виртуальные</a></li>
+      <li class="sub-nav__list-item"><a href="#">Архив</a></li>
+    </ul>
+  </div>
+</section>
+
+<section class="banners">
+  <div class="banners__wrapper">
+    <ul class="banners__list  banners__list--grid">
+      <li class="banners__list-item">
+        <a href="#">
+          <picture>
+            <source media="(min-width: 1440px)" data-src="/img/banners/banner-gray-desktop.jpg"
+              srcset="/img/banners/banner-gray-desktop.jpg">
+            <img class="lozad" data-src="/img/banners/banner-gray-mobile.jpg" src="/img/banners/banner-gray-mobile.jpg"
+              alt="Баннер партнера>">
+          </picture>
+        </a>
+      </li>
+      <li class="banners__list-item">
+        <a href="#">
+          <picture>
+            <source media="(min-width: 1440px)" data-src="/img/banners/banner-gray-desktop.jpg"
+              srcset="/img/banners/banner-gray-desktop.jpg">
+            <img class="lozad" data-src="/img/banners/banner-gray-mobile.jpg" src="/img/banners/banner-gray-mobile.jpg"
+              alt="Баннер партнера>">
+          </picture>
+        </a>
+      </li>
+      <li class="banners__list-item">
+        <a href="#">
+          <picture>
+            <source media="(min-width: 1440px)" data-src="/img/banners/banner-gray-desktop.jpg"
+              srcset="/img/banners/banner-gray-desktop.jpg">
+            <img class="lozad" data-src="/img/banners/banner-gray-mobile.jpg" src="/img/banners/banner-gray-mobile.jpg"
+              alt="Баннер партнера>">
+          </picture>
+        </a>
+      </li>
+      <li class="banners__list-item">
+        <a href="#">
+          <picture>
+            <source media="(min-width: 1440px)" data-src="/img/banners/banner-gray-desktop.jpg"
+              srcset="/img/banners/banner-gray-desktop.jpg">
+            <img class="lozad" data-src="/img/banners/banner-gray-mobile.jpg" src="/img/banners/banner-gray-mobile.jpg"
+              alt="Баннер партнера>">
+          </picture>
+        </a>
+      </li>
+      <li class="banners__list-item">
+        <a href="#">
+          <picture>
+            <source media="(min-width: 1440px)" data-src="/img/banners/banner-gray-desktop.jpg"
+              srcset="/img/banners/banner-gray-desktop.jpg">
+            <img class="lozad" data-src="/img/banners/banner-gray-mobile.jpg" src="/img/banners/banner-gray-mobile.jpg"
+              alt="Баннер партнера>">
+          </picture>
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+{% endblock %}

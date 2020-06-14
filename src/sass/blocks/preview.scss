@@ -86,7 +86,8 @@
 }
 
 .preview__article-date,
-.preview__article-time {
+.preview__article-time,
+.preview__article-type {
   width: 100%;
   font-size: 16px;
   line-height: 20px;
@@ -506,15 +507,13 @@
 
     .slick-slide {
       transition: all 0.2s ease;
-      width: 100%;
+      //width: 100%;
     }
 
     .slick-current {
       width: 445px !important;
-      max-width: initial;
-    }
+      max-width: 445px !important;
 
-    .slick-current {
       .preview__article {
         h3 {
           font-size: 25px;
