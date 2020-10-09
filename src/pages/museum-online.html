@@ -1,0 +1,108 @@
+---
+title: Музей онлайн
+---
+{% extends "../templates/layouts/_layout-inner.html" %}
+
+{% block content %}
+
+<section class="museum-online">
+  <div class="museum-online__wrapper">
+    <h2 class="museum-online__title">Онлайн выставки</h2>
+    <ul class="museum-online__list">
+      {% for i in range(0, 5) -%}
+      <li class="museum-online__item  museum-online__item--gray">
+        <a href="#">
+          <article class="museum-online__article">
+            <div class="museum-online__pic">
+              <img class="lozad" data-src="/img/museum-online/museum-online-desktop.jpg"
+                src="/img/museum-online/museum-online-desktop.jpg" alt="Подпись к фотографии">
+            </div>
+            <!--
+              desktop 360*250
+             -->
+            <div class="museum-online__article-text">
+              <p class="museum-online__type">выставка</p>
+              <h3 class="museum-online__item-title">«Путь к Победе: исторические источники свидетельствуют»</h3>
+            </div>
+          </article>
+        </a>
+      </li>
+      {%- endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="museum-online  museum-online--gray">
+  <div class="museum-online__wrapper">
+    <h2 class="museum-online__title">Интерактив</h2>
+    <ul class="museum-online__list">
+      {% for i in range(0, 3) -%}
+      <li class="museum-online__item">
+        <a href="#">
+          <article class="museum-online__article">
+            <div class="museum-online__pic">
+              <img class="lozad" data-src="/img/museum-online/museum-online-desktop.jpg"
+                src="/img/museum-online/museum-online-desktop.jpg" alt="Подпись к фотографии">
+            </div>
+            <div class="museum-online__article-text">
+              <p class="museum-online__type"> Интерактивная игра-квес</p>
+              <h3 class="museum-online__item-title">«Сквозь землю провалиться или секрет подпольной типографии»</h3>
+            </div>
+          </article>
+        </a>
+      </li>
+      {%- endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="museum-online">
+  <div class="museum-online__wrapper">
+    <h2 class="museum-online__title">Виртуальный тур</h2>
+    <ul class="museum-online__list">
+      {% for i in range(0, 3) -%}
+      <li class="museum-online__item  museum-online__item--gray">
+        <a href="#">
+          <article class="museum-online__article">
+            <div class="museum-online__pic">
+              <img class="lozad" data-src="/img/museum-online/museum-online-desktop.jpg"
+                src="/img/museum-online/museum-online-desktop.jpg" alt="Подпись к фотографии">
+            </div>
+            <div class="museum-online__article-text">
+              <p class="museum-online__type">Виртуальный тур</p>
+              <h3 class="museum-online__item-title">Открытое хранение фондов</h3>
+            </div>
+          </article>
+        </a>
+      </li>
+      {%- endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="museum-online  museum-online--gray">
+  <div class="museum-online__wrapper">
+    <h2 class="museum-online__title">Исторические спецпроекты
+    </h2>
+    <ul class="museum-online__list">
+      {% for i in range(0, 3) -%}
+      <li class="museum-online__item">
+        <a href="#">
+          <article class="museum-online__article">
+            <div class="museum-online__pic">
+              <img class="lozad" data-src="/img/museum-online/museum-online-desktop.jpg"
+                src="/img/museum-online/museum-online-desktop.jpg" alt="Подпись к фотографии">
+            </div>
+            <div class="museum-online__article-text">
+              <p class="museum-online__type">выставка</p>
+              <h3 class="museum-online__item-title">«Путь к Победе: исторические источники свидетельствуют» </h3>
+            </div>
+          </article>
+        </a>
+      </li>
+      {%- endfor %}
+    </ul>
+  </div>
+</section>
+
+{% endblock %}

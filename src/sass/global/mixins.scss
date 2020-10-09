@@ -11,20 +11,152 @@
 }
 
 @mixin wrapper {
-  min-width: 320px;
+  width: 100%;
+  // min-width: 320px;
   max-width: 375px;
   margin: 0 auto;
   padding: 0 20px;
 
   @media screen and (min-width: $tablet) {
-    min-width: 768px;
-    max-width: 1200px;
-    padding: 0 5.2%;
+    // min-width: 768px;
+    // max-width: 1200px;
+    width: 768px;
+    max-width: 768px;
+    // padding: 0 5.2%;
+    padding: 0 36px;
   }
 
   @media screen and (min-width: $desktop) {
-    min-width: 1440px;
+    // min-width: 1440px;
+    // max-width: 1440px;
+    width: 1440px;
     max-width: 1440px;
     padding: 0 130px;
+  }
+}
+
+@mixin btn {
+  display: inline-block;
+  padding: 14px 20px;
+  text-decoration: none;
+  border: none;
+  color: #fff;
+
+  background: $s-color;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  transition: all 0.3;
+
+  &:hover {
+    background: #de2b62;
+  }
+
+  &:focus,
+  &:active {
+    background: #ac103f;
+  }
+}
+
+@mixin slider-prev {
+  width: 13px;
+  height: 32px;
+  background-image: url("../img/icons/arrow_left_pink.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  font-size: 0;
+  cursor: pointer;
+  filter: grayscale(1) brightness(10);
+
+  &:hover {
+    filter: grayscale(0) brightness(1);
+  }
+}
+@mixin slider-next {
+  width: 13px;
+  height: 32px;
+  background-image: url("../img/icons/arrow_right_pink.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  font-size: 0;
+  cursor: pointer;
+  filter: grayscale(1) brightness(10);
+
+  &:hover {
+    filter: grayscale(0) brightness(1);
+  }
+}
+
+@mixin section-title {
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 400;
+  color: #292929;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 30px;
+    line-height: 38px;
+  }
+}
+
+@mixin contacts-block {
+  span {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    line-height: 136.39%;
+    /* identical to box height, or 19px */
+
+    color: #b69953;
+  }
+  p {
+    font-family: $base-font;
+    margin: 0;
+    font-size: 18px;
+    line-height: 113.2%;
+    /* or 20px */
+
+    color: #000000;
+
+    a {
+      color: inherit;
+    }
+  }
+
+  @media screen and (min-width: $tablet) {
+    span {
+      font-size: 14px;
+      line-height: 136.39%;
+    }
+
+    p {
+      font-size: 20px;
+      line-height: 113.2%;
+      /* identical to box height, or 23px */
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    span {
+      font-size: 14px;
+      line-height: 136.39%;
+      /* identical to box height, or 19px */
+
+      color: #b69953;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 113.2%;
+      /* or 20px */
+
+      color: #000000;
+    }
   }
 }

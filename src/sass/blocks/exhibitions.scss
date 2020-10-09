@@ -10,6 +10,10 @@
 .exhibitions__item {
   background-color: #f9f9f9;
   margin-bottom: 20px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .exhibitions__picture {
@@ -33,6 +37,12 @@
       font-weight: 700;
       font-size: 12px;
       line-height: 15px;
+    }
+  }
+
+  &--regional {
+    .exhibitions__picture-type {
+      display: none;
     }
   }
 }
@@ -74,12 +84,15 @@
 }
 
 .exhibitions__price {
-  margin-top: 21px;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 20px;
+  .exhibitions__price-text {
+    margin-top: 21px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
 
-  color: #c8134a;
+    color: #c8134a;
+  }
 }
 
 .exhibitions__info {
@@ -95,6 +108,15 @@
   margin-bottom: 14px;
   grid-column-start: 1;
   grid-column-end: 1;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
 .exhibitions__address {
@@ -111,6 +133,15 @@
   align-self: center;
 
   color: #c8134a;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
 .exhibitions__building {
@@ -120,6 +151,27 @@
   img {
     filter: grayscale(1) brightness(3.5);
   }
+
+  .exhibitions__price {
+    .exhibitions__price-text {
+      text-align: right;
+    }
+  }
+}
+
+.exhibition__link-more {
+  display: inline-block;
+  margin-bottom: 35px;
+  font-size: 14px;
+  line-height: 18px;
+  /* identical to box height */
+  font-weight: 700;
+
+  color: #cdbb8f;
+}
+
+.exhibitions__price-btn {
+  @include btn;
 }
 
 @media screen and (min-width: $tablet) {
@@ -136,20 +188,27 @@
     width: 131px;
 
     img {
-      height: 100%;
+      //height: 100%;
     }
 
     &--virtual {
       width: 275px;
+      height: 260px;
+
+      img {
+        height: 100%;
+        object-fit: cover;
+      }
 
       .exhibitions__picture-type {
-        bottom: 31px;
+        top: 194px;
+        bottom: auto;
       }
     }
   }
 
   .exhibitions__text {
-    width: 400px;
+    width: 325px;
     display: flex;
     flex-direction: column;
     padding: 26px 0 30px 30px;
@@ -168,6 +227,13 @@
   .exhibitions__price {
     margin-bottom: 0;
     margin-top: auto;
+    display: flex;
+    align-items: center;
+  }
+
+  .exhibitions__price-btn {
+    order: -1;
+    margin-right: 40px;
   }
 
   .exhibitions__info {
@@ -187,27 +253,17 @@
   .exhibitions__building {
     margin-top: auto;
   }
+
+  .exhibition__link-more {
+    margin-bottom: 40px;
+    font-size: 17px;
+    line-height: 21px;
+  }
 }
 
 @media screen and (min-width: $desktop) {
   .exhibitions__item {
     margin-bottom: 25px;
-  }
-
-  .exhibitions__article {
-    min-height: 317px;
-  }
-
-  .exhibitions__picture {
-    width: 280px;
-
-    &--virtual {
-      width: 280px;
-
-      .exhibitions__picture-type {
-        bottom: 23px;
-      }
-    }
   }
 
   .exhibitions__text {
@@ -220,7 +276,59 @@
     }
   }
 
+  .exhibitions__article {
+    min-height: 317px;
+
+    &--virtual {
+      .exhibitions__text {
+        flex-grow: 1 !important;
+        padding-right: 50px;
+
+        &--wide {
+          flex-grow: 1;
+        }
+      }
+    }
+  }
+
+  .exhibitions__picture {
+    width: 280px;
+
+    &--virtual {
+      width: 280px;
+      height: 198px;
+
+      .exhibitions__picture-type {
+        top: 140px;
+        bottom: auto;
+      }
+    }
+
+    &--regional {
+      position: relative;
+      .exhibitions__picture-type {
+        position: absolute;
+        right: 0;
+        top: 140px;
+        //bottom: 23px;
+        display: block;
+        padding: 10px 16px;
+        background-color: $s-color;
+        color: #fff;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+      }
+    }
+  }
+
   .exhibitions__info {
     width: 235px;
+  }
+
+  .exhibition__link-more {
+    margin-bottom: 100px;
+    font-size: 18px;
+    line-height: 23px;
   }
 }

@@ -1,0 +1,120 @@
+---
+title: Магазин
+subtitle:
+---
+{% extends "../templates/layouts/_layout-inner.html" %}
+
+{% block content %}
+
+
+<section class="shop">
+  <section class="shop__contacts">
+    <picture>
+      <source media="(min-width: 1440px)" data-src="/img/shop/shop-photo-desktop.jpg"
+        srcset="/img/shop/shop-photo-desktop.jpg">
+      <source media="(min-width: 768px)" data-src="/img/shop/shop-photo-tablet.jpg"
+        srcset="/img/shop/shop-photo-tablet.jpg">
+      <img class="lozad" data-src="/img/shop/shop-photo-mobile.jpg" src="/img/shop/shop-photo-mobile.jpg"
+        alt="Фотография товара" loading="lazy">
+    </picture>
+
+    <article class="shop__contacts-list">
+      <div class="shop__contacts-field">
+        <span>Адрес магазина</span>
+        <p>г. Москва, ул. Тверская 21</p>
+      </div>
+      <div class="shop__contacts-field">
+        <span>Часы ратоты</span>
+        <p>Пн-Пт с 8:00 до 16:30</p>
+      </div>
+      <div class="shop__contacts-field">
+        <span>Телефон</span>
+        <p>+7 911 992 99 99</p>
+      </div>
+      <a href="#">Перейти в онлайн магазин</a>
+    </article>
+  </section>
+
+  <div class="shop__wrapper">
+    <div class="shop__text">
+      <div class="shop__text-col">
+        <p> В нашем магазине вы найдете можете приобрести аксессуары, сувениры, подароные наборы и многое другое как для
+          себя, так и водарок.</p>
+      </div>
+
+      <div class="shop__text-col">
+        <p>Так же к каждой выставке наш ассортимент постоянно пополняется и обновляется. ПРиобрести вы можете его на
+          нашем
+          сате или в офлайн магазине.</p>
+      </div>
+    </div>
+
+    <div class="shop__slider">
+      <div class="shop__slider-list">
+        {% for i in range(0, 4) -%}
+        <div class="shop__slider-item">
+          <picture>
+            <source media="(min-width: 1440px)" data-src="/img/shop/shop-slider-desktop.jpg"
+              srcset="/img/shop/shop-slider-desktop.jpg">
+            <source media="(min-width: 768px)" data-src="/img/shop/shop-slider-tablet.jpg"
+              srcset="/img/shop/shop-slider-tablet.jpg">
+            <img class="lozad" data-src="/img/shop/shop-slider-mobile.jpg" src="/img/shop/shop-slider-mobile.jpg"
+              alt="Фотография товара" loading="lazy">
+          </picture>
+        </div>
+        {%- endfor %}
+      </div>
+      <div class="shop__slider-controls">
+        <button class="shop__slider-arrow  shop__slider-arrow--prev">Предыдущий</button>
+        <div class="shop__slider-dots"></div>
+        <button class="shop__slider-arrow  shop__slider-arrow--next">Следующий</button>
+      </div>
+    </div>
+  </div>
+
+
+  <section class="shop__parts">
+    <div class="shop__wrapper">
+      <h2 class="shop__parts-title">Разделы онлайн-магазина</h2>
+    </div>
+
+    <section class="shop__sub-nav">
+      <div class="shop__sub-nav-wrapper">
+        <ul class="shop__sub-nav-list">
+          <li class="shop__sub-nav-item"><a href="#">Детям</a></li>
+          <li class="shop__sub-nav-item"><a href="#">Сувениры</a></li>
+          <li class="shop__sub-nav-item"><a href="#">Книги</a></li>
+          <li class="shop__sub-nav-item"><a href="#">Текстиль</a></li>
+          <li class="shop__sub-nav-item"><a href="#">Издания к выставкам</a></li>
+          <li class="shop__sub-nav-item"><a href="#">Плакаты</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="shop__parts-list">
+      <div class="shop__wrapper">
+        <h2 class="shop__parts-title">Подарочные наборы</h2>
+        <ul class="shop__list  shop__list--3-items">
+          {% for i in range(0, 6) -%}
+          <li class="shop__list-item">
+            <picture>
+              <source media="(min-width: 1440px)" data-src="/img/shop/shop-desktop.jpg"
+                srcset="/img/shop/shop-desktop.jpg">
+              <source media="(min-width: 768px)" data-src="/img/shop/shop-tablet.jpg"
+                srcset="/img/shop/shop-tablet.jpg">
+              <img class="lozad" data-src="/img/shop/shop-mobile.jpg" src="/img/shop/shop-mobile.jpg"
+                alt="Фотография товара" loading="lazy">
+            </picture>
+            <h3>Ко Дню Победы</h3>
+            <a class="btn" href="#">Купить</a>
+          </li>
+          {%- endfor %}
+        </ul>
+      </div>
+    </section>
+
+  </section>
+</section>
+
+
+{% endblock %}

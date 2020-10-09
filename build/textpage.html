@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Человек и война. Нерасказанная история</title>
+    <link rel="stylesheet" href="/css/style.min.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="/img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+  </head>
+  <body>
+    <div class="marquee">
+      <div class="marquee__wrapper">
+        <div class="marquee__text">
+          <p>Внимание! В связи с осложнившейся ситуацией по коронавирусу, мы зак...</p>
+        </div>
+        <a href="#" class="marquee__link">Подробнее</a>
+        <button class="marquee__close-btn" type="button"><span class="visually-hidden">Закрыть строку</span></button>
+      </div>
+    </div>
+    <header class="header  header--inner">
+      <div class="header__wrapper">
+        <div class="header__logo">
+          <a href="#" class="logo">
+            <img src="/img/logo.svg" alt="Логотип Государственный центральный музей современной истории России" width="49" height="20">
+            <div class="logo__text">Государственный центральный музей современной истории России</div>
+            <div class="logo__slogan">Историю создаете вы!</div>
+          </a>
+        </div>
+        <div class="header__user-block">
+          <div class="lang">
+            <button class="lang__btn" type="button">RU</button>
+            <ul class="lang__list">
+              <li class="lang__item"><a href="#">RU</a></li>
+              <li class="lang__item"><a href="#">EN</a></li>
+              <li class="lang__item"><a href="#">日本</a></li>
+            </ul>
+          </div>
+          <div class="header__search">
+            <form action="#" method="GET" class="header__search-form">
+              <input type="text">
+              <button type="submit" class="header__search-form-btn"><span class="visually-hidden">Найти</span></button>
+            </form>
+            <button class="header__search-activate" type="button"><span class="visually-hidden">Открыть форму поиска</span></button>
+          </div>
+          <ul class="header__menu-list">
+            <li class="header__menu-item"><a href="#">Билеты</a></li>
+            <li class="header__menu-item"><a href="#">Адреса</a></li>
+            <li class="header__menu-item"><a href="#">Время работы</a></li>
+          </ul>
+        </div>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Меню</span></button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="ya.ru">Посетителям</a>
+              <ul class="main-nav__sublist">
+                <li><a href="#">Экскурсии</a></li>
+                <li><a href="#">Лекции и музейные занятия</a></li>
+                <li><a href="#">Образовательные проекты</a></li>
+                <li><a href="#">Билеты и расписание</a></li>
+                <li><a href="#">Экскурсии</a></li>
+                <li><a href="#">Лекции и музейные занятия</a></li>
+                <li><a href="#">Образовательные проекты</a></li>
+                <li><a href="#">Билеты и расписание</a></li>
+              </ul>
+            </li>
+            <li class="main-nav__item  main-nav__item--active">
+              <a href="#">Выставка</a>
+              <ul class="main-nav__sublist">
+                <li><a href="#">Экскурсии</a></li>
+                <li><a href="#">Лекции и музейные занятия</a></li>
+                <li><a href="#">Образовательные проекты</a></li>
+                <li><a href="#">Билеты и расписание</a></li>
+              </ul>
+            </li>
+            <li class="main-nav__item"><a href="#">События</a></li>
+            <li class="main-nav__item"><a href="#">Образование</a></li>
+            <li class="main-nav__item">
+              <a href="#">Музей</a>
+              <ul class="main-nav__sublist">
+                <li><a href="#">Экскурсии</a></li>
+                <li><a href="#">Лекции и музейные занятия</a></li>
+                <li><a href="#">Образовательные проекты</a></li>
+                <li><a href="#">Билеты и расписание</a></li>
+              </ul>
+            </li>
+            <li class="main-nav__item"><a href="#">Партнеры</a></li>
+            <li class="main-nav__item"><a href="#">Магазин</a></li>
+            <li class="main-nav__item  main-nav__item--contrast"><a class="js-contrast-version"><img src="/img/glasses.svg" alt="Иконка версии для слабовидящих"><span class="visually-hidden">Версия для слабовидящих</span></a>
+              <a class="js-normal-version">Обычная версия</a>
+            </li>
+            <li>
+              <ul class="main-nav__header-menu">
+                <li class="main-nav__header-item"><a href="#">Билеты</a></li>
+                <li class="main-nav__header-item"><a href="#">Адреса</a></li>
+                <li class="main-nav__header-item"><a href="#">Время работы</a></li>
+              </ul>
+            </li>
+            <li class="social social--header">
+              <ul class="social__list">
+                <li class="social__item">
+                  <a href="#" class="social__link">
+                    <span class="visually-hidden">Страница в ВК</span>
+                    <svg class="icon" width="44" height="44" viewBox="0 0 44 44">
+                      <use xlink:href="/img/sprite_auto.svg#vk" x="0" y="0" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="#" class="social__link">
+                    <span class="visually-hidden">Страница в Facebook</span>
+                    <svg class="icon" width="44" height="44" viewBox="0 0 44 44">
+                      <use xlink:href="/img/sprite_auto.svg#facebook" x="0" y="0" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="#" class="social__link">
+                    <span class="visually-hidden">Страница в одноклассниках</span>
+                    <svg class="icon" width="44" height="44" viewBox="0 0 44 44">
+                      <use xlink:href="/img/sprite_auto.svg#ok" x="0" y="0" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="#" class="social__link">
+                    <span class="visually-hidden">Канал в Телеграм</span>
+                    <svg class="icon" width="44" height="44" viewBox="0 0 44 44">
+                      <use xlink:href="/img/sprite_auto.svg#telegram" x="0" y="0" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="#" class="social__link">
+                    <span class="visually-hidden">Страница в Инстаграм</span>
+                    <svg class="icon" width="44" height="44" viewBox="0 0 44 44">
+                      <use xlink:href="/img/sprite_auto.svg#instagramm" x="0" y="0" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="#" class="social__link">
+                    <span class="visually-hidden">Твиттер аккаунт</span>
+                    <svg class="icon" width="44" height="44" viewBox="0 0 44 44">
+                      <use xlink:href="/img/sprite_auto.svg#twitter" x="0" y="0" />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="main-nav__footer-item">
+              <div class="main-nav__footer-logo">
+                <img src="/img/logo-menu-mobile.svg" alt="Логотип Государственный центральный музей современной истории России">
+                <p>Государственный центральный музей современной истории России</p>
+              </div>
+              <div class="main-nav__footer-links">
+                <a href="#">Открыть полную версию сайта</a>
+                <a href="#">На главную</a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="breadcrumbs">
+      <div class="breadcrumbs__wrapper">
+        <a href="#" class="breadcrumbs__link">на главную</a>
+        <h2 class="breadcrumbs__title">Человек и война. Нерасказанная история</h2>
+        <h2 class="breadcrumbs__subtitle">Подзаголовок выставки который мельче</h2>
+      </div>
+    </div>
+    <section class="text">
+      <div class="text__wrapper">
+        <div class="text__date">21 февраля 2020 - 30 июня 2020</div>
+      </div>
+      <div class="text__header-pic">
+        <picture>
+          <source media="(min-width: 1440px)" data-src="/img/text/text-img-desktop.jpg" srcset="/img/text/text-img-desktop.jpg">
+          <source media="(min-width: 768px)" data-src="/img/text/text-img-tablet.jpg" srcset="/img/text/text-img-tablet.jpg">
+          <img class="lozad" data-src="/img/text/text-img-mobile.jpg" src="/img/text/text-img-mobile.jpg" alt="Фотография к новости" loading="lazy">
+        </picture>
+        <div class="text__header-description">Подпись к титульной картинке</div>
+        <img src="/img/text/banner-small.jpg" alt="">
+        <img src="/img/text/banner-large.jpg" alt="">
+      </div>
+      <div class="text__wrapper">
+        <article class="text__grid">
+          <section class="text__info">
+            <a class="text__info-btn" href="#">Смотреть выставку</a>
+            <div class="text__date">21 февраля 2020 - 30 июня 2020</div>
+            <div class="text__info-place"><a href="#">Музей современной истории России</a></div>
+            <div class="text__info-price">
+              <div class="text__price-left">600 ₽</div>
+              <div class="text__price-right">Стоимость посещения</div>
+            </div>
+            <a class="text__info-btn" href="#">Купить билет</a>
+            <div class="text__info-description"><a href="#">Входит в спецпроект «Нерассказанные истории: война»</a></div>
+          </section>
+          <section class="text__title">
+            <h3>21 февраля 2020 г. в Музее современной истории России открылся масштабный выставочный проект «Человек и война. Нерассказанная история», посвящённый 75-летию Победы в Великой Отечественной войне, которая несомненно стала очень важным и значимым периодом в жизни народа России и СССР</h3>
+          </section>
+          <section class="text__article">
+            <p>В центре внимания выставки — человек и его бытие в экстремальных условиях военной повседневности. Выставка представляет события тех лет не только через предметы, свидетельствующие о знаменитых сражениях, блестящих операциях и героизме советских людей. Она рассказывает личные истории: через стёршийся на сгибах солдатский треугольник, пожелтевшую фотокарточку, через гильзу — талисман, прошедший с хозяином пол-Европы; через кусочек «хлеба» из льняных жмыхов, обваленный в овсяной шелухе, — подарок рабочим завода «Большевик» на Новый год; через комплекс вещей, принадлежавших студенткам Московского художественного училища (гитлеровцы пытали их, затем расстреляли и для устрашения повесили трупы девушек в г. Волоколамске); через предметы, связанные с жизнью и судьбой первой женщины-министра Александры Коллонтай, знаменитого разведчика Николая Кузнецова, выдающейся певицы и актрисы Клавдии Шульженко, маршала Константина Рокоссовского и многих других героев тех лет. Личные истории очевидцев — бесценные свидетельства эпохи, без которых невозможно осмыслить героическую и трагическую историю нашей страны.</p>
+            <p>На выставке будут представлены более 300 предметов, среди которых — материалы, скомплектованные в военные годы, недавно найденные артефакты, материалы из семейных альбомов.... </p>
+            <a href="#" class="read-more-show hide">Подробнее</a>
+            <div class="read-more-content">
+              <p>Начиная с июня 1941 г. Музей современной истории России пополнял коллекцию документами и предметами, связанными с Великой Отечественной войной, и до сих пор специалисты занимаются изучением, реставрацией и сбором новых материалов, посвящённых трагическим 1418 дням войны.</p>
+              <p>Через личные истории на выставке будут показаны важнейшие вехи войны и затронуты такие глобальные темы, как всеобщая мобилизация, жизнь и подвиг тыла, научные разработки (в том числе создание советского атомного проекта), вклад Русской православной церкви в борьбу с нацизмом, деятельность артистов и творческих коллективов на фронте, работа дипломатического корпуса и внешней разведки, жизнь на оккупированных территориях, проблема сиротства.</p>
+              <p>Выставка является частью мультимедийного образовательного выставочного проекта «Человек и война. Нерассказанная история. К 75-летию Победы в Великой Отечественной войне 1941–1945 гг.», подготовленного Музеем и автономной некоммерческой организацией дополнительного образования «Центр народного просвещения» при поддержке Фонда президентских грантов.</p>
+              <a href="#" class="read-more-hide hide">Свернуть</a>
+            </div>
+          </section>
+          <div class="text__video">
+            <div class="video">
+              <a class="video__link" href="https://youtu.be/l7_JYvGFjzw">
+                <img class="video__media" src="https://i.ytimg.com/vi/8tLH4HYCCgY/maxresdefault.jpg" alt="Описание">
+              </a>
+              <button class="video__button" type="button" aria-label="Запустить видео">
+                <svg width="160" height="122" viewBox="0 0 160 122" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0)">
+                    <rect x="33.6" y="14.4473" width="104" height="91.5" fill="white" />
+                    <path d="M60.0121 91.4954V30.4923L110.03 60.9969L60.0121 91.4954ZM158.4 26.3281C158.4 26.3281 156.836 14.3653 152.036 9.09841C145.945 2.19914 139.127 2.14986 136.006 1.76794C113.618 0 80.0303 0 80.0303 0H79.9515C79.9515 0 46.3697 0 23.9818 1.76178C20.8606 2.15602 14.0424 2.19298 7.95152 9.09225C3.16364 14.3529 1.58788 26.3219 1.58788 26.3219C1.58788 26.3219 0 40.3607 0 54.3933V67.5512C0 81.5962 1.6 95.6288 1.6 95.6288C1.6 95.6288 3.16364 107.585 7.96364 112.84C14.0545 119.739 22.0424 119.53 25.6 120.251C38.4 121.581 80 121.994 80 121.994C80 121.994 113.618 121.932 136.012 120.189C139.133 119.782 145.952 119.745 152.042 112.834C156.83 107.579 158.406 95.6226 158.406 95.6226C158.406 95.6226 160.006 81.59 160.006 67.5451V54.3933C160 40.3607 158.4 26.3281 158.4 26.3281Z" fill="#FF0000" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0">
+                      <rect width="160" height="122" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="text__share">
+            <section class="social">
+              <h2 class="social__title">Поделиться в соцсетях:</h2>
+              <ul class="social__list  social__list--in-text">
+                <li class="social__item"><a href="#" class="social__link  social__link--fb"><span class="visually-hidden">Вк</span></a></li>
+                <li class="social__item"><a href="#" class="social__link  social__link--vk"><span class="visually-hidden"></span></a></li>
+                <li class="social__item"><a href="#" class="social__link  social__link--ok"><span class="visually-hidden"></span></a></li>
+                <li class="social__item"><a href="#" class="social__link  social__link--inst"><span class="visually-hidden"></span></a></li>
+                <li class="social__item"><a href="#" class="social__link  social__link--tw"><span class="visually-hidden"></span></a></li>
+              </ul>
+            </section>
+          </div>
+          <div class="text__download">
+            <a href="#" class="download-link">Скачать PDF-релиз</a>
+          </div>
+        </article>
+      </div>
+      <div class="text__slider">
+        <div class="popup-slider">
+          <div class="popup__slider-list" id="lightgallery">
+            <div class="popup__slider-item">
+              <a href="/img/text/popup/popup-desktop.jpg" data-srcset="
+            /img/text/popup/popup-mobile.jpg 375w,
+            /img/text/popup/popup-tablet.jpg 768w,
+            /img/text/popup/popup-desktop.jpg 1440w" data-sizes="(min-width: 320px) 768px, 1440px" data-sub-html="<h4>Название фотографии</h4><p>Подпись к данной фотографии которая обьясняет чуть больше чем название и может быть в несколько строк</p>">
+                <picture>
+                  <source media="(min-width: 1440px)" data-src="/img/text/slider/slide-img-1-desktop.jpg" srcset="/img/text/slider/slide-img-1-desktop.jpg">
+                  <img class="lozad" data-src="/img/text/slider/slide-img-1-mobile.jpg" src="/img/text/slider/slide-img-1-mobile.jpg" alt="Название фотографии" loading="lazy">
+                </picture>
+              </a>
+            </div>
+            <div class="popup__slider-item">
+              <a href="/img/text/popup/popup-desktop.jpg" data-srcset="
+          /img/text/popup/popup-mobile.jpg 375w,
+          /img/text/popup/popup-tablet.jpg 768w,
+          /img/text/popup/popup-desktop.jpg 1440w" data-sizes="(min-width: 320px) 768px, 1440px" data-sub-html="<h4>Название фотографии 2</h4><p>Подпись к данной фотографии которая обьясняет чуть больше чем название и может быть в несколько строк</p>">
+                <picture>
+                  <source media="(min-width: 1440px)" data-src="/img/text/slider/slide-img-2-desktop.jpg" srcset="/img/text/slider/slide-img-2-desktop.jpg">
+                  <img class="lozad" data-src="/img/text/slider/slide-img-2-mobile.jpg" src="/img/text/slider/slide-img-2-mobile.jpg" alt="Название фотографии" loading="lazy">
+                </picture>
+              </a>
+            </div>
+            <div class="popup__slider-item">
+              <a href="/img/text/popup/popup-desktop.jpg" data-srcset="
+          /img/text/popup/popup-mobile.jpg 375w,
+          /img/text/popup/popup-tablet.jpg 768w,
+          /img/text/popup/popup-desktop.jpg 1440w" data-sizes="(min-width: 320px) 768px, 1440px" data-sub-html="<h4>Название фотографии</h4><p>Подпись к данной фотографии которая обьясняет чуть больше чем название и может быть в несколько строк</p>">
+                <picture>
+                  <source media="(min-width: 1440px)" data-src="/img/text/slider/slide-img-3-desktop.jpg" srcset="/img/text/slider/slide-img-3-desktop.jpg">
+                  <img class="lozad" data-src="/img/text/slider/slide-img-3-mobile.jpg" src="/img/text/slider/slide-img-3-mobile.jpg" alt="Название фотографии" loading="lazy">
+                </picture>
+              </a>
+            </div>
+            <div class="popup__slider-item">
+              <a href="/img/text/popup/popup-desktop.jpg" data-srcset="
+          /img/text/popup/popup-mobile.jpg 375w,
+          /img/text/popup/popup-tablet.jpg 768w,
+          /img/text/popup/popup-desktop.jpg 1440w" data-sizes="(min-width: 320px) 768px, 1440px" data-sub-html="<h4>Название фотографии 3</h4><p>Подпись к данной фотографии которая обьясняет чуть больше чем название и может быть в несколько строк</p>">
+                <picture>
+                  <source media="(min-width: 1440px)" data-src="/img/text/slider/slide-img-4-desktop.jpg" srcset="/img/text/slider/slide-img-4-desktop.jpg">
+                  <img class="lozad" data-src="/img/text/slider/slide-img-4-mobile.jpg" src="/img/text/slider/slide-img-4-mobile.jpg" alt="Название фотографии" loading="lazy">
+                </picture>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="table">
+        <div class="table__wrapper">
+          <h2 class="table__title">Табличное отображение</h2>
+          <table>
+            <tr>
+              <th>Экскурсия</th>
+              <th>Адрес объекта</th>
+              <th>Дата экскурсии</th>
+            </tr>
+            <tr>
+              <td>
+                <b>Экскурсия</b>
+                <p>Черноземье и земледелие в условиях зараженности радиацией</p>
+                <p><a href="#">Подробнее</a></p>
+              </td>
+              <td>
+                <b>Адрес объекта</b>
+                <p>Россия, г. Москва, пер. Знаменский Малый, д. 3/5, стр. 10</p>
+              </td>
+              <td>
+                <b>Дата экскурсии</b>
+                <p>16 сентября, 15:30</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <b>Экскурсия</b>
+                <p>Черноземье и земледелие в условиях зараженности радиацией</p>
+                <p><a href="#">Подробнее</a></p>
+              </td>
+              <td>
+                <b>Адрес объекта</b>
+                <p>Россия, г. Москва, пер. Знаменский Малый, д. 3/5, стр. 10</p>
+              </td>
+              <td>
+                <b>Дата экскурсии</b>
+                <p>16 сентября, 15:30</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <b>Экскурсия</b>
+                <p>Черноземье и земледелие в условиях зараженности радиацией</p>
+                <p><a href="#">Подробнее</a></p>
+              </td>
+              <td>
+                <b>Адрес объекта</b>
+                <p>Россия, г. Москва, пер. Знаменский Малый, д. 3/5, стр. 10</p>
+              </td>
+              <td>
+                <b>Дата экскурсии</b>
+                <p>16 сентября, 15:30</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <b>Экскурсия</b>
+                <p>Черноземье и земледелие в условиях зараженности радиацией</p>
+                <p><a href="#">Подробнее</a></p>
+              </td>
+              <td>
+                <b>Адрес объекта</b>
+                <p>Россия, г. Москва, пер. Знаменский Малый, д. 3/5, стр. 10</p>
+              </td>
+              <td>
+                <b>Дата экскурсии</b>
+                <p>16 сентября, 15:30</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </section>
+      <section class="table">
+        <div class="table__wrapper">
+          <h2 class="table__title">Связанные события:</h2>
+        </div>
+      </section>
+      <section class="preview  preview--full-page">
+        <!-- <h2 class="preview__subtitle  preview__subtitle--no-padding">Связанные события:</h2> -->
+        <div class="preview__slider ">
+          <div class="preview__slider-controls">
+            <button class="preview__slider-prev" type="button"><span class="visually-hidden">Предыдущий слайд</span></button>
+          </div>
+          <ul class="preview__slider-list">
+            <li class="preview__slider-item">
+              <article class="preview__article" style="background-image: url('/img/preview-events/preview-slide-1-full-tablet.jpg');">
+                <div class="preview__article-time">16:30</div>
+                <div class="preview__article-type">Выставка</div>
+                <h3><a href="#">Выставка современной истории </a></h3>
+                <time class="preview__article-date" datetime="2020-03-20 16:30">20/03/20</time>
+              </article>
+            </li>
+            <li class="preview__slider-item">
+              <article class="preview__article" style="background-image: url('/img/preview-events/preview-slide-1-full-tablet.jpg');">
+                <div class="preview__article-time">16:30</div>
+                <div class="preview__article-type">Выставка</div>
+                <h3><a href="#">Экспозиция итальянской культуры</a></h3>
+                <time class="preview__article-date" datetime="2020-03-20 16:30">20/03/20</time>
+              </article>
+            </li>
+            <li class="preview__slider-item">
+              <article class="preview__article">
+                <div class="preview__article-time">16:30</div>
+                <div class="preview__article-type">Выставка</div>
+                <h3><a href="#">Выставка галереи картин Айвазовского</a></h3>
+                <time class="preview__article-date" datetime="2020-03-20 16:30">20/03/20</time>
+              </article>
+            </li>
+            <li class="preview__slider-item">
+              <article class="preview__article">
+                <div class="preview__article-time">16:30</div>
+                <div class="preview__article-type">Выставка</div>
+                <h3><a href="#">Выставка галереи картин Айвазовского</a></h3>
+                <time class="preview__article-date" datetime="2020-03-20 16:30">20/03/20</time>
+              </article>
+            </li>
+            <li class="preview__slider-item">
+              <article class="preview__article">
+                <div class="preview__article-time">16:30</div>
+                <div class="preview__article-type">Выставка</div>
+                <h3><a href="#">Выставка галереи картин Айвазовского</a></h3>
+                <time class="preview__article-date" datetime="2020-03-20 16:30">20/03/20</time>
+              </article>
+            </li>
+            <li class="preview__slider-item">
+              <article class="preview__article">
+                <div class="preview__article-time">16:30</div>
+                <div class="preview__article-type">Выставка</div>
+                <h3><a href="#">Выставка галереи картин Айвазовского</a></h3>
+                <time class="preview__article-date" datetime="2020-03-20 16:30">20/03/20</time>
+              </article>
+            </li>
+            <li class="preview__slider-item">
+              <article class="preview__article">
+                <div class="preview__article-time">16:30</div>
+                <div class="preview__article-type">Выставка</div>
+                <h3><a href="#">Выставка галереи картин Айвазовского</a></h3>
+                <time class="preview__article-date" datetime="2020-03-20 16:30">20/03/20</time>
+              </article>
+            </li>
+          </ul>
+          <div class="preview__slider-controls">
+            <button class="preview__slider-next" type="button"><span class="visually-hidden">Следующий слайд</span></button>
+          </div>
+        </div>
+      </section>
+      <section class="banners">
+        <div class="banners__wrapper">
+          <ul class="banners__list  banners__list--grid">
+            <li class="banners__list-item">
+              <a href="#">
+                <picture>
+                  <source media="(min-width: 1440px)" data-src="/img/banners/banner-gray-desktop.jpg" srcset="/img/banners/banner-gray-desktop.jpg">
+                  <img class="lozad" data-src="/img/banners/banner-gray-mobile.jpg" src="/img/banners/banner-gray-mobile.jpg" alt="Баннер партнера>">
+                </picture>
+                <p>Наименование конкретного партнера</p>
+              </a>
+            </li>
+            <li class="banners__list-item">
+              <a href="#">
+                <picture>
+                  <source media="(min-width: 1440px)" data-src="/img/banners/banner-gray-desktop.jpg" srcset="/img/banners/banner-gray-desktop.jpg">
+                  <img class="lozad" data-src="/img/banners/banner-gray-mobile.jpg" src="/img/banners/banner-gray-mobile.jpg" alt="Баннер партнера>">
+                </picture>
+                <p>Наименование конкретного партнера</p>
+              </a>
+            </li>
+            <li class="banners__list-item">
+              <a href="#">
+                <picture>
+                  <source media="(min-width: 1440px)" data-src="/img/banners/banner-gray-desktop.jpg" srcset="/img/banners/banner-gray-desktop.jpg">
+                  <img class="lozad" data-src="/img/banners/banner-gray-mobile.jpg" src="/img/banners/banner-gray-mobile.jpg" alt="Баннер партнера>">
+                </picture>
+                <p>Наименование конкретного партнера</p>
+              </a>
+            </li>
+            <li class="banners__list-item">
+              <a href="#">
+                <picture>
+                  <source media="(min-width: 1440px)" data-src="/img/banners/banner-gray-desktop.jpg" srcset="/img/banners/banner-gray-desktop.jpg">
+                  <img class="lozad" data-src="/img/banners/banner-gray-mobile.jpg" src="/img/banners/banner-gray-mobile.jpg" alt="Баннер партнера>">
+                </picture>
+                <p>Наименование конкретного партнера</p>
+              </a>
+            </li>
+            <li class="banners__list-item">
+              <a href="#">
+                <picture>
+                  <source media="(min-width: 1440px)" data-src="/img/banners/banner-gray-desktop.jpg" srcset="/img/banners/banner-gray-desktop.jpg">
+                  <img class="lozad" data-src="/img/banners/banner-gray-mobile.jpg" src="/img/banners/banner-gray-mobile.jpg" alt="Баннер партнера>">
+                </picture>
+                <p>Наименование конкретного партнера</p>
+              </a>
+            </li>
+            <li class="banners__list-item">
+              <a href="#">
+                <picture>
+                  <source media="(min-width: 1440px)" data-src="/img/banners/banner-gray-desktop.jpg" srcset="/img/banners/banner-gray-desktop.jpg">
+                  <img class="lozad" data-src="/img/banners/banner-gray-mobile.jpg" src="/img/banners/banner-gray-mobile.jpg" alt="Баннер партнера>">
+                </picture>
+                <p>Наименование конкретного партнера</p>
+              </a>
+            </li>
+            <li class="banners__list-item">
+              <a href="#">
+                <picture>
+                  <source media="(min-width: 1440px)" data-src="/img/banners/banner-gray-desktop.jpg" srcset="/img/banners/banner-gray-desktop.jpg">
+                  <img class="lozad" data-src="/img/banners/banner-gray-mobile.jpg" src="/img/banners/banner-gray-mobile.jpg" alt="Баннер партнера>">
+                </picture>
+                <p>Наименование конкретного партнера</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="shop">
+        <div class="shop__wrapper">
+          <div class="shop__header">
+            <h2 class="shop__title">Магазин</h2>
+            <a href="#" class="shop__link">Перейти в магазин</a>
+          </div>
+          <ul class="shop__list">
+            <li class="shop__item">
+              <div class="shop__item-picture">
+                <picture>
+                  <source media="(min-width: 1440px)" data-src="/img/shop/shop-pic-desktop.jpg" srcset="/img/shop/shop-pic-desktop.jpg">
+                  <img class="lozad" data-src="/img/shop/shop-pic-mobile.jpg" src="/img/shop/shop-pic-mobile.jpg" alt="Баннер партнера>">
+                </picture>
+              </div>
+              <div class="shop__item-description">
+                <h3>Раздел каталога</h3>
+                <p>Описание какого-то товара который представлен в этом каталоге но при этом не является его основной частью зато относится к выставке</p>
+                <a href="#" class="shop__item-link">Подробнее</a>
+              </div>
+            </li>
+            <li class="shop__item">
+              <div class="shop__item-picture">
+                <picture>
+                  <source media="(min-width: 1440px)" data-src="/img/shop/shop-pic-desktop.jpg" srcset="/img/shop/shop-pic-desktop.jpg">
+                  <img class="lozad" data-src="/img/shop/shop-pic-mobile.jpg" src="/img/shop/shop-pic-mobile.jpg" alt="Баннер партнера>">
+                </picture>
+              </div>
+              <div class="shop__item-description">
+                <h3>Раздел каталога</h3>
+                <p>Описание какого-то товара который представлен в этом каталоге но при этом не является его основной частью зато относится к выставке</p>
+                <a href="#" class="shop__item-link">Подробнее</a>
+              </div>
+            </li>
+            <li class="shop__item">
+              <div class="shop__item-picture">
+                <picture>
+                  <source media="(min-width: 1440px)" data-src="/img/shop/shop-pic-desktop.jpg" srcset="/img/shop/shop-pic-desktop.jpg">
+                  <img class="lozad" data-src="/img/shop/shop-pic-mobile.jpg" src="/img/shop/shop-pic-mobile.jpg" alt="Баннер партнера>">
+                </picture>
+              </div>
+              <div class="shop__item-description">
+                <h3>Раздел каталога</h3>
+                <p>Описание какого-то товара который представлен в этом каталоге но при этом не является его основной частью зато относится к выставке</p>
+                <a href="#" class="shop__item-link">Подробнее</a>
+              </div>
+            </li>
+            <li class="shop__item">
+              <div class="shop__item-picture">
+                <picture>
+                  <source media="(min-width: 1440px)" data-src="/img/shop/shop-pic-desktop.jpg" srcset="/img/shop/shop-pic-desktop.jpg">
+                  <img class="lozad" data-src="/img/shop/shop-pic-mobile.jpg" src="/img/shop/shop-pic-mobile.jpg" alt="Баннер партнера>">
+                </picture>
+              </div>
+              <div class="shop__item-description">
+                <h3>Раздел каталога</h3>
+                <p>Описание какого-то товара который представлен в этом каталоге но при этом не является его основной частью зато относится к выставке</p>
+                <a href="#" class="shop__item-link">Подробнее</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="sub-nav  sub-nav--mb">
+        <div class="sub-nav__wrapper">
+          <ul class="sub-nav__list  sub-nav__list--wide">
+            <li class="sub-nav__list-item"><a href="#">Анонсы</a></li>
+            <li class="sub-nav__list-item"><a href="#">Региональные и зарубежные</a></li>
+            <li class="sub-nav__list-item"><a href="#">Виртуальные</a></li>
+            <li class="sub-nav__list-item"><a href="#">Архив</a></li>
+          </ul>
+        </div>
+      </section>
+      <section class="banners">
+        <div class="banners__wrapper">
+          <ul class="banners__list  banners__list--grid">
+            <li class="banners__list-item">
+              <a href="#">
+                <picture>
+                  <source media="(min-width: 1440px)" data-src="/img/banners/banner-gray-desktop.jpg" srcset="/img/banners/banner-gray-desktop.jpg">
+                  <img class="lozad" data-src="/img/banners/banner-gray-mobile.jpg" src="/img/banners/banner-gray-mobile.jpg" alt="Баннер партнера>">
+                </picture>
+              </a>
+            </li>
+            <li class="banners__list-item">
+              <a href="#">
+                <picture>
+                  <source media="(min-width: 1440px)" data-src="/img/banners/banner-gray-desktop.jpg" srcset="/img/banners/banner-gray-desktop.jpg">
+                  <img class="lozad" data-src="/img/banners/banner-gray-mobile.jpg" src="/img/banners/banner-gray-mobile.jpg" alt="Баннер партнера>">
+                </picture>
+              </a>
+            </li>
+            <li class="banners__list-item">
+              <a href="#">
+                <picture>
+                  <source media="(min-width: 1440px)" data-src="/img/banners/banner-gray-desktop.jpg" srcset="/img/banners/banner-gray-desktop.jpg">
+                  <img class="lozad" data-src="/img/banners/banner-gray-mobile.jpg" src="/img/banners/banner-gray-mobile.jpg" alt="Баннер партнера>">
+                </picture>
+              </a>
+            </li>
+            <li class="banners__list-item">
+              <a href="#">
+                <picture>
+                  <source media="(min-width: 1440px)" data-src="/img/banners/banner-gray-desktop.jpg" srcset="/img/banners/banner-gray-desktop.jpg">
+                  <img class="lozad" data-src="/img/banners/banner-gray-mobile.jpg" src="/img/banners/banner-gray-mobile.jpg" alt="Баннер партнера>">
+                </picture>
+              </a>
+            </li>
+            <li class="banners__list-item">
+              <a href="#">
+                <picture>
+                  <source media="(min-width: 1440px)" data-src="/img/banners/banner-gray-desktop.jpg" srcset="/img/banners/banner-gray-desktop.jpg">
+                  <img class="lozad" data-src="/img/banners/banner-gray-mobile.jpg" src="/img/banners/banner-gray-mobile.jpg" alt="Баннер партнера>">
+                </picture>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </section>
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <section class="footer__lists">
+          <ul class="footer__list">
+            <li class="footer__list-item"><a href="#">Адреса</a></li>
+            <li class="footer__list-item"><a href="#">Часы работы</a></li>
+            <li class="footer__list-item"><a href="#">Билеты</a></li>
+            <li class="footer__list-item"><a href="#">Правила посещения</a></li>
+            <li class="footer__list-item"><a href="#">Людям с ОВЗ</a></li>
+            <li class="footer__list-item"><a href="#">Противодействие коррупции</a></li>
+          </ul>
+          <ul class="footer__list">
+            <li class="footer__list-item"><a href="#">Главное</a></li>
+            <li class="footer__list-item"><a href="#">Пресня</a></li>
+            <li class="footer__list-item"><a href="#">Типография</a></li>
+            <li class="footer__list-item"><a href="#">Кржижановский</a></li>
+            <li class="footer__list-item"><a href="#">Евтушенко</a></li>
+            <li class="footer__list-item"><a href="#">Катынь</a></li>
+            <li class="footer__list-item"><a href="#">Медное</a></li>
+          </ul>
+          <ul class="footer__list">
+            <li class="footer__list-item"><a href="#">Для СМИ</a></li>
+            <li class="footer__list-item"><a href="#">Организация мероприятий</a></li>
+            <li class="footer__list-item"><a href="#">Спонсорам</a></li>
+            <li class="footer__list-item"><a href="#">Вакансии</a></li>
+            <li class="footer__list-item"><a href="#">Контакты</a></li>
+          </ul>
+        </section>
+        <section class="social  social--footer">
+          <h2 class="visually-hidden">Мы в соцсетях</h2>
+          <ul class="social__list">
+            <li class="social__item">
+              <a href="#" class="social__link">
+                <span class="visually-hidden">Страница в ВК</span>
+                <svg class="icon" width="44" height="44" viewBox="0 0 44 44">
+                  <use xlink:href="/img/sprite_auto.svg#vk" x="0" y="0" />
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link">
+                <span class="visually-hidden">Страница в Facebook</span>
+                <svg class="icon" width="44" height="44" viewBox="0 0 44 44">
+                  <use xlink:href="/img/sprite_auto.svg#facebook" x="0" y="0" />
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link">
+                <span class="visually-hidden">Страница в одноклассниках</span>
+                <svg class="icon" width="44" height="44" viewBox="0 0 44 44">
+                  <use xlink:href="/img/sprite_auto.svg#ok" x="0" y="0" />
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link">
+                <span class="visually-hidden">Канал в Телеграм</span>
+                <svg class="icon" width="44" height="44" viewBox="0 0 44 44">
+                  <use xlink:href="/img/sprite_auto.svg#telegram" x="0" y="0" />
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link">
+                <span class="visually-hidden">Страница в Инстаграм</span>
+                <svg class="icon" width="44" height="44" viewBox="0 0 44 44">
+                  <use xlink:href="/img/sprite_auto.svg#instagramm" x="0" y="0" />
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link">
+                <span class="visually-hidden">Твиттер аккаунт</span>
+                <svg class="icon" width="44" height="44" viewBox="0 0 44 44">
+                  <use xlink:href="/img/sprite_auto.svg#twitter" x="0" y="0" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class="subscribe  subscribe--footer">
+          <h2 class="subscribe__title">Написать нам</h2>
+          <section class="social  social--in-form">
+            <h2 class="visually-hidden">Мы в соцсетях</h2>
+            <ul class="social__list">
+              <li class="social__item">
+                <a href="#" class="social__link">
+                  <span class="visually-hidden">Страница в ВК</span>
+                  <svg class="icon" width="44" height="44" viewBox="0 0 44 44">
+                    <use xlink:href="/img/sprite_auto.svg#vk" x="0" y="0" />
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link">
+                  <span class="visually-hidden">Страница в Facebook</span>
+                  <svg class="icon" width="44" height="44" viewBox="0 0 44 44">
+                    <use xlink:href="/img/sprite_auto.svg#facebook" x="0" y="0" />
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link">
+                  <span class="visually-hidden">Страница в одноклассниках</span>
+                  <svg class="icon" width="44" height="44" viewBox="0 0 44 44">
+                    <use xlink:href="/img/sprite_auto.svg#ok" x="0" y="0" />
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link">
+                  <span class="visually-hidden">Канал в Телеграм</span>
+                  <svg class="icon" width="44" height="44" viewBox="0 0 44 44">
+                    <use xlink:href="/img/sprite_auto.svg#telegram" x="0" y="0" />
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link">
+                  <span class="visually-hidden">Страница в Инстаграм</span>
+                  <svg class="icon" width="44" height="44" viewBox="0 0 44 44">
+                    <use xlink:href="/img/sprite_auto.svg#instagramm" x="0" y="0" />
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link">
+                  <span class="visually-hidden">Твиттер аккаунт</span>
+                  <svg class="icon" width="44" height="44" viewBox="0 0 44 44">
+                    <use xlink:href="/img/sprite_auto.svg#twitter" x="0" y="0" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </section>
+          <form action="#" method="POST" class="subscribe__form">
+            <label for="name-footer" class="subscribe__label-field visually-hidden"><span class="visually-hidden">Ваше имя</span></label>
+            <input type="text" name="name" id="name-footer" class="subscribe__input-field  subscribe__input-field--dark" placeholder="Ваше имя" required>
+            <label for="mail-footer" class="subscribe__label-field visually-hidden"><span class="visually-hidden">Ваша почта</span></label>
+            <input type="email" name="mail" id="mail-footer" class="subscribe__input-field  subscribe__input-field--dark" placeholder="Ваша почта" required>
+            <label for="text-footer" class="subscribe__label-field visually-hidden"><span class="visually-hidden">Текст вопроса или предложения</span></label>
+            <textarea name="text" id="text-footer" class="subscribe__input-textarea" placeholder="Текст вопроса или предложения" required></textarea>
+            <div class="subscribe__field">
+              <input type="checkbox" id="check1" name="check" class="visually-hidden" required>
+              <label for="check1">Я согласен с <a>политикой обработки персональных данных</a>
+              </label>
+            </div>
+            <button class="subscribe__btn" type="submit">Отправить</button>
+          </form>
+        </section>
+        <section class="copyright">
+          <p>© 2015-2020. ГЦМСИР. Все права защищены. Использование материалов сайта разрешено только с предварительного согласия правообладателей.</p>
+        </section>
+        <section class="footer__logos">
+          <ul class="footer__logos-list">
+            <li class="footer__logos-item  footer__logos-item--main"><a href="#"><img src="/img/sovrhistory.svg" alt="Логотип ГЦСИР" width="105" height="89"></a></li>
+            <li class="footer__logos-item  footer__logos-item--mincult"><a href="#"><img src="/img/minkult.svg" alt="Логотип Мин культуры" width="94" height="76"></a></li>
+            <li class="footer__logos-item  footer__logos-item--cultrf"><a href="#"><img src="/img/kultrf.svg" alt="Логотип Культура.рф" width="136" height="18"></a></li>
+          </ul>
+        </section>
+        <ul class="footer__bottom-list">
+          <li class="footer__bottom-item  footer__bottom-item--old-version"><a href="#">Старая версия сайта</a></li>
+          <li class="footer__bottom-item  footer__bottom-item--rules"><a href="#">Правила использования материалов сайта</a>
+          </li>
+          <li class="footer__bottom-item  footer__bottom-item--quality">
+            <a href="#">Оценка качества услуг </a>
+            <div class="footer__bottom-icons">
+              <img src="/img/icons/like.svg" alt="Иконка мне нравится">
+              <img src="/img/icons/dislike.svg" alt="иконка мне не нравится">
+            </div>
+          </li>
+          <li class="footer__bottom-item  footer__bottom-item--politics"><a href="#">Политика конфиденциальности и обработки персональных данных</a></li>
+          <li class="footer__bottom-item  footer__bottom-item--developer"><a href="#">Разработка «Музей Плюс»</a></li>
+        </ul>
+      </div>
+    </footer>
+    <section class="cookie">
+      <div class="cookie__wrapper">
+        <div class="cookie__text">
+          <p>Какой-то текст для куков и вот <a href="#">ссылка</a></p>
+        </div>
+        <button class="cookie__close-btn" type="button"><span class="visually-hidden">Закрыть строку</span></button>
+      </div>
+    </section>
+    <script src="/js/libs.js"></script>
+    <script src="/js/scripts.min.js"></script>
+  </body>
+</html>

@@ -120,64 +120,55 @@ title: Главная страница
 
 <section class="buildings">
   <div class="buildings__wrapper">
-    <ul class="buildings__list">
-      <li class="buildings__list-item">
+    <div class="buildings__list  buildings__list--filter">
+      <div class="buildings__list-item">
         <button type="button" value="1">
           <img src="/img/buildings/building-1.svg" alt="">
           <span>Главное</span>
         </button>
-      </li>
-      <li class="buildings__list-item">
+      </div>
+      <div class="buildings__list-item">
         <button type="button" value="2">
           <img src="/img/buildings/building-2.svg" alt="">
           <span>Пресня</span>
         </button>
-      </li>
-      <li class="buildings__list-item">
+      </div>
+      <div class="buildings__list-item">
         <button type="button" value="3">
           <img src="/img/buildings/building-3.svg" alt="">
           <span>Типография</span>
         </button>
-      </li>
-      <li class="buildings__list-item">
+      </div>
+      <div class="buildings__list-item">
         <button type="button" value="3">
           <img src="/img/buildings/building-4.svg" alt="">
           <span>Кржижановский</span>
         </button>
-      </li>
-      <li class="buildings__list-item">
+      </div>
+      <div class="buildings__list-item">
         <button type="button" value="5">
           <img src="/img/buildings/building-5.svg" alt="">
           <span>Евтушенко</span>
         </button>
-      </li>
-      <li class="buildings__list-item">
+      </div>
+      <div class="buildings__list-item">
         <button type="button" value="6">
           <img src="/img/buildings/building-6.svg" alt="">
           <span>Катынь</span>
         </button>
-      </li>
-      <li class="buildings__list-item">
+      </div>
+      <div class="buildings__list-item">
         <button type="button" value="7">
           <img src="/img/buildings/building-7.svg" alt="">
           <span>Медное</span>
         </button>
-      </li>
-    </ul>
+      </div>
+    </div>
 
     <section class="social social--in-buildings   social--show">
       <h2 class="visually-hidden">Мы в соцсетях</h2>
       <ul class="social__list social__list--in-buildings">
-        <li class="social__item"><a href="#" class="social__link  social__link--fb"><span
-              class="visually-hidden">Вк</span></a></li>
-        <li class="social__item"><a href="#" class="social__link  social__link--vk"><span
-              class="visually-hidden"></span></a></li>
-        <li class="social__item"><a href="#" class="social__link  social__link--ok"><span
-              class="visually-hidden"></span></a></li>
-        <li class="social__item"><a href="#" class="social__link  social__link--inst"><span
-              class="visually-hidden"></span></a></li>
-        <li class="social__item"><a href="#" class="social__link  social__link--tw"><span
-              class="visually-hidden"></span></a></li>
+        {% include "../templates/partials/_social.html" %}
       </ul>
     </section>
 
@@ -308,16 +299,7 @@ title: Главная страница
   <section class="social social--in-buildings   social--hidden">
     <h2 class="visually-hidden">Мы в соцсетях</h2>
     <ul class="social__list social__list--in-buildings">
-      <li class="social__item"><a href="#" class="social__link  social__link--fb"><span
-            class="visually-hidden">Вк</span></a></li>
-      <li class="social__item"><a href="#" class="social__link  social__link--vk"><span
-            class="visually-hidden"></span></a></li>
-      <li class="social__item"><a href="#" class="social__link  social__link--ok"><span
-            class="visually-hidden"></span></a></li>
-      <li class="social__item"><a href="#" class="social__link  social__link--inst"><span
-            class="visually-hidden"></span></a></li>
-      <li class="social__item"><a href="#" class="social__link  social__link--tw"><span
-            class="visually-hidden"></span></a></li>
+      {% include "../templates/partials/_social.html" %}
     </ul>
   </section>
 </section>

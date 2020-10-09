@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>история музея</title>
+    <link rel="stylesheet" href="/css/style.min.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="/img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+  </head>
+  <body>
+    <div class="marquee">
+      <div class="marquee__wrapper">
+        <div class="marquee__text">
+          <p>Внимание! В связи с осложнившейся ситуацией по коронавирусу, мы зак...</p>
+        </div>
+        <a href="#" class="marquee__link">Подробнее</a>
+        <button class="marquee__close-btn" type="button"><span class="visually-hidden">Закрыть строку</span></button>
+      </div>
+    </div>
+    <header class="header  header--inner">
+      <div class="header__wrapper">
+        <div class="header__logo">
+          <a href="#" class="logo">
+            <img src="/img/logo.svg" alt="Логотип Государственный центральный музей современной истории России" width="49" height="20">
+            <div class="logo__text">Государственный центральный музей современной истории России</div>
+            <div class="logo__slogan">Историю создаете вы!</div>
+          </a>
+        </div>
+        <div class="header__user-block">
+          <div class="lang">
+            <button class="lang__btn" type="button">RU</button>
+            <ul class="lang__list">
+              <li class="lang__item"><a href="#">RU</a></li>
+              <li class="lang__item"><a href="#">EN</a></li>
+              <li class="lang__item"><a href="#">日本</a></li>
+            </ul>
+          </div>
+          <div class="header__search">
+            <form action="#" method="GET" class="header__search-form">
+              <input type="text">
+              <button type="submit" class="header__search-form-btn"><span class="visually-hidden">Найти</span></button>
+            </form>
+            <button class="header__search-activate" type="button"><span class="visually-hidden">Открыть форму поиска</span></button>
+          </div>
+          <ul class="header__menu-list">
+            <li class="header__menu-item"><a href="#">Билеты</a></li>
+            <li class="header__menu-item"><a href="#">Адреса</a></li>
+            <li class="header__menu-item"><a href="#">Время работы</a></li>
+          </ul>
+        </div>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Меню</span></button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="ya.ru">Посетителям</a>
+              <ul class="main-nav__sublist">
+                <li><a href="#">Экскурсии</a></li>
+                <li><a href="#">Лекции и музейные занятия</a></li>
+                <li><a href="#">Образовательные проекты</a></li>
+                <li><a href="#">Билеты и расписание</a></li>
+                <li><a href="#">Экскурсии</a></li>
+                <li><a href="#">Лекции и музейные занятия</a></li>
+                <li><a href="#">Образовательные проекты</a></li>
+                <li><a href="#">Билеты и расписание</a></li>
+              </ul>
+            </li>
+            <li class="main-nav__item  main-nav__item--active">
+              <a href="#">Выставка</a>
+              <ul class="main-nav__sublist">
+                <li><a href="#">Экскурсии</a></li>
+                <li><a href="#">Лекции и музейные занятия</a></li>
+                <li><a href="#">Образовательные проекты</a></li>
+                <li><a href="#">Билеты и расписание</a></li>
+              </ul>
+            </li>
+            <li class="main-nav__item"><a href="#">События</a></li>
+            <li class="main-nav__item"><a href="#">Образование</a></li>
+            <li class="main-nav__item">
+              <a href="#">Музей</a>
+              <ul class="main-nav__sublist">
+                <li><a href="#">Экскурсии</a></li>
+                <li><a href="#">Лекции и музейные занятия</a></li>
+                <li><a href="#">Образовательные проекты</a></li>
+                <li><a href="#">Билеты и расписание</a></li>
+              </ul>
+            </li>
+            <li class="main-nav__item"><a href="#">Партнеры</a></li>
+            <li class="main-nav__item"><a href="#">Магазин</a></li>
+            <li class="main-nav__item  main-nav__item--contrast"><a class="js-contrast-version"><img src="/img/glasses.svg" alt="Иконка версии для слабовидящих"><span class="visually-hidden">Версия для слабовидящих</span></a>
+              <a class="js-normal-version">Обычная версия</a>
+            </li>
+            <li>
+              <ul class="main-nav__header-menu">
+                <li class="main-nav__header-item"><a href="#">Билеты</a></li>
+                <li class="main-nav__header-item"><a href="#">Адреса</a></li>
+                <li class="main-nav__header-item"><a href="#">Время работы</a></li>
+              </ul>
+            </li>
+            <li class="social social--header">
+              <ul class="social__list">
+                <li class="social__item">
+                  <a href="#" class="social__link">
+                    <span class="visually-hidden">Страница в ВК</span>
+                    <svg class="icon" width="44" height="44" viewBox="0 0 44 44">
+                      <use xlink:href="/img/sprite_auto.svg#vk" x="0" y="0" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="#" class="social__link">
+                    <span class="visually-hidden">Страница в Facebook</span>
+                    <svg class="icon" width="44" height="44" viewBox="0 0 44 44">
+                      <use xlink:href="/img/sprite_auto.svg#facebook" x="0" y="0" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="#" class="social__link">
+                    <span class="visually-hidden">Страница в одноклассниках</span>
+                    <svg class="icon" width="44" height="44" viewBox="0 0 44 44">
+                      <use xlink:href="/img/sprite_auto.svg#ok" x="0" y="0" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="#" class="social__link">
+                    <span class="visually-hidden">Канал в Телеграм</span>
+                    <svg class="icon" width="44" height="44" viewBox="0 0 44 44">
+                      <use xlink:href="/img/sprite_auto.svg#telegram" x="0" y="0" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="#" class="social__link">
+                    <span class="visually-hidden">Страница в Инстаграм</span>
+                    <svg class="icon" width="44" height="44" viewBox="0 0 44 44">
+                      <use xlink:href="/img/sprite_auto.svg#instagramm" x="0" y="0" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="#" class="social__link">
+                    <span class="visually-hidden">Твиттер аккаунт</span>
+                    <svg class="icon" width="44" height="44" viewBox="0 0 44 44">
+                      <use xlink:href="/img/sprite_auto.svg#twitter" x="0" y="0" />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="main-nav__footer-item">
+              <div class="main-nav__footer-logo">
+                <img src="/img/logo-menu-mobile.svg" alt="Логотип Государственный центральный музей современной истории России">
+                <p>Государственный центральный музей современной истории России</p>
+              </div>
+              <div class="main-nav__footer-links">
+                <a href="#">Открыть полную версию сайта</a>
+                <a href="#">На главную</a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="breadcrumbs">
+      <div class="breadcrumbs__wrapper">
+        <a href="#" class="breadcrumbs__link">на главную</a>
+        <h2 class="breadcrumbs__title">история музея</h2>
+      </div>
+    </div>
+    <section class="timeline">
+      <div class="timeline__wrapper">
+        <ul class="timeline__list">
+          <li class="timeline__item">
+            <article class="timeline__article">
+              <div class="timeline__year">1831-1917 годы </div>
+              <h2 class="timeline__header">Английский клуб</h2>
+              <div class="timeline__text">
+                <p>Музей расположен в центре Москвы в здании-памятнике архитектуры позднего классицизма конца XVIII века. С 1831 по 1917 годы в нем размещался Московский Английский клуб.</p>
+              </div>
+            </article>
+          </li>
+          <li class="timeline__item">
+            <article class="timeline__article">
+              <div class="timeline__year">1917 год</div>
+              <h2 class="timeline__header">Создание музея</h2>
+              <div class="timeline__picture"><img src="/img/history-pic-1.jpg" alt=""></div>
+              <div class="timeline__text">
+                <p>Днем рождения музея считается 21 марта (8 марта по старому стилю) 1917 года, когда директор музея Всероссийского Союза городов, известный журналист В.П.Кранихфельд обратился к председателю Исполнительного Комитета Московских общественных организаций Н.М.Кишкину с предложением «безотлагательно созвать совещание из представителей исторической науки и существующих в Москве музеев с целью научной и практической разработки вопроса о создании в Москве Музея революции».</p>
+                <p>На совещании, которое состоялось 4 апреля (22 марта по старому стилю) 1917 года, было создано Общество Музея революции, объединившее людей различных политических убеждений: прогрессивных ученых, деятелей культуры, писателей и публицистов, представителей различных течений русского революционно — освободительного движения. Именно тогда были определены основные направления деятельности будущего Музея: собирать разноплановые источники и всесторонне изучать историю русского освободительного движения.</p>
+              </div>
+            </article>
+          </li>
+          <li class="timeline__item">
+            <article class="timeline__article">
+              <div class="timeline__video"></div>
+              <div class="timeline__text">
+                <p>Название видеоролика</p>
+              </div>
+              <div class="timeline__year"></div>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="banners">
+      <div class="banners__wrapper">
+        <ul class="banners__list  banners__list--grid">
+          <li class="banners__list-item">
+            <a href="#">
+              <picture>
+                <source media="(min-width: 1440px)" data-src="/img/banners/banner-gray-desktop.jpg" srcset="/img/banners/banner-gray-desktop.jpg">
+                <img class="lozad" data-src="/img/banners/banner-gray-mobile.jpg" src="/img/banners/banner-gray-mobile.jpg" alt="Баннер партнера>">
+              </picture>
+            </a>
+          </li>
+          <li class="banners__list-item">
+            <a href="#">
+              <picture>
+                <source media="(min-width: 1440px)" data-src="/img/banners/banner-gray-desktop.jpg" srcset="/img/banners/banner-gray-desktop.jpg">
+                <img class="lozad" data-src="/img/banners/banner-gray-mobile.jpg" src="/img/banners/banner-gray-mobile.jpg" alt="Баннер партнера>">
+              </picture>
+            </a>
+          </li>
+          <li class="banners__list-item">
+            <a href="#">
+              <picture>
+                <source media="(min-width: 1440px)" data-src="/img/banners/banner-gray-desktop.jpg" srcset="/img/banners/banner-gray-desktop.jpg">
+                <img class="lozad" data-src="/img/banners/banner-gray-mobile.jpg" src="/img/banners/banner-gray-mobile.jpg" alt="Баннер партнера>">
+              </picture>
+            </a>
+          </li>
+          <li class="banners__list-item">
+            <a href="#">
+              <picture>
+                <source media="(min-width: 1440px)" data-src="/img/banners/banner-gray-desktop.jpg" srcset="/img/banners/banner-gray-desktop.jpg">
+                <img class="lozad" data-src="/img/banners/banner-gray-mobile.jpg" src="/img/banners/banner-gray-mobile.jpg" alt="Баннер партнера>">
+              </picture>
+            </a>
+          </li>
+          <li class="banners__list-item">
+            <a href="#">
+              <picture>
+                <source media="(min-width: 1440px)" data-src="/img/banners/banner-gray-desktop.jpg" srcset="/img/banners/banner-gray-desktop.jpg">
+                <img class="lozad" data-src="/img/banners/banner-gray-mobile.jpg" src="/img/banners/banner-gray-mobile.jpg" alt="Баннер партнера>">
+              </picture>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <section class="footer__lists">
+          <ul class="footer__list">
+            <li class="footer__list-item"><a href="#">Адреса</a></li>
+            <li class="footer__list-item"><a href="#">Часы работы</a></li>
+            <li class="footer__list-item"><a href="#">Билеты</a></li>
+            <li class="footer__list-item"><a href="#">Правила посещения</a></li>
+            <li class="footer__list-item"><a href="#">Людям с ОВЗ</a></li>
+            <li class="footer__list-item"><a href="#">Противодействие коррупции</a></li>
+          </ul>
+          <ul class="footer__list">
+            <li class="footer__list-item"><a href="#">Главное</a></li>
+            <li class="footer__list-item"><a href="#">Пресня</a></li>
+            <li class="footer__list-item"><a href="#">Типография</a></li>
+            <li class="footer__list-item"><a href="#">Кржижановский</a></li>
+            <li class="footer__list-item"><a href="#">Евтушенко</a></li>
+            <li class="footer__list-item"><a href="#">Катынь</a></li>
+            <li class="footer__list-item"><a href="#">Медное</a></li>
+          </ul>
+          <ul class="footer__list">
+            <li class="footer__list-item"><a href="#">Для СМИ</a></li>
+            <li class="footer__list-item"><a href="#">Организация мероприятий</a></li>
+            <li class="footer__list-item"><a href="#">Спонсорам</a></li>
+            <li class="footer__list-item"><a href="#">Вакансии</a></li>
+            <li class="footer__list-item"><a href="#">Контакты</a></li>
+          </ul>
+        </section>
+        <section class="social  social--footer">
+          <h2 class="visually-hidden">Мы в соцсетях</h2>
+          <ul class="social__list">
+            <li class="social__item">
+              <a href="#" class="social__link">
+                <span class="visually-hidden">Страница в ВК</span>
+                <svg class="icon" width="44" height="44" viewBox="0 0 44 44">
+                  <use xlink:href="/img/sprite_auto.svg#vk" x="0" y="0" />
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link">
+                <span class="visually-hidden">Страница в Facebook</span>
+                <svg class="icon" width="44" height="44" viewBox="0 0 44 44">
+                  <use xlink:href="/img/sprite_auto.svg#facebook" x="0" y="0" />
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link">
+                <span class="visually-hidden">Страница в одноклассниках</span>
+                <svg class="icon" width="44" height="44" viewBox="0 0 44 44">
+                  <use xlink:href="/img/sprite_auto.svg#ok" x="0" y="0" />
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link">
+                <span class="visually-hidden">Канал в Телеграм</span>
+                <svg class="icon" width="44" height="44" viewBox="0 0 44 44">
+                  <use xlink:href="/img/sprite_auto.svg#telegram" x="0" y="0" />
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link">
+                <span class="visually-hidden">Страница в Инстаграм</span>
+                <svg class="icon" width="44" height="44" viewBox="0 0 44 44">
+                  <use xlink:href="/img/sprite_auto.svg#instagramm" x="0" y="0" />
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link">
+                <span class="visually-hidden">Твиттер аккаунт</span>
+                <svg class="icon" width="44" height="44" viewBox="0 0 44 44">
+                  <use xlink:href="/img/sprite_auto.svg#twitter" x="0" y="0" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class="subscribe  subscribe--footer">
+          <h2 class="subscribe__title">Написать нам</h2>
+          <section class="social  social--in-form">
+            <h2 class="visually-hidden">Мы в соцсетях</h2>
+            <ul class="social__list">
+              <li class="social__item">
+                <a href="#" class="social__link">
+                  <span class="visually-hidden">Страница в ВК</span>
+                  <svg class="icon" width="44" height="44" viewBox="0 0 44 44">
+                    <use xlink:href="/img/sprite_auto.svg#vk" x="0" y="0" />
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link">
+                  <span class="visually-hidden">Страница в Facebook</span>
+                  <svg class="icon" width="44" height="44" viewBox="0 0 44 44">
+                    <use xlink:href="/img/sprite_auto.svg#facebook" x="0" y="0" />
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link">
+                  <span class="visually-hidden">Страница в одноклассниках</span>
+                  <svg class="icon" width="44" height="44" viewBox="0 0 44 44">
+                    <use xlink:href="/img/sprite_auto.svg#ok" x="0" y="0" />
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link">
+                  <span class="visually-hidden">Канал в Телеграм</span>
+                  <svg class="icon" width="44" height="44" viewBox="0 0 44 44">
+                    <use xlink:href="/img/sprite_auto.svg#telegram" x="0" y="0" />
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link">
+                  <span class="visually-hidden">Страница в Инстаграм</span>
+                  <svg class="icon" width="44" height="44" viewBox="0 0 44 44">
+                    <use xlink:href="/img/sprite_auto.svg#instagramm" x="0" y="0" />
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link">
+                  <span class="visually-hidden">Твиттер аккаунт</span>
+                  <svg class="icon" width="44" height="44" viewBox="0 0 44 44">
+                    <use xlink:href="/img/sprite_auto.svg#twitter" x="0" y="0" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </section>
+          <form action="#" method="POST" class="subscribe__form">
+            <label for="name-footer" class="subscribe__label-field visually-hidden"><span class="visually-hidden">Ваше имя</span></label>
+            <input type="text" name="name" id="name-footer" class="subscribe__input-field  subscribe__input-field--dark" placeholder="Ваше имя" required>
+            <label for="mail-footer" class="subscribe__label-field visually-hidden"><span class="visually-hidden">Ваша почта</span></label>
+            <input type="email" name="mail" id="mail-footer" class="subscribe__input-field  subscribe__input-field--dark" placeholder="Ваша почта" required>
+            <label for="text-footer" class="subscribe__label-field visually-hidden"><span class="visually-hidden">Текст вопроса или предложения</span></label>
+            <textarea name="text" id="text-footer" class="subscribe__input-textarea" placeholder="Текст вопроса или предложения" required></textarea>
+            <div class="subscribe__field">
+              <input type="checkbox" id="check1" name="check" class="visually-hidden" required>
+              <label for="check1">Я согласен с <a>политикой обработки персональных данных</a>
+              </label>
+            </div>
+            <button class="subscribe__btn" type="submit">Отправить</button>
+          </form>
+        </section>
+        <section class="copyright">
+          <p>© 2015-2020. ГЦМСИР. Все права защищены. Использование материалов сайта разрешено только с предварительного согласия правообладателей.</p>
+        </section>
+        <section class="footer__logos">
+          <ul class="footer__logos-list">
+            <li class="footer__logos-item  footer__logos-item--main"><a href="#"><img src="/img/sovrhistory.svg" alt="Логотип ГЦСИР" width="105" height="89"></a></li>
+            <li class="footer__logos-item  footer__logos-item--mincult"><a href="#"><img src="/img/minkult.svg" alt="Логотип Мин культуры" width="94" height="76"></a></li>
+            <li class="footer__logos-item  footer__logos-item--cultrf"><a href="#"><img src="/img/kultrf.svg" alt="Логотип Культура.рф" width="136" height="18"></a></li>
+          </ul>
+        </section>
+        <ul class="footer__bottom-list">
+          <li class="footer__bottom-item  footer__bottom-item--old-version"><a href="#">Старая версия сайта</a></li>
+          <li class="footer__bottom-item  footer__bottom-item--rules"><a href="#">Правила использования материалов сайта</a>
+          </li>
+          <li class="footer__bottom-item  footer__bottom-item--quality">
+            <a href="#">Оценка качества услуг </a>
+            <div class="footer__bottom-icons">
+              <img src="/img/icons/like.svg" alt="Иконка мне нравится">
+              <img src="/img/icons/dislike.svg" alt="иконка мне не нравится">
+            </div>
+          </li>
+          <li class="footer__bottom-item  footer__bottom-item--politics"><a href="#">Политика конфиденциальности и обработки персональных данных</a></li>
+          <li class="footer__bottom-item  footer__bottom-item--developer"><a href="#">Разработка «Музей Плюс»</a></li>
+        </ul>
+      </div>
+    </footer>
+    <section class="cookie">
+      <div class="cookie__wrapper">
+        <div class="cookie__text">
+          <p>Какой-то текст для куков и вот <a href="#">ссылка</a></p>
+        </div>
+        <button class="cookie__close-btn" type="button"><span class="visually-hidden">Закрыть строку</span></button>
+      </div>
+    </section>
+    <script src="/js/libs.js"></script>
+    <script src="/js/scripts.min.js"></script>
+  </body>
+</html>

@@ -33,6 +33,13 @@
 
   a {
     display: block;
+    text-decoration: none;
+
+    &:hover {
+      p {
+        color: $s-color;
+      }
+    }
   }
 
   img {
@@ -40,10 +47,33 @@
     height: auto;
     object-fit: cover;
   }
+
+  p {
+    margin: 0;
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 18px;
+
+    color: #292929;
+  }
 }
 
 .banners__wrapper {
   @include wrapper;
+}
+
+.banners__title {
+  margin: 0;
+  margin-bottom: 25px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+
+  color: #292929;
+
+  &--hide-on-small-screens {
+    display: none;
+  }
 }
 
 @media screen and (min-width: $tablet) {
@@ -75,6 +105,18 @@
     &:nth-child(2n + 4) {
       margin-right: 0;
     }
+
+    p {
+      margin-top: 20px;
+      font-size: 18px;
+      line-height: 23px;
+    }
+  }
+
+  .banners__title {
+    margin-bottom: 34px;
+    font-size: 26px;
+    line-height: 33px;
   }
 }
 
@@ -107,5 +149,15 @@
 
   .banners__list-item {
     width: 207px;
+  }
+
+  .banners__title {
+    margin-bottom: 40px;
+    font-size: 30px;
+    line-height: 38px;
+
+    &--hide-on-small-screens {
+      display: block;
+    }
   }
 }

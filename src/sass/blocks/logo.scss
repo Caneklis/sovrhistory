@@ -1,5 +1,5 @@
 .logo {
-  width: 220px;
+  width: 225px;
   text-decoration: none;
   display: flex;
   flex-wrap: wrap;
@@ -47,7 +47,7 @@
 
 @media screen and (min-width: $desktop) {
   .logo {
-    width: 265px;
+    width: 280px;
 
     &--fixed {
       width: 310px;

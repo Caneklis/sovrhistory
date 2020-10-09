@@ -1,0 +1,383 @@
+.excursions {
+  margin-bottom: 40px;
+}
+
+.excursions__wrapper {
+  @include wrapper;
+}
+
+.excursions__title {
+  @include section-title;
+  margin: 0;
+  margin-bottom: 35px;
+}
+
+.excursions__contacts {
+  p {
+    margin: 0;
+    font-family: $sec-font;
+    font-size: 16px;
+    line-height: 136.39%;
+    /* or 22px */
+
+    color: #000000;
+  }
+}
+
+.excursions__contacts-list {
+  @include list-reset;
+}
+
+.excursions__contacts-item {
+  @include contacts-block;
+
+  &--phone,
+  &--email {
+    padding-left: 19px;
+    border-left: 1px solid #cacaca;
+  }
+
+  &--phone {
+    padding-bottom: 30px;
+  }
+
+  &--email {
+    margin-bottom: 35px;
+  }
+
+  &--hours {
+    display: flex;
+
+    span {
+      margin-right: 24px;
+    }
+  }
+}
+
+.excursions__contacts-text {
+  margin-bottom: 30px;
+  padding-right: 25px;
+}
+
+.excursions__prices {
+  margin-bottom: 40px;
+}
+
+.excursions__list {
+  @include list-reset;
+  min-width: 320px;
+  max-width: 335px;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: 1px solid #c4c4c4;
+}
+
+.excursions__list-item {
+  margin-bottom: 20px;
+  padding: 40px 30px;
+  background-color: #f9f9f9;
+}
+
+.excursions__list-text {
+  h3 {
+    margin: 0;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 125.89%;
+    /* or 23px */
+
+    text-decoration-line: underline;
+
+    color: #000000;
+
+    a {
+      color: inherit;
+    }
+  }
+
+  p {
+    margin: 0;
+    font-family: $sec-font;
+    font-size: 13px;
+    line-height: 125.89%;
+    /* or 16px */
+
+    color: #000000;
+  }
+}
+
+.excursions__list-contacts {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-top: 1px solid #c4c4c4;
+
+  span {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 136.39%;
+    /* identical to box height, or 19px */
+    color: $s-color;
+  }
+
+  p {
+    margin: 0;
+    font-size: 18px;
+    line-height: 113.2%;
+    /* or 20px */
+
+    color: #000000;
+  }
+}
+
+.excursions__list-filter {
+  display: flex;
+  flex-direction: column;
+  span {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    line-height: 18px;
+    /* identical to box height */
+
+    color: #b69953;
+  }
+
+  p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 113.2%;
+    /* identical to box height, or 16px */
+
+    color: #000000;
+  }
+}
+
+.excursions__list-filter-text {
+  margin-bottom: 15px;
+}
+
+.excursions__list-header {
+  display: none;
+}
+
+@media (min-width: $tablet) {
+  .excursions {
+    margin-bottom: 60px;
+  }
+
+  .excursions__contacts {
+    p {
+      font-size: 18px;
+      line-height: 136.39%;
+      /* or 25px */
+    }
+  }
+
+  .excursions__contacts-list {
+    display: grid;
+    grid-template-columns: 350px 346px;
+  }
+
+  .excursions__contacts-item {
+    &--phone {
+      grid-column: 1/2;
+      grid-row: 1/2;
+      border-left: none;
+      padding-left: 0;
+      padding-bottom: 20px;
+    }
+
+    &--email {
+      grid-column: 1/2;
+      grid-row: 2/3;
+      border-left: none;
+      padding-left: 0;
+      margin-bottom: 0;
+    }
+
+    &--hours {
+      grid-column: 2/3;
+      grid-row: 1/3;
+      border-left: 1px solid #cacaca;
+      padding-left: 40px;
+      flex-direction: column;
+
+      span {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  .excursions__contacts-text {
+    grid-column: 1/3;
+    padding-top: 30px;
+  }
+
+  .excursions__prices {
+    margin-bottom: 60px;
+  }
+
+  .excursions__list {
+    min-width: 760px;
+    max-width: 760px;
+    border-top: none;
+  }
+
+  .excursions__list-filter {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .excursions__list-filter-cat {
+    width: 120px;
+    margin-bottom: 27px;
+  }
+
+  .excursions__list-filter-text {
+    width: 470px;
+    margin-bottom: 0;
+  }
+
+  .excursions__list-contacts {
+    padding-bottom: 30px;
+  }
+
+  .excursions__list-item {
+    padding: 40px 55px;
+  }
+
+  .excursions__list-header {
+    display: flex;
+  }
+
+  .excursions__header-info,
+  .excursions__header-filter {
+    width: 50%;
+    margin: 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    /* identical to box height */
+
+    color: #b69953;
+  }
+
+  .excursions__header-filter {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop) {
+  .excursions__contacts {
+    width: 985px;
+  }
+
+  .excursions__contacts-list {
+    grid-template-columns: 255px 400px 330px;
+  }
+
+  .excursions__contacts-item {
+    &--phone {
+      padding-bottom: 0;
+    }
+
+    &--email {
+      grid-column: 2/3;
+      grid-row: 1/2;
+      padding-left: 70px;
+      border-left: 1px solid #cacaca;
+    }
+    &--hours {
+      grid-column: 3/4;
+      grid-row: 1/2;
+      flex-direction: row;
+      padding-left: 70px;
+
+      span {
+        margin-right: 30px;
+      }
+    }
+  }
+
+  .excursions__contacts-text {
+    grid-column: 1/4;
+    p {
+      max-width: 806px;
+    }
+  }
+
+  .excursions__prices {
+    margin-bottom: 50px;
+  }
+
+  .excursions__list {
+    min-width: 1300px;
+    max-width: 1300px;
+    margin-top: 0;
+  }
+
+  .excursions__list-item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 40px 66px;
+  }
+
+  .excursions__list-filter-cat {
+    width: 100%;
+    margin-bottom: 0;
+
+    span {
+      margin: 0;
+    }
+  }
+
+  .excursions__list-filter-text {
+    width: 100%;
+  }
+
+  .excursions__list-text {
+    width: 640px;
+  }
+
+  .excursions__list-filter {
+    display: grid;
+    align-items: flex-start;
+    grid-template-columns: 120px 320px;
+    grid-row-gap: 27px;
+    width: 528px;
+    padding-left: 60px;
+    border-left: 1px solid #c4c4c4;
+  }
+
+  .excursions__list-contacts {
+    border-top: none;
+    padding-top: 36px;
+    padding-bottom: 33px;
+    margin-top: 0;
+  }
+
+  .excursions__list-text {
+    h3 {
+      font-size: 24px;
+      line-height: 125.89%;
+      /* or 30px */
+      margin-bottom: 20px;
+    }
+  }
+
+  .excursions__header-info {
+    width: 641px;
+  }
+
+  .excursions__header-filter {
+    display: block;
+    width: 539px;
+    padding-left: 60px;
+  }
+}

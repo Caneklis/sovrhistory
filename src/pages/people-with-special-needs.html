@@ -1,0 +1,57 @@
+---
+title: Людям с инвалидностью
+---
+{% extends "../templates/layouts/_layout-inner.html" %}
+
+{% block content %}
+
+<section class="museum-online">
+  <div class="museum-online__wrapper">
+    <div class="museum-online__header">
+      <div class="museum-online__header-text">
+        <h2 class="museum-online__title">Информация</h2>
+        <p>Право бесплатного посещения музея предоставляется следующим категориям посетителей:</p>
+        <ul>
+          <li>дети до 18 лет;</li>
+          <li>студенты факультетов, специализирующихся в сфере изобразительного искусства, архитектуры и кинематографии,
+            вузов и сузов РФ;</li>
+          <li>инвалиды 1 и 2 групп (граждане РФ и СНГ), посетители на инвалидных колясках;</li>
+          <li>лица, сопровождающие инвалидов 1 и 2 группы, детей-инвалидов;</li>
+        </ul>
+      </div>
+      <div class="museum-online__contacts-block">
+        <div class="museum-online__contact">
+          <span>Телефон</span>
+          <p><a href="tel:+74956995217"></a>+7 (495) 699-52-17</p>
+        </div>
+        <div class="museum-online__contact">
+          <span>E-mail</span>
+          <p><a href="mailto:museum@sovrhistory.ru">museum@sovrhistory.ru</a></p>
+        </div>
+      </div>
+
+    </div>
+    <ul class="museum-online__list">
+      {% for i in range(0, 5) -%}
+      <li class="museum-online__item  museum-online__item--gray">
+        <a href="#">
+          <article class="museum-online__article">
+            <div class="museum-online__pic">
+              <img class="lozad" data-src="/img/museum-online/museum-online-desktop.jpg"
+                src="/img/museum-online/museum-online-desktop.jpg" alt="Подпись к фотографии">
+            </div>
+            <!--
+              desktop 360*250
+             -->
+            <div class="museum-online__article-text">
+              <h3 class="museum-online__item-title">«Путь к Победе: исторические источники свидетельствуют»</h3>
+            </div>
+          </article>
+        </a>
+      </li>
+      {%- endfor %}
+    </ul>
+  </div>
+</section>
+
+{% endblock %}

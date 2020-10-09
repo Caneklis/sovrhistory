@@ -1,0 +1,46 @@
+.error-page {
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  margin-top: -35px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+}
+
+.error-page__wrapper {
+  @include wrapper;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  position: relative;
+
+  h1 {
+    margin: 0;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 40px;
+  }
+
+  .error-page__text {
+    color: rgba(#fff, 0.8);
+    font-family: $sec-font;
+  }
+}
+.error-page__btn {
+  margin: 100px 0;
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: 400;
+}

@@ -1,0 +1,592 @@
+---
+title: Музей
+---
+{% extends "../templates/layouts/_layout-inner.html" %}
+
+{% block content %}
+
+<section class="museum">
+  <div class="museum__wrapper">
+    <div class="museum__text">
+      <div class="museum__left">
+        <h3>Мы сохраняем историю</h3>
+      </div>
+      <div class="museum__right">
+        <p>Общий официальный текст о музее, примерно 1000 символов. 21 февраля 2020 г. в Музее современной истории
+          России открылся масштабный выставочный проект «Человек и война. Нерассказанная история», посвящённый 75-летию
+          Победы в Великой Отечественной войне, которая несомненно стала очень важным и значимым периодом в жизни народа
+          России и СССР</p>
+
+        <p>Начиная с июня 1941 г. Музей современной истории России пополнял коллекцию документами и предметами,
+          связанными с Великой Отечественной войной, и до сих пор специалисты занимаются изучением, реставрацией и
+          сбором новых материалов, посвящённых трагическим 1418 дням войны.</p>
+
+        <p>Она рассказывает личные истории: через стёршийся на сгибах солдатский треугольник, пожелтевшую фотокарточку,
+          через гильзу — талисман, прошедший с хозяином пол-Европы; через кусочек «хлеба» из льняных жмыхов, обваленный
+          в овсяной шелухе, — подарок рабочим завода «Большевик» на Новый год; через комплекс вещей, принадлежавших
+          студенткам Московского художественного училища.</p>
+      </div>
+    </div>
+
+    <div class="museum__info">
+      <img src="/img/museum-main-building.jpg" alt="Описание фотографии">
+
+      <div class="museum__info-text">
+        <p>Цели и миссия музея - сохранить не тронутой часть нашей жизни и перенести через года наш <i>опыт будущим
+            покалениям</i>. Наша деятельность направлена
+          на обагащение <i>культурно-ценностного потенциала</i> современного общества
+          и воспитании в наших детях лучших качеств наших предков.</p>
+
+        <p><a href="#">Подробнее</a></p>
+
+        <ul class="museum__info-contacts">
+          <li class="museum__info-contact">
+            <span class="museum__info-contact-type">Адрес</span>
+            <p>г. Москва, ул. Тверская 21</p>
+          </li>
+          <li class="museum__info-contact">
+            <span class="museum__info-contact-type">Телефон</span>
+            <p>+7 (495) 699-52-17</p>
+          </li>
+          <li class="museum__info-contact">
+            <span class="museum__info-contact-type">E-mail</span>
+            <p>museum@sovrhistory.ru</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <section class="museum__video">
+    <!-- Хороший вариант -->
+    <div class="video">
+      <a class="video__link" href="https://youtu.be/vdiN8xSKbgc">
+        <picture>
+          <source srcset="https://i.ytimg.com/vi_webp/vdiN8xSKbgc/maxresdefault.webp" type="image/webp">
+          <img class="video__media" src="https://i.ytimg.com/vi/vdiN8xSKbgc/maxresdefault.jpg" alt="Описание">
+        </picture>
+      </a>
+      <button class="video__button  video__button--change-size" type="button" aria-label="Запустить видео">
+        <span class="video__button-text">Смотреть видео о музее</span>
+        <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="30" cy="30" r="29" stroke="white" stroke-width="2" />
+          <path d="M39.6016 29.6999L24.7516 38.2736L24.7516 21.1263L39.6016 29.6999Z" fill="white" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Просто iframe -->
+    <div class="museum__video-iframe">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/vdiN8xSKbgc" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <section class="news  news--inner">
+    <div class="news__wrapper">
+      <h2 class="news__title">Последние новости</h2>
+    </div>
+
+    <ul class="news__list  news__list--in-museum">
+      <li class="news__item  news__item--main">
+        <a href="#" class="news__link">
+          <article class="news__article">
+            <div class="news__photo">
+              <picture>
+                <source media="(min-width: 1440px)" data-src="/img/news/news-pic-main-desktop.jpg"
+                  srcset="/img/news/news-pic-main-desktop.jpg">
+                <source media="(min-width: 768px)" data-src="/img/news/news-pic-main-tablet.jpg"
+                  srcset="/img/news/news-pic-main-tablet.jpg">
+                <img class="lozad" data-src="/img/news/news-pic-main-mobile.jpg"
+                  src="/img/news/news-pic-main-mobile.jpg" alt="Фотография к новости">
+              </picture>
+            </div>
+            <div class="news__text">
+              <div class="news__type">Новость</div>
+              <h3>Директор Музея современной истории России Ирина Великанова выступила на конференции Российского
+                исторического общества</h3>
+              <p>В эти дни Доме Российского исторического общества проходит международная научно-практическая
+                конференция «История современности. Информационные ресурсы и исследовательские практики в России и за
+                рубежом».</p>
+              <p>В числе участников – президент РГГУ Ефим Пивовар, ректор РГГУ Александр Безбородов, исполнительный
+                директора фонда «История Отечества» Константин Могилевский... </p>
+              <div class="news__info">
+                <span class="news__read-link">Читать далее</span>
+                <time class="news__date" datetime="2020-02-13">13 февраля</time>
+              </div>
+            </div>
+          </article>
+        </a>
+      </li>
+      <li class="news__item">
+        <a href="#" class="news__link">
+          <article class="news__article">
+            <div class="news__text">
+              <div class="news__type">Новость</div>
+              <h3>Директор Музея современной истории России Ирина Великанова выступила на конференции Российского
+                исторического общества</h3>
+              <div class="news__info">
+                <time class="news__date" datetime="2020-02-13">13 февраля</time>
+              </div>
+            </div>
+            <div class="news__photo">
+              <img src="/img/news/news-pic-1.jpg" alt="Фотография к новости">
+            </div>
+          </article>
+        </a>
+      </li>
+      <li class="news__item">
+        <a href="#" class="news__link">
+          <article class="news__article">
+            <div class="news__text">
+              <div class="news__type">Новость</div>
+              <h3>Захар Прилепин поделился планом создания нового общественного движения</h3>
+              <div class="news__info">
+                <time class="news__date" datetime="2020-02-13">13 февраля</time>
+              </div>
+            </div>
+            <div class="news__photo">
+              <img src="/img/news/news-pic-2.jpg" alt="Фотография к новости">
+            </div>
+          </article>
+        </a>
+      </li>
+      <li class="news__item">
+        <a href="#" class="news__link">
+          <article class="news__article">
+            <div class="news__text">
+              <div class="news__type">Новость</div>
+              <h3>Захар Прилепин поделился планом создания нового общественного движения</h3>
+              <div class="news__info">
+                <time class="news__date" datetime="2020-02-13">13 февраля</time>
+              </div>
+            </div>
+            <div class="news__photo">
+              <img src="/img/news/news-pic-2.jpg" alt="Фотография к новости">
+            </div>
+          </article>
+        </a>
+      </li>
+      <li class="news__item subscribe">
+        <h2 class="subscribe__title">Подпишитесь на информационную рассылку музея</h2>
+        <form action="#" method="POST" class="subscribe__form">
+          <label for="mail" class="subscribe__label-field"><span class="visually-hidden">Ваша почта</span></label>
+          <input type="email" name="mail" id="mail" class="subscribe__input-field" placeholder="example@mail.ru"
+            required>
+          <button class="subscribe__btn" type="submit">Подписаться</button>
+
+          <div class="subscribe__field">
+            <input type="checkbox" id="check" name="check" class="visually-hidden" required>
+            <label for="check">Я согласен с условиями подписки и <a>политикой обработки персональных данных</a>
+            </label>
+          </div>
+        </form>
+      </li>
+    </ul>
+
+    <div class="news__wrapper">
+      <a href="#" class="news__show-archive-link">Архив новостей</a>
+    </div>
+
+  </section>
+
+  <section class="tabs">
+    <div class="tabs__wrapper  tabs__grid">
+      <ul class="tabs__nav  buildings__list">
+        <li class="buildings__list-item  active">
+          <button class="tabs__nav-btn" type="button" data-tab="#tab_1">
+            <img src="/img/buildings/building-1.svg" alt="Иконка здания">
+            <span>Главное</span>
+          </button>
+        </li>
+        <li class="buildings__list-item">
+          <button class="tabs__nav-btn" type="button" data-tab="#tab_2">
+            <img src="/img/buildings/building-2.svg" alt="Иконка здания">
+            <span>Пресня</span>
+          </button>
+        </li>
+        <li class="buildings__list-item">
+          <button class="tabs__nav-btn" type="button" data-tab="#tab_3">
+            <img src="/img/buildings/building-3.svg" alt="Иконка здания">
+            <span>Типография</span>
+          </button>
+        </li>
+        <li class="buildings__list-item">
+          <button class="tabs__nav-btn" type="button" data-tab="#tab_4">
+            <img src="/img/buildings/building-4.svg" alt="Иконка здания">
+            <span>Кржижановский</span>
+          </button>
+        </li>
+        <li class="buildings__list-item">
+          <button class="tabs__nav-btn" type="button" data-tab="#tab_5">
+            <img src="/img/buildings/building-5.svg" alt="Иконка здания">
+            <span>Евтушенко</span>
+          </button>
+        </li>
+        <li class="buildings__list-item">
+          <button class="tabs__nav-btn" type="button" data-tab="#tab_6">
+            <img src="/img/buildings/building-6.svg" alt="Иконка здания">
+            <span>Катынь</span>
+          </button>
+        </li>
+        <li class="buildings__list-item">
+          <button class="tabs__nav-btn" type="button" data-tab="#tab_7">
+            <img src="/img/buildings/building-7.svg" alt="Иконка здания">
+            <span>Медное</span>
+          </button>
+        </li>
+      </ul>
+      <section class="social social--in-tabs">
+        <h2 class="visually-hidden">Мы в соцсетях</h2>
+        <ul class="social__list">
+          {% include "../templates/partials/_social.html" %}
+        </ul>
+      </section>
+    </div>
+
+    <div class="tabs__content">
+      <div class="tabs__wrapper">
+        <div class="tabs__item  tabs__item--horizontal" id="tab_1">
+          <div class="tabs__item-pic">
+            <div class="tabs__item-slider">
+              <div class="tabs__item-slider-item">
+                <img class="lozad" data-src="/img/buildings/slider/main-building-hor-slider.jpg"
+                  src="/img/buildings/slider/main-building-hor-slider.jpg" alt="Подпись к фотографии">
+              </div>
+              <div class="tabs__item-slider-item">
+                <img class="lozad" data-src="/img/buildings/slider/main-building-hor-slider.jpg"
+                  src="/img/buildings/slider/main-building-hor-slider.jpg" alt="Подпись к фотографии">
+              </div>
+            </div>
+          </div>
+          <div class="tabs__item-text">
+            <h3>Музей современной истории России</h3>
+            <ul class="tabs__contacts-list">
+              <li class="tabs__contacts-item">
+                <span>Адрес</span>
+                <p>г. Москва, ул. Тверская 21</p>
+              </li>
+              <li class="tabs__contacts-item">
+                <span>Режим рабтоты</span>
+                <p>Пн-Пт с 8:00 до 16:30</p>
+                <p>Сб-Вс с 9:00 до 20:з0</p>
+              </li>
+              <li class="tabs__contacts-item">
+                <span>Телефон</span>
+                <p>+7 911 992 99 99</p>
+                <a href="#" class="btn">Перейти к филиалу</a>
+              </li>
+              <li class="tabs__item-inner">
+                <ul class="tabs__item-inner-list">
+                  <li><a href="#">Экскурсии и программы</a></li>
+                  <li><a href="#">Правила посещения </a></li>
+                  <li><a href="#">Людям с инвалидностью</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+
+        <div class="tabs__item  tabs__item--horizontal" id="tab_2">
+          <div class="tabs__item-pic">
+            <div class="tabs__item-slider">
+              <div class="tabs__item-slider-item">
+                <img class="lozad" data-src="/img/buildings/slider/main-building-hor-slider.jpg"
+                  src="/img/buildings/slider/main-building-hor-slider.jpg" alt="Подпись к фотографии">
+              </div>
+              <div class="tabs__item-slider-item">
+                <img class="lozad" data-src="/img/buildings/slider/main-building-hor-slider.jpg"
+                  src="/img/buildings/slider/main-building-hor-slider.jpg" alt="Подпись к фотографии">
+              </div>
+            </div>
+          </div>
+          <div class="tabs__item-text">
+            <h3>Пресня</h3>
+            <ul class="tabs__contacts-list">
+              <li class="tabs__contacts-item">
+                <span>Адрес</span>
+                <p>г. Москва, ул. Тверская 21</p>
+              </li>
+              <li class="tabs__contacts-item">
+                <span>Режим рабтоты</span>
+                <p>Пн-Пт с 8:00 до 16:30</p>
+                <p>Сб-Вс с 9:00 до 20:з0</p>
+              </li>
+              <li class="tabs__contacts-item">
+                <span>Телефон</span>
+                <p>+7 911 992 99 99</p>
+                <a href="#" class="btn">Перейти к филиалу</a>
+              </li>
+              <li class="tabs__item-inner">
+                <ul class="tabs__item-inner-list">
+                  <li><a href="#">Экскурсии и программы</a></li>
+                  <li><a href="#">Правила посещения </a></li>
+                  <li><a href="#">Людям с инвалидностью</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tabs__item  tabs__item--horizontal" id="tab_3">
+          <div class="tabs__item-pic">
+            <div class="tabs__item-slider">
+              <div class="tabs__item-slider-item">
+                <img class="lozad" data-src="/img/buildings/slider/main-building-hor-slider.jpg"
+                  src="/img/buildings/slider/main-building-hor-slider.jpg" alt="Подпись к фотографии">
+              </div>
+              <div class="tabs__item-slider-item">
+                <img class="lozad" data-src="/img/buildings/slider/main-building-hor-slider.jpg"
+                  src="/img/buildings/slider/main-building-hor-slider.jpg" alt="Подпись к фотографии">
+              </div>
+            </div>
+          </div>
+          <div class="tabs__item-text">
+            <h3>Типография</h3>
+            <ul class="tabs__contacts-list">
+              <li class="tabs__contacts-item">
+                <span>Адрес</span>
+                <p>г. Москва, ул. Тверская 21</p>
+              </li>
+              <li class="tabs__contacts-item">
+                <span>Режим рабтоты</span>
+                <p>Пн-Пт с 8:00 до 16:30</p>
+                <p>Сб-Вс с 9:00 до 20:з0</p>
+              </li>
+              <li class="tabs__contacts-item">
+                <span>Телефон</span>
+                <p>+7 911 992 99 99</p>
+                <a href="#" class="btn">Перейти к филиалу</a>
+              </li>
+              <li class="tabs__item-inner">
+                <ul class="tabs__item-inner-list">
+                  <li><a href="#">Экскурсии и программы</a></li>
+                  <li><a href="#">Правила посещения </a></li>
+                  <li><a href="#">Людям с инвалидностью</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tabs__item  tabs__item--horizontal" id="tab_4">
+          <div class="tabs__item-pic">
+            <div class="tabs__item-slider">
+              <div class="tabs__item-slider-item">
+                <img class="lozad" data-src="/img/buildings/slider/main-building-hor-slider.jpg"
+                  src="/img/buildings/slider/main-building-hor-slider.jpg" alt="Подпись к фотографии">
+              </div>
+              <div class="tabs__item-slider-item">
+                <img class="lozad" data-src="/img/buildings/slider/main-building-hor-slider.jpg"
+                  src="/img/buildings/slider/main-building-hor-slider.jpg" alt="Подпись к фотографии">
+              </div>
+            </div>
+          </div>
+          <div class="tabs__item-text">
+            <h3>Кржижановского</h3>
+            <ul class="tabs__contacts-list">
+              <li class="tabs__contacts-item">
+                <span>Адрес</span>
+                <p>г. Москва, ул. Тверская 21</p>
+              </li>
+              <li class="tabs__contacts-item">
+                <span>Режим рабтоты</span>
+                <p>Пн-Пт с 8:00 до 16:30</p>
+                <p>Сб-Вс с 9:00 до 20:з0</p>
+              </li>
+              <li class="tabs__contacts-item">
+                <span>Телефон</span>
+                <p>+7 911 992 99 99</p>
+                <a href="#" class="btn">Перейти к филиалу</a>
+              </li>
+              <li class="tabs__item-inner">
+                <ul class="tabs__item-inner-list">
+                  <li><a href="#">Экскурсии и программы</a></li>
+                  <li><a href="#">Правила посещения </a></li>
+                  <li><a href="#">Людям с инвалидностью</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tabs__item  tabs__item--horizontal" id="tab_5">
+          <div class="tabs__item-pic">
+            <div class="tabs__item-slider">
+              <div class="tabs__item-slider-item">
+                <img class="lozad" data-src="/img/buildings/slider/main-building-hor-slider.jpg"
+                  src="/img/buildings/slider/main-building-hor-slider.jpg" alt="Подпись к фотографии">
+              </div>
+              <div class="tabs__item-slider-item">
+                <img class="lozad" data-src="/img/buildings/slider/main-building-hor-slider.jpg"
+                  src="/img/buildings/slider/main-building-hor-slider.jpg" alt="Подпись к фотографии">
+              </div>
+            </div>
+          </div>
+          <div class="tabs__item-text">
+            <h3>Евтушенко</h3>
+            <ul class="tabs__contacts-list">
+              <li class="tabs__contacts-item">
+                <span>Адрес</span>
+                <p>г. Москва, ул. Тверская 21</p>
+              </li>
+              <li class="tabs__contacts-item">
+                <span>Режим рабтоты</span>
+                <p>Пн-Пт с 8:00 до 16:30</p>
+                <p>Сб-Вс с 9:00 до 20:з0</p>
+              </li>
+              <li class="tabs__contacts-item">
+                <span>Телефон</span>
+                <p>+7 911 992 99 99</p>
+                <a href="#" class="btn">Перейти к филиалу</a>
+              </li>
+              <li class="tabs__item-inner">
+                <ul class="tabs__item-inner-list">
+                  <li><a href="#">Экскурсии и программы</a></li>
+                  <li><a href="#">Правила посещения </a></li>
+                  <li><a href="#">Людям с инвалидностью</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tabs__item  tabs__item--horizontal" id="tab_6">
+          <div class="tabs__item-pic">
+            <div class="tabs__item-slider">
+              <div class="tabs__item-slider-item">
+                <img class="lozad" data-src="/img/buildings/slider/main-building-hor-slider.jpg"
+                  src="/img/buildings/slider/main-building-hor-slider.jpg" alt="Подпись к фотографии">
+              </div>
+              <div class="tabs__item-slider-item">
+                <img class="lozad" data-src="/img/buildings/slider/main-building-hor-slider.jpg"
+                  src="/img/buildings/slider/main-building-hor-slider.jpg" alt="Подпись к фотографии">
+              </div>
+            </div>
+          </div>
+          <div class="tabs__item-text">
+            <h3>Катынь</h3>
+            <ul class="tabs__contacts-list">
+              <li class="tabs__contacts-item">
+                <span>Адрес</span>
+                <p>г. Москва, ул. Тверская 21</p>
+              </li>
+              <li class="tabs__contacts-item">
+                <span>Режим рабтоты</span>
+                <p>Пн-Пт с 8:00 до 16:30</p>
+                <p>Сб-Вс с 9:00 до 20:з0</p>
+                <!-- <table>
+                  <tr>
+                    <td>Пн-Пт</td>
+                    <td>с 8:00 до 16:30</td>
+                  </tr>
+                  <tr>
+                    <td>Сб-Вс</td>
+                    <td>с 9:00 до 20:з0</td>
+                  </tr>
+                </table> -->
+              </li>
+              <li class="tabs__contacts-item">
+                <span>Телефон</span>
+                <p>+7 911 992 99 99</p>
+                <a href="#" class="btn">Перейти к филиалу</a>
+              </li>
+              <li class="tabs__item-inner">
+                <ul class="tabs__item-inner-list">
+                  <li><a href="#">Экскурсии и программы</a></li>
+                  <li><a href="#">Правила посещения </a></li>
+                  <li><a href="#">Людям с инвалидностью</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tabs__item  tabs__item--horizontal" id="tab_7">
+          <div class="tabs__item-pic">
+            <div class="tabs__item-slider">
+              <div class="tabs__item-slider-item">
+                <img class="lozad" data-src="/img/buildings/slider/main-building-hor-slider.jpg"
+                  src="/img/buildings/slider/main-building-hor-slider.jpg" alt="Подпись к фотографии">
+              </div>
+              <div class="tabs__item-slider-item">
+                <img class="lozad" data-src="/img/buildings/slider/main-building-hor-slider.jpg"
+                  src="/img/buildings/slider/main-building-hor-slider.jpg" alt="Подпись к фотографии">
+              </div>
+            </div>
+          </div>
+          <div class="tabs__item-text">
+            <h3>Медное</h3>
+            <ul class="tabs__contacts-list">
+              <li class="tabs__contacts-item">
+                <span>Адрес</span>
+                <p>г. Москва, ул. Тверская 21</p>
+              </li>
+              <li class="tabs__contacts-item">
+                <span>Режим рабтоты</span>
+                <p>Пн-Пт с 8:00 до 16:30</p>
+                <p>Сб-Вс с 9:00 до 20:з0</p>
+              </li>
+              <li class="tabs__contacts-item">
+                <span>Телефон</span>
+                <p>+7 911 992 99 99</p>
+                <a href="#" class="btn">Перейти к филиалу</a>
+              </li>
+              <li class="tabs__item-inner">
+                <ul class="tabs__item-inner-list">
+                  <li><a href="#">Экскурсии и программы</a></li>
+                  <li><a href="#">Правила посещения </a></li>
+                  <li><a href="#">Людям с инвалидностью</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="museum">
+    <div class="museum__wrapper">
+      <ul class="museum__link-list">
+        <li class="museum__link-item">
+          <a href="#">История музея</a>
+        </li>
+        <li class="museum__link-item">
+          <a href="#">Новости</a>
+        </li>
+        <li class="museum__link-item">
+          <a href="#">Здания и филиалы</a>
+        </li>
+        <li class="museum__link-item">
+          <a href="#">Спецпроекты</a>
+        </li>
+        <li class="museum__link-item">
+          <a href="#">Музей Онлайн</a>
+        </li>
+        <li class="museum__link-item">
+          <a href="#">Для СМИ</a>
+        </li>
+        <li class="museum__link-item">
+          <a href="#">Команда</a>
+        </li>
+        <li class="museum__link-item">
+          <a href="#">Вакансии</a>
+        </li>
+        <li class="museum__link-item">
+          <a href="#">Контакты</a>
+        </li>
+        <li class="museum__link-item">
+          <a href="#">Официальные документы</a>
+        </li>
+        <li class="museum__link-item">
+          <a href="#">Экспозиция и коллекции</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+</section>
+
+{% endblock %}

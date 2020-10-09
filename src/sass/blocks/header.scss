@@ -13,10 +13,13 @@
 
   &--inner {
     margin-bottom: 35px;
+    background-color: #0e0e0e;
+    backdrop-filter: blur(0);
   }
 
   &--fixed {
     position: fixed;
+    background-color: #0e0e0e;
   }
 }
 
@@ -36,10 +39,24 @@
 }
 
 .header__search {
-  margin-right: 20px;
+  //margin-right: 20px;
   position: relative;
   display: flex;
   align-items: center;
+
+  &--opened {
+    .header__search-form {
+      display: flex;
+      align-items: center;
+      //padding-right: 5px;
+      position: absolute;
+      right: 25px;
+      top: -3px;
+      // transform: translateY(-50%);
+      border-radius: 0;
+      z-index: 2;
+    }
+  }
 }
 
 .header__search-activate {
@@ -70,28 +87,35 @@
 .header__search-form {
   display: none;
 
-  &--opened {
-    display: flex;
-    align-items: center;
-    padding-right: 5px;
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    border-radius: 0;
-  }
-
   input {
-    padding: 5px 5px;
-    height: 20px;
+    width: 274px;
+    padding: 10px 15px;
+    height: 32px;
     font-size: 13px;
     line-height: 13px;
-    margin-right: 5px;
+    margin-right: -20px;
     font-family: $sec-font;
+    background: #7d7d7d;
+    border-radius: 3px;
+    border: none;
+    font-size: 9px;
+    line-height: 119.7%;
+    /* identical to box height, or 11px */
+
+    color: #ffffff;
+
+    &::placeholder {
+      font-size: 9px;
+      line-height: 119.7%;
+      /* identical to box height, or 11px */
+
+      color: #ffffff;
+    }
 
     &:focus,
     &:active {
-      outline: 2px solid $s-color;
+      box-shadow: 0 0 0 2px $s-color;
+      outline: none;
     }
   }
 }
@@ -168,14 +192,16 @@
     }
   }
   .header__wrapper {
+    @include wrapper;
+    max-width: 768px;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    min-width: 768px;
-    max-width: 1200px;
-    //width: 768px;
-    margin: 0 auto;
-    padding: 0 5.2%;
+    // min-width: 768px;
+    // max-width: 1200px;
+    // //width: 768px;
+    // margin: 0 auto;
+    // padding: 0 5.2%;
   }
 
   .header__menu-list {
@@ -305,9 +331,17 @@
   }
 }
 
-@media screen and (max-width: 335px) {
+@media screen and (max-width: 374px) {
   .header__search {
     margin-left: auto;
     margin-right: 0;
+
+    &--opened {
+      .header__search-form {
+        input {
+          width: 200px;
+        }
+      }
+    }
   }
 }

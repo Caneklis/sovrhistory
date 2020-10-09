@@ -3,6 +3,9 @@
 @import "../../node_modules/slick-carousel/slick/slick-theme.scss";
 @import "../../node_modules/select2/dist/css/select2.min";
 @import "../../node_modules/@chenfengyuan/datepicker/src/css/datepicker.scss";
+@import "../../node_modules/lightgallery/dist/css/lightgallery";
+@import "../../node_modules/baron/baron";
+@import "../../node_modules/nouislider/distribute/nouislider";
 @import "global/fonts";
 @import "global/variables";
 @import "global/scafolding";
@@ -32,3 +35,27 @@
 @import "blocks/exhibitions";
 @import "blocks/filter";
 @import "blocks/recommendations";
+@import "blocks/text";
+@import "blocks/video";
+@import "blocks/popup-slider";
+@import "blocks/shop";
+@import "blocks/timeline";
+@import "blocks/contrast.scss";
+@import "blocks/accordion.scss";
+@import "blocks/table.scss";
+@import "blocks/partners-page.scss";
+@import "blocks/company.scss";
+@import "blocks/team.scss";
+@import "blocks/press-service.scss";
+@import "blocks/offices.scss";
+@import "blocks/museum-online.scss";
+@import "blocks/cards.scss";
+@import "blocks/tabs.scss";
+@import "blocks/departments.scss";
+@import "blocks/museum.scss";
+@import "blocks/events.scss";
+@import "blocks/error-page.scss";
+@import "blocks/excursions.scss";
+@import "blocks/ya-share.scss";
+
+@import "blocks/cookie.scss";

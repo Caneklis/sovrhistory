@@ -2,5 +2,8 @@
   <div class="breadcrumbs__wrapper">
     <a href="#" class="breadcrumbs__link">на главную</a>
     <h2 class="breadcrumbs__title">{{ title }}</h2>
+    {% if subtitle %}
+    <h2 class="breadcrumbs__subtitle">{{ subtitle }}</h2>
+    {% endif %}
   </div>
 </div>

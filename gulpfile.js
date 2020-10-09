@@ -110,7 +110,7 @@ gulp.task("nunjucks:changed", function () {
 
 gulp.task("sprite", function () {
   return gulp
-    .src("src/img/{icon-*,htmlacademy*}.svg")
+    .src("src/img/icons/**/*.svg")
     .pipe(
       svgstore({
         inlineSvg: true,
@@ -161,6 +161,9 @@ gulp.task("libs", function () {
       "node_modules/select2/dist/js/select2.full.min.js",
       "node_modules/@chenfengyuan/datepicker/dist/datepicker.js",
       "node_modules/@chenfengyuan/datepicker/i18n/datepicker.ru-RU.js",
+      "node_modules/lightgallery/dist/js/lightgallery-all.min.js",
+      "node_modules/baron/baron.js",
+      "node_modules/nouislider/distribute/nouislider.js",
     ])
     .pipe(concat("libs.js"))
     .pipe(uglify()) // Минимизировать весь js (на выбор)

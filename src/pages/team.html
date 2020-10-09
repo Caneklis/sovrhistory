@@ -1,0 +1,404 @@
+---
+title: Команда
+subtitle:
+---
+{% extends "../templates/layouts/_layout-inner.html" %}
+
+{% block content %}
+
+<section class="team">
+  <div class="team__wrapper">
+    <article class="team__lead">
+      <div class="team__photo team__photo--main">
+        <picture>
+          <source media="(min-width: 1440px)" data-src="/img/team/photo-boss-desktop.jpg"
+            srcset="/img/team/photo-boss-desktop.jpg">
+          <source media="(min-width: 768px)" data-src="/img/team/photo-boss-tablet.jpg"
+            srcset="/img/team/photo-boss-tablet.jpg">
+          <img class="lozad" data-src="/img/team/photo-boss-mobile.jpg" src="/img/team/photo-boss-mobile.jpg"
+            alt="Фотография товара" loading="lazy">
+        </picture>
+        <!--mobile 124*124
+            tablet 194*194
+            desktop 280*280
+        -->
+      </div>
+      <img class="team__building  team__building--tablet" src="/img/buildings/building-1.svg" alt="Иконка музея"
+        width="58" height="21">
+      <div class="team__position">
+        <img class="team__building" src="/img/buildings/building-1.svg" alt="Иконка музея" width="58" height="21">
+        <p>Генеральный директор Музея современной истории России</p>
+        <h3>Великанова Ирина Яковлевна</h3>
+      </div>
+      <div class="team__text">
+        <p>Доктор исторических наук, один из ведущих отечественных специалистов в области древней истории, археологии и
+          нумизматики стран Ближнего Востока и Центральной Азии, автор и соавтор свыше 160 научных работ (из них семи
+          монографий).</p>
+      </div>
+      <div class="team__contacts  team__contacts--main">
+        <div class="team__phone">
+          <span>Телефон</span>
+          <p><a href="tel:+74956995217"></a>+7 (495) 699-52-17</p>
+        </div>
+        <div class="team__mail">
+          <span>E-mail</span>
+          <p><a href="mailto:museum@sovrhistory.ru">museum@sovrhistory.ru</a></p>
+        </div>
+      </div>
+    </article>
+
+  </div>
+  <section class="team__director-assistants">
+    <div class="team__wrapper">
+      <h2 class="team__title">Сотрудники музея</h2>
+
+      <ul class="team__list">
+        {% for i in range(0, 3) -%}
+        <li class="team__item">
+          <div class="team__photo">
+            <picture>
+              <source media="(min-width: 1440px)" data-src="/img/team/photo-desktop.jpg"
+                srcset="/img/team/photo-desktop.jpg">
+              <source media="(min-width: 768px)" data-src="/img/team/photo-tablet.jpg"
+                srcset="/img/team/photo-tablet.jpg">
+              <img class="lozad" data-src="/img/team/photo-mobile.jpg" src="/img/team/photo-mobile.jpg"
+                alt="Фотография товара" loading="lazy">
+            </picture>
+            <!--mobile 110*110
+                tablet 178*178
+                desktop 194*194
+            -->
+          </div>
+          <div class="team__position">
+            <!-- <img class="team__building" src="/img/buildings/building-1.svg" alt="Иконка музея" width="58" height="21"> -->
+            <h3>Нелюба Инна Васильевна</h3>
+            <p>Первый заместитель генерального директора</p>
+          </div>
+          <div class="team__contacts">
+            <span>Контакты</span>
+            <p><a href="tel:+74956995217"></a>+7 (495) 699-52-17</p>
+            <p><a href="mailto:museum@sovrhistory.ru">museum@sovrhistory.ru</a></p>
+          </div>
+        </li>
+        {%- endfor %}
+      </ul>
+    </div>
+  </section>
+
+  <section class="press-service">
+    <article class="press-service__text">
+      <h2 class="press-service__title">Пресс-служба</h2>
+      <div class="press-service__contacts">
+        <span>Телефон</span>
+        <p><a href="tel:+74956990974">+7 (495) 699-09-74</a></p>
+      </div>
+      <div class="press-service__contacts">
+        <span>E-mail</span>
+        <p><a href="mailto:pressasovr@gmail.com">pressasovr@gmail.com</a></p>
+        <p><a href="mailto:pressa@sovrhistory.ru">pressa@sovrhistory.ru</a></p>
+      </div>
+    </article>
+  </section>
+
+  <section class="team__workers">
+    <div class="team__wrapper">
+      <h2 class="team__title">Заместители директора</h2>
+      <ul class="team__list">
+        {% for i in range(0, 6) -%}
+        <li class="team__item">
+          <div class="team__photo">
+            <picture>
+              <source media="(min-width: 1440px)" data-src="/img/team/photo-desktop.jpg"
+                srcset="/img/team/photo-desktop.jpg">
+              <source media="(min-width: 768px)" data-src="/img/team/photo-tablet.jpg"
+                srcset="/img/team/photo-tablet.jpg">
+              <img class="lozad" data-src="/img/team/photo-mobile.jpg" src="/img/team/photo-mobile.jpg"
+                alt="Фотография товара" loading="lazy">
+            </picture>
+            <!--mobile 110*110
+                tablet 178*178
+                desktop 194*194
+            -->
+          </div>
+          <div class="team__position">
+            <!-- <img class="team__building" src="/img/buildings/building-1.svg" alt="Иконка музея" width="58" height="21"> -->
+            <h3>Нелюба Инна Васильевна</h3>
+            <p>Первый заместитель генерального директора</p>
+          </div>
+          <div class="team__contacts">
+            <span>Контакты</span>
+            <p><a href="tel:+74956995217"></a>+7 (495) 699-52-17</p>
+            <p><a href="mailto:museum@sovrhistory.ru">museum@sovrhistory.ru</a></p>
+          </div>
+        </li>
+        {%- endfor %}
+      </ul>
+    </div>
+  </section>
+
+  <section class="offices">
+    <div class="offices__wrapper">
+      <h2 class="offices__title">Директоры фелиалов</h2>
+      <article class="offices__head">
+        <div class="offices__head-pic">
+          <picture>
+            <source media="(min-width: 1440px)" data-src="https://via.placeholder.com/200/200"
+              srcset="https://via.placeholder.com/200/200">
+            <source media="(min-width: 768px)" data-src="https://via.placeholder.com/146/146"
+              srcset="https://via.placeholder.com/146/146">
+            <img class="lozad" data-src="https://via.placeholder.com/111/111" src="https://via.placeholder.com/111/111"
+              alt="Фотография товара" loading="lazy">
+          </picture>
+          <!--mobile 111*111
+            tablet 146*146
+            desktop 200*200
+        -->
+        </div>
+
+        <div class="offices__position">
+          <p>Директор фелиалов</p>
+          <h3>Иванв Андрей Яковлевич</h3>
+        </div>
+        <div class="offices__contacts">
+          <span>Контакты</span>
+          <p><a href="tel:+74956995217"></a>+7 (495) 699-52-17</p>
+          <p><a href="mailto:museum@sovrhistory.ru">museum@sovrhistory.ru</a></p>
+        </div>
+      </article>
+
+      <h2 class="offices__title">Начальники отделов</h2>
+
+      <article class="offices__item">
+        <div class="offices__item-pic">
+          <picture>
+            <source media="(min-width: 1440px)" data-src="https://via.placeholder.com/200/200"
+              srcset="https://via.placeholder.com/200/200">
+            <source media="(min-width: 768px)" data-src="https://via.placeholder.com/180/180"
+              srcset="https://via.placeholder.com/180/180">
+            <img class="lozad" data-src="https://via.placeholder.com/111/111" src="https://via.placeholder.com/177/177"
+              alt="Фотография товара" loading="lazy">
+          </picture>
+          <!--mobile 177*177
+            tablet 180*180
+            desktop 200*200
+        -->
+        </div>
+        <div class="offices__building">
+          <img src="/img/buildings/building-2.svg" alt="Иконка музея" width="87" height="34">
+        </div>
+        <div class="offices__position">
+          <h3>Иванв Андрей Яковлевич</h3>
+          <p>Директор музея «Пресня»</p>
+          <div class="offices__contacts">
+            <span>Контакты</span>
+            <p><a href="tel:+74956995217"></a>+7 (495) 699-52-17</p>
+            <p><a href="mailto:museum@sovrhistory.ru">museum@sovrhistory.ru</a></p>
+          </div>
+        </div>
+      </article>
+
+      <article class="offices__item">
+        <div class="offices__item-pic">
+          <picture>
+            <source media="(min-width: 1440px)" data-src="https://via.placeholder.com/200/200"
+              srcset="https://via.placeholder.com/200/200">
+            <source media="(min-width: 768px)" data-src="https://via.placeholder.com/180/180"
+              srcset="https://via.placeholder.com/180/180">
+            <img class="lozad" data-src="https://via.placeholder.com/111/111" src="https://via.placeholder.com/177/177"
+              alt="Фотография товара" loading="lazy">
+          </picture>
+          <!--mobile 177*177
+            tablet 180*180
+            desktop 200*200
+        -->
+        </div>
+        <div class="offices__position">
+          <h3>Иванв Андрей Яковлевич</h3>
+          <p>Директор музея «Пресня»</p>
+          <div class="offices__contacts">
+            <span>Контакты</span>
+            <p><a href="tel:+74956995217"></a>+7 (495) 699-52-17</p>
+            <p><a href="mailto:museum@sovrhistory.ru">museum@sovrhistory.ru</a></p>
+          </div>
+        </div>
+      </article>
+
+
+      <h2 class="offices__title  offices__title--full">Просто список сотрудников если нужно</h2>
+
+      <ul class="offices__list">
+        <li class="offices__item">
+          <div class="offices__item-pic">
+            <picture>
+              <source media="(min-width: 1440px)" data-src="https://via.placeholder.com/200/200"
+                srcset="https://via.placeholder.com/200/200">
+              <source media="(min-width: 768px)" data-src="https://via.placeholder.com/180/180"
+                srcset="https://via.placeholder.com/180/180">
+              <img class="lozad" data-src="https://via.placeholder.com/111/111"
+                src="https://via.placeholder.com/177/177" alt="Фотография товара" loading="lazy">
+            </picture>
+            <!--mobile 177*177
+              tablet 180*180
+              desktop 200*200
+          -->
+          </div>
+          <div class="offices__building">
+            <img src="/img/buildings/building-2.svg" alt="Иконка музея" width="87" height="34">
+          </div>
+          <div class="offices__position">
+            <h3>Иванв Андрей Яковлевич</h3>
+            <p>Директор музея «Пресня»</p>
+            <div class="offices__contacts">
+              <span>Контакты</span>
+              <p><a href="tel:+74956995217"></a>+7 (495) 699-52-17</p>
+              <p><a href="mailto:museum@sovrhistory.ru">museum@sovrhistory.ru</a></p>
+            </div>
+          </div>
+        </li>
+        <li class="offices__item">
+          <div class="offices__item-pic">
+            <picture>
+              <source media="(min-width: 1440px)" data-src="https://via.placeholder.com/200/200"
+                srcset="https://via.placeholder.com/200/200">
+              <source media="(min-width: 768px)" data-src="https://via.placeholder.com/180/180"
+                srcset="https://via.placeholder.com/180/180">
+              <img class="lozad" data-src="https://via.placeholder.com/111/111"
+                src="https://via.placeholder.com/177/177" alt="Фотография товара" loading="lazy">
+            </picture>
+            <!--mobile 177*177
+              tablet 180*180
+              desktop 200*200
+          -->
+          </div>
+          <div class="offices__building">
+            <img src="/img/buildings/building-4.svg" alt="Иконка музея" width="76" height="47">
+          </div>
+          <div class="offices__position">
+            <h3>Иванв Андрей Яковлевич</h3>
+            <p>Директор мемориальной квартиры «Кржижановский»</p>
+            <div class="offices__contacts">
+              <span>Контакты</span>
+              <p><a href="tel:+74956995217"></a>+7 (495) 699-52-17</p>
+              <p><a href="mailto:museum@sovrhistory.ru">museum@sovrhistory.ru</a></p>
+            </div>
+          </div>
+        </li>
+        <li class="offices__item">
+          <div class="offices__item-pic">
+            <picture>
+              <source media="(min-width: 1440px)" data-src="https://via.placeholder.com/200/200"
+                srcset="https://via.placeholder.com/200/200">
+              <source media="(min-width: 768px)" data-src="https://via.placeholder.com/180/180"
+                srcset="https://via.placeholder.com/180/180">
+              <img class="lozad" data-src="https://via.placeholder.com/111/111"
+                src="https://via.placeholder.com/177/177" alt="Фотография товара" loading="lazy">
+            </picture>
+            <!--mobile 177*177
+              tablet 180*180
+              desktop 200*200
+          -->
+          </div>
+          <div class="offices__building">
+            <img src="/img/buildings/building-6.svg" alt="Иконка музея" width="103" height="30">
+          </div>
+          <div class="offices__position">
+            <h3>Иванв Андрей Яковлевич</h3>
+            <p>Директор мемориального комплекса «Катынь»</p>
+            <div class="offices__contacts">
+              <span>Контакты</span>
+              <p><a href="tel:+74956995217"></a>+7 (495) 699-52-17</p>
+              <p><a href="mailto:museum@sovrhistory.ru">museum@sovrhistory.ru</a></p>
+            </div>
+          </div>
+        </li>
+        <li class="offices__item">
+          <div class="offices__item-pic">
+            <picture>
+              <source media="(min-width: 1440px)" data-src="https://via.placeholder.com/200/200"
+                srcset="https://via.placeholder.com/200/200">
+              <source media="(min-width: 768px)" data-src="https://via.placeholder.com/180/180"
+                srcset="https://via.placeholder.com/180/180">
+              <img class="lozad" data-src="https://via.placeholder.com/111/111"
+                src="https://via.placeholder.com/177/177" alt="Фотография товара" loading="lazy">
+            </picture>
+            <!--mobile 177*177
+              tablet 180*180
+              desktop 200*200
+          -->
+          </div>
+          <div class="offices__building">
+            <img src="/img/buildings/building-3.svg" alt="Иконка музея" width="84" height="45">
+          </div>
+          <div class="offices__position">
+            <h3>Иванв Андрей Яковлевич</h3>
+            <p>Директор музея «Типография»</p>
+            <div class="offices__contacts">
+              <span>Контакты</span>
+              <p><a href="tel:+74956995217"></a>+7 (495) 699-52-17</p>
+              <p><a href="mailto:museum@sovrhistory.ru">museum@sovrhistory.ru</a></p>
+            </div>
+          </div>
+        </li>
+        <li class="offices__item">
+          <div class="offices__item-pic">
+            <picture>
+              <source media="(min-width: 1440px)" data-src="https://via.placeholder.com/200/200"
+                srcset="https://via.placeholder.com/200/200">
+              <source media="(min-width: 768px)" data-src="https://via.placeholder.com/180/180"
+                srcset="https://via.placeholder.com/180/180">
+              <img class="lozad" data-src="https://via.placeholder.com/111/111"
+                src="https://via.placeholder.com/177/177" alt="Фотография товара" loading="lazy">
+            </picture>
+            <!--mobile 177*177
+              tablet 180*180
+              desktop 200*200
+          -->
+          </div>
+          <div class="offices__building">
+            <img src="/img/buildings/building-5.svg" alt="Иконка музея" width="79" height="40">
+          </div>
+          <div class="offices__position">
+            <h3>Иванв Андрей Яковлевич</h3>
+            <p>Директор музея «Евтушенко»</p>
+            <div class="offices__contacts">
+              <span>Контакты</span>
+              <p><a href="tel:+74956995217"></a>+7 (495) 699-52-17</p>
+              <p><a href="mailto:museum@sovrhistory.ru">museum@sovrhistory.ru</a></p>
+            </div>
+          </div>
+        </li>
+        <li class="offices__item">
+          <div class="offices__item-pic">
+            <picture>
+              <source media="(min-width: 1440px)" data-src="https://via.placeholder.com/200/200"
+                srcset="https://via.placeholder.com/200/200">
+              <source media="(min-width: 768px)" data-src="https://via.placeholder.com/180/180"
+                srcset="https://via.placeholder.com/180/180">
+              <img class="lozad" data-src="https://via.placeholder.com/111/111"
+                src="https://via.placeholder.com/177/177" alt="Фотография товара" loading="lazy">
+            </picture>
+            <!--mobile 177*177
+              tablet 180*180
+              desktop 200*200
+          -->
+          </div>
+          <div class="offices__building">
+            <img src="/img/buildings/building-7.svg" alt="Иконка музея" width="109" height="47">
+          </div>
+          <div class="offices__position">
+            <h3>Иванв Андрей Яковлевич</h3>
+            <p>Директор мемориального комплекса «Медное»</p>
+            <div class="offices__contacts">
+              <span>Контакты</span>
+              <p><a href="tel:+74956995217"></a>+7 (495) 699-52-17</p>
+              <p><a href="mailto:museum@sovrhistory.ru">museum@sovrhistory.ru</a></p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+</section>
+
+
+{% endblock %}

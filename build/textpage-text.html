@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Человек и война. Нерасказанная история</title>
+    <link rel="stylesheet" href="/css/style.min.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="/img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+  </head>
+  <body>
+    <div class="marquee">
+      <div class="marquee__wrapper">
+        <div class="marquee__text">
+          <p>Внимание! В связи с осложнившейся ситуацией по коронавирусу, мы зак...</p>
+        </div>
+        <a href="#" class="marquee__link">Подробнее</a>
+        <button class="marquee__close-btn" type="button"><span class="visually-hidden">Закрыть строку</span></button>
+      </div>
+    </div>
+    <header class="header  header--inner">
+      <div class="header__wrapper">
+        <div class="header__logo">
+          <a href="#" class="logo">
+            <img src="/img/logo.svg" alt="Логотип Государственный центральный музей современной истории России" width="49" height="20">
+            <div class="logo__text">Государственный центральный музей современной истории России</div>
+            <div class="logo__slogan">Историю создаете вы!</div>
+          </a>
+        </div>
+        <div class="header__user-block">
+          <div class="lang">
+            <button class="lang__btn" type="button">RU</button>
+            <ul class="lang__list">
+              <li class="lang__item"><a href="#">RU</a></li>
+              <li class="lang__item"><a href="#">EN</a></li>
+              <li class="lang__item"><a href="#">日本</a></li>
+            </ul>
+          </div>
+          <div class="header__search">
+            <form action="#" method="GET" class="header__search-form">
+              <input type="text">
+              <button type="submit" class="header__search-form-btn"><span class="visually-hidden">Найти</span></button>
+            </form>
+            <button class="header__search-activate" type="button"><span class="visually-hidden">Открыть форму поиска</span></button>
+          </div>
+          <ul class="header__menu-list">
+            <li class="header__menu-item"><a href="#">Билеты</a></li>
+            <li class="header__menu-item"><a href="#">Адреса</a></li>
+            <li class="header__menu-item"><a href="#">Время работы</a></li>
+          </ul>
+        </div>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Меню</span></button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="ya.ru">Посетителям</a>
+              <ul class="main-nav__sublist">
+                <li><a href="#">Экскурсии</a></li>
+                <li><a href="#">Лекции и музейные занятия</a></li>
+                <li><a href="#">Образовательные проекты</a></li>
+                <li><a href="#">Билеты и расписание</a></li>
+                <li><a href="#">Экскурсии</a></li>
+                <li><a href="#">Лекции и музейные занятия</a></li>
+                <li><a href="#">Образовательные проекты</a></li>
+                <li><a href="#">Билеты и расписание</a></li>
+              </ul>
+            </li>
+            <li class="main-nav__item  main-nav__item--active">
+              <a href="#">Выставка</a>
+              <ul class="main-nav__sublist">
+                <li><a href="#">Экскурсии</a></li>
+                <li><a href="#">Лекции и музейные занятия</a></li>
+                <li><a href="#">Образовательные проекты</a></li>
+                <li><a href="#">Билеты и расписание</a></li>
+              </ul>
+            </li>
+            <li class="main-nav__item"><a href="#">События</a></li>
+            <li class="main-nav__item"><a href="#">Образование</a></li>
+            <li class="main-nav__item">
+              <a href="#">Музей</a>
+              <ul class="main-nav__sublist">
+                <li><a href="#">Экскурсии</a></li>
+                <li><a href="#">Лекции и музейные занятия</a></li>
+                <li><a href="#">Образовательные проекты</a></li>
+                <li><a href="#">Билеты и расписание</a></li>
+              </ul>
+            </li>
+            <li class="main-nav__item"><a href="#">Партнеры</a></li>
+            <li class="main-nav__item"><a href="#">Магазин</a></li>
+            <li class="main-nav__item  main-nav__item--contrast"><a class="js-contrast-version"><img src="/img/glasses.svg" alt="Иконка версии для слабовидящих"><span class="visually-hidden">Версия для слабовидящих</span></a>
+              <a class="js-normal-version">Обычная версия</a>
+            </li>
+            <li>
+              <ul class="main-nav__header-menu">
+                <li class="main-nav__header-item"><a href="#">Билеты</a></li>
+                <li class="main-nav__header-item"><a href="#">Адреса</a></li>
+                <li class="main-nav__header-item"><a href="#">Время работы</a></li>
+              </ul>
+            </li>
+            <li class="social social--header">
+              <ul class="social__list">
+                <li class="social__item">
+                  <a href="#" class="social__link">
+                    <span class="visually-hidden">Страница в ВК</span>
+                    <svg class="icon" width="44" height="44" viewBox="0 0 44 44">
+                      <use xlink:href="/img/sprite_auto.svg#vk" x="0" y="0" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="#" class="social__link">
+                    <span class="visually-hidden">Страница в Facebook</span>
+                    <svg class="icon" width="44" height="44" viewBox="0 0 44 44">
+                      <use xlink:href="/img/sprite_auto.svg#facebook" x="0" y="0" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="#" class="social__link">
+                    <span class="visually-hidden">Страница в одноклассниках</span>
+                    <svg class="icon" width="44" height="44" viewBox="0 0 44 44">
+                      <use xlink:href="/img/sprite_auto.svg#ok" x="0" y="0" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="#" class="social__link">
+                    <span class="visually-hidden">Канал в Телеграм</span>
+                    <svg class="icon" width="44" height="44" viewBox="0 0 44 44">
+                      <use xlink:href="/img/sprite_auto.svg#telegram" x="0" y="0" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="#" class="social__link">
+                    <span class="visually-hidden">Страница в Инстаграм</span>
+                    <svg class="icon" width="44" height="44" viewBox="0 0 44 44">
+                      <use xlink:href="/img/sprite_auto.svg#instagramm" x="0" y="0" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="#" class="social__link">
+                    <span class="visually-hidden">Твиттер аккаунт</span>
+                    <svg class="icon" width="44" height="44" viewBox="0 0 44 44">
+                      <use xlink:href="/img/sprite_auto.svg#twitter" x="0" y="0" />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="main-nav__footer-item">
+              <div class="main-nav__footer-logo">
+                <img src="/img/logo-menu-mobile.svg" alt="Логотип Государственный центральный музей современной истории России">
+                <p>Государственный центральный музей современной истории России</p>
+              </div>
+              <div class="main-nav__footer-links">
+                <a href="#">Открыть полную версию сайта</a>
+                <a href="#">На главную</a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="breadcrumbs">
+      <div class="breadcrumbs__wrapper">
+        <a href="#" class="breadcrumbs__link">на главную</a>
+        <h2 class="breadcrumbs__title">Человек и война. Нерасказанная история</h2>
+        <h2 class="breadcrumbs__subtitle">Подзаголовок выставки который мельче</h2>
+      </div>
+    </div>
+    <section class="text">
+      <div class="text__header-pic  text__header-pic--no-padding">
+        <picture>
+          <source media="(min-width: 1440px)" data-src="/img/text/text-img-desktop.jpg" srcset="/img/text/text-img-desktop.jpg">
+          <source media="(min-width: 768px)" data-src="/img/text/text-img-tablet.jpg" srcset="/img/text/text-img-tablet.jpg">
+          <img class="lozad" data-src="/img/text/text-img-mobile.jpg" src="/img/text/text-img-mobile.jpg" alt="Фотография к новости" loading="lazy">
+        </picture>
+        <div class="text__header-description">Подпись к титульной картинке</div>
+        <img src="/img/text/banner-small.jpg" alt="">
+        <img src="/img/text/banner-large.jpg" alt="">
+      </div>
+      <div class="text__wrapper">
+        <article class="text__grid">
+          <section class="text__article-slider">
+            <div class="text__article-slider-list">
+              <div class="text__article-slider-item">
+                <article class="text__article-slide">
+                  <div class="text__article-slide-pic">
+                    <img src="/img/preview-events/preview-slide-1-full-tablet.jpg" alt="">
+                    <div class="text__article-slide-text">
+                      <h3><a href="#">Выставка <br> современной <br> истории</a></h3>
+                      <time class=" text__article-slide-date" datetime="2020-03-20 16:30">20/03/20</time>
+                    </div>
+                  </div>
+                  <p>Описание картинки, если будет нужно, может быть длиннымв несколько строк</p>
+                </article>
+              </div>
+              <div class="text__article-slider-item">
+                <article class="text__article-slide">
+                  <div class="text__article-slide-pic">
+                    <img src="/img/preview-events/preview-slide-1-mobile.jpg" alt="">
+                    <div class="text__article-slide-text">
+                      <h3><a href="#">Выставка <br> современной <br> истории</a></h3>
+                      <time class=" text__article-slide-date" datetime="2020-03-20 16:30">20/03/20</time>
+                    </div>
+                  </div>
+                  <p>Описание картинки, если будет нужно, может быть длиннымв несколько строк</p>
+                </article>
+              </div>
+              <div class="text__article-slider-item">
+                <article class="text__article-slide">
+                  <div class="text__article-slide-pic">
+                    <img src="/img/preview-events/preview-slide-1-full-tablet.jpg" alt="">
+                    <div class="text__article-slide-text">
+                      <h3><a href="#">Выставка <br> современной <br> истории</a></h3>
+                      <time class=" text__article-slide-date" datetime="2020-03-20 16:30">20/03/20</time>
+                    </div>
+                  </div>
+                  <p>Описание картинки, если будет нужно, может быть длиннымв несколько строк</p>
+                </article>
+              </div>
+            </div>
+            <div class="text__article-slider-controls">
+              <button class="text__article-slider--prev" type="button"><span class="visually-hidden">Следующий слайд</span></button>
+              <button class="text__article-slider--next" type="button"><span class="visually-hidden">Следующий слайд</span></button>
+            </div>
+          </section>
+          <section class="text__article">
+            <p>В центре внимания выставки — человек и его бытие в экстремальных условиях военной повседневности. Выставка представляет события тех лет не только через предметы, свидетельствующие о знаменитых сражениях, блестящих операциях и героизме советских людей. Она рассказывает личные истории: через стёршийся на сгибах солдатский треугольник, пожелтевшую фотокарточку, через гильзу — талисман, прошедший с хозяином пол-Европы; через кусочек «хлеба» из льняных жмыхов, обваленный в овсяной шелухе, — подарок рабочим завода «Большевик» на Новый год; через комплекс вещей, принадлежавших студенткам Московского художественного училища (гитлеровцы пытали их, затем расстреляли и для устрашения повесили трупы девушек в г. Волоколамске); через предметы, связанные с жизнью и судьбой первой женщины-министра Александры Коллонтай, знаменитого разведчика Николая Кузнецова, выдающейся певицы и актрисы Клавдии Шульженко, маршала Константина Рокоссовского и многих других героев тех лет. Личные истории очевидцев — бесценные свидетельства эпохи, без которых невозможно осмыслить героическую и трагическую историю нашей страны.</p>
+            <p>На выставке будут представлены более 300 предметов, среди которых — материалы, скомплектованные в военные годы, недавно найденные артефакты, материалы из семейных альбомов.... </p>
+            <a href="#" class="read-more-show hide">Подробнее</a>
+            <div class="read-more-content">
+              <p>Начиная с июня 1941 г. Музей современной истории России пополнял коллекцию документами и предметами, связанными с Великой Отечественной войной, и до сих пор специалисты занимаются изучением, реставрацией и сбором новых материалов, посвящённых трагическим 1418 дням войны.</p>
+              <p>Через личные истории на выставке будут показаны важнейшие вехи войны и затронуты такие глобальные темы, как всеобщая мобилизация, жизнь и подвиг тыла, научные разработки (в том числе создание советского атомного проекта), вклад Русской православной церкви в борьбу с нацизмом, деятельность артистов и творческих коллективов на фронте, работа дипломатического корпуса и внешней разведки, жизнь на оккупированных территориях, проблема сиротства.</p>
+              <p>Выставка является частью мультимедийного образовательного выставочного проекта «Человек и война. Нерассказанная история. К 75-летию Победы в Великой Отечественной войне 1941–1945 гг.», подготовленного Музеем и автономной некоммерческой организацией дополнительного образования «Центр народного просвещения» при поддержке Фонда президентских грантов.</p>
+              <a href="#" class="read-more-hide hide">Свернуть</a>
+            </div>
+            <table>
+              <tr>
+                <th>Экскурсия</th>
+                <th>Адрес объекта</th>
+                <th>Дата экскурсии</th>
+              </tr>
+              <tr>
+                <td>
+                  <b>Экскурсия</b>
+                  <p>Черноземье и земледелие в условиях зараженности радиацией</p>
+                  <p><a href="#">Подробнее</a></p>
+                </td>
+                <td>
+                  <b>Адрес объекта</b>
+                  <p>Россия, г. Москва, пер. Знаменский Малый, д. 3/5, стр. 10</p>
+                </td>
+                <td>
+                  <b>Дата экскурсии</b>
+                  <p>16 сентября, 15:30</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <b>Экскурсия</b>
+                  <p>Черноземье и земледелие в условиях зараженности радиацией</p>
+                  <p><a href="#">Подробнее</a></p>
+                </td>
+                <td>
+                  <b>Адрес объекта</b>
+                  <p>Россия, г. Москва, пер. Знаменский Малый, д. 3/5, стр. 10</p>
+                </td>
+                <td>
+                  <b>Дата экскурсии</b>
+                  <p>16 сентября, 15:30</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <b>Экскурсия</b>
+                  <p>Черноземье и земледелие в условиях зараженности радиацией</p>
+                  <p><a href="#">Подробнее</a></p>
+                </td>
+                <td>
+                  <b>Адрес объекта</b>
+                  <p>Россия, г. Москва, пер. Знаменский Малый, д. 3/5, стр. 10</p>
+                </td>
+                <td>
+                  <b>Дата экскурсии</b>
+                  <p>16 сентября, 15:30</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <b>Экскурсия</b>
+                  <p>Черноземье и земледелие в условиях зараженности радиацией</p>
+                  <p><a href="#">Подробнее</a></p>
+                </td>
+                <td>
+                  <b>Адрес объекта</b>
+                  <p>Россия, г. Москва, пер. Знаменский Малый, д. 3/5, стр. 10</p>
+                </td>
+                <td>
+                  <b>Дата экскурсии</b>
+                  <p>16 сентября, 15:30</p>
+                </td>
+              </tr>
+            </table>
+          </section>
+          <div class="text__video">
+            <div class="text__iframe">
+              <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/8tLH4HYCCgY" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe> -->
+            </div>
+            <p>Описание картинки, если будет нужно, может быть длиннымв несколько строк</p>
+            <a class="text__info-btn" href="#">Скачать PDF-релиз</a>
+          </div>
+          <div class="text__share">
+            <section class="social">
+              <h2 class="social__title">Поделиться в соцсетях:</h2>
+              <script src="https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+              <script src="https://yastatic.net/share2/share.js"></script>
+              <div class="ya-share2" data-services="vkontakte,facebook,odnoklassniki,twitter,telegram" data-size="s"></div>
+            </section>
+          </div>
+        </article>
+      </div>
+      <div class="text__wrapper">
+        <section class="text__article">
+          <h2>Заголовок 2</h2>
+          <h3>Заголовок 3</h3>
+          <h4>Заголовок 4</h4>
+          <p>В центре внимания выставки — человек и его бытие в экстремальных условиях военной повседневности. Выставка представляет события тех лет не только через предметы, свидетельствующие о знаменитых сражениях, блестящих операциях и героизме советских людей. Она рассказывает личные истории: через стёршийся на сгибах солдатский треугольник, пожелтевшую фотокарточку, через гильзу — талисман, прошедший с хозяином пол-Европы; через кусочек «хлеба» из льняных жмыхов, обваленный в овсяной шелухе, — подарок рабочим завода «Большевик» на Новый год; через комплекс вещей, принадлежавших студенткам Московского художественного училища (гитлеровцы пытали их, затем расстреляли и для устрашения повесили трупы девушек в г. Волоколамске); через предметы, связанные с жизнью и судьбой первой женщины-министра Александры Коллонтай, знаменитого разведчика Николая Кузнецова, выдающейся певицы и актрисы Клавдии Шульженко, маршала Константина Рокоссовского и многих других героев тех лет. Личные истории очевидцев — бесценные свидетельства эпохи, без которых невозможно осмыслить героическую и трагическую историю нашей страны.</p>
+          <ul>
+            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad reiciendis fugiat magnam quia, ullam porro mollitia, perspiciatis omnis fugit eveniet odit saepe aperiam eos numquam aspernatur quis dolore molestiae possimus.</li>
+            <li>Sapiente cupiditate aperiam rem inventore voluptatum quaerat minus voluptates ex illo! Enim quidem commodi maiores, ullam temporibus odio culpa repellat dolorem. Consectetur repellendus nihil aspernatur soluta expedita, distinctio voluptatem eius.</li>
+            <li>Suscipit itaque beatae voluptatum architecto doloribus doloremque ratione delectus aut, sint incidunt quo repellendus iusto accusantium iure consectetur rerum ex optio quidem aliquam blanditiis assumenda omnis voluptatibus possimus veritatis? Numquam?</li>
+            <li>Quidem, architecto unde explicabo vel molestias officiis ex molestiae reiciendis voluptates eos. Quos assumenda perspiciatis nisi recusandae fugit harum ipsa blanditiis, esse a, dolore cumque omnis placeat odio ea sunt.</li>
+            <li>Impedit dolorum laborum beatae neque aut rem, qui voluptatum dicta laboriosam et. Quisquam corrupti ut consequatur perspiciatis nostrum vitae repudiandae magnam alias, excepturi cum iste nesciunt ratione deleniti totam placeat?</li>
+          </ul>
+          <ol>
+            <li> <a href="#">а я ссылка</a>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad reiciendis fugiat magnam quia, ullam porro mollitia, perspiciatis omnis fugit eveniet odit saepe aperiam eos numquam aspernatur quis dolore molestiae possimus.</li>
+            <li>Sapiente cupiditate aperiam rem inventore voluptatum quaerat minus voluptates ex illo! Enim quidem commodi maiores, ullam temporibus odio culpa repellat dolorem. Consectetur repellendus nihil aspernatur soluta expedita, distinctio voluptatem eius.</li>
+            <li>Suscipit itaque beatae voluptatum architecto doloribus doloremque ratione delectus aut, sint incidunt quo repellendus iusto accusantium iure consectetur rerum ex optio quidem aliquam blanditiis assumenda omnis voluptatibus possimus veritatis? Numquam?</li>
+            <li>Quidem, architecto unde explicabo vel molestias officiis ex molestiae reiciendis voluptates eos. Quos assumenda perspiciatis nisi recusandae fugit harum ipsa blanditiis, esse a, dolore cumque omnis placeat odio ea sunt.</li>
+            <li>Impedit dolorum laborum beatae neque aut rem, qui voluptatum dicta laboriosam et. Quisquam corrupti ut consequatur perspiciatis nostrum vitae repudiandae magnam alias, excepturi cum iste nesciunt ratione deleniti totam placeat?</li>
+          </ol>
+          <p>На выставке будут представлены более 300 предметов, среди которых — материалы, скомплектованные в военные годы, недавно найденные артефакты, материалы из семейных альбомов.... </p>
+          <a href="#" class="read-more-show hide">Подробнее</a>
+          <div class="read-more-content">
+            <p>Начиная с июня 1941 г. Музей современной истории России пополнял коллекцию документами и предметами, связанными с Великой Отечественной войной, и до сих пор специалисты занимаются изучением, реставрацией и сбором новых материалов, посвящённых трагическим 1418 дням войны.</p>
+            <p>Через личные истории на выставке будут показаны важнейшие вехи войны и затронуты такие глобальные темы, как всеобщая мобилизация, жизнь и подвиг тыла, научные разработки (в том числе создание советского атомного проекта), вклад Русской православной церкви в борьбу с нацизмом, деятельность артистов и творческих коллективов на фронте, работа дипломатического корпуса и внешней разведки, жизнь на оккупированных территориях, проблема сиротства.</p>
+            <p>Выставка является частью мультимедийного образовательного выставочного проекта «Человек и война. Нерассказанная история. К 75-летию Победы в Великой Отечественной войне 1941–1945 гг.», подготовленного Музеем и автономной некоммерческой организацией дополнительного образования «Центр народного просвещения» при поддержке Фонда президентских грантов.</p>
+            <a href="#" class="read-more-hide hide">Свернуть</a>
+          </div>
+          <table>
+            <tr>
+              <th>Экскурсия</th>
+              <th>Адрес объекта</th>
+              <th>Дата экскурсии</th>
+            </tr>
+            <tr>
+              <td>
+                <b>Экскурсия</b>
+                <p>Черноземье и земледелие в условиях зараженности радиацией</p>
+                <p><a href="#">Подробнее</a></p>
+              </td>
+              <td>
+                <b>Адрес объекта</b>
+                <p>Россия, г. Москва, пер. Знаменский Малый, д. 3/5, стр. 10</p>
+              </td>
+              <td>
+                <b>Дата экскурсии</b>
+                <p>16 сентября, 15:30</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <b>Экскурсия</b>
+                <p>Черноземье и земледелие в условиях зараженности радиацией</p>
+                <p><a href="#">Подробнее</a></p>
+              </td>
+              <td>
+                <b>Адрес объекта</b>
+                <p>Россия, г. Москва, пер. Знаменский Малый, д. 3/5, стр. 10</p>
+              </td>
+              <td>
+                <b>Дата экскурсии</b>
+                <p>16 сентября, 15:30</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <b>Экскурсия</b>
+                <p>Черноземье и земледелие в условиях зараженности радиацией</p>
+                <p><a href="#">Подробнее</a></p>
+              </td>
+              <td>
+                <b>Адрес объекта</b>
+                <p>Россия, г. Москва, пер. Знаменский Малый, д. 3/5, стр. 10</p>
+              </td>
+              <td>
+                <b>Дата экскурсии</b>
+                <p>16 сентября, 15:30</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <b>Экскурсия</b>
+                <p>Черноземье и земледелие в условиях зараженности радиацией</p>
+                <p><a href="#">Подробнее</a></p>
+              </td>
+              <td>
+                <b>Адрес объекта</b>
+                <p>Россия, г. Москва, пер. Знаменский Малый, д. 3/5, стр. 10</p>
+              </td>
+              <td>
+                <b>Дата экскурсии</b>
+                <p>16 сентября, 15:30</p>
+              </td>
+            </tr>
+          </table>
+          <div class="text__share">
+            <section class="social">
+              <h2 class="social__title">Поделиться в соцсетях:</h2>
+              <ul class="social__list  social__list--in-text">
+                <li class="social__item"><a href="#" class="social__link  social__link--fb"><span class="visually-hidden">Вк</span></a></li>
+                <li class="social__item"><a href="#" class="social__link  social__link--vk"><span class="visually-hidden"></span></a></li>
+                <li class="social__item"><a href="#" class="social__link  social__link--ok"><span class="visually-hidden"></span></a></li>
+                <li class="social__item"><a href="#" class="social__link  social__link--inst"><span class="visually-hidden"></span></a></li>
+                <li class="social__item"><a href="#" class="social__link  social__link--tw"><span class="visually-hidden"></span></a></li>
+              </ul>
+            </section>
+          </div>
+        </section>
+        <section class="accordion">
+          <h2 class="accordion__title">Подзаголовок блока аккордеонного типа</h2>
+          <div class="accordion__panel">
+            <h3 class="accordion__header">Устав с изменениями</h3>
+            <div class="accordion__body">
+              <p>Коррупция — злоупотребление служебным положением, дача взятки, получение взятки, злоупотребление полномочиями, коммерческий подкуп либо иное незаконное использование физическим лицом своего должностного положения вопреки законным интересам общества и государства в целях получения выгоды в виде денег, ценностей, иного имущества или услуг имущественного характера, иных имущественных прав для себя или для третьих лиц либо незаконное предоставление такой выгоды указанному лицу другими физическими лицами. Противодействие коррупции — деятельность федеральных органов государственной власти, органов государственной власти субъектов Российской Федерации, органов местного самоуправления, институтов гражданского общества, организаций и физических лиц в пределах их полномочий.</p>
+              <div class="accordion__panel  accordion__panel--inner">
+                <h3 class="accordion__header">Подпункт</h3>
+                <div class="accordion__body">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint magnam rerum, reiciendis assumenda temporibus eaque officia provident id, repellat doloremque quidem distinctio rem nam. Mollitia sint voluptatem quae culpa! Nam!</p>
+                  <div class="accordion__panel  accordion__panel--inner">
+                    <h3 class="accordion__header">Подпункт</h3>
+                    <div class="accordion__body">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint magnam rerum, reiciendis assumenda temporibus eaque officia provident id, repellat doloremque quidem distinctio rem nam. Mollitia sint voluptatem quae culpa! Nam!</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion__panel">
+            <h3 class="accordion__header">Копии лицензий</h3>
+            <div class="accordion__body">
+              <p>Коррупция — злоупотребление служебным положением, дача взятки, получение взятки, злоупотребление полномочиями, коммерческий подкуп либо иное незаконное использование физическим лицом своего должностного положения вопреки законным интересам общества и государства в целях получения выгоды в виде денег, ценностей, иного имущества или услуг имущественного характера, иных имущественных прав для себя или для третьих лиц либо незаконное предоставление такой выгоды указанному лицу другими физическими лицами. Противодействие коррупции — деятельность федеральных органов государственной власти, органов государственной власти субъектов Российской Федерации, органов местного самоуправления, институтов гражданского общества, организаций и физических лиц в пределах их полномочий.</p>
+            </div>
+          </div>
+          <div class="accordion__panel">
+            <h3 class="accordion__header  toggle">Свидетельства и регистрации</h3>
+            <div class="accordion__body">
+              <p>Коррупция — злоупотребление служебным положением, дача взятки, получение взятки, злоупотребление полномочиями, коммерческий подкуп либо иное незаконное использование физическим лицом своего должностного положения вопреки законным интересам общества и государства в целях получения выгоды в виде денег, ценностей, иного имущества или услуг имущественного характера, иных имущественных прав для себя или для третьих лиц либо незаконное предоставление такой выгоды указанному лицу другими физическими лицами. Противодействие коррупции — деятельность федеральных органов государственной власти, органов государственной власти субъектов Российской Федерации, органов местного самоуправления, институтов гражданского общества, организаций и физических лиц в пределах их полномочий.</p>
+            </div>
+          </div>
+          <div class="accordion__panel">
+            <h3 class="accordion__header">Политика конфиденциальности и обработки персональных данных</h3>
+            <div class="accordion__body">
+              <p>Коррупция — злоупотребление служебным положением, дача взятки, получение взятки, злоупотребление полномочиями, коммерческий подкуп либо иное незаконное использование физическим лицом своего должностного положения вопреки законным интересам общества и государства в целях получения выгоды в виде денег, ценностей, иного имущества или услуг имущественного характера, иных имущественных прав для себя или для третьих лиц либо незаконное предоставление такой выгоды указанному лицу другими физическими лицами. Противодействие коррупции — деятельность федеральных органов государственной власти, органов государственной власти субъектов Российской Федерации, органов местного самоуправления, институтов гражданского общества, организаций и физических лиц в пределах их полномочий.</p>
+            </div>
+          </div>
+          <div class="accordion__panel">
+            <h3 class="accordion__header">Противодействие коррупции</h3>
+            <div class="accordion__body">
+              <p>Коррупция — злоупотребление служебным положением, дача взятки, получение взятки, злоупотребление полномочиями, коммерческий подкуп либо иное незаконное использование физическим лицом своего должностного положения вопреки законным интересам общества и государства в целях получения выгоды в виде денег, ценностей, иного имущества или услуг имущественного характера, иных имущественных прав для себя или для третьих лиц либо незаконное предоставление такой выгоды указанному лицу другими физическими лицами. Противодействие коррупции — деятельность федеральных органов государственной власти, органов государственной власти субъектов Российской Федерации, органов местного самоуправления, институтов гражданского общества, организаций и физических лиц в пределах их полномочий.</p>
+            </div>
+          </div>
+          <div class="accordion__panel">
+            <h3 class="accordion__header">Положение о филиалах</h3>
+            <div class="accordion__body">
+              <p>Коррупция — злоупотребление служебным положением, дача взятки, получение взятки, злоупотребление полномочиями, коммерческий подкуп либо иное незаконное использование физическим лицом своего должностного положения вопреки законным интересам общества и государства в целях получения выгоды в виде денег, ценностей, иного имущества или услуг имущественного характера, иных имущественных прав для себя или для третьих лиц либо незаконное предоставление такой выгоды указанному лицу другими физическими лицами. Противодействие коррупции — деятельность федеральных органов государственной власти, органов государственной власти субъектов Российской Федерации, органов местного самоуправления, институтов гражданского общества, организаций и физических лиц в пределах их полномочий.</p>
+            </div>
+          </div>
+          <div class="accordion__panel">
+            <h3 class="accordion__header">Сведения о руководителе</h3>
+            <div class="accordion__body">
+              <p>Коррупция — злоупотребление служебным положением, дача взятки, получение взятки, злоупотребление полномочиями, коммерческий подкуп либо иное незаконное использование физическим лицом своего должностного положения вопреки законным интересам общества и государства в целях получения выгоды в виде денег, ценностей, иного имущества или услуг имущественного характера, иных имущественных прав для себя или для третьих лиц либо незаконное предоставление такой выгоды указанному лицу другими физическими лицами. Противодействие коррупции — деятельность федеральных органов государственной власти, органов государственной власти субъектов Российской Федерации, органов местного самоуправления, институтов гражданского общества, организаций и физических лиц в пределах их полномочий.</p>
+            </div>
+          </div>
+          <div class="accordion__panel">
+            <h3 class="accordion__header">Условия информационной рассылки</h3>
+            <div class="accordion__body">
+              <p>Коррупция — злоупотребление служебным положением, дача взятки, получение взятки, злоупотребление полномочиями, коммерческий подкуп либо иное незаконное использование физическим лицом своего должностного положения вопреки законным интересам общества и государства в целях получения выгоды в виде денег, ценностей, иного имущества или услуг имущественного характера, иных имущественных прав для себя или для третьих лиц либо незаконное предоставление такой выгоды указанному лицу другими физическими лицами. Противодействие коррупции — деятельность федеральных органов государственной власти, органов государственной власти субъектов Российской Федерации, органов местного самоуправления, институтов гражданского общества, организаций и физических лиц в пределах их полномочий.</p>
+            </div>
+          </div>
+          <h3 class="accordion__header-link"><a href="#">Просто ссылка</a></h3>
+        </section>
+      </div>
+      <div class="text__slider">
+        <div class="popup-slider">
+          <div class="popup__slider-list" id="lightgallery">
+            <div class="popup__slider-item">
+              <a href="/img/text/popup/popup-desktop.jpg" data-srcset="
+            /img/text/popup/popup-mobile.jpg 375w,
+            /img/text/popup/popup-tablet.jpg 768w,
+            /img/text/popup/popup-desktop.jpg 1440w" data-sizes="(min-width: 320px) 768px, 1440px" data-sub-html="<p>Подпись к данной фотографии которая обьясняет чуть больше чем название и может быть в несколько строк</p>">
+                <picture>
+                  <source media="(min-width: 1440px)" data-src="/img/text/slider/slide-img-1-desktop.jpg" srcset="/img/text/slider/slide-img-1-desktop.jpg">
+                  <img class="lozad" data-src="/img/text/slider/slide-img-1-mobile.jpg" src="/img/text/slider/slide-img-1-mobile.jpg" alt="Название фотографии" loading="lazy">
+                </picture>
+              </a>
+            </div>
+            <div class="popup__slider-item">
+              <a href="/img/text/popup/popup-desktop.jpg" data-srcset="
+          /img/text/popup/popup-mobile.jpg 375w,
+          /img/text/popup/popup-tablet.jpg 768w,
+          /img/text/popup/popup-desktop.jpg 1440w" data-sizes="(min-width: 320px) 768px, 1440px" data-sub-html="<p>Подпись к данной фотографии которая обьясняет чуть больше чем название и может быть в несколько строк</p>">
+                <picture>
+                  <source media="(min-width: 1440px)" data-src="/img/text/slider/slide-img-2-desktop.jpg" srcset="/img/text/slider/slide-img-2-desktop.jpg">
+                  <img class="lozad" data-src="/img/text/slider/slide-img-2-mobile.jpg" src="/img/text/slider/slide-img-2-mobile.jpg" alt="Название фотографии" loading="lazy">
+                </picture>
+              </a>
+            </div>
+            <div class="popup__slider-item">
+              <a href="/img/text/popup/popup-desktop.jpg" data-srcset="
+          /img/text/popup/popup-mobile.jpg 375w,
+          /img/text/popup/popup-tablet.jpg 768w,
+          /img/text/popup/popup-desktop.jpg 1440w" data-sizes="(min-width: 320px) 768px, 1440px" data-sub-html="<p>Подпись к данной фотографии которая обьясняет чуть больше чем название и может быть в несколько строк</p>">
+                <picture>
+                  <source media="(min-width: 1440px)" data-src="/img/text/slider/slide-img-3-desktop.jpg" srcset="/img/text/slider/slide-img-3-desktop.jpg">
+                  <img class="lozad" data-src="/img/text/slider/slide-img-3-mobile.jpg" src="/img/text/slider/slide-img-3-mobile.jpg" alt="Название фотографии" loading="lazy">
+                </picture>
+              </a>
+            </div>
+            <div class="popup__slider-item">
+              <a href="/img/text/popup/popup-desktop.jpg" data-srcset="
+          /img/text/popup/popup-mobile.jpg 375w,
+          /img/text/popup/popup-tablet.jpg 768w,
+          /img/text/popup/popup-desktop.jpg 1440w" data-sizes="(min-width: 320px) 768px, 1440px" data-sub-html="<p>Подпись к данной фотографии которая обьясняет чуть больше чем название и может быть в несколько строк</p>">
+                <picture>
+                  <source media="(min-width: 1440px)" data-src="/img/text/slider/slide-img-4-desktop.jpg" srcset="/img/text/slider/slide-img-4-desktop.jpg">
+                  <img class="lozad" data-src="/img/text/slider/slide-img-4-mobile.jpg" src="/img/text/slider/slide-img-4-mobile.jpg" alt="Название фотографии" loading="lazy">
+                </picture>
+              </a>
+            </div>
+            <div class="popup__slider-item">
+              <a href="/img/text/popup/popup-desktop.jpg" data-srcset="
+          /img/text/popup/popup-mobile.jpg 375w,
+          /img/text/popup/popup-tablet.jpg 768w,
+          /img/text/popup/popup-desktop.jpg 1440w" data-sizes="(min-width: 320px) 768px, 1440px" data-sub-html="<p>Подпись к данной фотографии которая обьясняет чуть больше чем название и может быть в несколько строк</p>">
+                <picture>
+                  <source media="(min-width: 1440px)" data-src="/img/text/slider/slide-img-4-desktop.jpg" srcset="/img/text/slider/slide-img-4-desktop.jpg">
+                  <img class="lozad" data-src="/img/text/slider/slide-img-4-mobile.jpg" src="/img/text/slider/slide-img-4-mobile.jpg" alt="Название фотографии" loading="lazy">
+                </picture>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="table">
+      <div class="table__wrapper">
+        <h2 class="table__title">Табличное отображение</h2>
+        <table>
+          <tr>
+            <th>Экскурсия</th>
+            <th>Адрес объекта</th>
+            <th>Дата экскурсии</th>
+          </tr>
+          <tr>
+            <td>
+              <b>Экскурсия</b>
+              <p>Черноземье и земледелие в условиях зараженности радиацией</p>
+              <p><a href="#">Подробнее</a></p>
+            </td>
+            <td>
+              <b>Адрес объекта</b>
+              <p>Россия, г. Москва, пер. Знаменский Малый, д. 3/5, стр. 10</p>
+            </td>
+            <td>
+              <b>Дата экскурсии</b>
+              <p>16 сентября, 15:30</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <b>Экскурсия</b>
+              <p>Черноземье и земледелие в условиях зараженности радиацией</p>
+              <p><a href="#">Подробнее</a></p>
+            </td>
+            <td>
+              <b>Адрес объекта</b>
+              <p>Россия, г. Москва, пер. Знаменский Малый, д. 3/5, стр. 10</p>
+            </td>
+            <td>
+              <b>Дата экскурсии</b>
+              <p>16 сентября, 15:30</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <b>Экскурсия</b>
+              <p>Черноземье и земледелие в условиях зараженности радиацией</p>
+              <p><a href="#">Подробнее</a></p>
+            </td>
+            <td>
+              <b>Адрес объекта</b>
+              <p>Россия, г. Москва, пер. Знаменский Малый, д. 3/5, стр. 10</p>
+            </td>
+            <td>
+              <b>Дата экскурсии</b>
+              <p>16 сентября, 15:30</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <b>Экскурсия</b>
+              <p>Черноземье и земледелие в условиях зараженности радиацией</p>
+              <p><a href="#">Подробнее</a></p>
+            </td>
+            <td>
+              <b>Адрес объекта</b>
+              <p>Россия, г. Москва, пер. Знаменский Малый, д. 3/5, стр. 10</p>
+            </td>
+            <td>
+              <b>Дата экскурсии</b>
+              <p>16 сентября, 15:30</p>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <section class="footer__lists">
+          <ul class="footer__list">
+            <li class="footer__list-item"><a href="#">Адреса</a></li>
+            <li class="footer__list-item"><a href="#">Часы работы</a></li>
+            <li class="footer__list-item"><a href="#">Билеты</a></li>
+            <li class="footer__list-item"><a href="#">Правила посещения</a></li>
+            <li class="footer__list-item"><a href="#">Людям с ОВЗ</a></li>
+            <li class="footer__list-item"><a href="#">Противодействие коррупции</a></li>
+          </ul>
+          <ul class="footer__list">
+            <li class="footer__list-item"><a href="#">Главное</a></li>
+            <li class="footer__list-item"><a href="#">Пресня</a></li>
+            <li class="footer__list-item"><a href="#">Типография</a></li>
+            <li class="footer__list-item"><a href="#">Кржижановский</a></li>
+            <li class="footer__list-item"><a href="#">Евтушенко</a></li>
+            <li class="footer__list-item"><a href="#">Катынь</a></li>
+            <li class="footer__list-item"><a href="#">Медное</a></li>
+          </ul>
+          <ul class="footer__list">
+            <li class="footer__list-item"><a href="#">Для СМИ</a></li>
+            <li class="footer__list-item"><a href="#">Организация мероприятий</a></li>
+            <li class="footer__list-item"><a href="#">Спонсорам</a></li>
+            <li class="footer__list-item"><a href="#">Вакансии</a></li>
+            <li class="footer__list-item"><a href="#">Контакты</a></li>
+          </ul>
+        </section>
+        <section class="social  social--footer">
+          <h2 class="visually-hidden">Мы в соцсетях</h2>
+          <ul class="social__list">
+            <li class="social__item">
+              <a href="#" class="social__link">
+                <span class="visually-hidden">Страница в ВК</span>
+                <svg class="icon" width="44" height="44" viewBox="0 0 44 44">
+                  <use xlink:href="/img/sprite_auto.svg#vk" x="0" y="0" />
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link">
+                <span class="visually-hidden">Страница в Facebook</span>
+                <svg class="icon" width="44" height="44" viewBox="0 0 44 44">
+                  <use xlink:href="/img/sprite_auto.svg#facebook" x="0" y="0" />
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link">
+                <span class="visually-hidden">Страница в одноклассниках</span>
+                <svg class="icon" width="44" height="44" viewBox="0 0 44 44">
+                  <use xlink:href="/img/sprite_auto.svg#ok" x="0" y="0" />
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link">
+                <span class="visually-hidden">Канал в Телеграм</span>
+                <svg class="icon" width="44" height="44" viewBox="0 0 44 44">
+                  <use xlink:href="/img/sprite_auto.svg#telegram" x="0" y="0" />
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link">
+                <span class="visually-hidden">Страница в Инстаграм</span>
+                <svg class="icon" width="44" height="44" viewBox="0 0 44 44">
+                  <use xlink:href="/img/sprite_auto.svg#instagramm" x="0" y="0" />
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link">
+                <span class="visually-hidden">Твиттер аккаунт</span>
+                <svg class="icon" width="44" height="44" viewBox="0 0 44 44">
+                  <use xlink:href="/img/sprite_auto.svg#twitter" x="0" y="0" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class="subscribe  subscribe--footer">
+          <h2 class="subscribe__title">Написать нам</h2>
+          <section class="social  social--in-form">
+            <h2 class="visually-hidden">Мы в соцсетях</h2>
+            <ul class="social__list">
+              <li class="social__item">
+                <a href="#" class="social__link">
+                  <span class="visually-hidden">Страница в ВК</span>
+                  <svg class="icon" width="44" height="44" viewBox="0 0 44 44">
+                    <use xlink:href="/img/sprite_auto.svg#vk" x="0" y="0" />
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link">
+                  <span class="visually-hidden">Страница в Facebook</span>
+                  <svg class="icon" width="44" height="44" viewBox="0 0 44 44">
+                    <use xlink:href="/img/sprite_auto.svg#facebook" x="0" y="0" />
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link">
+                  <span class="visually-hidden">Страница в одноклассниках</span>
+                  <svg class="icon" width="44" height="44" viewBox="0 0 44 44">
+                    <use xlink:href="/img/sprite_auto.svg#ok" x="0" y="0" />
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link">
+                  <span class="visually-hidden">Канал в Телеграм</span>
+                  <svg class="icon" width="44" height="44" viewBox="0 0 44 44">
+                    <use xlink:href="/img/sprite_auto.svg#telegram" x="0" y="0" />
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link">
+                  <span class="visually-hidden">Страница в Инстаграм</span>
+                  <svg class="icon" width="44" height="44" viewBox="0 0 44 44">
+                    <use xlink:href="/img/sprite_auto.svg#instagramm" x="0" y="0" />
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link">
+                  <span class="visually-hidden">Твиттер аккаунт</span>
+                  <svg class="icon" width="44" height="44" viewBox="0 0 44 44">
+                    <use xlink:href="/img/sprite_auto.svg#twitter" x="0" y="0" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </section>
+          <form action="#" method="POST" class="subscribe__form">
+            <label for="name-footer" class="subscribe__label-field visually-hidden"><span class="visually-hidden">Ваше имя</span></label>
+            <input type="text" name="name" id="name-footer" class="subscribe__input-field  subscribe__input-field--dark" placeholder="Ваше имя" required>
+            <label for="mail-footer" class="subscribe__label-field visually-hidden"><span class="visually-hidden">Ваша почта</span></label>
+            <input type="email" name="mail" id="mail-footer" class="subscribe__input-field  subscribe__input-field--dark" placeholder="Ваша почта" required>
+            <label for="text-footer" class="subscribe__label-field visually-hidden"><span class="visually-hidden">Текст вопроса или предложения</span></label>
+            <textarea name="text" id="text-footer" class="subscribe__input-textarea" placeholder="Текст вопроса или предложения" required></textarea>
+            <div class="subscribe__field">
+              <input type="checkbox" id="check1" name="check" class="visually-hidden" required>
+              <label for="check1">Я согласен с <a>политикой обработки персональных данных</a>
+              </label>
+            </div>
+            <button class="subscribe__btn" type="submit">Отправить</button>
+          </form>
+        </section>
+        <section class="copyright">
+          <p>© 2015-2020. ГЦМСИР. Все права защищены. Использование материалов сайта разрешено только с предварительного согласия правообладателей.</p>
+        </section>
+        <section class="footer__logos">
+          <ul class="footer__logos-list">
+            <li class="footer__logos-item  footer__logos-item--main"><a href="#"><img src="/img/sovrhistory.svg" alt="Логотип ГЦСИР" width="105" height="89"></a></li>
+            <li class="footer__logos-item  footer__logos-item--mincult"><a href="#"><img src="/img/minkult.svg" alt="Логотип Мин культуры" width="94" height="76"></a></li>
+            <li class="footer__logos-item  footer__logos-item--cultrf"><a href="#"><img src="/img/kultrf.svg" alt="Логотип Культура.рф" width="136" height="18"></a></li>
+          </ul>
+        </section>
+        <ul class="footer__bottom-list">
+          <li class="footer__bottom-item  footer__bottom-item--old-version"><a href="#">Старая версия сайта</a></li>
+          <li class="footer__bottom-item  footer__bottom-item--rules"><a href="#">Правила использования материалов сайта</a>
+          </li>
+          <li class="footer__bottom-item  footer__bottom-item--quality">
+            <a href="#">Оценка качества услуг </a>
+            <div class="footer__bottom-icons">
+              <img src="/img/icons/like.svg" alt="Иконка мне нравится">
+              <img src="/img/icons/dislike.svg" alt="иконка мне не нравится">
+            </div>
+          </li>
+          <li class="footer__bottom-item  footer__bottom-item--politics"><a href="#">Политика конфиденциальности и обработки персональных данных</a></li>
+          <li class="footer__bottom-item  footer__bottom-item--developer"><a href="#">Разработка «Музей Плюс»</a></li>
+        </ul>
+      </div>
+    </footer>
+    <section class="cookie">
+      <div class="cookie__wrapper">
+        <div class="cookie__text">
+          <p>Какой-то текст для куков и вот <a href="#">ссылка</a></p>
+        </div>
+        <button class="cookie__close-btn" type="button"><span class="visually-hidden">Закрыть строку</span></button>
+      </div>
+    </section>
+    <script src="/js/libs.js"></script>
+    <script src="/js/scripts.min.js"></script>
+  </body>
+</html>

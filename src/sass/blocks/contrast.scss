@@ -1,0 +1,313 @@
+html.contrast {
+  .js-normal-version {
+    display: block !important;
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  html.contrast {
+    .header {
+      background-color: #000 !important;
+
+      &--fixed {
+        .header__user-block {
+          display: none;
+        }
+      }
+    }
+
+    .header__wrapper {
+      grid-template-columns: 1fr 5fr;
+      padding: 0;
+    }
+
+    .header__menu-list {
+      a {
+        font-size: 22px;
+      }
+    }
+
+    .lang {
+      .lang__btn {
+        width: 50px;
+        font-size: 22px;
+      }
+
+      a {
+        font-size: 22px;
+      }
+    }
+
+    .main-nav {
+      a {
+        color: #fff !important;
+        text-transform: uppercase;
+      }
+
+      .main-nav__item {
+        max-width: 400px;
+        padding-left: 10px;
+        padding-right: 0;
+
+        a {
+          padding-left: 0;
+          padding-right: 0;
+          font-size: 16px;
+        }
+
+        @media screen and (min-width: $desktop) {
+          padding-left: 10px;
+          a {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+
+    .logo {
+      color: #fff !important;
+
+      .logo__text {
+        color: inherit;
+      }
+    }
+
+    .main-slider {
+      background-color: #000;
+
+      .main-slider__controls {
+        position: relative;
+        bottom: 0;
+      }
+    }
+
+    .main-slider__item-description {
+      padding-top: 100px;
+      position: relative;
+      top: auto;
+      left: auto;
+      bottom: auto;
+      color: #fff;
+      width: auto;
+      transform: translate(0, 0);
+      * {
+        color: #fff;
+      }
+    }
+
+    .buildings__list-item {
+      span {
+        font-size: 18px;
+      }
+    }
+
+    .buildings__events,
+    .buildings__events-item {
+      background-color: #000;
+    }
+
+    .buildings__events-text {
+      * {
+        font-size: 24px;
+      }
+    }
+
+    .sub-nav {
+      background-color: #fff;
+    }
+
+    .sub-nav__list {
+      * {
+        color: #000;
+        text-transform: uppercase;
+      }
+    }
+
+    .projects__list-item {
+      padding: 20px;
+      background-color: #000;
+
+      * {
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #fff;
+      }
+
+      .projects__btn {
+        background-color: #000;
+      }
+    }
+
+    .partners {
+      display: none;
+    }
+
+    .news {
+      width: 100%;
+
+      .news__photo {
+        display: none;
+      }
+
+      .news__text {
+        width: 100%;
+      }
+
+      * {
+        font-size: 24px;
+        line-height: 1.2;
+      }
+    }
+
+    .main-info__wrapper {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .footer {
+      background-image: none;
+      background-color: #000;
+
+      * {
+        color: #fff;
+        font-size: 18px;
+        line-height: 1.2;
+      }
+    }
+
+    .footer__wrapper {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .footer__logos {
+      display: none;
+    }
+
+    .footer__bottom-list {
+      width: 100%;
+      padding: 0;
+      padding-top: 20px;
+      display: flex;
+
+      .footer__bottom-item {
+        width: 25%;
+        text-align: left;
+      }
+    }
+
+    .copyright {
+      width: 100%;
+    }
+
+    .preview__filter-row {
+      margin-bottom: 20px;
+      input,
+      p {
+        font-size: 20px;
+      }
+    }
+
+    .select2-selection__rendered,
+    .select2-results__options,
+    .select2-results__options li {
+      font-size: 20px;
+    }
+
+    .preview__select-dropdown .select2-results__options li {
+      font-size: 20px;
+    }
+
+    .preview__buttons-filter {
+      button {
+        font-size: 22px;
+        padding: 20px;
+        text-transform: uppercase;
+      }
+    }
+
+    .preview__slider-item {
+      .preview__article {
+        background-image: none !important;
+        background-color: #000;
+      }
+    }
+
+    .exhibitions__text {
+      flex-grow: 1;
+    }
+
+    .exhibitions__article {
+      background-color: #fff;
+      color: #000;
+
+      h2 {
+        font-size: 24px;
+        text-transform: uppercase;
+      }
+
+      p {
+        font-size: 22px;
+        line-height: 1.4;
+      }
+
+      .exhibitions__picture {
+        display: none;
+      }
+
+      .exhibitions__date {
+        font-size: 20px;
+      }
+
+      .exhibitions__info {
+        font-size: 22px;
+        line-height: 1.4;
+      }
+    }
+
+    .filter__title {
+      font-size: 24px;
+    }
+
+    .filter__button {
+      background-color: #000;
+      color: #fff;
+      font-size: 22px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      padding: 15px 25px;
+      text-transform: uppercase;
+    }
+
+    .text__article {
+      p,
+      a {
+        font-size: 24px;
+      }
+    }
+
+    .social__item {
+      a {
+        width: 40px;
+        height: 40px;
+      }
+    }
+
+    .shop__item-description {
+      h3 {
+        font-size: 24px;
+      }
+
+      p {
+        font-size: 22px;
+      }
+    }
+
+    .banners {
+      img {
+        display: block !important;
+        filter: grayscale(1);
+      }
+    }
+  }
+}

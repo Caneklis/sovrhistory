@@ -2,7 +2,7 @@
   <button class="main-nav__toggle" type="button"><span class="visually-hidden">Меню</span></button>
   <ul class="main-nav__list">
     <li class="main-nav__item">
-      <a href="#">Посетителям</a>
+      <a href="ya.ru">Посетителям</a>
       <ul class="main-nav__sublist">
         <li><a href="#">Экскурсии</a></li>
         <li><a href="#">Лекции и музейные занятия</a></li>
@@ -14,7 +14,7 @@
         <li><a href="#">Билеты и расписание</a></li>
       </ul>
     </li>
-    <li class="main-nav__item">
+    <li class="main-nav__item  main-nav__item--active">
       <a href="#">Выставка</a>
       <ul class="main-nav__sublist">
         <li><a href="#">Экскурсии</a></li>
@@ -39,6 +39,31 @@
     <li class="main-nav__item  main-nav__item--contrast"><a class="js-contrast-version"><img src="/img/glasses.svg"
           alt="Иконка версии для слабовидящих"><span class="visually-hidden">Версия для слабовидящих</span></a>
       <a class="js-normal-version">Обычная версия</a>
+    </li>
+
+    <li>
+      <ul class="main-nav__header-menu">
+        <li class="main-nav__header-item"><a href="#">Билеты</a></li>
+        <li class="main-nav__header-item"><a href="#">Адреса</a></li>
+        <li class="main-nav__header-item"><a href="#">Время работы</a></li>
+      </ul>
+    </li>
+
+    <li class="social social--header">
+      <ul class="social__list">
+        {% include "../partials/_social.html" %}
+      </ul>
+    </li>
+
+    <li class="main-nav__footer-item">
+      <div class="main-nav__footer-logo">
+        <img src="/img/logo-menu-mobile.svg" alt="Логотип Государственный центральный музей современной истории России">
+        <p>Государственный центральный музей современной истории России</p>
+      </div>
+      <div class="main-nav__footer-links">
+        <a href="#">Открыть полную версию сайта</a>
+        <a href="#">На главную</a>
+      </div>
     </li>
   </ul>
 </nav>

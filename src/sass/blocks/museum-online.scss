@@ -1,0 +1,221 @@
+.museum-online {
+  padding-top: 40px;
+  background-color: #fff;
+  &--gray {
+    background-color: #f9f9f9;
+  }
+
+  &:first-of-type {
+    padding-top: 5px;
+  }
+}
+
+.museum-online__wrapper {
+  @include wrapper;
+}
+
+.museum-online__title {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 400;
+  color: $s-color;
+}
+
+.museum-online__list {
+  @include list-reset;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.museum-online__item {
+  min-height: 400px;
+  margin-bottom: 30px;
+  background-color: #fff;
+
+  &--gray {
+    background-color: #f9f9f9;
+  }
+
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+}
+
+.museum-online__article-text {
+  padding: 33px 28px 5px;
+
+  h3 {
+    font-size: 20px;
+    line-height: 125.89%;
+    /* or 25px */
+    font-weight: 400;
+
+    text-decoration-line: underline;
+  }
+}
+
+.museum-online__article {
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+}
+
+.museum-online__type {
+  margin: 0;
+  margin-bottom: 18px;
+  font-size: 16px;
+  line-height: 125.89%;
+  /* or 20px */
+  color: $s-color;
+}
+
+.museum-online__header-text {
+  margin-bottom: 20px;
+
+  h2 {
+    margin: 0;
+    margin-bottom: 18px;
+    padding-bottom: 18px;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 400;
+    color: $s-color;
+    border-bottom: 1px solid $s-color;
+  }
+
+  p,
+  ul {
+    margin: 0;
+    margin-bottom: 15px;
+    font-family: $sec-font;
+    font-size: 12px;
+    line-height: 136.39%;
+  }
+
+  ul {
+    padding: 0;
+    padding-left: 20px;
+  }
+}
+
+.museum-online__contact {
+  span {
+    font-size: 10px;
+    line-height: 136.39%;
+    color: #b69953;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 113.2%;
+    color: #000;
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+  }
+}
+
+.museum-online__pic {
+  min-height: 200px;
+}
+
+@media screen and (min-width: $tablet) {
+  .museum-online {
+    padding-top: 60px;
+
+    &:first-of-type {
+      padding-top: 20px;
+    }
+  }
+
+  .museum-online__title {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .museum-online__type {
+    margin-bottom: 14px;
+    font-size: 14px;
+  }
+
+  .museum-online__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 28px;
+  }
+
+  .museum-online__item {
+    min-height: 420px;
+    margin-bottom: 0;
+  }
+
+  .museum-online__header {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .museum-online__header-text {
+    padding-right: 20px;
+
+    h2 {
+      border-bottom: none;
+      margin-bottom: 30px;
+      padding-bottom: 0;
+    }
+  }
+
+  .museum-online__contacts-block {
+    padding-left: 20px;
+    margin-top: 55px;
+    border-left: 1px solid $s-color;
+  }
+
+  .museum-online__pic {
+    min-height: 250px;
+  }
+
+  .museum-online__header {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .museum-online {
+    padding-top: 60px;
+  }
+
+  .museum-online__list {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .museum-online__header-text {
+    p,
+    ul {
+      font-size: 18px;
+      line-height: 136.39%;
+    }
+  }
+
+  .museum-online__contact {
+    span {
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 113.2%;
+    }
+  }
+}

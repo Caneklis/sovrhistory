@@ -1,0 +1,363 @@
+---
+title: Региональные и зарубежные выставки
+---
+{% extends "../templates/layouts/_layout-inner.html" %}
+
+{% block content %}
+
+<section class="exhibitions">
+  <div class="exhibitions__wrapper">
+    <section class="filter">
+      <div class="filter__block">
+        <h2 class="filter__title">Региональные</h2>
+
+        <div class="filter__custom-select">
+          <select class="js-example-basic-multiple" name="buildings[]" multiple="multiple">
+            <option value="all">Все темы</option>
+            <option value="1">Тематика про конституцию</option>
+            <option value="2">Военная тематика</option>
+            <option value="3">Революция</option>
+            <option value="4">Подпольная типография</option>
+            <option value="5">Эксперты о войне</option>
+          </select>
+        </div>
+
+        <div class="filter__buttons">
+          <button class="filter__button" type="button" value="1">Тематика про конституцию</button>
+          <button class="filter__button" type="button" value="2">Военная тематика</button>
+          <button class="filter__button" type="button" value="3">Революция</button>
+          <button class="filter__button" type="button" value="4">Подпольная типография</button>
+          <button class="filter__button" type="button" value="5">Эксперты о войне</button>
+        </div>
+      </div>
+
+    </section>
+
+    <ul class="exhibitions__list">
+      <li class="exhibitions__item">
+        <article class="exhibitions__article">
+          <div class="exhibitions__picture  exhibitions__picture--regional">
+            <picture>
+              <source media="(min-width: 1440px)" data-src="/img/exhibitions/regional-desktop.jpg"
+                srcset="/img/exhibitions/regional-desktop.jpg">
+              <source media="(min-width: 768px)" data-src="/img/exhibitions/regional-tablet.jpg"
+                srcset="/img/exhibitions/regional-tablet.jpg">
+              <img class="lozad" data-src="/img/exhibitions/regional-mobile.jpg"
+                src="/img/exhibitions/regional-mobile.jpg" alt="Фотография к новости" loading="lazy">
+            </picture>
+
+            <div class="exhibitions__picture-type">Тверь, Тверская область</div>
+          </div>
+
+          <div class="exhibitions__text">
+            <time class="exhibitions__date" datetime="2020">19 августа 2020</time>
+            <h2><a href="#">Военная экипировка</a></h2>
+            <p>С 20 сентября 2019 года до 19 января 2020 года пройдет выставка Никаса Сафронова «Иные миры». Работы
+              художника будут представлены в главном здании Музея современной истории России как в традиционном
+              исполнении ...</p>
+          </div>
+
+          <div class="exhibitions__info">
+            <div class="exhibitions__place">Тверская область, Тверь</div>
+            <div class="exhibitions__address">Тверская 21</div>
+            <div class="exhibitions__time">с 11.00 до 19.00</div>
+            <div class="exhibitions__building">
+
+              <div class="exhibitions__price">800₽</div>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="exhibitions__item">
+        <article class="exhibitions__article">
+          <div class="exhibitions__picture  exhibitions__picture--regional">
+            <picture>
+              <source media="(min-width: 1440px)" data-src="/img/exhibitions/regional-desktop.jpg"
+                srcset="/img/exhibitions/regional-desktop.jpg">
+              <source media="(min-width: 768px)" data-src="/img/exhibitions/regional-tablet.jpg"
+                srcset="/img/exhibitions/regional-tablet.jpg">
+              <img class="lozad" data-src="/img/exhibitions/regional-mobile.jpg"
+                src="/img/exhibitions/regional-mobile.jpg" alt="Фотография к новости" loading="lazy">
+            </picture>
+
+            <div class="exhibitions__picture-type">Тверь, Тверская область</div>
+          </div>
+
+          <div class="exhibitions__text">
+            <time class="exhibitions__date" datetime="2020">19 августа 2020</time>
+            <h2><a href="#">Военная экипировка</a></h2>
+            <p>С 20 сентября 2019 года до 19 января 2020 года пройдет выставка Никаса Сафронова «Иные миры». Работы
+              художника будут представлены в главном здании Музея современной истории России как в традиционном
+              исполнении ...</p>
+            <p>С 20 сентября 2019 года до 19 января 2020 года пройдет выставка Никаса Сафронова «Иные миры». Работы
+              художника будут представлены в главном здании Музея современной истории России как в традиционном
+              исполнении ...</p>
+          </div>
+
+          <div class="exhibitions__info">
+            <div class="exhibitions__place">Тверская область, Тверь</div>
+            <div class="exhibitions__address">Тверская 21</div>
+            <div class="exhibitions__time">с 11.00 до 19.00</div>
+            <div class="exhibitions__building">
+
+              <div class="exhibitions__price">800₽</div>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="exhibitions__item">
+        <article class="exhibitions__article">
+          <div class="exhibitions__picture  exhibitions__picture--regional">
+            <picture>
+              <source media="(min-width: 1440px)" data-src="/img/exhibitions/regional-desktop.jpg"
+                srcset="/img/exhibitions/regional-desktop.jpg">
+              <source media="(min-width: 768px)" data-src="/img/exhibitions/regional-tablet.jpg"
+                srcset="/img/exhibitions/regional-tablet.jpg">
+              <img class="lozad" data-src="/img/exhibitions/regional-mobile.jpg"
+                src="/img/exhibitions/regional-mobile.jpg" alt="Фотография к новости" loading="lazy">
+            </picture>
+
+            <div class="exhibitions__picture-type">Тверь, Тверская область</div>
+          </div>
+
+          <div class="exhibitions__text">
+            <time class="exhibitions__date" datetime="2020">19 августа 2020</time>
+            <h2><a href="#">Военная экипировка</a></h2>
+            <p>С 20 сентября 2019 года до 19 января 2020 года пройдет выставка Никаса Сафронова «Иные миры». Работы
+              художника будут представлены в главном здании Музея современной истории России как в традиционном
+              исполнении ...</p>
+            <p>С 20 сентября 2019 года до 19 января 2020 года пройдет выставка Никаса Сафронова «Иные миры». Работы
+              художника будут представлены в главном здании Музея современной истории России как в традиционном
+              исполнении ...</p>
+            <p>С 20 сентября 2019 года до 19 января 2020 года пройдет выставка Никаса Сафронова «Иные миры». Работы
+              художника будут представлены в главном здании Музея современной истории России как в традиционном
+              исполнении ...</p>
+          </div>
+
+          <div class="exhibitions__info">
+            <div class="exhibitions__place">Тверская область, Тверь</div>
+            <div class="exhibitions__address">Тверская 21</div>
+            <div class="exhibitions__time">с 11.00 до 19.00</div>
+            <div class="exhibitions__building">
+
+              <div class="exhibitions__price">800₽</div>
+            </div>
+          </div>
+        </article>
+      </li>
+    </ul>
+
+    <a href="#" class="exhibition__link-more">Архив региональных выставок</a>
+    <section class="filter">
+      <div class="filter__block">
+        <h2 class="filter__title">Региональные</h2>
+
+        <div class="filter__custom-select">
+          <select class="js-example-basic-multiple" name="buildings[]" multiple="multiple">
+            <option value="all">Все темы</option>
+            <option value="1">Тематика про конституцию</option>
+            <option value="2">Военная тематика</option>
+            <option value="3">Революция</option>
+            <option value="4">Подпольная типография</option>
+            <option value="5">Эксперты о войне</option>
+          </select>
+        </div>
+
+        <div class="filter__buttons">
+          <button class="filter__button" type="button" value="1">Тематика про конституцию</button>
+          <button class="filter__button" type="button" value="2">Военная тематика</button>
+          <button class="filter__button" type="button" value="3">Революция</button>
+          <button class="filter__button" type="button" value="4">Подпольная типография</button>
+          <button class="filter__button" type="button" value="5">Эксперты о войне</button>
+        </div>
+      </div>
+
+    </section>
+
+    <ul class="exhibitions__list">
+      <li class="exhibitions__item">
+        <article class="exhibitions__article">
+          <div class="exhibitions__picture  exhibitions__picture--regional">
+            <picture>
+              <source media="(min-width: 1440px)" data-src="/img/exhibitions/regional-desktop.jpg"
+                srcset="/img/exhibitions/regional-desktop.jpg">
+              <source media="(min-width: 768px)" data-src="/img/exhibitions/regional-tablet.jpg"
+                srcset="/img/exhibitions/regional-tablet.jpg">
+              <img class="lozad" data-src="/img/exhibitions/regional-mobile.jpg"
+                src="/img/exhibitions/regional-mobile.jpg" alt="Фотография к новости" loading="lazy">
+            </picture>
+
+            <div class="exhibitions__picture-type">Тверь, Тверская область</div>
+          </div>
+
+          <div class="exhibitions__text">
+            <time class="exhibitions__date" datetime="2020">19 августа 2020</time>
+            <h2><a href="#">Военная экипировка</a></h2>
+            <p>С 20 сентября 2019 года до 19 января 2020 года пройдет выставка Никаса Сафронова «Иные миры». Работы
+              художника будут представлены в главном здании Музея современной истории России как в традиционном
+              исполнении ...</p>
+          </div>
+
+          <div class="exhibitions__info">
+            <div class="exhibitions__place">Тверская область, Тверь</div>
+            <div class="exhibitions__address">Тверская 21</div>
+            <div class="exhibitions__time">с 11.00 до 19.00</div>
+            <div class="exhibitions__building">
+
+              <div class="exhibitions__price">800₽</div>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="exhibitions__item">
+        <article class="exhibitions__article">
+          <div class="exhibitions__picture  exhibitions__picture--regional">
+            <picture>
+              <source media="(min-width: 1440px)" data-src="/img/exhibitions/regional-desktop.jpg"
+                srcset="/img/exhibitions/regional-desktop.jpg">
+              <source media="(min-width: 768px)" data-src="/img/exhibitions/regional-tablet.jpg"
+                srcset="/img/exhibitions/regional-tablet.jpg">
+              <img class="lozad" data-src="/img/exhibitions/regional-mobile.jpg"
+                src="/img/exhibitions/regional-mobile.jpg" alt="Фотография к новости" loading="lazy">
+            </picture>
+
+            <div class="exhibitions__picture-type">Тверь, Тверская область</div>
+          </div>
+
+          <div class="exhibitions__text">
+            <time class="exhibitions__date" datetime="2020">19 августа 2020</time>
+            <h2><a href="#">Военная экипировка</a></h2>
+            <p>С 20 сентября 2019 года до 19 января 2020 года пройдет выставка Никаса Сафронова «Иные миры». Работы
+              художника будут представлены в главном здании Музея современной истории России как в традиционном
+              исполнении ...</p>
+            <p>С 20 сентября 2019 года до 19 января 2020 года пройдет выставка Никаса Сафронова «Иные миры». Работы
+              художника будут представлены в главном здании Музея современной истории России как в традиционном
+              исполнении ...</p>
+          </div>
+
+          <div class="exhibitions__info">
+            <div class="exhibitions__place">Тверская область, Тверь</div>
+            <div class="exhibitions__address">Тверская 21</div>
+            <div class="exhibitions__time">с 11.00 до 19.00</div>
+            <div class="exhibitions__building">
+
+              <div class="exhibitions__price">800₽</div>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="exhibitions__item">
+        <article class="exhibitions__article">
+          <div class="exhibitions__picture  exhibitions__picture--regional">
+            <picture>
+              <source media="(min-width: 1440px)" data-src="/img/exhibitions/regional-desktop.jpg"
+                srcset="/img/exhibitions/regional-desktop.jpg">
+              <source media="(min-width: 768px)" data-src="/img/exhibitions/regional-tablet.jpg"
+                srcset="/img/exhibitions/regional-tablet.jpg">
+              <img class="lozad" data-src="/img/exhibitions/regional-mobile.jpg"
+                src="/img/exhibitions/regional-mobile.jpg" alt="Фотография к новости" loading="lazy">
+            </picture>
+
+            <div class="exhibitions__picture-type">Тверь, Тверская область</div>
+          </div>
+
+          <div class="exhibitions__text">
+            <time class="exhibitions__date" datetime="2020">19 августа 2020</time>
+            <h2><a href="#">Военная экипировка</a></h2>
+            <p>С 20 сентября 2019 года до 19 января 2020 года пройдет выставка Никаса Сафронова «Иные миры». Работы
+              художника будут представлены в главном здании Музея современной истории России как в традиционном
+              исполнении ...</p>
+            <p>С 20 сентября 2019 года до 19 января 2020 года пройдет выставка Никаса Сафронова «Иные миры». Работы
+              художника будут представлены в главном здании Музея современной истории России как в традиционном
+              исполнении ...</p>
+            <p>С 20 сентября 2019 года до 19 января 2020 года пройдет выставка Никаса Сафронова «Иные миры». Работы
+              художника будут представлены в главном здании Музея современной истории России как в традиционном
+              исполнении ...</p>
+          </div>
+
+          <div class="exhibitions__info">
+            <div class="exhibitions__place">Тверская область, Тверь</div>
+            <div class="exhibitions__address">Тверская 21</div>
+            <div class="exhibitions__time">с 11.00 до 19.00</div>
+            <div class="exhibitions__building">
+
+              <div class="exhibitions__price">800₽</div>
+            </div>
+          </div>
+        </article>
+      </li>
+    </ul>
+
+    <a href="#" class="exhibition__link-more">Архив региональных выставок</a>
+  </div>
+</section>
+
+<section class="sub-nav">
+  <div class="sub-nav__wrapper">
+    <ul class="sub-nav__list  sub-nav__list--wide">
+      <li class="sub-nav__list-item"><a href="#">Анонсы</a></li>
+      <li class="sub-nav__list-item"><a href="#">Региональные и зарубежные</a></li>
+      <li class="sub-nav__list-item"><a href="#">Виртуальные</a></li>
+      <li class="sub-nav__list-item"><a href="#">Архив</a></li>
+    </ul>
+  </div>
+</section>
+
+<section class="banners">
+  <div class="banners__wrapper">
+    <ul class="banners__list  banners__list--grid">
+      <li class="banners__list-item">
+        <a href="#">
+          <picture>
+            <source media="(min-width: 1440px)" data-src="/img/banners/banner-gray-desktop.jpg"
+              srcset="/img/banners/banner-gray-desktop.jpg">
+            <img class="lozad" data-src="/img/banners/banner-gray-mobile.jpg" src="/img/banners/banner-gray-mobile.jpg"
+              alt="Баннер партнера>">
+          </picture>
+        </a>
+      </li>
+      <li class="banners__list-item">
+        <a href="#">
+          <picture>
+            <source media="(min-width: 1440px)" data-src="/img/banners/banner-gray-desktop.jpg"
+              srcset="/img/banners/banner-gray-desktop.jpg">
+            <img class="lozad" data-src="/img/banners/banner-gray-mobile.jpg" src="/img/banners/banner-gray-mobile.jpg"
+              alt="Баннер партнера>">
+          </picture>
+        </a>
+      </li>
+      <li class="banners__list-item">
+        <a href="#">
+          <picture>
+            <source media="(min-width: 1440px)" data-src="/img/banners/banner-gray-desktop.jpg"
+              srcset="/img/banners/banner-gray-desktop.jpg">
+            <img class="lozad" data-src="/img/banners/banner-gray-mobile.jpg" src="/img/banners/banner-gray-mobile.jpg"
+              alt="Баннер партнера>">
+          </picture>
+        </a>
+      </li>
+      <li class="banners__list-item">
+        <a href="#">
+          <picture>
+            <source media="(min-width: 1440px)" data-src="/img/banners/banner-gray-desktop.jpg"
+              srcset="/img/banners/banner-gray-desktop.jpg">
+            <img class="lozad" data-src="/img/banners/banner-gray-mobile.jpg" src="/img/banners/banner-gray-mobile.jpg"
+              alt="Баннер партнера>">
+          </picture>
+        </a>
+      </li>
+      <li class="banners__list-item">
+        <a href="#">
+          <picture>
+            <source media="(min-width: 1440px)" data-src="/img/banners/banner-gray-desktop.jpg"
+              srcset="/img/banners/banner-gray-desktop.jpg">
+            <img class="lozad" data-src="/img/banners/banner-gray-mobile.jpg" src="/img/banners/banner-gray-mobile.jpg"
+              alt="Баннер партнера>">
+          </picture>
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+{% endblock %}

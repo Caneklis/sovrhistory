@@ -7,7 +7,7 @@ html {
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 * {
@@ -15,8 +15,13 @@ html {
 }
 
 body {
-  min-height: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-text-size-adjust: 100%; // stylelint-disable-line
+  height: 100%;
   margin: 0;
+
+  display: flex;
+  flex-direction: column;
   overflow-x: hidden;
 
   background-color: $body-bg;
@@ -25,6 +30,7 @@ body {
   font-size: $font-size;
   line-height: $line-height;
   font-style: normal;
+  font-weight: 400;
   color: $b-color;
   word-break: break-word;
 
@@ -177,19 +183,36 @@ textarea {
   }
 }
 
-html.contrast {
-  color: #000 !important;
-
-  * {
-    // font-size: 24px !important;
-    // line-height: 1.2 !important;
-    color: #000 !important;
-
-    p {
-      color: #000 !important;
-    }
-  }
+.page--fixed {
+  // overflow: hidden;
+  // height: 100%;
+  // width: 100%;
+  // position: fixed;
+  // z-index: 0;
 }
+
+* {
+  -webkit-overflow-scrolling: touch;
+}
+// *,
+// *::before,
+// *::after {
+//   outline: 2px solid yellow;
+// }
+
+// html.contrast {
+//   color: #000 !important;
+
+//   * {
+//     // font-size: 24px !important;
+//     // line-height: 1.2 !important;
+//     color: #000 !important;
+
+//     p {
+//       color: #000 !important;
+//     }
+//   }
+// }
 
 // .select-hidden {
 //   display: none;
@@ -294,6 +317,7 @@ html.contrast {
   letter-spacing: 0.02em;
 
   transition: all 0.3;
+  cursor: pointer;
 
   &:hover {
     background: #de2b62;
@@ -303,4 +327,177 @@ html.contrast {
   &:active {
     background: #ac103f;
   }
+}
+
+.download-link {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.02em;
+
+  color: #b69953;
+}
+
+.read-more-show,
+.read-more-hide {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding-left: 36px;
+  font-size: 16px;
+  line-height: 20px;
+  background-repeat: no-repeat;
+  background-position: center left;
+  background-size: 21px;
+}
+
+.read-more-show {
+  color: $s-color;
+  background-image: url("../img/icons/read-more-icon.svg");
+}
+
+.read-more-hide {
+  color: #b69953;
+  background-image: url("../img/icons/read-less-icon.svg");
+}
+
+.hide {
+  display: none;
+}
+
+.lg-actions {
+  .lg-prev {
+    width: 13px;
+    height: 32px;
+    background-color: transparent;
+    background-image: url("../img/icons/arrow_left_pink.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-size: 0;
+    cursor: pointer;
+    filter: grayscale(1) brightness(10);
+
+    &:hover {
+      filter: grayscale(0) brightness(1);
+    }
+  }
+  .lg-next {
+    width: 13px;
+    height: 32px;
+    background-color: transparent;
+    background-image: url("../img/icons/arrow_right_pink.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-size: 0;
+    cursor: pointer;
+    filter: grayscale(1) brightness(10);
+
+    &:hover {
+      filter: grayscale(0) brightness(1);
+    }
+  }
+}
+
+.lg-sub-html {
+  max-width: 886px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f3f3f3;
+  color: #000000;
+  text-align: left;
+
+  // h4 {
+  //   margin: 0;
+  //   font-size: 18px;
+  //   line-height: 23px;
+  //   font-weight: 400;
+  // }
+
+  p {
+    margin: 2px 0;
+    font-family: $sec-font;
+    font-size: 14px;
+    line-height: 136.39%;
+    /* or 19px */
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+
+    // h4 {
+    //   width: 30%;
+    // }
+
+    p {
+      //width: 70%;
+      padding: 0 20px;
+    }
+  }
+}
+
+.lg-outer {
+  outline: none;
+  &:focus,
+  &:active {
+    outline: none;
+  }
+
+  .lg-inner {
+    max-width: 886px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .lg-img-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .lg-image {
+    display: block;
+    max-width: 886px;
+    width: 100% !important;
+    height: auto !important;
+  }
+}
+
+.lg-toolbar .lg-icon {
+  color: #fff;
+}
+
+.lg-backdrop {
+  background: rgba(72, 70, 74, 0.8);
+}
+
+.lg-toolbar {
+  background-color: transparent;
+}
+
+.slick-arrow {
+  &:focus,
+  &:active {
+    outline: none;
+  }
+}
+
+.slick-slide {
+  &:focus,
+  &:active {
+    outline: none;
+  }
+}
+
+.page_anchor::before {
+  display: block;
+  content: "";
+  height: 88px;
+  margin: -88px 0 0;
 }

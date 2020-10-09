@@ -1,0 +1,220 @@
+---
+title: Новости
+---
+{% extends "../templates/layouts/_layout-inner.html" %}
+
+{% block content %}
+
+<section class="filter">
+  <div class="filter__wrapper">
+    <div class="filter__block">
+      <h2 class="filter__title">Года:</h2>
+
+      <div class="filter__buttons  filter__buttons--visible">
+        <button class="filter__button" type="button" value="1">Все</button>
+        <button class="filter__button" type="button" value="2">2020</button>
+        <button class="filter__button" type="button" value="3">2021</button>
+        <button class="filter__button" type="button" value="4">2022</button>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+<section class="news  news--inner">
+  <ul class="news__list">
+    <li class="news__item  news__item--main">
+      <a href="#" class="news__link">
+        <article class="news__article">
+          <div class="news__photo">
+            <picture>
+              <source media="(min-width: 1440px)" data-src="/img/news/news-pic-main-desktop.jpg"
+                srcset="/img/news/news-pic-main-desktop.jpg">
+              <source media="(min-width: 768px)" data-src="/img/news/news-pic-main-tablet.jpg"
+                srcset="/img/news/news-pic-main-tablet.jpg">
+              <img class="lozad" data-src="/img/news/news-pic-main-mobile.jpg" src="/img/news/news-pic-main-mobile.jpg"
+                alt="Фотография к новости">
+            </picture>
+          </div>
+          <div class="news__text">
+            <div class="news__type">Новость</div>
+            <h3>Директор Музея современной истории России Ирина Великанова выступила на конференции Российского
+              исторического общества</h3>
+            <p>В эти дни Доме Российского исторического общества проходит международная научно-практическая
+              конференция «История современности. Информационные ресурсы и исследовательские практики в России и за
+              рубежом».</p>
+            <p>В числе участников – президент РГГУ Ефим Пивовар, ректор РГГУ Александр Безбородов, исполнительный
+              директора фонда «История Отечества» Константин Могилевский... </p>
+            <div class="news__info">
+              <span class="news__read-link">Читать далее</span>
+              <time class="news__date" datetime="2020-02-13">13 февраля</time>
+            </div>
+          </div>
+        </article>
+      </a>
+    </li>
+    <li class="news__item">
+      <a href="#" class="news__link">
+        <article class="news__article">
+          <div class="news__text">
+            <div class="news__type">Новость</div>
+            <h3>Директор Музея современной истории России Ирина Великанова выступила на конференции Российского
+              исторического общества</h3>
+            <div class="news__info">
+              <time class="news__date" datetime="2020-02-13">13 февраля</time>
+            </div>
+          </div>
+          <div class="news__photo">
+            <img src="/img/news/news-pic-1.jpg" alt="Фотография к новости">
+          </div>
+        </article>
+      </a>
+    </li>
+    <li class="news__item">
+      <a href="#" class="news__link">
+        <article class="news__article">
+          <div class="news__text">
+            <div class="news__type">Новость</div>
+            <h3>Захар Прилепин поделился планом создания нового общественного движения</h3>
+            <div class="news__info">
+              <time class="news__date" datetime="2020-02-13">13 февраля</time>
+            </div>
+          </div>
+          <div class="news__photo">
+            <img src="/img/news/news-pic-2.jpg" alt="Фотография к новости">
+          </div>
+        </article>
+      </a>
+    </li>
+    <li class="news__item">
+      <a href="#" class="news__link">
+        <article class="news__article">
+          <div class="news__text">
+            <div class="news__type">Новость</div>
+            <h3>Захар Прилепин поделился планом создания нового общественного движения</h3>
+            <div class="news__info">
+              <time class="news__date" datetime="2020-02-13">13 февраля</time>
+            </div>
+          </div>
+          <div class="news__photo">
+            <img src="/img/news/news-pic-2.jpg" alt="Фотография к новости">
+          </div>
+        </article>
+      </a>
+    </li>
+    <li class="news__item">
+      <a href="#" class="news__link">
+        <article class="news__article">
+          <div class="news__text">
+            <div class="news__type">Новость</div>
+            <h3>Директор Музея современной истории России Ирина Великанова выступила на конференции Российского
+              исторического общества</h3>
+            <div class="news__info">
+              <time class="news__date" datetime="2020-02-13">13 февраля</time>
+            </div>
+          </div>
+          <div class="news__photo">
+            <img src="/img/news/news-pic-1.jpg" alt="Фотография к новости">
+          </div>
+        </article>
+      </a>
+    </li>
+    <li class="news__item  news__item--attention">
+      <div class="attention">
+        <p>Внимание</p>
+        <button class="attention__btn" type="button"><span class="visually-hidden">Закрыть</span></button>
+      </div>
+      <a href="#" class="news__link">
+        <article class="news__article">
+          <div class="news__text">
+            <div class="news__type">Новость</div>
+            <h3>Изменения в графике работы Музея в период распространения коронавирусе и карантина в связи с
+              пандемией</h3>
+          </div>
+        </article>
+      </a>
+    </li>
+    <li class="subscribe">
+      <h2 class="subscribe__title">Подпишитесь на информационную рассылку музея</h2>
+      <form action="#" method="POST" class="subscribe__form">
+        <label for="mail" class="subscribe__label-field"><span class="visually-hidden">Ваша почта</span></label>
+        <input type="email" name="mail" id="mail" class="subscribe__input-field" placeholder="example@mail.ru" required>
+        <button class="subscribe__btn" type="submit">Подписаться</button>
+
+        <div class="subscribe__field">
+          <input type="checkbox" id="check" name="check" class="visually-hidden" required>
+          <label for="check">Я согласен с условиями подписки и <a>политикой обработки персональных данных</a>
+          </label>
+        </div>
+      </form>
+    </li>
+  </ul>
+
+  <div class="news__wrapper">
+    <a href="#" class="news__show-more-link">Показать еще</a>
+    <a href="#" class="news__show-archive-link">Архив новостей</a>
+  </div>
+
+</section>
+
+
+<section class="banners">
+  <div class="banners__wrapper">
+    <h2 class="banners__title  banners__title--hide-on-small-screens">Наши партнеры</h2>
+    <ul class="banners__list  banners__list--grid">
+      <li class="banners__list-item">
+        <a href="#">
+          <picture>
+            <source media="(min-width: 1440px)" data-src="/img/banners/banner-gray-desktop.jpg"
+              srcset="/img/banners/banner-gray-desktop.jpg">
+            <img class="lozad" data-src="/img/banners/banner-gray-mobile.jpg" src="/img/banners/banner-gray-mobile.jpg"
+              alt="Баннер партнера>">
+          </picture>
+        </a>
+      </li>
+      <li class="banners__list-item">
+        <a href="#">
+          <picture>
+            <source media="(min-width: 1440px)" data-src="/img/banners/banner-gray-desktop.jpg"
+              srcset="/img/banners/banner-gray-desktop.jpg">
+            <img class="lozad" data-src="/img/banners/banner-gray-mobile.jpg" src="/img/banners/banner-gray-mobile.jpg"
+              alt="Баннер партнера>">
+          </picture>
+        </a>
+      </li>
+      <li class="banners__list-item">
+        <a href="#">
+          <picture>
+            <source media="(min-width: 1440px)" data-src="/img/banners/banner-gray-desktop.jpg"
+              srcset="/img/banners/banner-gray-desktop.jpg">
+            <img class="lozad" data-src="/img/banners/banner-gray-mobile.jpg" src="/img/banners/banner-gray-mobile.jpg"
+              alt="Баннер партнера>">
+          </picture>
+        </a>
+      </li>
+      <li class="banners__list-item">
+        <a href="#">
+          <picture>
+            <source media="(min-width: 1440px)" data-src="/img/banners/banner-gray-desktop.jpg"
+              srcset="/img/banners/banner-gray-desktop.jpg">
+            <img class="lozad" data-src="/img/banners/banner-gray-mobile.jpg" src="/img/banners/banner-gray-mobile.jpg"
+              alt="Баннер партнера>">
+          </picture>
+        </a>
+      </li>
+      <li class="banners__list-item">
+        <a href="#">
+          <picture>
+            <source media="(min-width: 1440px)" data-src="/img/banners/banner-gray-desktop.jpg"
+              srcset="/img/banners/banner-gray-desktop.jpg">
+            <img class="lozad" data-src="/img/banners/banner-gray-mobile.jpg" src="/img/banners/banner-gray-mobile.jpg"
+              alt="Баннер партнера>">
+          </picture>
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+{% endblock %}

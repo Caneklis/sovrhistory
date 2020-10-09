@@ -68,7 +68,7 @@
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Меню</span></button>
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a href="#">Посетителям</a>
+              <a href="ya.ru">Посетителям</a>
               <ul class="main-nav__sublist">
                 <li><a href="#">Экскурсии</a></li>
                 <li><a href="#">Лекции и музейные занятия</a></li>
@@ -80,7 +80,7 @@
                 <li><a href="#">Билеты и расписание</a></li>
               </ul>
             </li>
-            <li class="main-nav__item">
+            <li class="main-nav__item  main-nav__item--active">
               <a href="#">Выставка</a>
               <ul class="main-nav__sublist">
                 <li><a href="#">Экскурсии</a></li>
@@ -104,6 +104,75 @@
             <li class="main-nav__item"><a href="#">Магазин</a></li>
             <li class="main-nav__item  main-nav__item--contrast"><a class="js-contrast-version"><img src="/img/glasses.svg" alt="Иконка версии для слабовидящих"><span class="visually-hidden">Версия для слабовидящих</span></a>
               <a class="js-normal-version">Обычная версия</a>
+            </li>
+            <li>
+              <ul class="main-nav__header-menu">
+                <li class="main-nav__header-item"><a href="#">Билеты</a></li>
+                <li class="main-nav__header-item"><a href="#">Адреса</a></li>
+                <li class="main-nav__header-item"><a href="#">Время работы</a></li>
+              </ul>
+            </li>
+            <li class="social social--header">
+              <ul class="social__list">
+                <li class="social__item">
+                  <a href="#" class="social__link">
+                    <span class="visually-hidden">Страница в ВК</span>
+                    <svg class="icon" width="44" height="44" viewBox="0 0 44 44">
+                      <use xlink:href="/img/sprite_auto.svg#vk" x="0" y="0" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="#" class="social__link">
+                    <span class="visually-hidden">Страница в Facebook</span>
+                    <svg class="icon" width="44" height="44" viewBox="0 0 44 44">
+                      <use xlink:href="/img/sprite_auto.svg#facebook" x="0" y="0" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="#" class="social__link">
+                    <span class="visually-hidden">Страница в одноклассниках</span>
+                    <svg class="icon" width="44" height="44" viewBox="0 0 44 44">
+                      <use xlink:href="/img/sprite_auto.svg#ok" x="0" y="0" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="#" class="social__link">
+                    <span class="visually-hidden">Канал в Телеграм</span>
+                    <svg class="icon" width="44" height="44" viewBox="0 0 44 44">
+                      <use xlink:href="/img/sprite_auto.svg#telegram" x="0" y="0" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="#" class="social__link">
+                    <span class="visually-hidden">Страница в Инстаграм</span>
+                    <svg class="icon" width="44" height="44" viewBox="0 0 44 44">
+                      <use xlink:href="/img/sprite_auto.svg#instagramm" x="0" y="0" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="#" class="social__link">
+                    <span class="visually-hidden">Твиттер аккаунт</span>
+                    <svg class="icon" width="44" height="44" viewBox="0 0 44 44">
+                      <use xlink:href="/img/sprite_auto.svg#twitter" x="0" y="0" />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="main-nav__footer-item">
+              <div class="main-nav__footer-logo">
+                <img src="/img/logo-menu-mobile.svg" alt="Логотип Государственный центральный музей современной истории России">
+                <p>Государственный центральный музей современной истории России</p>
+              </div>
+              <div class="main-nav__footer-links">
+                <a href="#">Открыть полную версию сайта</a>
+                <a href="#">На главную</a>
+              </div>
             </li>
           </ul>
         </nav>
@@ -165,11 +234,13 @@
           <li class="exhibitions__item">
             <article class="exhibitions__article">
               <div class="exhibitions__picture">
-                <picture>
-                  <source media="(min-width: 1440px)" data-src="/img/exhibitions/anons-desktop.jpg" srcset="/img/exhibitions/anons-desktop.jpg">
-                  <source media="(min-width: 768px)" data-src="/img/exhibitions/anons-tablet.jpg" srcset="/img/exhibitions/anons-tablet.jpg">
-                  <img class="lozad" data-src="/img/exhibitions/anons-mobile.jpg" src="/img/exhibitions/anons-mobile.jpg" alt="Фотография к новости" loading="lazy">
-                </picture>
+                <a href="#">
+                  <picture>
+                    <source media="(min-width: 1440px)" data-src="/img/exhibitions/anons-desktop.jpg" srcset="/img/exhibitions/anons-desktop.jpg">
+                    <source media="(min-width: 768px)" data-src="/img/exhibitions/anons-tablet.jpg" srcset="/img/exhibitions/anons-tablet.jpg">
+                    <img class="lozad" data-src="/img/exhibitions/anons-mobile.jpg" src="/img/exhibitions/anons-mobile.jpg" alt="Фотография к новости" loading="lazy">
+                  </picture>
+                </a>
               </div>
               <div class="exhibitions__text">
                 <time class="exhibitions__date" datetime="2020-02-13 14:30">20 февраля 2020 - 30 апреля 2020</time>
@@ -181,9 +252,9 @@
                 </div>
               </div>
               <div class="exhibitions__info">
-                <div class="exhibitions__place">Музей современной истории России</div>
+                <div class="exhibitions__place"><a href="#">Музей современной истории России</a></div>
                 <div class="exhibitions__address">Тверская 21</div>
-                <div class="exhibitions__time">Региональная выставка</div>
+                <div class="exhibitions__time"><a href="#">Региональная выставка</a></div>
                 <div class="exhibitions__building">
                   <img src="/img/buildings/building-1.svg" alt="Иконка здания" width="66" height="25">
                 </div>
@@ -193,11 +264,13 @@
           <li class="exhibitions__item">
             <article class="exhibitions__article">
               <div class="exhibitions__picture">
-                <picture>
-                  <source media="(min-width: 1440px)" data-src="/img/exhibitions/anons-desktop.jpg" srcset="/img/exhibitions/anons-desktop.jpg">
-                  <source media="(min-width: 768px)" data-src="/img/exhibitions/anons-tablet.jpg" srcset="/img/exhibitions/anons-tablet.jpg">
-                  <img class="lozad" data-src="/img/exhibitions/anons-mobile.jpg" src="/img/exhibitions/anons-mobile.jpg" alt="Фотография к новости" loading="lazy">
-                </picture>
+                <a href="#">
+                  <picture>
+                    <source media="(min-width: 1440px)" data-src="/img/exhibitions/anons-desktop.jpg" srcset="/img/exhibitions/anons-desktop.jpg">
+                    <source media="(min-width: 768px)" data-src="/img/exhibitions/anons-tablet.jpg" srcset="/img/exhibitions/anons-tablet.jpg">
+                    <img class="lozad" data-src="/img/exhibitions/anons-mobile.jpg" src="/img/exhibitions/anons-mobile.jpg" alt="Фотография к новости" loading="lazy">
+                  </picture>
+                </a>
               </div>
               <div class="exhibitions__text">
                 <time class="exhibitions__date" datetime="2020-02-13 14:30">20 февраля 2020 - 30 апреля 2020</time>
@@ -210,7 +283,7 @@
                 </div>
               </div>
               <div class="exhibitions__info">
-                <div class="exhibitions__place">Музей современной истории России</div>
+                <div class="exhibitions__place"><a href="#">Музей современной истории России</a></div>
                 <div class="exhibitions__address">Тверская 21</div>
                 <div class="exhibitions__time">с 11.00 до 19.00</div>
                 <div class="exhibitions__building">
@@ -309,11 +382,54 @@
         <section class="social  social--footer">
           <h2 class="visually-hidden">Мы в соцсетях</h2>
           <ul class="social__list">
-            <li class="social__item"><a href="#" class="social__link  social__link--fb"><span class="visually-hidden">Вк</span></a></li>
-            <li class="social__item"><a href="#" class="social__link  social__link--vk"><span class="visually-hidden"></span></a></li>
-            <li class="social__item"><a href="#" class="social__link  social__link--ok"><span class="visually-hidden"></span></a></li>
-            <li class="social__item"><a href="#" class="social__link  social__link--inst"><span class="visually-hidden"></span></a></li>
-            <li class="social__item"><a href="#" class="social__link  social__link--tw"><span class="visually-hidden"></span></a></li>
+            <li class="social__item">
+              <a href="#" class="social__link">
+                <span class="visually-hidden">Страница в ВК</span>
+                <svg class="icon" width="44" height="44" viewBox="0 0 44 44">
+                  <use xlink:href="/img/sprite_auto.svg#vk" x="0" y="0" />
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link">
+                <span class="visually-hidden">Страница в Facebook</span>
+                <svg class="icon" width="44" height="44" viewBox="0 0 44 44">
+                  <use xlink:href="/img/sprite_auto.svg#facebook" x="0" y="0" />
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link">
+                <span class="visually-hidden">Страница в одноклассниках</span>
+                <svg class="icon" width="44" height="44" viewBox="0 0 44 44">
+                  <use xlink:href="/img/sprite_auto.svg#ok" x="0" y="0" />
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link">
+                <span class="visually-hidden">Канал в Телеграм</span>
+                <svg class="icon" width="44" height="44" viewBox="0 0 44 44">
+                  <use xlink:href="/img/sprite_auto.svg#telegram" x="0" y="0" />
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link">
+                <span class="visually-hidden">Страница в Инстаграм</span>
+                <svg class="icon" width="44" height="44" viewBox="0 0 44 44">
+                  <use xlink:href="/img/sprite_auto.svg#instagramm" x="0" y="0" />
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link">
+                <span class="visually-hidden">Твиттер аккаунт</span>
+                <svg class="icon" width="44" height="44" viewBox="0 0 44 44">
+                  <use xlink:href="/img/sprite_auto.svg#twitter" x="0" y="0" />
+                </svg>
+              </a>
+            </li>
           </ul>
         </section>
         <section class="subscribe  subscribe--footer">
@@ -321,11 +437,54 @@
           <section class="social  social--in-form">
             <h2 class="visually-hidden">Мы в соцсетях</h2>
             <ul class="social__list">
-              <li class="social__item"><a href="#" class="social__link  social__link--fb"><span class="visually-hidden">Вк</span></a></li>
-              <li class="social__item"><a href="#" class="social__link  social__link--vk"><span class="visually-hidden"></span></a></li>
-              <li class="social__item"><a href="#" class="social__link  social__link--ok"><span class="visually-hidden"></span></a></li>
-              <li class="social__item"><a href="#" class="social__link  social__link--inst"><span class="visually-hidden"></span></a></li>
-              <li class="social__item"><a href="#" class="social__link  social__link--tw"><span class="visually-hidden"></span></a></li>
+              <li class="social__item">
+                <a href="#" class="social__link">
+                  <span class="visually-hidden">Страница в ВК</span>
+                  <svg class="icon" width="44" height="44" viewBox="0 0 44 44">
+                    <use xlink:href="/img/sprite_auto.svg#vk" x="0" y="0" />
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link">
+                  <span class="visually-hidden">Страница в Facebook</span>
+                  <svg class="icon" width="44" height="44" viewBox="0 0 44 44">
+                    <use xlink:href="/img/sprite_auto.svg#facebook" x="0" y="0" />
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link">
+                  <span class="visually-hidden">Страница в одноклассниках</span>
+                  <svg class="icon" width="44" height="44" viewBox="0 0 44 44">
+                    <use xlink:href="/img/sprite_auto.svg#ok" x="0" y="0" />
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link">
+                  <span class="visually-hidden">Канал в Телеграм</span>
+                  <svg class="icon" width="44" height="44" viewBox="0 0 44 44">
+                    <use xlink:href="/img/sprite_auto.svg#telegram" x="0" y="0" />
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link">
+                  <span class="visually-hidden">Страница в Инстаграм</span>
+                  <svg class="icon" width="44" height="44" viewBox="0 0 44 44">
+                    <use xlink:href="/img/sprite_auto.svg#instagramm" x="0" y="0" />
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link">
+                  <span class="visually-hidden">Твиттер аккаунт</span>
+                  <svg class="icon" width="44" height="44" viewBox="0 0 44 44">
+                    <use xlink:href="/img/sprite_auto.svg#twitter" x="0" y="0" />
+                  </svg>
+                </a>
+              </li>
             </ul>
           </section>
           <form action="#" method="POST" class="subscribe__form">
@@ -369,6 +528,14 @@
         </ul>
       </div>
     </footer>
+    <section class="cookie">
+      <div class="cookie__wrapper">
+        <div class="cookie__text">
+          <p>Какой-то текст для куков и вот <a href="#">ссылка</a></p>
+        </div>
+        <button class="cookie__close-btn" type="button"><span class="visually-hidden">Закрыть строку</span></button>
+      </div>
+    </section>
     <script src="/js/libs.js"></script>
     <script src="/js/scripts.min.js"></script>
   </body>

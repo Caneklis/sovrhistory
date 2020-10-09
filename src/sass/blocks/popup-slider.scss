@@ -1,0 +1,48 @@
+.popup__slider-list {
+  @include list-reset;
+  position: relative;
+}
+
+.popup__slider-item {
+  img {
+    width: 100%;
+  }
+}
+
+.popup-slider__arrow {
+  position: absolute;
+  z-index: 2;
+  bottom: 40px;
+  display: block;
+  width: 13px;
+  height: 32px;
+  background: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+
+  &--prev {
+    left: 43%;
+  }
+
+  &--next {
+    right: 43%;
+  }
+
+  &.slick-disabled {
+    opacity: 0.6;
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .popup-slider__arrow {
+    &--prev {
+      left: 140px;
+    }
+
+    &--next {
+      right: auto;
+      left: 180px;
+    }
+  }
+}
