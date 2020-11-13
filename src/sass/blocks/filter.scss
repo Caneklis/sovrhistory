@@ -18,6 +18,16 @@
     .selection {
       width: 100%;
     }
+
+    .select2-search__field::placeholder {
+      color: #cecfd0;
+    }
+    .select2-search__field:-ms-input-placeholder {
+      color: #cecfd0;
+    }
+    .select2-search__field::-ms-input-placeholder {
+      color: #cecfd0;
+    }
   }
 
   .select2-container--default .select2-selection--multiple {
@@ -156,6 +166,16 @@
   }
 }
 
+a.filter__button {
+  text-decoration: none;
+
+  &--active {
+    &::after {
+      display: none;
+    }
+  }
+}
+
 .filter__title {
   display: none;
 }
@@ -279,7 +299,7 @@
 
   .filter__link {
     display: flex;
-    margin-left: 45px;
+    margin-left: 10px;
     font-size: 16px;
     line-height: 20px;
     align-self: center;

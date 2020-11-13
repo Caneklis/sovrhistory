@@ -15,31 +15,39 @@
 
 .table {
   margin-bottom: 35px;
+  overflow-x: auto;
   table {
     width: 100%;
+    border-spacing: 0;
     border-collapse: collapse;
+    border: none;
 
     tr {
-      display: flex;
-      flex-direction: column;
+      width: 100%;
+      // display: flex;
+      // flex-direction: column;
       padding: 20px 0;
       border-top: 2px solid #c4c4c4;
 
-      &:first-of-type {
-        display: none;
-        border-top: none;
-      }
+      // &:first-of-type {
+      //   display: none;
+      //   border-top: none;
+      // }
     }
 
     th {
+      min-width: 170px;
       text-align: left;
       font-size: 14px;
       line-height: 18px;
 
       color: #b69953;
+      border: none;
     }
 
     td {
+      border: none;
+
       p {
         max-width: 262px;
         font-size: 13px;
@@ -78,8 +86,6 @@
   }
 
   &--gray {
-    padding-top: 50px;
-    margin-bottom: 0;
     background-color: #f9f9f9;
   }
 
@@ -98,25 +104,27 @@
 @media screen and (min-width: $tablet) {
   .table {
     margin-bottom: 40px;
+    overflow-x: hidden;
 
     table {
       tr {
-        flex-direction: row;
+        // flex-direction: row;
 
-        &:first-of-type {
-          display: flex;
-        }
+        // &:first-of-type {
+        //   display: flex;
+        // }
       }
 
       th {
-        display: flex;
+        // display: flex;
+        padding: 20px 0;
         font-size: 16px;
         line-height: 20px;
-        width: 50%;
-        &:nth-child(2),
-        &:nth-child(3) {
-          width: 25%;
-        }
+        // width: 50%;
+        // &:nth-child(2),
+        // &:nth-child(3) {
+        //   width: 25%;
+        // }
 
         &:nth-child(3) {
           text-align: right;
@@ -125,11 +133,11 @@
       }
 
       td {
-        width: 50%;
-        &:nth-child(2),
-        &:nth-child(3) {
-          width: 25%;
-        }
+        // width: 50%;
+        // &:nth-child(2),
+        // &:nth-child(3) {
+        //   width: 25%;
+        // }
 
         &:nth-child(3),
         &:last-child {
@@ -167,19 +175,19 @@
       table {
         td,
         th {
-          &:nth-child(1) {
-            width: 260px;
-          }
-          &:nth-child(2) {
-            width: 360px;
-          }
-          &:nth-child(3),
-          &:last-child {
-            width: 80px;
-          }
+          // &:nth-child(1) {
+          //   width: 260px;
+          // }
+          // &:nth-child(2) {
+          //   width: 360px;
+          // }
+          // &:nth-child(3),
+          // &:last-child {
+          //   width: 80px;
+          // }
         }
         td[colspan="2"] {
-          width: 620px;
+          // width: 620px;
 
           p {
             max-width: 590px;

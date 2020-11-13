@@ -6,6 +6,7 @@
 .timeline__wrapper {
   padding-left: 20px;
   margin-bottom: 35px;
+  overflow-x: hidden;
 }
 
 .timeline__list {
@@ -16,10 +17,11 @@
   grid-auto-flow: column;
   grid-template-rows: 1fr;
   //grid-column-gap: 30px;
-  width: 1920px;
+  // width: 1920px;
   padding-top: 20px;
   overflow-x: auto; /* has to be scroll, not auto */
   -webkit-overflow-scrolling: touch;
+  cursor: grab;
 
   &.active {
     cursor: grabbing;
@@ -87,6 +89,16 @@
   img {
     max-width: 100%;
   }
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+  }
 }
 
 .timeline__year {
@@ -120,6 +132,11 @@
 
   color: #000000;
   p {
+  }
+
+  a {
+    font-size: 16px;
+    line-height: 20px;
   }
 }
 
@@ -158,6 +175,11 @@
   .timeline__text {
     font-size: 18px;
     line-height: 136.39%;
+
+    a {
+      font-size: 18px;
+      line-height: 136.39%;
+    }
   }
   .timeline__item {
     width: 620px;

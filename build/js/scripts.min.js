@@ -510,6 +510,9 @@ $(".js-example-basic-multiple").select2({
   scrollAfterSelect: true,
   dropdownCssClass: "preview__select-dropdown",
   minimumResultsForSearch: -1,
+  placeholder: function () {
+    $(this).data("placeholder");
+  },
 });
 
 $(".js-example-basic-multiple").on("change", function () {
@@ -562,11 +565,13 @@ $(".read-more-hide").on("click", function (e) {
   e.preventDefault();
 });
 
-function findVideos() {
-  let videos = document.querySelectorAll(".video");
+if (document.querySelector(".video__link")) {
+  function findVideos() {
+    let videos = document.querySelectorAll(".video");
 
-  for (let i = 0; i < videos.length; i++) {
-    setupVideo(videos[i]);
+    for (let i = 0; i < videos.length; i++) {
+      setupVideo(videos[i]);
+    }
   }
 }
 
@@ -613,13 +618,13 @@ function generateURL(id) {
   return "https://www.youtube.com/embed/" + id + query;
 }
 
-findVideos();
+// findVideos();
 
 $(".popup__slider-list").each(function (index) {
   $(this).attr("data-slider", index);
 
   $(this).slick({
-    slidesToShow: 4,
+    // slidesToShow: 4,
     slidesToScroll: 1,
     infinite: false,
     dots: false,
@@ -886,11 +891,11 @@ $(".events__custom-select").click(function () {
   $(this).toggleClass("events__custom-select--active");
 });
 
-$(".events__filter-item a").click(function (event) {
-  event.preventDefault();
-  var par = $(this).parents(".events__custom-select");
-  $(".events__select-value", par).text($.trim($(this).text()));
-});
+// $(".events__filter-item a").click(function (event) {
+//   event.preventDefault();
+//   var par = $(this).parents(".events__custom-select");
+//   $(".events__select-value", par).text($.trim($(this).text()));
+// });
 
 var nonLinearStepSlider = document.getElementById("filter-range");
 

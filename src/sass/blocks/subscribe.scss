@@ -191,6 +191,7 @@
 @media screen and (min-width: $tablet) {
   .subscribe {
     width: 49%;
+    margin-bottom: 21px;
 
     &--footer {
       display: flex;
@@ -283,6 +284,7 @@
   .subscribe {
     width: 32.4%;
     margin-left: 1.4%;
+    margin-bottom: 13px;
 
     &--footer {
       width: 58%;

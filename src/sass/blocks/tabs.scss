@@ -148,6 +148,9 @@
 }
 
 .tabs__item-slider-item {
+  background-color: #fff;
+  background-color: #f9f9f9;
+
   p {
     font-size: 14px;
     line-height: 16px;
@@ -189,12 +192,12 @@
 
         .tabs__item-slider-item {
           display: flex;
-          img {
-            display: block;
-            width: 100%;
-            height: auto;
-          }
-
+          align-items: flex-start;
+          // img {
+          //   display: block;
+          //   width: 100%;
+          //   height: auto;
+          // }
           p {
             margin-top: 20px;
             font-size: 18px;

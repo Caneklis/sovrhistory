@@ -23,7 +23,38 @@ title: Новости
 
 
 <section class="news  news--inner">
-  <ul class="news__list">
+  <ul class="news__list  news__list--inner">
+    <li class="news__item  news__item--main">
+      <a href="#" class="news__link">
+        <article class="news__article">
+          <div class="news__photo">
+            <!-- <picture>
+              <source media="(min-width: 1440px)" data-src="/img/news/news-pic-main-desktop.jpg"
+                srcset="/img/news/news-pic-main-desktop.jpg">
+              <source media="(min-width: 768px)" data-src="/img/news/news-pic-main-tablet.jpg"
+                srcset="/img/news/news-pic-main-tablet.jpg">
+              <img class="lozad" data-src="/img/news/news-pic-main-mobile.jpg" src="/img/news/news-pic-main-mobile.jpg"
+                alt="Фотография к новости">
+            </picture> -->
+            <img src="https://picsum.photos/375/209" alt="">
+          </div>
+          <div class="news__text">
+            <div class="news__type">Новость</div>
+            <h3>Директор Музея современной истории России Ирина Великанова выступила на конференции Российского
+              исторического общества</h3>
+            <p>В эти дни Доме Российского исторического общества проходит международная научно-практическая
+              конференция «История современности. Информационные ресурсы и исследовательские практики в России и за
+              рубежом».</p>
+            <p>В числе участников – президент РГГУ Ефим Пивовар, ректор РГГУ Александр Безбородов, исполнительный
+              директора фонда «История Отечества» Константин Могилевский... </p>
+            <div class="news__info">
+              <span class="news__read-link">Читать далее</span>
+              <time class="news__date" datetime="2020-02-13">13 февраля</time>
+            </div>
+          </div>
+        </article>
+      </a>
+    </li>
     <li class="news__item  news__item--main">
       <a href="#" class="news__link">
         <article class="news__article">
@@ -123,7 +154,7 @@ title: Новости
     <li class="news__item  news__item--attention">
       <div class="attention">
         <p>Внимание</p>
-        <button class="attention__btn" type="button"><span class="visually-hidden">Закрыть</span></button>
+        <!-- <button class="attention__btn" type="button"><span class="visually-hidden">Закрыть</span></button> -->
       </div>
       <a href="#" class="news__link">
         <article class="news__article">
@@ -135,7 +166,7 @@ title: Новости
         </article>
       </a>
     </li>
-    <li class="subscribe">
+    <li class="news__item  subscribe">
       <h2 class="subscribe__title">Подпишитесь на информационную рассылку музея</h2>
       <form action="#" method="POST" class="subscribe__form">
         <label for="mail" class="subscribe__label-field"><span class="visually-hidden">Ваша почта</span></label>
@@ -153,7 +184,7 @@ title: Новости
 
   <div class="news__wrapper">
     <a href="#" class="news__show-more-link">Показать еще</a>
-    <a href="#" class="news__show-archive-link">Архив новостей</a>
+    <!-- <a href="#" class="news__show-archive-link">Архив новостей</a> -->
   </div>
 
 </section>

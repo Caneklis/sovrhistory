@@ -455,6 +455,7 @@ textarea {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 
     &::before {
       display: none;
@@ -464,7 +465,7 @@ textarea {
   .lg-image {
     display: block;
     max-width: 886px;
-    width: 100% !important;
+    // width: 100% !important;
     height: auto !important;
   }
 }
