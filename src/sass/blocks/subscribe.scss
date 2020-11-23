@@ -190,7 +190,7 @@
 
 @media screen and (min-width: $tablet) {
   .subscribe {
-    width: 49%;
+    // width: 49%;
     margin-bottom: 21px;
 
     &--footer {
@@ -282,9 +282,11 @@
 
 @media screen and (min-width: $desktop) {
   .subscribe {
-    width: 32.4%;
-    margin-left: 1.4%;
-    margin-bottom: 13px;
+    // width: 32.4%;
+    width: 100%;
+    // margin-left: 1.4%;
+    // margin-bottom: 13px;
+    margin-bottom: 0;
 
     &--footer {
       width: 58%;

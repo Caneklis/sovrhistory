@@ -122,7 +122,8 @@
 
 @media screen and (min-width: $desktop) {
   .banners {
-    grid-area: banners;
+    // grid-area: banners;
+    grid-row: 2/2;
     padding: 0;
   }
 
@@ -148,7 +149,7 @@
   }
 
   .banners__list-item {
-    width: 207px;
+    width: 206px;
   }
 
   .banners__title {

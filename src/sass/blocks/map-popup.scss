@@ -1,0 +1,60 @@
+.map-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  width: 320px;
+  height: 400px;
+  padding-top: 5px;
+  padding-bottom: 30px;
+  background-color: #fff;
+
+  &--hide {
+    display: none;
+  }
+}
+
+.map-popup__close-btn {
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin-left: auto;
+  margin-bottom: 5px;
+  position: relative;
+  padding: 0;
+  color: $s-color;
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 0;
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: $s-color;
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .map-popup {
+    width: 760px;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .map-popup {
+    width: 1300px;
+  }
+}

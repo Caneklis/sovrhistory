@@ -38,6 +38,7 @@ title: Экскурсии
       <h2 class="excursions__title">Цены на экскурсионные путевки </h2>
 
       <a href="#" class="read-more-show hide">Подробнее</a>
+
       <div class="read-more-content">
         <section class="table  table--3-col">
 
@@ -190,9 +191,11 @@ title: Экскурсии
 
         </section>
 
-
-        <a href="#" class="read-more-hide hide">Свернуть</a>
+        <a href="#" class="read-more-hide hide">Свернуть</a><a href="#" class="excursions__prices-btn  btn">Купить
+          билет</a>
       </div>
+
+      <a href="#" class="excursions__prices-btn  btn">Купить билет</a>
 
     </div>
   </section>
@@ -296,21 +299,42 @@ title: Экскурсии
           </div>
 
           <a href="#" class="read-more-hide hide">Свернуть</a>
+
+          <a href="#" class="excursions__prices-btn  btn">Купить билет</a>
         </div>
+
+        <a href="#" class="excursions__prices-btn  btn">Купить билет</a>
+
       </div>
       <div class="excursions__list-filter">
-        <div class="excursions__list-filter-cat">
-          <span>Категория:</span>
-        </div>
-        <div class="excursions__list-filter-text">
-          <p>Младший школьный возраст</p>
-        </div>
+
 
         <div class="excursions__list-filter-cat">
           <span>Музей:</span>
         </div>
         <div class="excursions__list-filter-text">
-          <p>Музей современной истории России</p>
+          <p>Музей современной истории</p> <button class="excursions__list-filter-pin" type="button">
+            <svg class="
+            icon" width="30" height="30" viewBox="0 0 30 30">
+              <use xlink:href="/img/sprite_auto.svg#map-pin-new" x="0" y="0" />
+            </svg>
+          </button>
+          <div class="map-popup map-popup--hide">
+            <button class="map-popup__close-btn" type="button">
+              <span class="visually-hidden">Закрыть
+                окно</span>
+            </button>
+            <script type="text/javascript" charset="utf-8" async
+              src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A7993977c96197ca29c40984b4324fda4f20d687e548c92a5f6da5233110d323e&amp;width=100%25&amp;lang=ru_RU&amp;scroll=true">
+            </script>
+          </div>
+        </div>
+
+        <div class="excursions__list-filter-cat">
+          <span>Категория:</span>
+        </div>
+        <div class="excursions__list-filter-text">
+          <p>Младший школьный возраст</p>
         </div>
 
         <div class="excursions__list-filter-cat">

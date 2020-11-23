@@ -84,11 +84,13 @@
 
 .excursions__list-item {
   margin-bottom: 20px;
-  padding: 40px 30px;
+  padding: 40px 20px;
   background-color: #f9f9f9;
 }
 
 .excursions__list-text {
+  margin-bottom: 20px;
+
   h3 {
     margin: 0;
     margin-bottom: 20px;
@@ -146,6 +148,8 @@
 .excursions__list-filter {
   display: flex;
   flex-direction: column;
+  position: relative;
+
   span {
     display: block;
     margin-bottom: 5px;
@@ -166,12 +170,39 @@
   }
 }
 
+.excursions__list-filter-pin {
+  margin-top: -15px;
+  background: transparent;
+  padding: 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  .icon {
+    fill: $s-color;
+  }
+}
+
 .excursions__list-filter-text {
   margin-bottom: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+
+  p {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
 }
 
 .excursions__list-header {
   display: none;
+}
+
+.excursions__prices-btn {
+  margin-left: 32px;
 }
 
 @media (min-width: $tablet) {
@@ -281,6 +312,10 @@
   .excursions__header-filter {
     display: none;
   }
+
+  // .excursions__list-filter-pin {
+  //   right: 0;
+  // }
 }
 
 @media (min-width: $desktop) {
@@ -365,6 +400,7 @@
   .excursions__list-text {
     width: 640px;
     padding-right: 30px;
+    margin-bottom: 0;
   }
 
   .excursions__list-filter {

@@ -9,9 +9,10 @@
     padding: 50px 130px;
     margin: auto;
     display: grid;
-    grid-template-areas:
-      "news partners"
-      "banners partners";
-    grid-gap: 50px;
+    // grid-template-areas:
+    //   "news partners"
+    //   "banners partners";
+    grid-template-columns: 860px 260px;
+    grid-column-gap: 40px;
   }
 }

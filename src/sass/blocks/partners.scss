@@ -52,7 +52,8 @@
 
 @media screen and (min-width: $desktop) {
   .partners {
-    grid-area: partners;
+    // grid-area: partners;
+    grid-row: 1/4;
     width: 260px;
     padding: 0;
     padding-top: 10px;

@@ -1,6 +1,7 @@
 .main-slider {
   position: relative;
-  max-width: 1920px;
+  min-width: 320px;
+  max-width: 375px;
   margin: 0 auto;
   border-bottom: 11px solid $s-color;
   .slider-track {
@@ -184,6 +185,11 @@
 }
 
 @media screen and (min-width: $tablet) {
+  .main-slider {
+    min-width: 768px;
+    max-width: 768px;
+  }
+
   .main-slider__item-description {
     position: absolute;
     left: 50%;
@@ -259,6 +265,8 @@
 @media screen and (min-width: $desktop) {
   .main-slider {
     border-bottom-width: 9px;
+    min-width: 1440px;
+    max-width: 1440px;
   }
   .main-slider__item {
     height: 760px;

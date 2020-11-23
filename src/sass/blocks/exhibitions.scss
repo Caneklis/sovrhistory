@@ -17,6 +17,7 @@
 }
 
 .exhibitions__picture {
+  display: block;
   img {
     display: block;
     width: 100%;
@@ -52,19 +53,30 @@
 }
 
 .exhibitions__text {
+  display: block;
   padding: 30px 30px 21px;
 
   color: #000;
+  text-decoration: none;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
 
   h2 {
     margin: 21px 0;
     font-size: 18px;
     line-height: 23px;
     font-weight: 400;
+    text-decoration: underline;
+  }
 
-    a {
-      color: inherit;
-    }
+  h3 {
+    margin: 21px 0;
+    font-size: 15px;
+    line-height: 17px;
+    font-weight: 400;
   }
 
   p {
@@ -93,9 +105,15 @@
 
     color: #c8134a;
   }
+
+  .btn,
+  .exhibitions__price-btn {
+    color: #fff;
+  }
 }
 
 .exhibitions__info {
+  @include list-reset;
   padding: 0 30px;
   font-size: 12px;
   line-height: 14px;
@@ -149,10 +167,18 @@
   grid-column-end: 2;
 
   img {
-    filter: grayscale(1) brightness(3.5);
+    filter: grayscale(1) brightness(2);
   }
 
   .exhibitions__price {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 113.2%;
+
+    text-align: right;
+
+    color: $s-color;
+
     .exhibitions__price-text {
       text-align: right;
     }
@@ -185,7 +211,8 @@
   }
 
   .exhibitions__picture {
-    width: 131px;
+    // width: 131px;
+    width: 200px;
 
     img {
       //height: 100%;
@@ -208,14 +235,25 @@
   }
 
   .exhibitions__text {
-    width: 325px;
+    // width: 325px;
+    width: 330px;
     display: flex;
     flex-direction: column;
     padding: 26px 0 30px 30px;
 
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
     h2 {
       font-size: 24px;
       line-height: 30px;
+    }
+
+    h3 {
+      font-size: 18px;
+      line-height: 24px;
     }
 
     &--wide {
@@ -229,6 +267,10 @@
     margin-top: auto;
     display: flex;
     align-items: center;
+    justify-content: flex-end;
+    font-size: 18px;
+    line-height: 113.2%;
+    color: #fff;
   }
 
   .exhibitions__price-btn {
@@ -237,7 +279,8 @@
   }
 
   .exhibitions__info {
-    width: 200px;
+    // width: 200px;
+    width: 165px;
     margin-left: auto;
     padding: 30px;
     padding-left: 0;
@@ -252,6 +295,11 @@
 
   .exhibitions__building {
     margin-top: auto;
+    margin-bottom: 15px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   .exhibition__link-more {

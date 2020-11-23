@@ -554,6 +554,11 @@ $(".read-more-show, .read-more-hide").removeClass("hide");
 // Set up the toggle effect:
 $(".read-more-show").on("click", function (e) {
   $(this).next(".read-more-content").removeClass("hide");
+  $(this)
+    .next(".read-more-content")
+    .next(".excursions__prices-btn")
+    .addClass("hide");
+
   $(this).addClass("hide");
   e.preventDefault();
 });
@@ -561,6 +566,7 @@ $(".read-more-show").on("click", function (e) {
 $(".read-more-hide").on("click", function (e) {
   var p = $(this).parent(".read-more-content");
   p.addClass("hide");
+  p.next(".excursions__prices-btn").removeClass("hide");
   p.prev(".read-more-show").removeClass("hide"); // Hide only the preceding "Read More"
   e.preventDefault();
 });
@@ -666,6 +672,16 @@ $("#lightgallery").lightGallery({
   fullScreen: false,
   counter: false,
   enableDrag: false,
+});
+
+$(".excursions__list-filter-pin").on("click", function () {
+  $(".map-popup").addClass("map-popup--hide");
+  $(this).next(".map-popup").removeClass("map-popup--hide");
+});
+
+$(".map-popup__close-btn").on("click", function () {
+  $(this).parent(".map-popup").addClass("map-popup--hide");
+  console.log("bla");
 });
 
 $(".tabs__item-slider").each(function (index) {
