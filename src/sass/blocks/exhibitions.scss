@@ -113,17 +113,20 @@
 }
 
 .exhibitions__info {
-  @include list-reset;
   padding: 0 30px;
   font-size: 12px;
   line-height: 14px;
   color: #000;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  // display: grid;
+  // grid-template-columns: 1fr 1fr;
+}
+
+.exhibitions__info-list {
+  @include list-reset;
 }
 
 .exhibitions__place {
-  margin-bottom: 14px;
+  margin-bottom: 5px;
   grid-column-start: 1;
   grid-column-end: 1;
 
@@ -138,12 +141,14 @@
 }
 
 .exhibitions__address {
-  margin-bottom: 14px;
+  margin-bottom: 5px;
   grid-column-start: 1;
   grid-column-end: 1;
 }
 
 .exhibitions__time {
+  margin-bottom: 15px;
+  font-size: 14px;
   font-weight: 700;
   grid-column-start: 1;
   grid-column-end: 1;
@@ -296,10 +301,6 @@
   .exhibitions__building {
     margin-top: auto;
     margin-bottom: 15px;
-
-    &:last-child {
-      margin-bottom: 0;
-    }
   }
 
   .exhibition__link-more {

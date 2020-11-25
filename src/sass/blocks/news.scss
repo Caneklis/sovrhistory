@@ -409,3 +409,136 @@
     }
   }
 }
+
+.news {
+  &--with-bg-photo {
+    .news__item {
+      position: relative;
+      min-height: 340px;
+
+      @media screen and (max-width: 766px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+        &--main {
+          justify-content: flex-start;
+        }
+      }
+
+      .news__article {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        background-color: #2f2f2f;
+        height: 100%;
+      }
+
+      .news__info {
+        padding-bottom: 0;
+      }
+
+      &--attention {
+        padding-top: 55px;
+        padding-bottom: 0;
+        background-color: #2f2f2f;
+      }
+
+      .news__link {
+        color: #fff;
+      }
+      .news__text {
+        position: relative;
+        padding-bottom: 20px;
+        z-index: 2;
+        font-size: 16px;
+        // background-color: rgba(#2f2f2f, 0.5);
+        background: rgba(#2f2f2f, 0.5);
+        background: linear-gradient(
+          0deg,
+          rgba(47, 47, 47, 0.7805497198879552) 0%,
+          rgba(47, 47, 47, 0.39119397759103647) 65%,
+          rgba(47, 47, 47, 0) 100%
+        );
+
+        h3 {
+          min-height: auto;
+          font-size: 16px;
+          text-decoration: none;
+        }
+      }
+
+      .news__date {
+        color: #fff;
+      }
+
+      .news__photo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+
+        img {
+          object-fit: cover;
+          max-width: 380px;
+        }
+
+        // @media screen and (min-width: $tablet) {
+        //   object-fit: cover;
+        // }
+      }
+
+      &--main {
+        min-height: 325px;
+
+        @media screen and (min-width: $tablet) {
+          .news__article {
+            flex-direction: row;
+          }
+
+          .news__photo {
+            width: 181px;
+            height: 100%;
+            img {
+              max-width: 100%;
+            }
+          }
+        }
+
+        @media screen and (min-width: $desktop) {
+          .news__photo {
+            width: 367px;
+          }
+        }
+
+        .news__photo {
+          position: static;
+        }
+
+        .news__article {
+          background-color: #fff;
+        }
+
+        .news__text {
+          background: transparent;
+        }
+
+        .news__link {
+          color: #000;
+        }
+      }
+    }
+
+    .attention {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      z-index: 2;
+    }
+  }
+}

@@ -13,7 +13,8 @@ title: Текущие выставки
         <h2 class="filter__title">Музеи:</h2>
 
         <div class="filter__custom-select">
-          <select class="js-example-basic-multiple" name="buildings[]" multiple="multiple">
+          <select class="js-example-basic-multiple" name="buildings[]" multiple="multiple"
+            data-placeholder="Подпись для плейсхолдера">
             <option value="all">Все музеи</option>
             <option value="1">Музей современной истории России</option>
             <option value="2">Пресня</option>
@@ -38,6 +39,17 @@ title: Текущие выставки
 
       <div class="filter__block">
         <h2 class="filter__title">Темы</h2>
+
+        <div class="filter__custom-select">
+          <select class="js-example-basic-multiple" name="buildings[]" multiple="multiple"
+            data-placeholder="Подпись для плейсхолдера">
+            <option value="all">Все темы</option>
+            <option value="1">Военная тематика</option>
+            <option value="2">Революция</option>
+            <option value="3">типография</option>
+            <option value="4">Эксперты о войне</option>
+          </select>
+        </div>
 
         <div class="filter__buttons">
           <button class="filter__button" type="button" value="1">Тематика про конституцию</button>
@@ -81,34 +93,35 @@ title: Текущие выставки
             </div>
           </div>
 
-          <ul class="exhibitions__info">
-            <li class="exhibitions__info-item">
-              <div class="exhibitions__place">Музей современной истории России</div>
-              <div class="exhibitions__address">Тверская 21</div>
-              <div class="exhibitions__time">с 11.00 до 19.00</div>
-              <div class="exhibitions__building">
-                <img src="/img/buildings/building-1.svg" alt="Иконка здания" width="66" height="25">
-              </div>
-            </li>
+          <div class="exhibitions__info">
+            <div class="exhibitions__time">с 11.00 до 19.00</div>
 
-            <li class="exhibitions__info-item">
-              <div class="exhibitions__place">Еще одно замечательное здание</div>
-              <div class="exhibitions__address">Тверская 21</div>
-              <div class="exhibitions__time">с 11.00 до 19.00</div>
-              <div class="exhibitions__building">
-                <img src="/img/buildings/building-2.svg" alt="Иконка здания" width="66" height="25">
-              </div>
-            </li>
+            <ul class="exhibitions__info-list">
+              <li class="exhibitions__info-item">
+                <div class="exhibitions__place">Музей современной истории России</div>
+                <div class="exhibitions__address">Тверская 21</div>
+                <div class="exhibitions__building">
+                  <img src="/img/buildings/building-1.svg" alt="Иконка здания" width="66" height="25">
+                </div>
+              </li>
 
-            <li class="exhibitions__info-item">
-              <div class="exhibitions__place">И еще одно</div>
-              <div class="exhibitions__address">Тверская 21</div>
-              <div class="exhibitions__time">с 11.00 до 19.00</div>
-              <div class="exhibitions__building">
-                <img src="/img/buildings/building-3.svg" alt="Иконка здания" width="66" height="25">
-              </div>
-            </li>
-          </ul>
+              <li class="exhibitions__info-item">
+                <div class="exhibitions__place">Еще одно замечательное здание</div>
+                <div class="exhibitions__address">Тверская 21</div>
+                <div class="exhibitions__building">
+                  <img src="/img/buildings/building-2.svg" alt="Иконка здания" width="66" height="25">
+                </div>
+              </li>
+
+              <li class="exhibitions__info-item">
+                <div class="exhibitions__place">И еще одно</div>
+                <div class="exhibitions__address">Тверская 21</div>
+                <div class="exhibitions__building">
+                  <img src="/img/buildings/building-3.svg" alt="Иконка здания" width="66" height="25">
+                </div>
+              </li>
+            </ul>
+          </div>
         </article>
       </li>
       <li class="exhibitions__item">
@@ -147,12 +160,16 @@ title: Текущие выставки
           </div>
 
           <div class="exhibitions__info">
-            <div class="exhibitions__place">Музей современной истории России</div>
-            <div class="exhibitions__address">Тверская 21</div>
             <div class="exhibitions__time">с 11.00 до 19.00</div>
-            <div class="exhibitions__building">
-              <img src="/img/buildings/building-1.svg" alt="Иконка здания" width="66" height="25">
-            </div>
+            <ul class="exhibitions__info-list">
+              <li class="exhibitions__info-item">
+                <div class="exhibitions__place">Музей современной истории России</div>
+                <div class="exhibitions__address">Тверская 21</div>
+                <div class="exhibitions__building">
+                  <img src="/img/buildings/building-1.svg" alt="Иконка здания" width="66" height="25">
+                </div>
+              </li>
+            </ul>
           </div>
         </article>
       </li>
@@ -182,12 +199,16 @@ title: Текущие выставки
           </div>
 
           <div class="exhibitions__info">
-            <div class="exhibitions__place">Музей современной истории России</div>
-            <div class="exhibitions__address">Тверская 21</div>
             <div class="exhibitions__time">с 11.00 до 19.00</div>
-            <div class="exhibitions__building">
-              <img src="/img/buildings/building-1.svg" alt="Иконка здания" width="66" height="25">
-            </div>
+            <ul class="exhibitions__info-list">
+              <li class="exhibitions__info-item">
+                <div class="exhibitions__place">Музей современной истории России</div>
+                <div class="exhibitions__address">Тверская 21</div>
+                <div class="exhibitions__building">
+                  <img src="/img/buildings/building-1.svg" alt="Иконка здания" width="66" height="25">
+                </div>
+              </li>
+            </ul>
           </div>
         </article>
       </li>

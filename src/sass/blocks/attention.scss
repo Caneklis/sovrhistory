@@ -9,6 +9,15 @@
   p {
     margin: 0;
   }
+
+  &--white {
+    background-color: #fff;
+    color: $s-color;
+
+    .attention__btn {
+      background-image: url("../img/icons/cross-pink.svg");
+    }
+  }
 }
 
 .attention__btn {
@@ -25,4 +34,5 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
+  outline: none;
 }

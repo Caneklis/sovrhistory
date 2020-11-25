@@ -935,3 +935,11 @@ if (nonLinearStepSlider) {
     },
   });
 }
+
+$(".lightgallery").lightGallery({
+  share: false,
+});
+
+$(".gallery__btn").click(function () {
+  $(this).next().find("a").trigger("click");
+});

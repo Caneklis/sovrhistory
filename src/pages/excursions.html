@@ -281,10 +281,11 @@ title: Экскурсии
 
 
   <ul class="excursions__list">
-    {% for i in range(0, 6) -%}
+    {% for i in range(0, 3) -%}
     <li class="excursions__list-item">
       <div class="excursions__list-text">
         <h3>Сказки, мифы и легенды народов Востока</h3>
+
         <a href="#" class="read-more-show hide">Подробнее</a>
 
         <div class="read-more-content">
@@ -304,6 +305,25 @@ title: Экскурсии
         </div>
 
         <a href="#" class="excursions__prices-btn  btn">Купить билет</a>
+
+        <div class="gallery">
+          <button class="gallery__btn" type="button">
+            <svg class="
+            icon" width="20" height="20" viewBox="0 0 20 20">
+              <use xlink:href="/img/sprite_auto.svg#gallery" x="0" y="0" />
+            </svg>
+            Фотогалерея
+          </button>
+
+          <div class="lightgallery  hide">
+            <a href="/img/text/popup/popup-desktop.jpg">
+              <img src="/img/text/popup/popup-desktop.jpg" />
+            </a>
+            <a href="/img/text/popup/popup-desktop.jpg">
+              <img src="/img/text/popup/popup-desktop.jpg" />
+            </a>
+          </div>
+        </div>
 
       </div>
       <div class="excursions__list-filter">

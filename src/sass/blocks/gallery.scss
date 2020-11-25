@@ -1,0 +1,19 @@
+.gallery__btn {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  background: transparent;
+  border: none;
+  color: $s-color;
+  font-family: $base-font;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: underline;
+  cursor: pointer;
+  outline: none;
+
+  svg {
+    margin-right: 15px;
+    stroke: $s-color;
+  }
+}
