@@ -1,5 +1,5 @@
 .logo {
-  width: 225px;
+  width: 240px;
   text-decoration: none;
   display: flex;
   flex-wrap: wrap;
@@ -22,9 +22,15 @@
   padding-left: 49px+13px;
   font-size: 13px;
   line-height: 16px;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.2px;
   font-weight: 700;
   font-style: italic;
+  // background: -webkit-linear-gradient(to right, #b01645, #fe407a);
+  // -webkit-background-clip: text;
+  // -webkit-text-fill-color: transparent;
+  background: linear-gradient(to right, #b01645 0%, #fe407a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 @media screen and (min-width: $tablet) {
@@ -47,7 +53,7 @@
 
 @media screen and (min-width: $desktop) {
   .logo {
-    width: 280px;
+    width: 300px;
 
     &--fixed {
       width: 310px;

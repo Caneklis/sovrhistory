@@ -164,6 +164,10 @@ gulp.task("libs", function () {
       "node_modules/lightgallery/dist/js/lightgallery-all.min.js",
       "node_modules/baron/baron.js",
       "node_modules/nouislider/distribute/nouislider.js",
+      "node_modules/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js",
+      "src/js/js.cookie.js",
+      // "src/js/bvi-init.js",
+      "src/js/bvi.min.js",
     ])
     .pipe(concat("libs.js"))
     .pipe(uglify()) // Минимизировать весь js (на выбор)

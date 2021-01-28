@@ -2,7 +2,7 @@
   width: 100%; /* the plugin works for responsive layouts so width is not necessary */
   height: 80px;
   padding: 18px 0;
-  background-color: $s-color;
+  background-color: #7e1332;
   position: relative;
   z-index: 2;
 }
@@ -31,10 +31,12 @@
   a {
     color: #fff;
     margin-right: 40px;
+    outline: nonenpm install scrollmagic;
   }
 }
 
 .marquee__link {
+  min-width: 200px;
   font-size: 11px;
   line-height: 14px;
   font-weight: 700;

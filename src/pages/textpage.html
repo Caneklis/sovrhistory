@@ -13,6 +13,15 @@ subtitle: Подзаголовок выставки который мельче
   </div>
 
   <div class="text__header-pic">
+    <div class="text__header-video">
+      <picture>
+        <source media="(min-width: 768px)" data-src="/img/text/text-img-tablet.jpg"
+          srcset="/img/text/text-img-tablet.jpg">
+        <img class="lozad" data-src="/img/text/text-img-mobile.jpg" src="/img/text/text-img-mobile.jpg"
+          alt="Фотография к новости" loading="lazy">
+      </picture>
+      <video src="/video/radio_tundra.mp4" muted autoplay loop></video>
+    </div>
     <picture>
       <source media="(min-width: 1440px)" data-src="/img/text/text-img-desktop.jpg"
         srcset="/img/text/text-img-desktop.jpg">
@@ -465,7 +474,60 @@ subtitle: Подзаголовок выставки который мельче
     </div>
   </section>
 
-  <section class="banners">
+  <section class="partners-page">
+    <div class="partners-page__wrapper">
+      <article class="partners-page__patners-article">
+        <h2 class="partners-page__title">Партнеры</h2>
+        <ul class="partners-page__patners-list  partners-page__patners-list--grid">
+          <li class="partners-page__patners-item">
+            <a href="#">
+              <div class="partners-page__patners-logo">
+                <img src="https://sovr.museumplus.ru/partners/sponsors/317_logomain_ru.jpg"
+                  alt="Логотип партнера с названием">
+              </div>
+              <div class="partners-page__patners-text">
+                <p>Партнер направления Пушкинский XXI</p>
+              </div>
+            </a>
+          </li>
+          <li class="partners-page__patners-item">
+            <a href="#">
+              <div class="partners-page__patners-logo">
+                <img src="https://sovr.museumplus.ru/partners/sponsors/318_logomain_ru.jpg"
+                  alt="Логотип партнера с названием">
+              </div>
+              <div class="partners-page__patners-text">
+                <p>Партнер направления Пушкинский XXI</p>
+              </div>
+            </a>
+          </li>
+          <li class="partners-page__patners-item">
+            <a href="#">
+              <div class="partners-page__patners-logo">
+                <img src="https://sovr.museumplus.ru/partners/sponsors/319_logomain_ru.jpg"
+                  alt="Логотип партнера с названием">
+              </div>
+              <div class="partners-page__patners-text">
+                <p>Партнер направления Пушкинский XXI</p>
+              </div>
+            </a>
+          </li>
+          <li class="partners-page__patners-item">
+            <a href="#">
+              <div class="partners-page__patners-logo">
+                <img src="/img/partner-logo.jpg" alt="Логотип партнера с названием">
+              </div>
+              <div class="partners-page__patners-text">
+                <p>Партнер направления Пушкинский XXI</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- <section class="banners">
     <div class="banners__wrapper">
       <ul class="banners__list  banners__list--grid">
         <li class="banners__list-item">
@@ -547,7 +609,9 @@ subtitle: Подзаголовок выставки который мельче
         </li>
       </ul>
     </div>
-  </section>
+  </section> -->
+
+
 
   <section class="shop">
     <div class="shop__wrapper">

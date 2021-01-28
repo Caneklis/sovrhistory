@@ -70,6 +70,7 @@
     "normalize.css": "^8.0.1",
     "nouislider": "^14.6.2",
     "npm-check-updates": "^6.0.1",
+    "scrollmagic": "^2.0.8",
     "select2": "^4.0.13",
     "slick-carousel": "^1.8.1",
     "swiper": "^5.4.1"

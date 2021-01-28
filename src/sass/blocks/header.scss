@@ -4,7 +4,7 @@
   background-color: rgba(#0e0e0e, 0.6);
   backdrop-filter: blur(40px);
   z-index: 10;
-  margin-bottom: -88px;
+  // margin-bottom: -88px;
 
   position: relative;
   top: 0;
@@ -12,7 +12,7 @@
   right: 0;
 
   &--inner {
-    margin-bottom: 35px;
+    // margin-bottom: 35px;
     background-color: #0e0e0e;
     backdrop-filter: blur(0);
   }
@@ -154,10 +154,10 @@
   .header {
     padding-bottom: 0;
     padding-top: 30px;
-    margin-bottom: -133px;
+    // margin-bottom: -133px;
 
     &--inner {
-      margin-bottom: 35px;
+      // margin-bottom: 35px;
     }
 
     &--fixed {
@@ -271,6 +271,10 @@
       .header__logo {
         padding-bottom: 15px;
       }
+
+      .header__search--opened .header__search-form {
+        top: 14px;
+      }
     }
   }
 
@@ -315,7 +319,7 @@
       margin-right: 0;
     }
     a {
-      font-size: 11px;
+      font-size: 13px;
       line-height: 14px;
       /* identical to box height */
 

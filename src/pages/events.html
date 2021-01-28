@@ -7,6 +7,60 @@ title: События
 
 <section class="exhibitions">
   <div class="exhibitions__wrapper">
+    <section class="filter">
+      <div class="filter__block">
+        <h2 class="filter__title">Музеи:</h2>
+
+        <div class="filter__custom-select">
+          <select class="js-example-basic-multiple" name="buildings[]" multiple="multiple"
+            data-placeholder="Подпись для плейсхолдера">
+            <option value="all">Все музеи</option>
+            <option value="1">Музей современной истории России</option>
+            <option value="2">Пресня</option>
+            <option value="3">Подпольная типография 1905-1906 гг.</option>
+            <option value="4">Квартира Г.М. Кржижановского</option>
+            <option value="5">Музей-галерея Е. Евтушенко</option>
+            <option value="6">Мемориальный комплекс «Катынь»</option>
+            <option value="7">Мемориальный комплекс «Медное»</option>
+          </select>
+        </div>
+
+        <div class="filter__buttons">
+          <button class="filter__button" type="button" value="1">Музей современной истории России</button>
+          <button class="filter__button" type="button" value="2">Пресня</button>
+          <button class="filter__button" type="button" value="3">Подпольная типография 1905-1906 гг.</button>
+          <button class="filter__button" type="button" value="4">Квартира Г.М. Кржижановского</button>
+          <button class="filter__button" type="button" value="3">Музей-галерея Е. Евтушенко</button>
+          <button class="filter__button" type="button" value="5">Мемориальный комплекс «Катынь»</button>
+          <button class="filter__button" type="button" value="6">Мемориальный комплекс «Медное»</button>
+        </div>
+      </div>
+
+      <div class="filter__block">
+        <h2 class="filter__title">Темы</h2>
+
+        <div class="filter__custom-select">
+          <select class="js-example-basic-multiple" name="buildings[]" multiple="multiple"
+            data-placeholder="Подпись для плейсхолдера">
+            <option value="all">Все темы</option>
+            <option value="1">Военная тематика</option>
+            <option value="2">Революция</option>
+            <option value="3">типография</option>
+            <option value="4">Эксперты о войне</option>
+          </select>
+        </div>
+
+        <div class="filter__buttons">
+          <button class="filter__button" type="button" value="1">Тематика про конституцию</button>
+          <button class="filter__button" type="button" value="2">Военная тематика</button>
+          <button class="filter__button" type="button" value="3">Революция</button>
+          <button class="filter__button" type="button" value="4">типография</button>
+          <button class="filter__button" type="button" value="5">Эксперты о войне</button>
+        </div>
+      </div>
+
+    </section>
+
     <h2 class="exhibitions__title">События сегодня</h2>
 
     <ul class="exhibitions__list">
@@ -26,7 +80,7 @@ title: События
           <div class="exhibitions__text">
             <a href="#">
               <time class="exhibitions__date" datetime="2020-02-13 14:30">20 февраля 2020 - 30 апреля 2020</time>
-              <h2><a href="#">Человек и война. Нерасказанная история</a></h2>
+              <h2>Человек и война. Нерасказанная история</h2>
               <p>21 февраля 2020 г. в Музее современной истории России открылся масштабный выставочный проект «Человек и
                 война. Нерассказанная история», посвящённый 75-летию Победы в Великой Отечественной войне. В центре
                 внимания выставки — человек и его бытие в экстремальных условиях военной повседневности. Выставка
@@ -41,12 +95,36 @@ title: События
           </div>
 
           <div class="exhibitions__info">
-            <div class="exhibitions__place">Музей современной истории России</div>
-            <div class="exhibitions__address">Тверская 21</div>
             <div class="exhibitions__time">с 11.00 до 19.00</div>
-            <div class="exhibitions__building">
-              <img src="/img/buildings/building-1.svg" alt="Иконка здания" width="66" height="25">
-            </div>
+
+            <ul class="exhibitions__info-list">
+              <li class="exhibitions__info-item">
+                <div class="exhibitions__place">Музей современной истории России</div>
+                <div class="exhibitions__address">Тверская 21</div>
+                <div class="exhibitions__type"><a href="#">Лекция кликабельная</a></div>
+                <div class="exhibitions__building">
+                  <img src="/img/buildings/building-1.svg" alt="Иконка здания" width="66" height="25">
+                </div>
+              </li>
+
+              <li class="exhibitions__info-item">
+                <div class="exhibitions__place">Еще одно замечательное здание</div>
+                <div class="exhibitions__address">Тверская 21</div>
+                <div class="exhibitions__type">Лекция</div>
+                <div class="exhibitions__building">
+                  <img src="/img/buildings/building-2.svg" alt="Иконка здания" width="66" height="25">
+                </div>
+              </li>
+
+              <li class="exhibitions__info-item">
+                <div class="exhibitions__place">И еще одно</div>
+                <div class="exhibitions__address">Тверская 21</div>
+                <div class="exhibitions__type">Лекция</div>
+                <div class="exhibitions__building">
+                  <img src="/img/buildings/building-3.svg" alt="Иконка здания" width="66" height="25">
+                </div>
+              </li>
+            </ul>
           </div>
         </article>
       </li>
@@ -87,12 +165,18 @@ title: События
           </div>
 
           <div class="exhibitions__info">
-            <div class="exhibitions__place">Музей современной истории России</div>
-            <div class="exhibitions__address">Тверская 21</div>
             <div class="exhibitions__time">с 11.00 до 19.00</div>
-            <div class="exhibitions__building">
-              <img src="/img/buildings/building-1.svg" alt="Иконка здания" width="66" height="25">
-            </div>
+
+            <ul class="exhibitions__info-list">
+              <li class="exhibitions__info-item">
+                <div class="exhibitions__place">Музей современной истории России</div>
+                <div class="exhibitions__address">Тверская 21</div>
+                <div class="exhibitions__type">Лекция</div>
+                <div class="exhibitions__building">
+                  <img src="/img/buildings/building-1.svg" alt="Иконка здания" width="66" height="25">
+                </div>
+              </li>
+            </ul>
           </div>
         </article>
       </li>
@@ -137,12 +221,18 @@ title: События
           </div>
 
           <div class="exhibitions__info">
-            <div class="exhibitions__place">Музей современной истории России</div>
-            <div class="exhibitions__address">Тверская 21</div>
             <div class="exhibitions__time">с 11.00 до 19.00</div>
-            <div class="exhibitions__building">
-              <img src="/img/buildings/building-1.svg" alt="Иконка здания" width="66" height="25">
-            </div>
+
+            <ul class="exhibitions__info-list">
+              <li class="exhibitions__info-item">
+                <div class="exhibitions__place">Музей современной истории России</div>
+                <div class="exhibitions__address">Тверская 21</div>
+                <div class="exhibitions__type">Лекция</div>
+                <div class="exhibitions__building">
+                  <img src="/img/buildings/building-1.svg" alt="Иконка здания" width="66" height="25">
+                </div>
+              </li>
+            </ul>
           </div>
         </article>
       </li>
@@ -183,12 +273,18 @@ title: События
           </div>
 
           <div class="exhibitions__info">
-            <div class="exhibitions__place">Музей современной истории России</div>
-            <div class="exhibitions__address">Тверская 21</div>
             <div class="exhibitions__time">с 11.00 до 19.00</div>
-            <div class="exhibitions__building">
-              <img src="/img/buildings/building-1.svg" alt="Иконка здания" width="66" height="25">
-            </div>
+
+            <ul class="exhibitions__info-list">
+              <li class="exhibitions__info-item">
+                <div class="exhibitions__place">Музей современной истории России</div>
+                <div class="exhibitions__address">Тверская 21</div>
+                <div class="exhibitions__type">Лекция</div>
+                <div class="exhibitions__building">
+                  <img src="/img/buildings/building-1.svg" alt="Иконка здания" width="66" height="25">
+                </div>
+              </li>
+            </ul>
           </div>
         </article>
       </li>
@@ -196,70 +292,13 @@ title: События
   </div>
 </section>
 
-<section class="sub-nav">
+<section class="sub-nav  sub-nav--no-margin-bottom">
   <div class="sub-nav__wrapper">
     <ul class="sub-nav__list  sub-nav__list--wide">
       <li class="sub-nav__list-item"><a href="#">Анонсы</a></li>
       <li class="sub-nav__list-item"><a href="#">Региональные и зарубежные</a></li>
       <li class="sub-nav__list-item"><a href="#">Виртуальные</a></li>
       <li class="sub-nav__list-item"><a href="#">Архив</a></li>
-    </ul>
-  </div>
-</section>
-
-<section class="banners">
-  <div class="banners__wrapper">
-    <ul class="banners__list  banners__list--grid">
-      <li class="banners__list-item">
-        <a href="#">
-          <picture>
-            <source media="(min-width: 1440px)" data-src="/img/banners/banner-gray-desktop.jpg"
-              srcset="/img/banners/banner-gray-desktop.jpg">
-            <img class="lozad" data-src="/img/banners/banner-gray-mobile.jpg" src="/img/banners/banner-gray-mobile.jpg"
-              alt="Баннер партнера>">
-          </picture>
-        </a>
-      </li>
-      <li class="banners__list-item">
-        <a href="#">
-          <picture>
-            <source media="(min-width: 1440px)" data-src="/img/banners/banner-gray-desktop.jpg"
-              srcset="/img/banners/banner-gray-desktop.jpg">
-            <img class="lozad" data-src="/img/banners/banner-gray-mobile.jpg" src="/img/banners/banner-gray-mobile.jpg"
-              alt="Баннер партнера>">
-          </picture>
-        </a>
-      </li>
-      <li class="banners__list-item">
-        <a href="#">
-          <picture>
-            <source media="(min-width: 1440px)" data-src="/img/banners/banner-gray-desktop.jpg"
-              srcset="/img/banners/banner-gray-desktop.jpg">
-            <img class="lozad" data-src="/img/banners/banner-gray-mobile.jpg" src="/img/banners/banner-gray-mobile.jpg"
-              alt="Баннер партнера>">
-          </picture>
-        </a>
-      </li>
-      <li class="banners__list-item">
-        <a href="#">
-          <picture>
-            <source media="(min-width: 1440px)" data-src="/img/banners/banner-gray-desktop.jpg"
-              srcset="/img/banners/banner-gray-desktop.jpg">
-            <img class="lozad" data-src="/img/banners/banner-gray-mobile.jpg" src="/img/banners/banner-gray-mobile.jpg"
-              alt="Баннер партнера>">
-          </picture>
-        </a>
-      </li>
-      <li class="banners__list-item">
-        <a href="#">
-          <picture>
-            <source media="(min-width: 1440px)" data-src="/img/banners/banner-gray-desktop.jpg"
-              srcset="/img/banners/banner-gray-desktop.jpg">
-            <img class="lozad" data-src="/img/banners/banner-gray-mobile.jpg" src="/img/banners/banner-gray-mobile.jpg"
-              alt="Баннер партнера>">
-          </picture>
-        </a>
-      </li>
     </ul>
   </div>
 </section>

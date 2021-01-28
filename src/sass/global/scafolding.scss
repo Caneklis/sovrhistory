@@ -81,7 +81,7 @@ main {
 a {
   color: $link-color;
   background-color: transparent;
-  transition: color 0.3s;
+  // transition: color 0.3s;
 
   // &:hover,
   // &:focus {
@@ -501,4 +501,11 @@ textarea {
   content: "";
   height: 88px;
   margin: -88px 0 0;
+}
+
+.pager {
+  margin-bottom: 35px;
+  .pgrtit {
+    margin-right: 10px;
+  }
 }

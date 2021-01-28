@@ -171,6 +171,9 @@
 }
 
 .excursions__list-filter-pin {
+  position: absolute;
+  right: 0;
+  top: 0;
   margin-top: -15px;
   background: transparent;
   padding: 0;
@@ -185,9 +188,11 @@
 
 .excursions__list-filter-text {
   margin-bottom: 15px;
+  padding-right: 30px;
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
+  position: relative;
 
   p {
     position: relative;

@@ -6,6 +6,10 @@
   @include wrapper;
 }
 
+.partners-page__title {
+  @include section-title;
+}
+
 .partners-page__text {
   margin-bottom: 60px;
   p {

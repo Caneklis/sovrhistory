@@ -1,3 +1,74 @@
-<svg width="54" height="22" viewBox="0 0 54 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M17.8478 4.83255L27.0158 0.751221L36.1838 4.83255M17.8478 4.83255H19.8851M17.8478 4.83255V8.65881M36.1838 4.83255H34.1465M36.1838 4.83255V8.65881M17.8478 12.4851H25.9971M17.8478 12.4851H34.1465V4.83255M17.8478 12.4851H13.7731M17.8478 12.4851V8.65881M19.8851 12.4851V4.83255M19.8851 4.83255H21.9225M21.9225 4.83255V12.4851H23.9598V4.83255M21.9225 4.83255H23.9598M23.9598 4.83255H25.9971M25.9971 4.83255V12.4851M25.9971 4.83255H28.0345M25.9971 12.4851H30.0718M28.0345 12.4851V4.83255M28.0345 4.83255H30.0718M30.0718 4.83255V12.4851M30.0718 4.83255H32.1091M30.0718 12.4851H36.1838V8.65881M32.1091 12.4851V4.83255M32.1091 4.83255H34.1465M14.2825 20.6477V12.4851H39.7491V20.6477M14.2825 20.6477H39.7491M14.2825 20.6477H5.11446M39.7491 20.6477H48.9171M17.3385 20.1376V16.5664C17.3385 15.0359 20.3945 15.0359 20.3945 16.5664V20.1376M22.9411 20.1376V16.5664C22.9411 15.0359 25.9971 15.0359 25.9971 16.5664V20.1376M28.0345 20.1376V16.5664C28.0345 15.0359 31.0905 15.0359 31.0905 16.5664V20.1376M33.6371 20.1376V16.5664C33.6371 15.0359 36.6931 15.0359 36.6931 16.5664V20.1376M17.8478 8.65881H12.2451M5.11446 20.6477V8.65881H12.2451M5.11446 20.6477H1.03979V6.36306H10.2078L12.2451 8.65881M48.9171 20.6477V8.65881H41.7865M48.9171 20.6477H52.9918V6.36306H43.8238L41.7865 8.65881M36.1838 8.65881H41.7865M3.07713 11.4647V13.5054M3.07713 16.5664V18.6071M7.15179 11.4647V13.5054M9.18913 11.4647V13.5054M11.2265 11.4647V13.5054M7.15179 16.5664V18.6071M9.18913 16.5664V18.6071M11.2265 16.5664V18.6071M42.8051 11.4647V13.5054M44.8424 11.4647V13.5054M46.8798 11.4647V13.5054M50.9544 11.4647V13.5054M42.8051 16.5664V18.6071M44.8424 16.5664V18.6071M46.8798 16.5664V18.6071M50.9544 16.5664V18.6071" stroke="#C8134A" stroke-width="1.10536"/>
+
+<svg width="74px" height="23px" viewBox="0 0 74 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="building-1" stroke="#C8134A">
+            <g id="Layer_1" transform="translate(1.000000, 1.000000)">
+                <g id="Group" transform="translate(21.000000, 0.000000)">
+                    <polyline id="Path" points="0.7 4 15.2 0.1 29.7 4"></polyline>
+                    <path d="M3.2,15 L3.2,5.5" id="Path" stroke-width="1.105"></path>
+                    <path d="M2.2,4.8 L28.3,4.8" id="Path" stroke-width="1.4354"></path>
+                    <path d="M6.6,15 L6.6,5.5" id="Path" stroke-width="1.105"></path>
+                    <path d="M10.1,15 L10.1,5.5" id="Path" stroke-width="1.105"></path>
+                    <path d="M13.5,15 L13.5,5.5" id="Path" stroke-width="1.105"></path>
+                    <path d="M17,15 L17,5.5" id="Path" stroke-width="1.105"></path>
+                    <path d="M20.5,15 L20.5,5.5" id="Path" stroke-width="1.105"></path>
+                    <path d="M23.9,15 L23.9,5.5" id="Path" stroke-width="1.105"></path>
+                    <path d="M27.4,15 L27.4,5.5" id="Path" stroke-width="1.105"></path>
+                    <polyline id="Path" stroke-width="0.8" points="2.1 21 2.1 15.3 28.3 15.3 28.3 21"></polyline>
+                    <path d="M1.7,21 L28.7,21" id="Path" stroke-width="0.9"></path>
+                    <path d="M3.7,20.9 L3.7,17.6 C3.7,16.8 5.4,16.8 5.4,17.6 L5.4,20.9" id="Path" stroke-width="0.5"></path>
+                    <path d="M7.2,20.9 L7.2,17.6 C7.2,16.8 8.9,16.8 8.9,17.6 L8.9,20.9" id="Path" stroke-width="0.5"></path>
+                    <path d="M10.8,20.9 L10.8,17.6 C10.8,16.8 12.5,16.8 12.5,17.6 L12.5,20.9" id="Path" stroke-width="0.5"></path>
+                    <path d="M14.4,20.9 L14.4,17.6 C14.4,16.8 16.1,16.8 16.1,17.6 L16.1,20.9" id="Path" stroke-width="0.5"></path>
+                    <path d="M17.9,20.9 L17.9,17.6 C17.9,16.8 19.6,16.8 19.6,17.6 L19.6,20.9" id="Path" stroke-width="0.5"></path>
+                    <path d="M21.5,20.9 L21.5,17.6 C21.5,16.8 23.2,16.8 23.2,17.6 L23.2,20.9" id="Path" stroke-width="0.5"></path>
+                    <path d="M25.1,20.9 L25.1,17.6 C25.1,16.8 26.8,16.8 26.8,17.6 L26.8,20.9" id="Path" stroke-width="0.5"></path>
+                </g>
+                <g id="Group" transform="translate(0.000000, 1.000000)">
+                    <polyline id="Path" stroke-width="0.4" points="3.5 9.8 5.7 9 7.8 9.8"></polyline>
+                    <polyline id="Path" stroke-width="0.5" points="12 2.2 15 0.4 31.2 0.4"></polyline>
+                    <path d="M12.7,14.6 L23.3,14.6" id="Path" stroke-width="0.5"></path>
+                    <polyline id="Path" stroke-width="0.5" points="0.7 14.1 11.1 14.1 12.7 14.6"></polyline>
+                    <path d="M12.7,4.3 L12.7,19.4" id="Path" stroke-width="0.5"></path>
+                    <path d="M11,3.3 L11,20" id="Path" stroke-width="0.5"></path>
+                    <path d="M4.8,19.9 L4.8,16.6 C4.8,15.8 6.5,15.8 6.5,16.6 L6.5,19.9" id="Path" stroke-width="0.5"></path>
+                    <polyline id="Path" stroke-width="0.5" points="23.9 4.3 12.8 4.3 11.1 3.3 0.8 3.3 0.8 20 11.1 20 12.7 19.4 23.4 19.4"></polyline>
+                    <polyline id="Path" stroke-width="0.5" points="22.5 2.7 12.8 2.7 11.1 1.7 0 1.7 0.8 3.3"></polyline>
+                    <path d="M15,5.7 L15,7.7" id="Path" stroke-width="1.105"></path>
+                    <path d="M5.7,4.7 L5.7,6.7" id="Path" stroke-width="1.105"></path>
+                    <path d="M5.7,10.3 L5.7,12.3" id="Path" stroke-width="1.105"></path>
+                    <path d="M18.1,5.7 L18.1,7.7" id="Path" stroke-width="1.105"></path>
+                    <path d="M21.2,5.7 L21.2,7.7" id="Path" stroke-width="1.105"></path>
+                    <path d="M15,10.3 L15,12.3" id="Path" stroke-width="1.105"></path>
+                    <path d="M18.1,10.3 L18.1,12.3" id="Path" stroke-width="1.105"></path>
+                    <path d="M21.2,10.3 L21.2,12.3" id="Path" stroke-width="1.105"></path>
+                    <path d="M15,16.3 L15,18.3" id="Path" stroke-width="1.105"></path>
+                    <path d="M18.1,16.3 L18.1,18.3" id="Path" stroke-width="1.105"></path>
+                    <path d="M21.2,16.3 L21.2,18.3" id="Path" stroke-width="1.105"></path>
+                </g>
+                <g id="Group" transform="translate(41.000000, 1.000000)">
+                    <polyline id="Path" stroke-width="0.4" points="23.6 9.8 25.7 9 27.9 9.8"></polyline>
+                    <polyline id="Path" stroke-width="0.5" points="0.2 0.4 16.4 0.4 19.4 2.2"></polyline>
+                    <path d="M8.1,14.6 L18.7,14.6" id="Path" stroke-width="0.5"></path>
+                    <polyline id="Path" stroke-width="0.5" points="18.7 14.6 20.3 14.1 30.7 14.1"></polyline>
+                    <path d="M18.7,19.4 L18.7,4.3" id="Path" stroke-width="0.5"></path>
+                    <path d="M20.4,20 L20.4,3.3" id="Path" stroke-width="0.5"></path>
+                    <path d="M24.9,19.9 L24.9,16.6 C24.9,15.8 26.6,15.8 26.6,16.6 L26.6,19.9" id="Path" stroke-width="0.5"></path>
+                    <polyline id="Path" stroke-width="0.5" points="8 19.4 18.7 19.4 20.3 20 30.6 20 30.6 3.3 20.3 3.3 18.6 4.3 7.5 4.3"></polyline>
+                    <polyline id="Path" stroke-width="0.5" points="30.6 3.3 31.4 1.7 20.3 1.7 18.6 2.7 8.9 2.7"></polyline>
+                    <path d="M16.4,7.7 L16.4,5.7" id="Path" stroke-width="1.105"></path>
+                    <path d="M25.7,6.7 L25.7,4.7" id="Path" stroke-width="1.105"></path>
+                    <path d="M25.7,12.3 L25.7,10.3" id="Path" stroke-width="1.105"></path>
+                    <path d="M13.3,7.7 L13.3,5.7" id="Path" stroke-width="1.105"></path>
+                    <path d="M10.2,7.7 L10.2,5.7" id="Path" stroke-width="1.105"></path>
+                    <path d="M16.4,12.3 L16.4,10.3" id="Path" stroke-width="1.105"></path>
+                    <path d="M13.3,12.3 L13.3,10.3" id="Path" stroke-width="1.105"></path>
+                    <path d="M10.2,12.3 L10.2,10.3" id="Path" stroke-width="1.105"></path>
+                    <path d="M16.4,18.3 L16.4,16.3" id="Path" stroke-width="1.105"></path>
+                    <path d="M13.3,18.3 L13.3,16.3" id="Path" stroke-width="1.105"></path>
+                    <path d="M10.2,18.3 L10.2,16.3" id="Path" stroke-width="1.105"></path>
+                </g>
+            </g>
+        </g>
+    </g>
 </svg>

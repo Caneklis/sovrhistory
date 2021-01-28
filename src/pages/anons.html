@@ -13,7 +13,7 @@ title: Анонсы
         <h2 class="filter__title">Музеи:</h2>
 
         <div class="filter__custom-select">
-          <select class="js-example-basic-multiple" name="buildings[]" multiple="multiple">
+          <select class="js-example-basic-multiple" name="buildings[]" data-placeholder="Подпись для плейсхолдера">
             <option value="all">Все музеи</option>
             <option value="1">Музей современной истории России</option>
             <option value="2">Пресня</option>
@@ -25,7 +25,7 @@ title: Анонсы
           </select>
         </div>
 
-        <div class="filter__buttons">
+        <div class="filter__buttons  filter__buttons--not-multiple">
           <button class="filter__button" type="button" value="1">Музей современной истории России</button>
           <button class="filter__button" type="button" value="2">Пресня</button>
           <button class="filter__button" type="button" value="3">Подпольная типография 1905-1906 гг.</button>
@@ -39,7 +39,19 @@ title: Анонсы
       <div class="filter__block">
         <h2 class="filter__title">Темы</h2>
 
-        <div class="filter__buttons">
+        <div class="filter__custom-select">
+          <select class="js-example-basic-multiple" multiple name="buildings[]"
+            data-placeholder="Подпись для плейсхолдера">
+            <option value="1">Все темы</option>
+            <option value="1">Тематика про конституцию</option>
+            <option value="2">Военная тематика</option>
+            <option value="3">Революция</option>
+            <option value="3">типография</option>
+            <option value="3">Эксперты о войне</option>
+          </select>
+        </div>
+
+        <div class="filter__buttons  filter__buttons--multiple">
           <button class="filter__button" type="button" value="1">Тематика про конституцию</button>
           <button class="filter__button" type="button" value="2">Военная тематика</button>
           <button class="filter__button" type="button" value="3">Революция</button>
@@ -50,6 +62,17 @@ title: Анонсы
 
       <div class="filter__block">
         <h2 class="filter__title">Года</h2>
+
+        <div class="filter__custom-select">
+          <select class="js-example-basic-multiple" name="buildings[]" data-placeholder="Подпись для плейсхолдера">
+            <option value="all">Все годы</option>
+            <option value="1">Тематика про конституцию</option>
+            <option value="2">Военная тематика</option>
+            <option value="3">Революция</option>
+            <option value="3">типография</option>
+            <option value="3">Эксперты о войне</option>
+          </select>
+        </div>
 
         <div class="filter__buttons">
           <button class="filter__button" type="button" value="1">2020</button>

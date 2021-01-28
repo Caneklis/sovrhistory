@@ -1,3 +1,8 @@
+.buildings {
+  background-color: #fff;
+  position: relative;
+}
+
 .buildings__list {
   @include list-reset;
   // max-width: 375px;
@@ -32,7 +37,7 @@
 .buildings__list-item {
   display: flex !important;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   position: relative;
 
   &::after {
@@ -75,7 +80,8 @@
     }
 
     span {
-      font-size: 8.29021px;
+      min-height: 32px;
+      font-size: 8px;
       line-height: 10px;
       font-weight: 700;
       color: #565656;
@@ -119,6 +125,7 @@
 
 .buildings__events {
   position: relative;
+  background-color: #f3f3f3;
 }
 
 .buildings__events-list {
@@ -144,6 +151,16 @@
   padding: 0 20px 35px;
   position: relative;
   overflow: hidden;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(#000, 0.2);
+  }
 }
 
 .buildings__events-picture {
@@ -162,7 +179,7 @@
 
 .buildings__events-text {
   position: relative;
-  text-align: center;
+  z-index: 1;
   padding: 32px 0 15px;
   color: #fff;
 
@@ -172,7 +189,6 @@
     font-size: 20px;
     line-height: 25px;
     font-weight: 400;
-    text-align: center;
     text-decoration-line: underline;
 
     a {
@@ -182,21 +198,16 @@
 
   p {
     margin: 0;
-    padding: 0 60px;
     font-size: 13px;
     line-height: 16px;
-    text-align: center;
   }
 }
 .buildings__events-date {
   display: block;
   margin-top: 30px;
-  padding-left: 50px;
   font-size: 13px;
   line-height: 16px;
   font-weight: 700;
-  text-align: left;
-  word-spacing: 20px;
 }
 
 .buildings__events-type {
@@ -205,11 +216,8 @@
   line-height: 13px;
   font-weight: 700;
   text-transform: lowercase;
-  /* identical to box height */
 
-  text-align: center;
-
-  color: #b5b5b5;
+  color: $s-color;
   p {
     margin: 0;
   }
@@ -217,13 +225,14 @@
 
 .buildings__events-place {
   position: relative;
+  z-index: 1;
   display: flex;
   margin-bottom: 20px;
   font-size: 12px;
   line-height: 15px;
   font-weight: 700;
   color: #ffffff;
-  padding: 0 82px 0 45px;
+  // padding: 0 82px 0 45px;
   &::before {
     content: url(../img/icons/map-pin.svg);
     width: 20px;
@@ -235,9 +244,10 @@
 .buildings__events-buy {
   display: block;
   width: 250px;
-  margin: 0 auto;
+  // margin: 0 auto;
   padding: 11px 5px 13px;
   position: relative;
+  z-index: 1;
   font-size: 14px;
   line-height: 18px;
   font-weight: 700;
@@ -315,7 +325,28 @@
   background-image: url("../img/icons/prev-arrow.svg");
 }
 
+.buildings {
+  .social__list {
+    width: 100%;
+    padding: 10px 20px 0;
+    justify-content: center;
+    background-color: #f3f3f3;
+
+    .social__link {
+      width: 24px;
+      height: 24px;
+      margin: 0 8px;
+    }
+  }
+}
+
 @media screen and (min-width: $tablet) {
+  .buildings__events-wrapper {
+    width: 768px;
+    margin: 0 auto;
+    position: relative;
+  }
+
   .buildings__list {
     display: flex;
     //justify-content: center;
@@ -352,8 +383,9 @@
 
   .buildings__events-article {
     //margin: 0 auto;
+    max-width: 1160px;
     min-height: 340px;
-    padding-left: 5.2%;
+    // padding-left: 5.2%;
     padding-bottom: 30px;
     display: flex;
     flex-wrap: wrap;
@@ -396,7 +428,7 @@
     padding-left: 0;
     font-size: 15px;
     line-height: 19px;
-    word-spacing: 28px;
+    // word-spacing: 28px;
   }
 
   .buildings__events-buy {
@@ -414,7 +446,7 @@
     padding-right: 0;
     font-size: 13px;
     line-height: 16px;
-    max-width: 362px;
+    max-width: 400px;
   }
 
   .buildings__slider-controls {
@@ -470,10 +502,51 @@
       background-size: contain;
     }
   }
+
+  .buildings {
+    .social__list {
+      .social__link {
+        width: 24px;
+        height: 24px;
+        margin: 0 8px;
+      }
+    }
+  }
 }
 
 @media screen and (min-width: $desktop) {
   .buildings {
+    .social {
+      padding-top: 55px;
+      display: flex;
+      order: 2;
+      width: 11%;
+
+      &--hidden {
+        display: none;
+      }
+    }
+
+    .social__list {
+      padding: 0;
+      padding-left: 23px;
+      justify-content: start;
+      background-color: #fff;
+
+      .social__item {
+        margin: 0;
+        margin-right: 17px;
+        margin-bottom: 14px;
+
+        &:nth-child(3n) {
+          margin-right: 0;
+        }
+      }
+
+      .social__link {
+        margin: 0;
+      }
+    }
   }
 
   .buildings__wrapper {
@@ -513,14 +586,20 @@
   .buildings__list-item {
     button {
       padding-top: 62px;
-      padding-bottom: 45px;
+      padding-bottom: 40px;
       img {
         transform: scale(1.5);
         margin-bottom: 23px;
       }
 
+      &:hover {
+        img {
+          transform: scale(1.58);
+        }
+      }
+
       span {
-        font-size: 12.4107px;
+        font-size: 12px;
         line-height: 16px;
       }
     }

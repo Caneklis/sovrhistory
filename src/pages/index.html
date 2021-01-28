@@ -66,7 +66,7 @@ title: Главная страница
   <div class="buildings__events">
     <div class="buildings__events-wrapper">
       <ul class="buildings__events-list">
-        <li class="buildings__events-item" data-tags="1">
+        <li class="buildings__events-item" data-tags="1 2">
           <article class="buildings__events-article">
             <div class="buildings__events-picture">
               <picture>
@@ -83,7 +83,7 @@ title: Главная страница
               <div class="buildings__events-type">
                 <p>выставка</p>
               </div>
-              <h3><a href="#">Выставка современной истории </a></h3>
+              <h3><a href="#">Выставка современной истории 1 2</a></h3>
               <p>В 2020 году Музей современной истории России проведёт три стажировки для работников музеев
                 исторического
                 профиля. </p>
@@ -201,10 +201,15 @@ title: Главная страница
     <li class="sub-nav__list-item"><a href="#">Лекции</a></li>
     <li class="sub-nav__list-item"><a href="#">Концерты</a></li>
     <li class="sub-nav__list-item"><a href="#">Специалистам</a></li>
+    <li class="sub-nav__list-item"><a href="#">Еще пункт</a></li>
+    <li class="sub-nav__list-item"><a href="#">Еще возможный пункт</a></li>
+    <li class="sub-nav__list-item"><a href="#">И еще один возможный пункт</a></li>
   </ul>
 </section>
 
-<section class="projects">
+{% include "../templates/partials/_special.html" %}
+
+<!-- <section class="projects">
   <h2 class="visually-hidden">Проекты музея</h2>
   <ul class="projects__list">
     <li class="projects__list-item">
@@ -274,7 +279,45 @@ title: Главная страница
       <div class="projects__list-item-desc">
         <h3>Человек и война</h3>
         <p>Нерасказанная история о перипетиях войн и о том, как обычные люди их преодолевали</p>
-        <a href="#" class="projects__btn">спецпроект →</a>
+        <a href="#" class="projects__btn">спецпроект</a>
+      </div>
+    </li>
+
+    <li class="projects__list-item  projects__list-item--special">
+      <div class="projects__list-item-picture">
+        <picture>
+          <source media="(min-width: 1440px)" data-src="/img/projects/project-spec-desktop.jpg"
+            srcset="/img/projects/project-spec-desktop.jpg">
+          <source media="(min-width: 768px)" data-src="/img/projects/project-spec-tablet.jpg"
+            srcset="/img/projects/project-spec-tablet.jpg">
+          <img class="lozad" data-src="/img/projects/project-spec-mobile.jpg"
+            src="/img/projects/project-spec-mobile.jpg" alt="Фотография к проекту" loading="lazy">
+        </picture>
+      </div>
+
+      <div class="projects__list-item-desc">
+        <h3>Еще один спецпроект</h3>
+        <p>Нерасказанная история о перипетиях войн и о том, как обычные люди их преодолевали</p>
+        <a href="#" class="projects__btn">спецпроект</a>
+      </div>
+    </li>
+
+    <li class="projects__list-item  projects__list-item--special">
+      <div class="projects__list-item-picture">
+        <picture>
+          <source media="(min-width: 1440px)" data-src="/img/projects/project-spec-desktop.jpg"
+            srcset="/img/projects/project-spec-desktop.jpg">
+          <source media="(min-width: 768px)" data-src="/img/projects/project-spec-tablet.jpg"
+            srcset="/img/projects/project-spec-tablet.jpg">
+          <img class="lozad" data-src="/img/projects/project-spec-mobile.jpg"
+            src="/img/projects/project-spec-mobile.jpg" alt="Фотография к проекту" loading="lazy">
+        </picture>
+      </div>
+
+      <div class="projects__list-item-desc">
+        <h3>А это еще один.</h3>
+        <p>Нерасказанная история о перипетиях войн и о том, как обычные люди их преодолевали</p>
+        <a href="#" class="projects__btn">спецпроект</a>
       </div>
     </li>
 
@@ -327,7 +370,7 @@ title: Главная страница
       </article>
     </li>
   </ul>
-</section>
+</section> -->
 
 <section class="main-info">
   <div class="main-info__wrapper">
@@ -547,50 +590,17 @@ title: Главная страница
       <ul class="banners__list">
         <li class="banners__list-item">
           <a href="#">
-            <picture>
-              <source media="(min-width: 1440px)" data-src="/img/banners/banner-desktop.jpg"
-                srcset="/img/banners/banner-desktop.jpg">
-              <source media="(min-width: 768px)" data-src="/img/banners/banner-tablet.jpg"
-                srcset="/img/banners/banner-tablet.jpg">
-              <img class="lozad" data-src="/img/banners/banner-mobile.jpg" src="/img/banners/banner-mobile.jpg"
-                alt="Баннер партнера>">
-            </picture>
+            <img src="http://via.placeholder.com/414x286" alt="Баннер партнера">
           </a>
         </li>
         <li class="banners__list-item">
           <a href="#">
-            <picture>
-              <source media="(min-width: 1440px)" data-src="/img/banners/banner-desktop.jpg"
-                srcset="/img/banners/banner-desktop.jpg">
-              <source media="(min-width: 768px)" data-src="/img/banners/banner-tablet.jpg"
-                srcset="/img/banners/banner-tablet.jpg">
-              <img class="lozad" data-src="/img/banners/banner-mobile.jpg" src="/img/banners/banner-mobile.jpg"
-                alt="Баннер партнера>">
-            </picture>
+            <img src="http://via.placeholder.com/414x286" alt="Баннер партнера">
           </a>
         </li>
         <li class="banners__list-item">
           <a href="#">
-            <picture>
-              <source media="(min-width: 1440px)" data-src="/img/banners/banner-desktop.jpg"
-                srcset="/img/banners/banner-desktop.jpg">
-              <source media="(min-width: 768px)" data-src="/img/banners/banner-tablet.jpg"
-                srcset="/img/banners/banner-tablet.jpg">
-              <img class="lozad" data-src="/img/banners/banner-mobile.jpg" src="/img/banners/banner-mobile.jpg"
-                alt="Баннер партнера>">
-            </picture>
-          </a>
-        </li>
-        <li class="banners__list-item">
-          <a href="#">
-            <picture>
-              <source media="(min-width: 1440px)" data-src="/img/banners/banner-desktop.jpg"
-                srcset="/img/banners/banner-desktop.jpg">
-              <source media="(min-width: 768px)" data-src="/img/banners/banner-tablet.jpg"
-                srcset="/img/banners/banner-tablet.jpg">
-              <img class="lozad" data-src="/img/banners/banner-mobile.jpg" src="/img/banners/banner-mobile.jpg"
-                alt="Баннер партнера>">
-            </picture>
+            <img src="http://via.placeholder.com/286x414" alt="Баннер партнера">
           </a>
         </li>
       </ul>

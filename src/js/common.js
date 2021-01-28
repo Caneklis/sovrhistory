@@ -21,6 +21,88 @@ if (searchActiveBtn) {
   });
 }
 
+playVideoInMainSlider = () => {
+  var sources = document.querySelectorAll(".main-slider__video video source");
+  // Define the video object this source is contained inside
+  var videos = document.querySelectorAll(".main-slider__video video");
+  var video = document.querySelector(".main-slider__video video");
+  // If for some reason we do want to load the video after, for desktop as opposed to mobile (I'd imagine), use videojs API to load
+  video.load();
+  videos.muted = "muted";
+
+  if (window.innerWidth < 767) {
+    console.log("is mobile");
+    // it is mobile browser
+    for (var i = 0; i < sources.length; i++) {
+      sources[i].setAttribute(
+        "src",
+        sources[i].getAttribute("data-src-mobile")
+      );
+    }
+    //video.load();
+    for (var i = 0; i < videos.length; i++) {
+      videos[i].setAttribute(
+        "poster",
+        videos[i].getAttribute("data-poster-mobile")
+      );
+    }
+  } else if (window.innerWidth >= 768 && window.innerWidth < 1439) {
+    console.log("is tablet");
+    for (var i = 0; i < sources.length; i++) {
+      sources[i].setAttribute(
+        "src",
+        sources[i].getAttribute("data-src-tablet")
+      );
+    }
+    //video.load();
+    for (var i = 0; i < videos.length; i++) {
+      videos[i].setAttribute(
+        "poster",
+        videos[i].getAttribute("data-poster-tablet")
+      );
+    }
+  } else {
+    console.log("is desktop");
+    for (var i = 0; i < sources.length; i++) {
+      sources[i].setAttribute("src", sources[i].getAttribute("data-src"));
+    }
+    //video.load();
+    for (var i = 0; i < videos.length; i++) {
+      videos[i].setAttribute("poster", videos[i].getAttribute("data-poster"));
+    }
+  }
+};
+
+if (document.querySelector(".main-slider__video video")) {
+  playVideoInMainSlider();
+
+  window.onresize = function (event) {
+    playVideoInMainSlider(event);
+    //$(".main-slider__list").slick("setPosition");
+  };
+
+  $(".main-slider__list").on(
+    "beforeChange",
+    function (event, slick, currentSlide, nextSlide) {
+      $("video").each(function () {
+        this.pause();
+        this.currentTime = 0;
+      });
+    }
+  );
+
+  $(".main-slider__list").on(
+    "afterChange",
+    function (event, slick, currentSlide, nextSlide) {
+      $("video").each(function () {
+        setTimeout(() => {
+          this.play();
+        }, 200);
+      });
+    }
+  );
+}
+
 function fixHeader() {
   if (window.scrollY >= topOfNav) {
     header.classList.add("header--fixed");
@@ -78,17 +160,29 @@ $(".cookie__close-btn").on("click", function () {
   document.cookie = "weusecookie=1;expires=" + wuc_date.toGMTString();
 });
 
-$(".main-slider__list").slick({
-  dots: true,
-  arrows: true,
-  appendDots: $(".main-slider__dots"),
-  prevArrow: $(".main-slider__prev"),
-  nextArrow: $(".main-slider__next"),
-  speed: 900,
-  infinite: true,
-  cssEase: "cubic-bezier(0.7, 0, 0.3, 1)",
-  touchThreshold: 100,
-  fade: true,
+$(".main-slider__list")
+  .slick({
+    dots: true,
+    arrows: true,
+    appendDots: $(".main-slider__dots"),
+    prevArrow: $(".main-slider__prev"),
+    nextArrow: $(".main-slider__next"),
+    speed: 900,
+    infinite: true,
+    cssEase: "cubic-bezier(0.7, 0, 0.3, 1)",
+    touchThreshold: 100,
+    fade: true,
+    rows: 0,
+    mobileFirst: true,
+    // autoplay: true,
+    // autoplaySpeed: 3000,
+  })
+  .on("setPosition", function (event, slick) {
+    slick.$slides.css("height", slick.$slideTrack.height() + "px");
+  });
+
+$(window).on("resize orientationchange", function () {
+  $(".main-slider__list").slick("setPosition");
 });
 
 var $carousel;
@@ -96,6 +190,20 @@ var $slickCache;
 var previousFilter = "";
 var currentFilter = "all";
 var filtered = "false";
+
+filterBuildingsEventsAfterLoad = function () {
+  var num1 = $(".buildings__list--filter .buildings__list-item button").get(0);
+  console.log(num1);
+  // filterHandler(num1);
+  // var num1 = $(".buildings__list--filter .buildings__list-item button").get(0);
+  if (num1) {
+    num1.click();
+  }
+};
+
+setTimeout(() => {
+  filterBuildingsEventsAfterLoad();
+}, 100);
 
 $(".buildings__list--filter").on("click", "button", function (event) {
   console.log(this, event.currentTarget.value);
@@ -151,6 +259,11 @@ filterHandler = function (tag) {
 
   return currentFilter;
 };
+
+// setTimeout(() => {
+//   $(".buildings__list--filter buildings__list-item:first-child button").click();
+//   console.log("bla");
+// }, 2000);
 
 function createSlick() {
   jQuery(".buildings__list")
@@ -277,65 +390,80 @@ function deleteCookie(name) {
   });
 }
 
-function blindVersion() {
-  var html = $("html"),
-    body = $("body"),
-    img = $("img"),
-    contrast = $(".js-contrast-version"),
-    normal = $(".js-normal-version"),
-    font = $(".js-font"),
-    contrastCookie = getCookie("contrast"),
-    imgCookie = getCookie("img"),
-    fontCookie = getCookie("font");
+// function blindVersion() {
+//   var html = $("html"),
+//     body = $("body"),
+//     img = $("img"),
+//     contrast = $(".js-contrast-version"),
+//     normal = $(".js-normal-version"),
+//     font = $(".js-font"),
+//     contrastCookie = getCookie("contrast"),
+//     imgCookie = getCookie("img"),
+//     fontCookie = getCookie("font");
 
-  function show() {
-    $("img").show();
-    $("svg").show();
-    $(".video-container").show();
-    $(".video-preview").show();
-  }
-  function hide() {
-    $("svg").hide();
-    $("img").hide();
-    $(".video-container").hide();
-    $(".video-preview").hide();
-  }
+//   function show() {
+//     $("img").show();
+//     $("svg").show();
+//     $(".video-container").show();
+//     $(".video-preview").show();
+//   }
+//   function hide() {
+//     $("svg").hide();
+//     $("img").hide();
+//     $(".video-container").hide();
+//     $(".video-preview").hide();
+//   }
 
-  contrast.on("click", function () {
-    html.addClass("contrast");
-    $(this).addClass("active");
-    normal.addClass("active");
-    hide();
-    setCookie("contrast", "on");
+//   contrast.on("click", function () {
+//     html.addClass("contrast");
+//     $(this).addClass("active");
+//     normal.addClass("active");
+//     hide();
+//     setCookie("contrast", "on");
 
-    //$grid.masonry();
-  });
-  normal.on("click", function () {
-    html.removeClass("contrast");
-    $(this).removeClass("active");
-    contrast.addClass("active");
-    show();
-    setCookie("contrast", "off");
+//     //$grid.masonry();
+//   });
+//   normal.on("click", function () {
+//     html.removeClass("contrast");
+//     $(this).removeClass("active");
+//     contrast.addClass("active");
+//     show();
+//     setCookie("contrast", "off");
 
-    //$grid.masonry();
-  });
+//     //$grid.masonry();
+//   });
 
-  if (contrastCookie == "on") {
-    contrast.addClass("active");
-    normal.removeClass("active");
-    html.addClass("contrast");
-    // img.hide();
-    hide();
-    //$grid.masonry();
-  } else {
-    contrast.removeClass("active");
-    normal.removeClass("active");
-    html.removeClass("contrast");
-    show();
-    //$grid.masonry();
-  }
-}
-blindVersion();
+//   if (contrastCookie == "on") {
+//     contrast.addClass("active");
+//     normal.removeClass("active");
+//     html.addClass("contrast");
+//     // img.hide();
+//     hide();
+//     //$grid.masonry();
+//   } else {
+//     contrast.removeClass("active");
+//     normal.removeClass("active");
+//     html.removeClass("contrast");
+//     show();
+//     //$grid.masonry();
+//   }
+// }
+// blindVersion();
+
+$.bvi({
+  bvi_target: ".bvi-open", // Класс ссылки включения плагина
+  bvi_theme: "white", // Цвет сайта
+  bvi_font: "arial", // Шрифт
+  bvi_font_size: 16, // Размер шрифта
+  bvi_letter_spacing: "normal", // Межбуквенный интервал
+  bvi_line_height: "normal", // Междустрочный интервал
+  bvi_images: true, // Изображения
+  bvi_reload: false, // Перезагрузка страницы при выключении плагина
+  bvi_fixed: true, // Фиксирование панели для слабовидящих вверху страницы
+  bvi_tts: true, // Синтез речи
+  bvi_flash_iframe: true, // Встроенные элементы (видео, карты и тд.)
+  bvi_hide: false, // Скрывает панель для слабовидящих и показывает иконку панели.
+});
 
 $(".js-example-tokenizer").select2({
   tags: false,
@@ -344,7 +472,7 @@ $(".js-example-tokenizer").select2({
 
 $(function () {
   $(".preview__slider-list").slick({
-    slidesToShow: 4,
+    slidesToShow: 2,
     centerMode: true,
     centerPadding: "0px",
     speed: 100,
@@ -353,7 +481,9 @@ $(function () {
     arrows: true,
     dots: false,
     variableWidth: true,
-    initialSlide: 1,
+    draggable: true,
+    initialSlide: 0,
+    // adaptiveHeight: true,
     prevArrow: $(".preview__slider-prev"),
     nextArrow: $(".preview__slider-next"),
 
@@ -529,7 +659,27 @@ $(".filter__select-option a").click(function (event) {
   $(".filter__select-value", par).text($.trim($(this).text()));
 });
 
-var buttons = document.querySelectorAll(".filter__button");
+// var buttonsMultiple = document.querySelectorAll(
+//   ".filter__buttons--multiple button.filter__button"
+// );
+// for (var i = 0; i < buttonsMultiple.length; i++) {
+//   var self = buttonsMultiple[i];
+
+//   self.addEventListener(
+//     "click",
+//     function (event) {
+//       // prevent browser's default action
+//       event.preventDefault();
+//       this.classList.toggle("filter__button--active");
+
+//       // call your awesome function here
+//       //MyAwesomeFunction(this); // 'this' refers to the current button on for loop
+//     },
+//     false
+//   );
+// }
+
+var buttons = document.querySelectorAll("button.filter__button");
 for (var i = 0; i < buttons.length; i++) {
   var self = buttons[i];
 
@@ -538,7 +688,7 @@ for (var i = 0; i < buttons.length; i++) {
     function (event) {
       // prevent browser's default action
       event.preventDefault();
-      this.classList.toggle("filter__button--active");
+      this.classList.toggle("filter__button--active-no-cross");
 
       // call your awesome function here
       //MyAwesomeFunction(this); // 'this' refers to the current button on for loop
@@ -546,6 +696,12 @@ for (var i = 0; i < buttons.length; i++) {
     false
   );
 }
+
+// var buttons = $(".filter__buttons--not-multiple button.filter__button");
+// buttons.on("click", function () {
+//   buttons.removeClass("filter__button--active-no-cross");
+//   this.classList.toggle("filter__button--active-no-cross");
+// });
 
 // Hide the extra content initially, using JS so that if JS is disabled, no problemo:
 $(".read-more-content").addClass("hide");
@@ -626,52 +782,54 @@ function generateURL(id) {
 
 // findVideos();
 
-$(".popup__slider-list").each(function (index) {
-  $(this).attr("data-slider", index);
+$(document).ready(function () {
+  $(".popup__slider-list").each(function (index) {
+    $(this).attr("data-slider", index);
 
-  $(this).slick({
-    // slidesToShow: 4,
-    slidesToScroll: 1,
-    infinite: false,
-    dots: false,
-    arrows: true,
-    adaptiveHeight: true,
-    variableWidth: true,
-    prevArrow: `<button type="button" class="popup-slider__arrow  popup-slider__arrow--prev"><img src="/img/icons/popup/arrow_left_white.svg" alt="Back"></button>`,
-    nextArrow: `<button type="button" class="popup-slider__arrow  popup-slider__arrow--next"><img src="/img/icons/popup/arrow_right_white.svg" alt="Next"></button>`,
+    $(this).slick({
+      // slidesToShow: 4,
+      slidesToScroll: 1,
+      infinite: false,
+      dots: false,
+      arrows: true,
+      adaptiveHeight: true,
+      variableWidth: true,
+      prevArrow: `<button type="button" class="popup-slider__arrow  popup-slider__arrow--prev"><img src="/img/icons/popup/arrow_left_white.svg" alt="Back"></button>`,
+      nextArrow: `<button type="button" class="popup-slider__arrow  popup-slider__arrow--next"><img src="/img/icons/popup/arrow_right_white.svg" alt="Next"></button>`,
 
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+          },
         },
-      },
-      {
-        breakpoint: 580,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
+        {
+          breakpoint: 580,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+          },
         },
-      },
-    ],
+      ],
+    });
   });
-});
 
-$("#lightgallery").lightGallery({
-  pager: false,
-  selector: "a",
-  thumbnail: false,
-  subHtmlSelectorRelative: true,
-  share: false,
-  zoom: false,
-  autoplay: false,
-  autoplayControls: false,
-  download: false,
-  fullScreen: false,
-  counter: false,
-  enableDrag: false,
+  $("#lightgallery").lightGallery({
+    pager: false,
+    selector: "a",
+    thumbnail: false,
+    subHtmlSelectorRelative: true,
+    share: false,
+    zoom: false,
+    autoplay: false,
+    autoplayControls: false,
+    download: false,
+    fullScreen: false,
+    counter: false,
+    enableDrag: false,
+  });
 });
 
 $(".excursions__list-filter-pin").on("click", function () {
@@ -938,8 +1096,48 @@ if (nonLinearStepSlider) {
 
 $(".lightgallery").lightGallery({
   share: false,
+  pager: false,
+  subHtmlSelectorRelative: false,
+  share: false,
+  zoom: false,
+  autoplay: false,
+  autoplayControls: false,
+  download: false,
+  fullScreen: false,
+  counter: false,
+  enableDrag: false,
 });
 
 $(".gallery__btn").click(function () {
   $(this).next().find("a").trigger("click");
+});
+
+$(function () {
+  // wait for document ready
+  // init
+
+  if (window.innerWidth > 1440) {
+    var controller = new ScrollMagic.Controller({
+      globalSceneOptions: {
+        triggerHook: "onLeave",
+        duration: "200%", // this works just fine with duration 0 as well
+        // However with large numbers (>20) of pinned sections display errors can occur so every section should be unpinned once it's covered by the next section.
+        // Normally 100% would work for this, but here 200% is used, as Panel 3 is shown for more than 100% of scrollheight due to the pause.
+        offset: 50, // start this scene after scrolling for 50px
+      },
+    });
+  }
+
+  // get all slides
+  var slides = document.querySelectorAll(".main-slider");
+
+  // create scene for every slide
+  for (var i = 0; i < slides.length; i++) {
+    new ScrollMagic.Scene({
+      triggerElement: slides[i],
+    })
+      .setPin(slides[i], { pushFollowers: false })
+      .addIndicators() // add indicators (requires plugin)
+      .addTo(controller);
+  }
 });

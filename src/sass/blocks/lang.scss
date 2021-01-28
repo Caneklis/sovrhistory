@@ -55,6 +55,16 @@
 @media screen and (min-width: $desktop) {
   .lang {
     margin-right: 0;
+    font-size: 16px;
+    line-height: 1.2;
+  }
+
+  .lang__btn {
+    width: 35px;
+  }
+
+  .lang__list {
+    padding: 0 5px 5px;
   }
 }
 

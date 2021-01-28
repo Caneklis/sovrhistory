@@ -146,6 +146,14 @@
   grid-column-end: 1;
 }
 
+.exhibitions__type {
+  margin-bottom: 5px;
+
+  a {
+    color: inherit;
+  }
+}
+
 .exhibitions__time {
   margin-bottom: 15px;
   font-size: 14px;
@@ -205,6 +213,14 @@
   @include btn;
 }
 
+.exhibitions__result {
+  margin-bottom: 25px;
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 400;
+  color: #292929;
+}
+
 @media screen and (min-width: $tablet) {
   .exhibitions__article {
     display: flex;
@@ -217,6 +233,7 @@
 
   .exhibitions__picture {
     // width: 131px;
+    align-self: flex-start;
     width: 200px;
 
     img {
@@ -233,8 +250,9 @@
       }
 
       .exhibitions__picture-type {
-        top: 194px;
-        bottom: auto;
+        // top: 194px;
+        // bottom: auto;
+        bottom: 30px;
       }
     }
   }
@@ -348,8 +366,9 @@
       height: 198px;
 
       .exhibitions__picture-type {
-        top: 140px;
-        bottom: auto;
+        // top: 140px;
+        // bottom: auto;
+        bottom: 30px;
       }
     }
 
@@ -358,7 +377,8 @@
       .exhibitions__picture-type {
         position: absolute;
         right: 0;
-        top: 140px;
+        bottom: 30px;
+        // top: 140px;
         //bottom: 23px;
         display: block;
         padding: 10px 16px;

@@ -1,6 +1,11 @@
 .popup__slider-list {
   @include list-reset;
   position: relative;
+  min-height: 326px;
+
+  .slick-list {
+    min-height: 326px;
+  }
 }
 
 .popup__slider-item {
