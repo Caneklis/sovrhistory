@@ -292,8 +292,8 @@ $(window).on("resize", createSlick);
 $carousel = $(".buildings__events-list").slick({
   slidesToShow: 1,
   slidesToScroll: 1,
-  autoplay: false,
-  autoplaySpeed: 2000,
+  autoplay: true,
+  autoplaySpeed: 3000,
   infinite: false,
   dots: true,
   arrows: true,
@@ -472,17 +472,20 @@ $(".js-example-tokenizer").select2({
 
 $(function () {
   $(".preview__slider-list").slick({
-    slidesToShow: 2,
-    centerMode: true,
+    slidesToShow: 1,
+    centerMode: false,
     centerPadding: "0px",
-    speed: 100,
+    speed: 300,
     focusOnSelect: true,
     infinite: false,
     arrows: true,
     dots: false,
     variableWidth: true,
+    adaptiveHeight: false,
     draggable: true,
     initialSlide: 0,
+    cssEase: "ease-in-out",
+    // infinite: true,
     // adaptiveHeight: true,
     prevArrow: $(".preview__slider-prev"),
     nextArrow: $(".preview__slider-next"),
@@ -505,6 +508,9 @@ $(function () {
       },
     ],
   });
+  // .on("afterChange", function (event, slick, currentSlide, nextSlide) {
+  //   console.log(nextSlide);
+  // });
 
   // When the filter values are changed,
   // apply the filter to slick.
@@ -1113,31 +1119,51 @@ $(".gallery__btn").click(function () {
 });
 
 $(function () {
-  // wait for document ready
-  // init
+  var controller = new ScrollMagic.Controller({
+    globalSceneOptions: {
+      triggerHook: "onLeave",
+      duration: "200%", // this works just fine with duration 0 as well
+      // However with large numbers (>20) of pinned sections display errors can occur so every section should be unpinned once it's covered by the next section.
+      // Normally 100% would work for this, but here 200% is used, as Panel 3 is shown for more than 100% of scrollheight due to the pause.
+      offset: 50, // start this scene after scrolling for 50px
+    },
+  });
 
   if (window.innerWidth > 1440) {
-    var controller = new ScrollMagic.Controller({
-      globalSceneOptions: {
-        triggerHook: "onLeave",
-        duration: "200%", // this works just fine with duration 0 as well
-        // However with large numbers (>20) of pinned sections display errors can occur so every section should be unpinned once it's covered by the next section.
-        // Normally 100% would work for this, but here 200% is used, as Panel 3 is shown for more than 100% of scrollheight due to the pause.
-        offset: 50, // start this scene after scrolling for 50px
-      },
-    });
-  }
+    // get all slides
+    var slides = document.querySelectorAll(".main-slider");
 
-  // get all slides
-  var slides = document.querySelectorAll(".main-slider");
-
-  // create scene for every slide
-  for (var i = 0; i < slides.length; i++) {
-    new ScrollMagic.Scene({
-      triggerElement: slides[i],
-    })
-      .setPin(slides[i], { pushFollowers: false })
-      .addIndicators() // add indicators (requires plugin)
-      .addTo(controller);
+    if (slides) {
+      // create scene for every slide
+      for (var i = 0; i < slides.length; i++) {
+        new ScrollMagic.Scene({
+          triggerElement: slides[i],
+        })
+          .setPin(slides[i], { pushFollowers: false })
+          //.addIndicators() // add indicators (requires plugin)
+          .addTo(controller);
+      }
+    }
   }
+});
+
+AOS.init({
+  // Global settings:
+  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+  startEvent: "DOMContentLoaded", // name of the event dispatched on the document, that AOS should initialize on
+  initClassName: "aos-init", // class applied after initialization
+  animatedClassName: "aos-animate", // class applied on animation
+  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+  debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+  offset: 200, // offset (in px) from the original trigger point
+  delay: 200, // values from 0 to 3000, with step 50ms
+  duration: 500, // values from 0 to 3000, with step 50ms
+  easing: "ease", // default easing for AOS animations
+  once: false, // whether animation should happen only once - while scrolling down
+  mirror: false, // whether elements should animate out while scrolling past them
+  anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
 });

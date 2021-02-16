@@ -165,6 +165,8 @@ gulp.task("libs", function () {
       "node_modules/baron/baron.js",
       "node_modules/nouislider/distribute/nouislider.js",
       "node_modules/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js",
+      "node_modules/scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js",
+      "node_modules/aos/dist/aos.js",
       "src/js/js.cookie.js",
       // "src/js/bvi-init.js",
       "src/js/bvi.min.js",

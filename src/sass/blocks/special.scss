@@ -1,6 +1,5 @@
 .special {
   position: relative;
-  margin-bottom: 90px;
   background-color: #fff;
 
   @media (max-width: $tablet) {
@@ -58,6 +57,15 @@
   @media (max-width: $tablet) {
     min-width: 320px;
     max-width: 375px;
+  }
+}
+
+.special__main-picture {
+  width: 267px;
+
+  img {
+    max-width: 100%;
+    height: auto;
   }
 }
 

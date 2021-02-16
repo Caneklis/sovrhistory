@@ -23,12 +23,17 @@
 
 .footer__list {
   @include list-reset;
-  width: 118px;
-  margin-bottom: 11px;
-  margin-right: 50px;
+  // width: 118px;
+  // margin-bottom: 11px;
+  // margin-right: 50px;
+  // width: 150px;
+  // margin: 0 10px 5px 0;
+  width: 50%;
+  padding-right: 10px;
 
   &:nth-child(2n) {
     margin-right: 0;
+    padding-right: 0;
   }
 }
 
@@ -40,6 +45,7 @@
     line-height: 13px;
     letter-spacing: 0.02em;
     text-decoration: underline;
+    word-break: normal;
 
     color: #cfc8b7;
   }

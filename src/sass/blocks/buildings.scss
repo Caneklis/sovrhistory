@@ -113,9 +113,9 @@
         opacity: 1;
       }
 
-      span {
-        color: $s-color;
-      }
+      // span {
+      //   color: $s-color;
+      // }
     }
     &::after {
       display: none;
@@ -189,10 +189,13 @@
     font-size: 20px;
     line-height: 25px;
     font-weight: 400;
-    text-decoration-line: underline;
 
     a {
       color: inherit;
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 
@@ -566,9 +569,9 @@
 
   .buildings__events {
     margin: 0 auto;
-    margin-bottom: 20px;
+    // margin-bottom: 20px;
     padding-top: 45px;
-    padding-bottom: 55px;
+    padding-bottom: 75px;
     background-color: #f3f3f3;
   }
 
@@ -627,6 +630,10 @@
       font-size: 16px;
       line-height: 20px;
     }
+
+    a {
+      text-decoration: none;
+    }
   }
 
   .buildings__events-type {
@@ -635,6 +642,10 @@
     p {
       font-size: 12px;
       line-height: 15px;
+    }
+
+    a {
+      text-decoration: none;
     }
   }
 

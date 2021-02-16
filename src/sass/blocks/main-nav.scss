@@ -264,12 +264,20 @@
     grid-area: nav;
     margin-top: 0;
     align-self: end;
+    justify-content: flex-end;
 
     &--fixed {
       align-self: center;
 
+      .main-nav__list {
+        justify-content: flex-end;
+      }
+
       .main-nav__item {
+        margin: 0;
+
         &--contrast {
+          width: 0;
           a {
             padding-right: 30px;
           }
@@ -285,6 +293,12 @@
   }
 
   .main-nav__item {
+    margin-left: 10px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
     a {
       padding: 10px 10px 30px 10px;
       font-size: 16px;

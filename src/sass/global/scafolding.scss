@@ -509,3 +509,55 @@ textarea {
     margin-right: 10px;
   }
 }
+
+.bvi-body .header--fixed {
+  padding-top: 110px;
+}
+
+.bvi-body .subscribe__form input,
+.bvi-body .subscribe__form textarea {
+  border: 1px solid #000;
+}
+
+.bvi-body .buildings__list-item {
+  img {
+    display: none !important;
+  }
+
+  span {
+    font-size: 20px !important;
+  }
+}
+
+html
+  body
+  .bvi-body[data-bvi-theme="white"]
+  .subscribe__field
+  input:checked
+  + label:after,
+html
+  body
+  .bvi-body[data-bvi-theme="white"]
+  .subscribe__field
+  input:checked
+  + label:before {
+  border-color: #000 !important;
+}
+
+html
+  body
+  .bvi-body[data-bvi-theme="white"]
+  .subscribe__field
+  input:checked
+  + label:after {
+  background-color: #000 !important;
+}
+
+html body .bvi-body[data-bvi-theme="white"] :after,
+html body .bvi-body[data-bvi-theme="white"] label:before {
+  border-color: #000 !important;
+}
+
+.bvi-panel-close {
+  text-align: center;
+}

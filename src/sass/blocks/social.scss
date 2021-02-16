@@ -71,47 +71,21 @@
   align-items: center;
   width: 22px;
   height: 22px;
+  color: #cfc8b7;
+  transition: all 0.2s linear;
 
   svg {
     width: 100%;
     height: 100%;
   }
 
-  &--vk {
-    content: url("../img/icons/social/vk.svg");
-  }
-
-  &--fb {
-    content: url("../img/icons/social/facebook.svg");
-  }
-
-  &--ok {
-    content: url("../img/icons/social/ok.svg");
-  }
-
-  &--tw {
-    content: url("../img/icons/social/twitter.svg");
-  }
-
-  &--inst {
-    content: url("../img/icons/social/instagramm.svg");
-  }
-
   &:hover {
-    svg {
-      path {
-        fill: #e0c37c;
-      }
-    }
-    //filter: invert(100%) sepia(35%);
+    color: $s-color;
+    transform: scale(1.1);
   }
 
   &:active {
-    svg {
-      path {
-        fill: #b69441;
-      }
-    }
+    color: $link-color--hover;
   }
 }
 
@@ -236,6 +210,16 @@
         margin-left: 16px;
         margin-bottom: 14px;
       }
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .social {
+    &--footer {
+      margin-left: 50%;
+      //margin-right: 95px;
+      margin-top: -100px;
     }
   }
 }
