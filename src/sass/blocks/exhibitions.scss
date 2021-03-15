@@ -180,7 +180,14 @@
   grid-column-end: 2;
 
   img {
-    filter: grayscale(1) brightness(2);
+    filter: grayscale(1);
+    transition: filter 0.3s;
+  }
+
+  &:hover {
+    img {
+      filter: grayscale(0);
+    }
   }
 
   .exhibitions__price {

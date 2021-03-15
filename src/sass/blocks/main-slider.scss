@@ -3,6 +3,7 @@
   // min-width: 320px;
   // max-width: 375px;
   width: 100%;
+  min-height: 544px;
   margin-left: auto !important;
   margin-right: auto !important;
   margin-top: -88px;
@@ -89,7 +90,8 @@
     width: auto;
     position: absolute;
     top: 0;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   // @media (max-width: 374px) {
@@ -240,6 +242,7 @@
   .main-slider {
     min-width: 768px;
     max-width: 768px;
+    min-height: 790px;
     margin-top: 133px !important 0;
   }
 
