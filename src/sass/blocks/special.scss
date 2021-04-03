@@ -119,13 +119,13 @@
   justify-content: center;
   gap: 40px;
 
-  @media (max-width: $desktop) {
+  @media (max-width: 1439px) {
     grid-template-columns: 340px 340px;
     max-width: 700px;
     gap: 20px;
   }
 
-  @media (max-width: $tablet) {
+  @media (max-width: 767px) {
     grid-template-columns: 320px;
   }
 }

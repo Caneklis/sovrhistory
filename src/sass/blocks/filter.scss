@@ -297,6 +297,10 @@ a.filter__button {
   }
 }
 
+.filter__building-result {
+  display: none;
+}
+
 @media screen and (min-width: $tablet) {
   .filter__custom-select {
     display: none;

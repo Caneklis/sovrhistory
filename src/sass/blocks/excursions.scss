@@ -86,6 +86,14 @@
   margin-bottom: 20px;
   padding: 40px 20px;
   background-color: #f9f9f9;
+
+  &:target {
+    border-top: 120px solid transparent;
+    margin-top: -120px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+  }
 }
 
 .excursions__list-text {
@@ -97,14 +105,11 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 125.89%;
-    /* or 23px */
-
-    text-decoration-line: underline;
-
     color: #000000;
 
     a {
       color: inherit;
+      text-decoration: none;
     }
   }
 
@@ -210,6 +215,33 @@
   margin-left: 32px;
 }
 
+.excursions__branch-title {
+  display: block;
+  margin: 0 0 9px;
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 400;
+  color: #292929;
+}
+
+.excursions__list-filter-link {
+  position: relative;
+
+  .excursions__list-filter-link-success {
+    display: none;
+
+    &--visible {
+      display: block;
+      padding: 10px;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: rgba($color: #fff, $alpha: 0.5);
+      color: $s-color;
+    }
+  }
+}
+
 @media (min-width: $tablet) {
   .excursions {
     margin-bottom: 60px;
@@ -255,7 +287,9 @@
       flex-direction: column;
 
       span {
-        margin-bottom: 20px;
+        width: 100%;
+        margin-bottom: 8px;
+        // margin-bottom: 20px;
       }
     }
   }
@@ -321,6 +355,9 @@
   // .excursions__list-filter-pin {
   //   right: 0;
   // }
+  .excursions__list-filter-link {
+    grid-column: 1/3;
+  }
 }
 
 @media (min-width: $desktop) {
@@ -355,6 +392,7 @@
       width: 350px;
       order: 3;
       flex-direction: row;
+      flex-wrap: wrap;
       padding-left: 70px;
 
       span {

@@ -19,6 +19,7 @@ body {
   -webkit-text-size-adjust: 100%; // stylelint-disable-line
   height: 100%;
   margin: 0;
+  margin-top: 1px;
 
   display: flex;
   flex-direction: column;
@@ -560,4 +561,12 @@ html body .bvi-body[data-bvi-theme="white"] label:before {
 
 .bvi-panel-close {
   text-align: center;
+}
+
+.sp-form[sp-id="183923"] {
+  width: 100% !important;
+}
+
+.sp-form[sp-id="183923"] .sp-form-fields-wrapper {
+  width: 100% !important;
 }

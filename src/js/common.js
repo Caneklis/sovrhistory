@@ -210,6 +210,11 @@ $(".buildings__list--filter").on("click", "button", function (event) {
   filterHandler(event.currentTarget.value);
   $(".buildings__list button").not(this).parent().removeClass("active");
   $(this).parent().addClass("active");
+
+  $(".buildings__branch-link").hide();
+  $(
+    ".buildings__branch-link[data-tags=" + event.currentTarget.value + "]"
+  ).show();
 });
 
 /**
@@ -1166,4 +1171,24 @@ AOS.init({
   once: false, // whether animation should happen only once - while scrolling down
   mirror: false, // whether elements should animate out while scrolling past them
   anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
+});
+
+$(".excursions__list-filter-link a").on("click", function (e) {
+  e.preventDefault();
+  const copyText = $(this).prop("href");
+  console.log(copyText);
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val(copyText).select();
+  document.execCommand("copy");
+  $temp.remove();
+  document.execCommand("copy");
+  $(this)
+    .find(".excursions__list-filter-link-success")
+    .addClass("excursions__list-filter-link-success--visible");
+  setTimeout(() => {
+    $(this)
+      .find(".excursions__list-filter-link-success")
+      .removeClass("excursions__list-filter-link-success--visible");
+  }, 800);
 });

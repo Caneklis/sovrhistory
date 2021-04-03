@@ -54,6 +54,24 @@ h3.accordion__header {
   }
 }
 
+.accordion__header-link {
+  &::after {
+    display: none;
+  }
+
+  a {
+    &::after {
+      content: url("../img/icons/preview-slider-next-arrow.svg");
+      width: 15px;
+      margin-left: 10px;
+      transition: all 0.3s ease;
+      // position: absolute;
+      // top: 0;
+      // right: 0;
+    }
+  }
+}
+
 .accordion__panel {
   //border: 1px dashed black;
   // margin: 2px;
