@@ -74,7 +74,7 @@
     "scrollmagic": "^2.0.8",
     "select2": "^4.0.13",
     "slick-carousel": "^1.8.1",
-    "swiper": "^5.4.1"
+    "swiper": "^6.5.1"
   },
   "repository": {
     "type": "git",
