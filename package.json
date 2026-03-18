@@ -38,7 +38,7 @@
     "eslint": "^7.1.0",
     "eslint-config-htmlacademy": "^0.5.2",
     "gh-pages": "^2.2.0",
-    "gulp": "^4.0.2",
+    "gulp": "^5.0.1",
     "gulp-changed": "^4.0.2",
     "gulp-concat": "^2.6.1",
     "gulp-csso": "^4.0.1",
