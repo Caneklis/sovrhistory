@@ -35,7 +35,7 @@
     "autoprefixer": "^9.8.0",
     "browser-sync": "^3.0.4",
     "editorconfig-cli": "^1.0.0",
-    "eslint": "^7.1.0",
+    "eslint": "^7.32.0",
     "eslint-config-htmlacademy": "^0.5.2",
     "gh-pages": "^5.0.0",
     "gulp": "^4.0.2",
@@ -55,7 +55,7 @@
     "gulp-svgstore": "^7.0.1",
     "gulp-uglify": "^3.0.2",
     "gulp-webp": "^4.0.1",
-    "stylelint": "^13.5.0",
+    "stylelint": "^13.13.1",
     "stylelint-config-htmlacademy": "^0.1.4"
   },
   "dependencies": {
